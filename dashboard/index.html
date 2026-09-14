@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Capex Signal Tracker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #10161A;
+    --surface: #171F24;
+    --surface-alt: #1D262C;
+    --border: #263139;
+    --text: #E7EDEF;
+    --text-muted: #8A9BA3;
+    --accent: #4FD1C5;
+    --accent-dim: #2E6F69;
+    --down: #E2725B;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    display: flex;
+    min-height: 100vh;
+  }
+  nav {
+    width: 220px;
+    flex-shrink: 0;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .brand {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+  nav button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 11px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+  }
+  nav button:hover { color: var(--text); }
+  nav button.active {
+    color: var(--text);
+    border-left: 2px solid var(--accent);
+    background: var(--surface-alt);
+  }
+  main { flex: 1; padding: 28px 36px; max-width: 1100px; }
+  header.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+  }
+  header.top h1 { font-size: 20px; font-weight: 600; margin: 0; }
+  header.top .meta { color: var(--text-muted); font-size: 13px; }
+  .controls { margin-bottom: 20px; }
+  select {
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .card .sub { color: var(--text-muted); font-size: 12px; margin-bottom: 12px; }
+  .card canvas { max-height: 240px; }
+  .num { font-variant-numeric: tabular-nums; }
+  .empty-state {
+    color: var(--text-muted);
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .summary-entry {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .summary-entry:first-child { padding-top: 0; }
+  .summary-entry .date { color: var(--accent); font-size: 13px; margin-bottom: 6px; }
+  .summary-entry p { margin: 0; line-height: 1.6; color: var(--text); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .briefing-text {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+  }
+  .briefing-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+  }
+  .briefing-text .label { color: var(--text-muted); font-size: 12px; margin-bottom: 10px; }
+  .grid-5 { grid-template-columns: repeat(5, 1fr); }
+  .spark-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .spark-card .label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+  .spark-card .value { font-size: 20px; font-weight: 600; margin-bottom: 2px; }
+  .spark-card .delta { font-size: 12px; margin-bottom: 8px; }
+  .spark-card .delta.up { color: var(--accent); }
+  .spark-card .delta.down { color: var(--down); }
+  .spark-card canvas { height: 40px !important; }
+  @media (max-width: 900px) { .grid-5 { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">AI Capex Tracker</div>
+  <button data-tab="briefing" class="active">Today's briefing</button>
+  <button data-tab="hiring">Hiring</button>
+  <button data-tab="market">Market</button>
+  <button data-tab="capex">Capex Signals</button>
+  <button data-tab="ecosystem">Ecosystem Dev Activity</button>
+</nav>
+
+<main>
+  <header class="top">
+    <h1 id="pageTitle">Today's briefing</h1>
+    <div class="meta" id="lastUpdated">Loading&hellip;</div>
+  </header>
+
+  <div id="loadError" class="empty-state" style="display:none;">
+    No data yet. Once the daily GitHub Action has run at least once,
+    this page will populate automatically.
+  </div>
+
+  <div id="tabs">
+    <section class="tab-panel active" id="tab-briefing">
+      <div class="briefing-text" id="briefingText"></div>
+      <div class="grid grid-5" id="briefingSparks"></div>
+      <h3 style="margin: 28px 0 4px; font-size: 14px; color: var(--text-muted); font-weight: 600;">Previous briefings</h3>
+      <div id="summaryList"></div>
+    </section>
+
+    <section class="tab-panel" id="tab-hiring">
+      <div class="controls">
+        <select id="companySelectHiring"></select>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Job postings</h3>
+          <div class="sub">Overall open roles vs. AI/ML-titled roles</div>
+          <canvas id="chartJobs"></canvas>
+        </div>
+        <div class="card">
+          <h3>Hiring velocity</h3>
+          <div class="sub">Jobs posted in the trailing 30 days</div>
+          <canvas id="chartJobs30d"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="tab-market">
+      <div class="controls">
+        <select id="companySelectMarket"></select>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Stock price</h3>
+          <div class="sub">Daily close</div>
+          <canvas id="chartPrice"></canvas>
+        </div>
+        <div class="card">
+          <h3>Volume</h3>
+          <div class="sub">Daily trading volume</div>
+          <canvas id="chartVolume"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="tab-capex">
+      <div class="grid">
+        <div class="card" style="grid-column: 1 / -1;">
+          <h3>8-K filings across tracked companies</h3>
+          <div class="sub">Daily count -- a spike often precedes a capex/spending disclosure</div>
+          <canvas id="chart8k"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="tab-ecosystem">
+      <div class="grid">
+        <div class="card" style="grid-column: 1 / -1;">
+          <h3>Commits across curated AI infra repos</h3>
+          <div class="sub">pytorch, transformers, vllm, llama.cpp, TensorRT-LLM, DeepSpeed</div>
+          <canvas id="chartGithub"></canvas>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+const COLORS = ['#4FD1C5', '#E8A24C', '#7C9EF2', '#E2725B', '#B497D6', '#6FCF97'];
+
+let history = [];
+
+async function loadData() {
+  try {
+    const res = await fetch('../data/history.json');
+    history = await res.json();
+  } catch (e) {
+    history = [];
+  }
+  if (!history.length) {
+    document.getElementById('loadError').style.display = 'block';
+    document.getElementById('lastUpdated').textContent = 'No data yet';
+    return;
+  }
+  document.getElementById('lastUpdated').textContent =
+    'Last updated ' + history[history.length - 1].date;
+  populateCompanySelectors();
+  renderBriefing();
+  renderHiring();
+  renderMarket();
+  renderCapex();
+  renderEcosystem();
+}
+
+function allTickers() {
+  const set = new Set();
+  history.forEach(day => Object.keys(day.companies || {}).forEach(t => set.add(t)));
+  return Array.from(set).sort();
+}
+
+function populateCompanySelectors() {
+  const tickers = allTickers();
+  ['companySelectHiring', 'companySelectMarket'].forEach(id => {
+    const el = document.getElementById(id);
+    el.innerHTML = tickers.map(t => `<option value="${t}">${t}</option>`).join('');
+    el.addEventListener('change', () => {
+      if (id === 'companySelectHiring') renderHiring();
+      else renderMarket();
+    });
+  });
+}
+
+function seriesFor(ticker, metric) {
+  return history.map(day => (day.companies && day.companies[ticker] ? day.companies[ticker][metric] : null));
+}
+
+function dateLabels() {
+  return history.map(d => d.date);
+}
+
+function aggregateSeries(metric) {
+  return history.map(day => {
+    const companies = day.companies || {};
+    const vals = Object.values(companies).map(c => c[metric]).filter(v => v != null);
+    return vals.length ? vals.reduce((a, b) => a + b, 0) : null;
+  });
+}
+
+function basketIndexSeries() {
+  // Equal-weighted average of each company's cumulative % return from the
+  // first day it has a price -- lets very differently-priced stocks (e.g.
+  // a $40 stock and a $900 stock) contribute equally to a combined trend.
+  const tickers = allTickers();
+  const bases = {};
+  return history.map(day => {
+    const vals = [];
+    tickers.forEach(t => {
+      const price = day.companies && day.companies[t] ? day.companies[t].stock_price : null;
+      if (price == null) return;
+      if (!(t in bases)) bases[t] = price;
+      vals.push((price / bases[t] - 1) * 100);
+    });
+    return vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+  });
+}
+
+function pctChange(series, daysBack) {
+  const n = series.length;
+  const current = series[n - 1];
+  const past = series[n - 1 - daysBack];
+  if (current == null || past == null || past === 0) return null;
+  return Math.round((current - past) / past * 1000) / 10;
+}
+
+// For series that are ALREADY a percentage (the basket index), a "percent
+// change of a percent" is meaningless (and blows up near zero) -- use the
+// plain point difference instead, e.g. "index moved from +1.2% to +3.6%"
+// is reported as "+2.4pp", not as a 200% change.
+function pointDiff(series, daysBack) {
+  const n = series.length;
+  const current = series[n - 1];
+  const past = series[n - 1 - daysBack];
+  if (current == null || past == null) return null;
+  return Math.round((current - past) * 10) / 10;
+}
+
+function drawSparkline(canvasId, series, color) {
+  if (charts[canvasId]) charts[canvasId].destroy();
+  const ctx = document.getElementById(canvasId).getContext('2d');
+  charts[canvasId] = new Chart(ctx, {
+    type: 'line',
+    data: { labels: dateLabels(), datasets: [{ data: series, borderColor: color, borderWidth: 1.5, pointRadius: 0, tension: 0.3 }] },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      scales: { x: { display: false }, y: { display: false } },
+      elements: { line: { fill: false } },
+    },
+  });
+}
+
+function renderBriefing() {
+  const today = history[history.length - 1];
+  const textEl = document.getElementById('briefingText');
+  if (today.summary) {
+    textEl.innerHTML = `<div class="label">${today.date}</div><p>${today.summary.replace(/\n/g, '<br>')}</p>`;
+  } else {
+    textEl.innerHTML = `<div class="label">${today.date}</div><p style="color:var(--text-muted);">No briefing generated yet for today.</p>`;
+  }
+
+  const featured = [
+    { key: 'jobs_ai_total', label: 'AI-titled postings (all companies)', series: aggregateSeries('jobs_ai'), color: COLORS[0] },
+    { key: 'jobs_overall_total', label: 'Overall open roles (all companies)', series: aggregateSeries('jobs_overall'), color: COLORS[2] },
+    { key: 'basket', label: 'Basket price index (equal-weight)', series: basketIndexSeries(), color: COLORS[1], isPct: true },
+    { key: 'sec8k_total', label: '8-K filings (all companies)', series: aggregateSeries('sec_8k_filings_today'), color: COLORS[3] },
+    { key: 'commits_total', label: 'Ecosystem commits, 24h', series: history.map(d => Object.entries(d.macro || {}).filter(([k]) => k.includes('/')).reduce((s, [, v]) => s + (v.commits_last_24h || 0), 0)), color: COLORS[4] },
+  ];
+
+  const container = document.getElementById('briefingSparks');
+  container.innerHTML = featured.map(f => {
+    const current = f.series[f.series.length - 1];
+    const d7 = f.isPct ? pointDiff(f.series, 7) : pctChange(f.series, 7);
+    const displayVal = current == null ? '--' : (f.isPct ? current.toFixed(1) + '%' : Math.round(current).toLocaleString());
+    const deltaClass = d7 == null ? '' : (d7 >= 0 ? 'up' : 'down');
+    const deltaUnit = f.isPct ? 'pp' : '%';
+    const deltaText = d7 == null ? 'not enough history yet' : `${d7 >= 0 ? '+' : ''}${d7}${deltaUnit} (7d)`;
+    return `<div class="spark-card">
+      <div class="label">${f.label}</div>
+      <div class="value num">${displayVal}</div>
+      <div class="delta ${deltaClass}">${deltaText}</div>
+      <canvas id="spark-${f.key}"></canvas>
+    </div>`;
+  }).join('');
+
+  featured.forEach(f => drawSparkline(`spark-${f.key}`, f.series, f.color));
+  renderSummary();
+}
+
+let charts = {};
+function drawChart(canvasId, type, labels, datasets, extraOptions = {}) {
+  if (charts[canvasId]) charts[canvasId].destroy();
+  const ctx = document.getElementById(canvasId).getContext('2d');
+  charts[canvasId] = new Chart(ctx, {
+    type,
+    data: { labels, datasets },
+    options: Object.assign({
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8A9BA3' } } },
+      scales: {
+        x: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
+        y: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
+      },
+    }, extraOptions),
+  });
+}
+
+function renderHiring() {
+  const ticker = document.getElementById('companySelectHiring').value;
+  drawChart('chartJobs', 'line', dateLabels(), [
+    { label: 'Overall open roles', data: seriesFor(ticker, 'jobs_overall'), borderColor: COLORS[0], backgroundColor: COLORS[0], tension: 0.25 },
+    { label: 'AI/ML-titled roles', data: seriesFor(ticker, 'jobs_ai'), borderColor: COLORS[1], backgroundColor: COLORS[1], tension: 0.25 },
+  ]);
+  drawChart('chartJobs30d', 'bar', dateLabels(), [
+    { label: 'Jobs posted, trailing 30d', data: seriesFor(ticker, 'jobs_last_30d'), backgroundColor: COLORS[2] },
+  ]);
+}
+
+function renderMarket() {
+  const ticker = document.getElementById('companySelectMarket').value;
+  drawChart('chartPrice', 'line', dateLabels(), [
+    { label: `${ticker} close`, data: seriesFor(ticker, 'stock_price'), borderColor: COLORS[0], backgroundColor: COLORS[0], tension: 0.25 },
+  ]);
+  drawChart('chartVolume', 'bar', dateLabels(), [
+    { label: `${ticker} volume`, data: seriesFor(ticker, 'stock_volume'), backgroundColor: COLORS[3] },
+  ]);
+}
+
+function renderCapex() {
+  const totals = history.map(day => {
+    const companies = day.companies || {};
+    return Object.values(companies).reduce((sum, c) => sum + (c.sec_8k_filings_today || 0), 0);
+  });
+  drawChart('chart8k', 'bar', dateLabels(), [
+    { label: '8-K filings (all tracked companies)', data: totals, backgroundColor: COLORS[1] },
+  ]);
+}
+
+function renderEcosystem() {
+  const totals = history.map(day => {
+    const macro = day.macro || {};
+    return Object.entries(macro)
+      .filter(([k]) => k.includes('/'))
+      .reduce((sum, [, v]) => sum + (v.commits_last_24h || 0), 0);
+  });
+  drawChart('chartGithub', 'bar', dateLabels(), [
+    { label: 'Commits, trailing 24h', data: totals, backgroundColor: COLORS[4] },
+  ]);
+}
+
+function renderSummary() {
+  const el = document.getElementById('summaryList');
+  const withSummaries = history.filter(d => d.summary).slice().reverse();
+  if (!withSummaries.length) {
+    el.innerHTML = '<div class="empty-state">No summaries generated yet.</div>';
+    return;
+  }
+  el.innerHTML = withSummaries.map(d => `
+    <div class="summary-entry">
+      <div class="date">${d.date}</div>
+      <p>${d.summary.replace(/\n/g, '<br>')}</p>
+    </div>
+  `).join('');
+}
+
+document.querySelectorAll('nav button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    document.getElementById('pageTitle').textContent = btn.textContent;
+  });
+});
+
+loadData();
+</script>
+</body>
+</html>
