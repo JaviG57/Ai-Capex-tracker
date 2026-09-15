@@ -52,6 +52,11 @@ HEADERS = {
     "Content-Type": "application/json",
 }
 
+# Temporary debug capture -- written to data/debug_theirstack.json by
+# run_daily.py so it can be inspected without needing GitHub Actions log
+# access. Safe to remove once the integration is confirmed working.
+_DEBUG_LOG = []
+
 
 def pick_todays_subset(companies: list[dict], day_index: int, batch_size: int) -> list[dict]:
     """Round-robin helper for free-tier credit budgets. Not used by default
@@ -65,6 +70,11 @@ def pick_todays_subset(companies: list[dict], day_index: int, batch_size: int) -
 
 def _post(payload: dict) -> dict | None:
     resp = requests.post(THEIRSTACK_API_URL, json=payload, headers=HEADERS, timeout=30)
+    _DEBUG_LOG.append({
+        "payload": payload,
+        "status_code": resp.status_code,
+        "body_snippet": resp.text[:500],
+    })
     if resp.status_code == 402:
         print("[theirstack] out of credits for this billing period -- skipping remainder")
         return "OUT_OF_CREDITS"

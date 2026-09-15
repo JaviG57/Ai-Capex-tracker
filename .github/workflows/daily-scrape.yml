@@ -31,6 +31,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEIRSTACK_DEBUG_LIMIT: "2"
         run: python run_daily.py
 
       - name: Commit updated data
