@@ -3,116 +3,116 @@
     "date": "2026-09-15",
     "companies": {
       "MSFT": {
-        "stock_price": 505.41,
-        "stock_volume": 23070000,
+        "stock_price": 499.26,
+        "stock_volume": 7550822,
         "sec_8k_filings_today": 0
       },
       "GOOGL": {
-        "stock_price": 349.39,
-        "stock_volume": 35860000,
+        "stock_price": 343.13,
+        "stock_volume": 9963684,
         "sec_8k_filings_today": 0
       },
       "AMZN": {
-        "stock_price": 253.54,
-        "stock_volume": 34292800,
+        "stock_price": 248.52,
+        "stock_volume": 17717486,
         "sec_8k_filings_today": 0
       },
       "META": {
-        "stock_price": 665.6,
-        "stock_volume": 19300300,
+        "stock_price": 666.14,
+        "stock_volume": 10748384,
         "sec_8k_filings_today": 0
       },
       "NVDA": {
-        "stock_price": 210.96,
-        "stock_volume": 131942300,
+        "stock_price": 211.34,
+        "stock_volume": 48853639,
         "sec_8k_filings_today": 0
       },
       "AVGO": {
-        "stock_price": 344.72,
-        "stock_volume": 32605300,
+        "stock_price": 338.29,
+        "stock_volume": 12834363,
         "sec_8k_filings_today": 0
       },
       "AMD": {
-        "stock_price": 493.41,
-        "stock_volume": 24773600,
+        "stock_price": 504.42,
+        "stock_volume": 10814343,
         "sec_8k_filings_today": 0
       },
       "TSM": {
-        "stock_price": 418.01,
-        "stock_volume": 14291800,
+        "stock_price": 413.64,
+        "stock_volume": 4886716,
         "sec_8k_filings_today": 0
       },
       "ASML": {
-        "stock_price": 1575.15,
-        "stock_volume": 1970800,
+        "stock_price": 1591.84,
+        "stock_volume": 1126326,
         "sec_8k_filings_today": 0
       },
       "ARM": {
-        "stock_price": 239.01,
-        "stock_volume": 6475400,
+        "stock_price": 242.52,
+        "stock_volume": 2521805,
         "sec_8k_filings_today": 0
       },
       "ORCL": {
-        "stock_price": 144.79,
-        "stock_volume": 42049600,
+        "stock_price": 143.08,
+        "stock_volume": 18212430,
         "sec_8k_filings_today": 0
       },
       "DELL": {
-        "stock_price": 534.28,
-        "stock_volume": 9145200,
+        "stock_price": 549.52,
+        "stock_volume": 7181138,
         "sec_8k_filings_today": 0
       },
       "SMCI": {
-        "stock_price": 36.74,
-        "stock_volume": 39833600,
+        "stock_price": 36.17,
+        "stock_volume": 15614442,
         "sec_8k_filings_today": 0
       },
       "CRWV": {
-        "stock_price": 82.98,
-        "stock_volume": 26458800,
+        "stock_price": 81.62,
+        "stock_volume": 7626139,
         "sec_8k_filings_today": 0
       },
       "DLR": {
-        "stock_price": 179.14,
-        "stock_volume": 2044900,
+        "stock_price": 178.01,
+        "stock_volume": 765167,
         "sec_8k_filings_today": 0
       },
       "EQIX": {
-        "stock_price": 998.72,
-        "stock_volume": 550100,
+        "stock_price": 998.0,
+        "stock_volume": 229340,
         "sec_8k_filings_today": 0
       },
       "VRT": {
-        "stock_price": 237.39,
-        "stock_volume": 10888900,
+        "stock_price": 236.62,
+        "stock_volume": 2951025,
         "sec_8k_filings_today": 0
       },
       "ETN": {
-        "stock_price": 393.16,
-        "stock_volume": 3188400,
+        "stock_price": 392.06,
+        "stock_volume": 958339,
         "sec_8k_filings_today": 0
       }
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 100
+        "commits_last_24h": 76
       },
       "huggingface/transformers": {
-        "commits_last_24h": 17
+        "commits_last_24h": 7
       },
       "vllm-project/vllm": {
-        "commits_last_24h": 74
+        "commits_last_24h": 70
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 23
+        "commits_last_24h": 18
       },
       "NVIDIA/TensorRT-LLM": {
-        "commits_last_24h": 35
+        "commits_last_24h": 30
       },
       "microsoft/DeepSpeed": {
         "commits_last_24h": 10
       }
     },
-    "summary": "Nothing in today's pull rises above noise. Every company across the dashboard \u2014 MSFT, GOOGL, AMZN, META, NVDA, AVGO, AMD, TSM, ASML, ARM, ORCL, DELL, SMCI, CRWV, DLR, EQIX, VRT, ETN \u2014 shows zero 8-K filings today, and there are no percent-change fields (1d/7d/30d) attached to any metric in this snapshot, so there's no basis for calling a move \"notable\" versus a single day's noise. We're effectively looking at a set of current-value snapshots (stock prices, share volume, filings, GitHub commit counts) with no trend history yet to judge direction or speed.\n\nThat said, a few raw levels are worth flagging as context rather than signal: NVDA's volume (131.9M shares) dwarfs every other name in the set, including much higher-priced peers like ASML (1.97M shares) and EQIX (550K shares) \u2014 typical of NVDA's role as the most liquid AI-capex proxy, not evidence of anything changing today. Commit activity across core inference/training repos (PyTorch at 100, vLLM at 74, TensorRT-LLM at 35, llama.cpp at 23, DeepSpeed at 10, Transformers at 17) is likewise just a level, not a trend \u2014 with no prior baseline in this payload, a day's commit count on any single repo is noise, especially DeepSpeed's 10, which is low-volume enough that normal day-to-day variance could swing it materially without meaning anything.\n\nOn synchronization: the one thing every company in the set shares today is the flat 8-K count (zero), which is unremarkable and expected on most trading days \u2014 it would only become interesting if it held while other spending signals accelerated, or if several names filed simultaneously.\n\nBottom line: this snapshot is"
+    "summary": "Today's data is essentially a level-check, not a signal day: every company across the hyperscaler, chipmaker, and datacenter-infrastructure cohorts shows zero 8-K filings and no percent-change history yet on stock price or volume, meaning there's nothing to compare against 1d/7d/30d baselines. That absence is itself worth noting only insofar as it's uniform \u2014 Microsoft, Google, Amazon, Meta, Nvidia, Broadcom, AMD, TSMC, ASML, Arm, Oracle, Dell, Supermicro, CoreWeave, Digital Realty, Equinix, Vertiv, and Eaton all filed nothing today, which is unremarkable given 8-Ks are lumpy, low-frequency events rather than a daily cadence \u2014 a quiet day across eighteen names doesn't imply synchronized caution, just an ordinary non-filing day.\n\nOn raw levels, Nvidia's volume stands out at roughly 48.9 million shares versus single-digit-million to low-teens-million for most peers, and Oracle's ~18.2 million and Amazon's ~17.7 million are elevated relative to the quieter infrastructure names like Equinix (~229K) and Digital Realty (~765K) \u2014 but without prior-period deltas this is just a snapshot of typical liquidity differences between mega-caps and REIT-structured datacenter plays, not evidence of a move.\n\nThe open-source ML repo activity is the only category with standalone current values worth noting as context: PyTorch (76 commits) and vLLM (70 commits) are seeing heavy daily commit volume versus DeepSpeed (10) and Hugging Face Transformers (7), consistent with where community development energy currently concentrates, though a single day's commit count is noisy and shouldn't be read as a trend absent history.\n\n"
   }
 ]
