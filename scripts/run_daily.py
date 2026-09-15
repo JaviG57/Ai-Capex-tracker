@@ -5,6 +5,9 @@ the daily summary, and saves. The Action workflow commits the updated file.
 """
 import datetime
 import os
+import pathlib
+import json
+import traceback
 
 import companies as companies_module
 import fetch_jobs_theirstack
@@ -23,9 +26,28 @@ def main():
     print(f"=== AI Capex Tracker daily run: {today_str} ===")
 
     print("-> TheirStack job postings")
-    debug_limit = int(__import__("os").environ.get("THEIRSTACK_DEBUG_LIMIT", "0"))
+    debug_limit = int(os.environ.get("THEIRSTACK_DEBUG_LIMIT", "0"))
     theirstack_companies = companies[:debug_limit] if debug_limit else companies
-    jobs = fetch_jobs_theirstack.fetch_all(theirstack_companies)
+    debug_path = (pathlib.Path(__file__).resolve().parent.parent / "data" / "debug_theirstack.json")
+    try:
+        jobs = fetch_jobs_theirstack.fetch_all(theirstack_companies)
+        debug_payload = {
+            "error": None,
+            "companies_queried": [c["ticker"] for c in theirstack_companies],
+            "jobs_returned": jobs,
+            "request_log": fetch_jobs_theirstack._DEBUG_LOG,
+        }
+    except Exception as e:
+        jobs = {}
+        debug_payload = {
+            "error": str(e),
+            "traceback": traceback.format_exc(),
+            "companies_queried": [c["ticker"] for c in theirstack_companies],
+            "request_log": fetch_jobs_theirstack._DEBUG_LOG,
+        }
+    debug_path.parent.mkdir(parents=True, exist_ok=True)
+    debug_path.write_text(json.dumps(debug_payload, indent=2, default=str))
+    print(f"-> wrote debug file to {debug_path} ({debug_path.stat().st_size} bytes)")
 
     print("-> Market data (price/volume)")
     market = fetch_market_data.fetch_all(companies)
@@ -77,12 +99,6 @@ def main():
     history[-1]["summary"] = summary
 
     storage.save_history(history)
-
-    # Temporary diagnostic dump -- remove once TheirStack integration is confirmed
-    import json as _json
-    with open(os.path.join(os.path.dirname(__file__), "..", "data", "debug_theirstack.json"), "w") as f:
-        _json.dump(fetch_jobs_theirstack._DEBUG_LOG, f, indent=2)
-
     print("Done. data/history.json updated.")
     print("\n--- Summary preview ---\n" + summary)
 
