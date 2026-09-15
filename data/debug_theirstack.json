@@ -1,0 +1,33 @@
+{
+  "error": null,
+  "companies_queried": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "jobs_returned": {},
+  "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "microsoft.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 402,
+      "body_snippet": "{\"request_id\":54592227,\"error\":{\"code\":\"E-019\",\"title\":\"Team has no api credits left\",\"description\":\"You have no api credits left. Please add api credits to your account.\"}}"
+    }
+  ]
+}
