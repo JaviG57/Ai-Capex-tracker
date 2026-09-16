@@ -114,5 +114,121 @@
       }
     },
     "summary": "Today's data is essentially a level-check, not a signal day: every company across the hyperscaler, chipmaker, and datacenter-infrastructure cohorts shows zero 8-K filings and no percent-change history yet on stock price or volume, meaning there's nothing to compare against 1d/7d/30d baselines. That absence is itself worth noting only insofar as it's uniform \u2014 Microsoft, Google, Amazon, Meta, Nvidia, Broadcom, AMD, TSMC, ASML, Arm, Oracle, Dell, Supermicro, CoreWeave, Digital Realty, Equinix, Vertiv, and Eaton all filed nothing today, which is unremarkable given 8-Ks are lumpy, low-frequency events rather than a daily cadence \u2014 a quiet day across eighteen names doesn't imply synchronized caution, just an ordinary non-filing day.\n\nOn raw levels, Nvidia's volume stands out at roughly 48.9 million shares versus single-digit-million to low-teens-million for most peers, and Oracle's ~18.2 million and Amazon's ~17.7 million are elevated relative to the quieter infrastructure names like Equinix (~229K) and Digital Realty (~765K) \u2014 but without prior-period deltas this is just a snapshot of typical liquidity differences between mega-caps and REIT-structured datacenter plays, not evidence of a move.\n\nThe open-source ML repo activity is the only category with standalone current values worth noting as context: PyTorch (76 commits) and vLLM (70 commits) are seeing heavy daily commit volume versus DeepSpeed (10) and Hugging Face Transformers (7), consistent with where community development energy currently concentrates, though a single day's commit count is noisy and shouldn't be read as a trend absent history.\n\n"
+  },
+  {
+    "date": "2026-09-16",
+    "companies": {
+      "MSFT": {
+        "stock_price": 493.86,
+        "stock_volume": 6525596,
+        "sec_8k_filings_today": 0
+      },
+      "GOOGL": {
+        "stock_price": 345.29,
+        "stock_volume": 7551343,
+        "sec_8k_filings_today": 0
+      },
+      "AMZN": {
+        "stock_price": 247.74,
+        "stock_volume": 14983399,
+        "sec_8k_filings_today": 0
+      },
+      "META": {
+        "stock_price": 676.56,
+        "stock_volume": 8452393,
+        "sec_8k_filings_today": 0
+      },
+      "NVDA": {
+        "stock_price": 215.39,
+        "stock_volume": 44949795,
+        "sec_8k_filings_today": 0
+      },
+      "AVGO": {
+        "stock_price": 340.0,
+        "stock_volume": 9238412,
+        "sec_8k_filings_today": 0
+      },
+      "AMD": {
+        "stock_price": 522.15,
+        "stock_volume": 12164528,
+        "sec_8k_filings_today": 0
+      },
+      "TSM": {
+        "stock_price": 417.28,
+        "stock_volume": 6055331,
+        "sec_8k_filings_today": 0
+      },
+      "ASML": {
+        "stock_price": 1602.16,
+        "stock_volume": 827564,
+        "sec_8k_filings_today": 0
+      },
+      "ARM": {
+        "stock_price": 246.36,
+        "stock_volume": 1252904,
+        "sec_8k_filings_today": 0
+      },
+      "ORCL": {
+        "stock_price": 143.75,
+        "stock_volume": 20170300,
+        "sec_8k_filings_today": 0
+      },
+      "DELL": {
+        "stock_price": 564.2,
+        "stock_volume": 8060611,
+        "sec_8k_filings_today": 0
+      },
+      "SMCI": {
+        "stock_price": 36.83,
+        "stock_volume": 14611928,
+        "sec_8k_filings_today": 0
+      },
+      "CRWV": {
+        "stock_price": 83.97,
+        "stock_volume": 9733803,
+        "sec_8k_filings_today": 0
+      },
+      "DLR": {
+        "stock_price": 183.27,
+        "stock_volume": 610268,
+        "sec_8k_filings_today": 0
+      },
+      "EQIX": {
+        "stock_price": 1026.23,
+        "stock_volume": 139470,
+        "sec_8k_filings_today": 0
+      },
+      "VRT": {
+        "stock_price": 243.6,
+        "stock_volume": 2730324,
+        "sec_8k_filings_today": 0
+      },
+      "ETN": {
+        "stock_price": 401.51,
+        "stock_volume": 722111,
+        "sec_8k_filings_today": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 89
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 17
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 71
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 21
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 49
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 2
+      }
+    },
+    "summary": "Only one-day deltas are populated today (no 7d/30d history yet), so this is a snapshot rather than a trend read \u2014 worth flagging up front given the usual caution about over-reading single-day moves, especially on low-volume series.\n\nThe standout equity move is a broad-based rally across the physical AI-infrastructure and power/cooling names: Digital Realty (+3.0%), Vertiv (+2.9%), CoreWeave (+2.9%), Eaton (+2.4%), Equinix (+2.8%), and Dell (+2.7%) all posted gains of roughly 2.5-3%, notably outpacing the hyperscalers and chipmakers. AMD (+3.5%) was the single biggest mover of the day, alongside modest gains at Nvidia (+1.9%) and Arm (+1.6%). Meanwhile Microsoft (-1.1%) and Amazon (-0.3%) were the only names in the red. No company filed an 8-K today \u2014 across all sixteen tickers \u2014 so there's no fresh capex-disclosure signal to weigh against the price action.\n\nThe clearest cross-company pattern is that data-center/power-and-cooling infrastructure stocks (DLR, VRT, EQIX, ETN) moved together and in the same direction as compute names like CRWV and DELL, suggesting the market's enthusiasm today was concentrated in physical AI buildout exposure rather than the software/model layer. Volume told a more mixed story: several names saw volume fall sharply alongside price gains (ASML -26.5%, EQIX -39.2%, ARM -50.3%), which tempers conviction in those moves, while AMD, TSM, Oracle, Dell, and CoreWeave saw volume rise alongside price gains, a more classic confirming pattern.\n\nOn the open-source/compute-utilization side,"
   }
 ]
