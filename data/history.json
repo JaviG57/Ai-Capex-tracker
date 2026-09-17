@@ -230,5 +230,121 @@
       }
     },
     "summary": "Only one-day deltas are populated today (no 7d/30d history yet), so this is a snapshot rather than a trend read \u2014 worth flagging up front given the usual caution about over-reading single-day moves, especially on low-volume series.\n\nThe standout equity move is a broad-based rally across the physical AI-infrastructure and power/cooling names: Digital Realty (+3.0%), Vertiv (+2.9%), CoreWeave (+2.9%), Eaton (+2.4%), Equinix (+2.8%), and Dell (+2.7%) all posted gains of roughly 2.5-3%, notably outpacing the hyperscalers and chipmakers. AMD (+3.5%) was the single biggest mover of the day, alongside modest gains at Nvidia (+1.9%) and Arm (+1.6%). Meanwhile Microsoft (-1.1%) and Amazon (-0.3%) were the only names in the red. No company filed an 8-K today \u2014 across all sixteen tickers \u2014 so there's no fresh capex-disclosure signal to weigh against the price action.\n\nThe clearest cross-company pattern is that data-center/power-and-cooling infrastructure stocks (DLR, VRT, EQIX, ETN) moved together and in the same direction as compute names like CRWV and DELL, suggesting the market's enthusiasm today was concentrated in physical AI buildout exposure rather than the software/model layer. Volume told a more mixed story: several names saw volume fall sharply alongside price gains (ASML -26.5%, EQIX -39.2%, ARM -50.3%), which tempers conviction in those moves, while AMD, TSM, Oracle, Dell, and CoreWeave saw volume rise alongside price gains, a more classic confirming pattern.\n\nOn the open-source/compute-utilization side,"
+  },
+  {
+    "date": "2026-09-17",
+    "companies": {
+      "MSFT": {
+        "stock_price": 494.89,
+        "stock_volume": 7474167,
+        "sec_8k_filings_today": 0
+      },
+      "GOOGL": {
+        "stock_price": 345.11,
+        "stock_volume": 9133117,
+        "sec_8k_filings_today": 0
+      },
+      "AMZN": {
+        "stock_price": 251.2,
+        "stock_volume": 15817912,
+        "sec_8k_filings_today": 0
+      },
+      "META": {
+        "stock_price": 677.78,
+        "stock_volume": 7835298,
+        "sec_8k_filings_today": 0
+      },
+      "NVDA": {
+        "stock_price": 218.89,
+        "stock_volume": 51150361,
+        "sec_8k_filings_today": 0
+      },
+      "AVGO": {
+        "stock_price": 348.84,
+        "stock_volume": 10531904,
+        "sec_8k_filings_today": 0
+      },
+      "AMD": {
+        "stock_price": 548.28,
+        "stock_volume": 18093488,
+        "sec_8k_filings_today": 0
+      },
+      "TSM": {
+        "stock_price": 428.54,
+        "stock_volume": 4698872,
+        "sec_8k_filings_today": 0
+      },
+      "ASML": {
+        "stock_price": 1621.28,
+        "stock_volume": 916577,
+        "sec_8k_filings_today": 0
+      },
+      "ARM": {
+        "stock_price": 263.42,
+        "stock_volume": 3487198,
+        "sec_8k_filings_today": 0
+      },
+      "ORCL": {
+        "stock_price": 149.73,
+        "stock_volume": 17581301,
+        "sec_8k_filings_today": 0
+      },
+      "DELL": {
+        "stock_price": 587.5,
+        "stock_volume": 5951436,
+        "sec_8k_filings_today": 0
+      },
+      "SMCI": {
+        "stock_price": 40.65,
+        "stock_volume": 47136369,
+        "sec_8k_filings_today": 0
+      },
+      "CRWV": {
+        "stock_price": 79.54,
+        "stock_volume": 50953951,
+        "sec_8k_filings_today": 1
+      },
+      "DLR": {
+        "stock_price": 183.77,
+        "stock_volume": 331080,
+        "sec_8k_filings_today": 0
+      },
+      "EQIX": {
+        "stock_price": 1024.92,
+        "stock_volume": 96425,
+        "sec_8k_filings_today": 0
+      },
+      "VRT": {
+        "stock_price": 242.48,
+        "stock_volume": 2972491,
+        "sec_8k_filings_today": 0
+      },
+      "ETN": {
+        "stock_price": 411.36,
+        "stock_volume": 1403379,
+        "sec_8k_filings_today": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 81
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 22
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 87
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 20
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 47
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 8
+      }
+    },
+    "summary": "Every metric in today's pull is stock price/volume and a handful of GitHub commit counts \u2014 no hiring, capex-signal, or utilization data came through, so this is a narrower read than usual, essentially a one-day market-reaction snapshot rather than a fundamentals update.\n\nThat said, the day's price action was unusually synchronized across the AI-infrastructure hardware and datacenter-buildout complex. ARM (+6.9%), SMCI (+10.4%), AMD (+5.0%), ORCL (+4.2%), DELL (+4.1%), and AVGO (+2.6%) all rallied together, and the volume behind those moves was extreme rather than incidental: SMCI volume was up 222.6%, ARM up 178.3%, AMD up 48.7%, and ETN (grid/power equipment) up 94.3% even as its price only rose 2.5%. That combination \u2014 broad-based gains across chipmakers, server OEMs, and power-equipment names on sharply elevated volume \u2014 looks like a real, coordinated market re-rating of the AI-capex trade for the day, worth noting as a shared move even though the dashboard can't say what triggered it. CRWV was the outlier, falling 5.3% on a 423.5% volume spike and filing an 8-K same-day, which given the size of the volume move deserves watching but isn't yet enough to characterize beyond \"something happened.\"\n\nOn the software side, the commit data is thin and one 300% jump (DeepSpeed, 2\u21928 commits) is just noise from a low base, not signal. More interesting is the split between vLLM (+22.5%) and HuggingFace Transformers (+29.4%) accelerating while PyTorch (-9.0%), llama.cpp (-4.8%), and TensorRT-LLM (-4.1%) cooled \u2014 a divergence, not a trend"
   }
 ]
