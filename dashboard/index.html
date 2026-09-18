@@ -135,6 +135,21 @@
   .spark-card .delta.down { color: var(--down); }
   .spark-card canvas { height: 40px !important; }
   @media (max-width: 900px) { .grid-5 { grid-template-columns: repeat(2, 1fr); } }
+  .group-section { margin-bottom: 28px; }
+  .group-section h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .group-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .group-charts.single { grid-template-columns: 1fr; }
+  .group-charts canvas { max-height: 220px; }
+
 </style>
 </head>
 <body>
@@ -168,39 +183,11 @@
     </section>
 
     <section class="tab-panel" id="tab-hiring">
-      <div class="controls">
-        <select id="companySelectHiring"></select>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Job postings</h3>
-          <div class="sub">Overall open roles vs. AI/ML-titled roles</div>
-          <canvas id="chartJobs"></canvas>
-        </div>
-        <div class="card">
-          <h3>Hiring velocity</h3>
-          <div class="sub">Jobs posted in the trailing 30 days</div>
-          <canvas id="chartJobs30d"></canvas>
-        </div>
-      </div>
+      <div id="hiringGroups"></div>
     </section>
 
     <section class="tab-panel" id="tab-market">
-      <div class="controls">
-        <select id="companySelectMarket"></select>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Stock price</h3>
-          <div class="sub">Daily close</div>
-          <canvas id="chartPrice"></canvas>
-        </div>
-        <div class="card">
-          <h3>Volume</h3>
-          <div class="sub">Daily trading volume</div>
-          <canvas id="chartVolume"></canvas>
-        </div>
-      </div>
+      <div id="marketGroups"></div>
     </section>
 
     <section class="tab-panel" id="tab-capex">
@@ -229,6 +216,8 @@
 const COLORS = ['#4FD1C5', '#E8A24C', '#7C9EF2', '#E2725B', '#B497D6', '#6FCF97'];
 
 let history = [];
+let companyMeta = [];
+const GROUP_ORDER = ['Hyperscalers', 'Chipmakers', 'Infra / OEM', 'Power / Data Center'];
 
 async function loadData() {
   try {
@@ -237,6 +226,12 @@ async function loadData() {
   } catch (e) {
     history = [];
   }
+  try {
+    const metaRes = await fetch('../data/companies_meta.json');
+    companyMeta = await metaRes.json();
+  } catch (e) {
+    companyMeta = [];
+  }
   if (!history.length) {
     document.getElementById('loadError').style.display = 'block';
     document.getElementById('lastUpdated').textContent = 'No data yet';
@@ -244,7 +239,6 @@ async function loadData() {
   }
   document.getElementById('lastUpdated').textContent =
     'Last updated ' + history[history.length - 1].date;
-  populateCompanySelectors();
   renderBriefing();
   renderHiring();
   renderMarket();
@@ -258,16 +252,27 @@ function allTickers() {
   return Array.from(set).sort();
 }
 
-function populateCompanySelectors() {
-  const tickers = allTickers();
-  ['companySelectHiring', 'companySelectMarket'].forEach(id => {
-    const el = document.getElementById(id);
-    el.innerHTML = tickers.map(t => `<option value="${t}">${t}</option>`).join('');
-    el.addEventListener('change', () => {
-      if (id === 'companySelectHiring') renderHiring();
-      else renderMarket();
-    });
+function groupedTickers() {
+  // Falls back to a single "All companies" group if companies_meta.json
+  // hasn't been generated yet (e.g. before the first run with this feature).
+  const present = allTickers();
+  if (!companyMeta.length) {
+    return [{ group: 'All companies', tickers: present }];
+  }
+  const byGroup = {};
+  companyMeta.forEach(c => {
+    if (!present.includes(c.ticker)) return;
+    byGroup[c.group] = byGroup[c.group] || [];
+    byGroup[c.group].push(c.ticker);
   });
+  const orderedGroups = GROUP_ORDER.filter(g => byGroup[g]);
+  Object.keys(byGroup).forEach(g => { if (!orderedGroups.includes(g)) orderedGroups.push(g); });
+  return orderedGroups.map(g => ({ group: g, tickers: byGroup[g] }));
+}
+
+function companyName(ticker) {
+  const c = companyMeta.find(c => c.ticker === ticker);
+  return c ? c.name : ticker;
 }
 
 function seriesFor(ticker, metric) {
@@ -395,25 +400,91 @@ function drawChart(canvasId, type, labels, datasets, extraOptions = {}) {
   });
 }
 
+function groupPriceIndexSeries(tickers) {
+  // Same normalization idea as the briefing's basket index, but scoped to
+  // one group's tickers, per company (not averaged) -- so companies with
+  // very different share prices are still comparable on the same axes.
+  const bases = {};
+  return tickers.map(t => {
+    let base = null;
+    const series = history.map(day => {
+      const price = day.companies && day.companies[t] ? day.companies[t].stock_price : null;
+      if (price == null) return null;
+      if (base == null) base = price;
+      return Math.round((price / base - 1) * 1000) / 10;
+    });
+    return { ticker: t, series };
+  });
+}
+
+function renderGroupedCharts(containerId, buildDatasetsForGroup) {
+  const container = document.getElementById(containerId);
+  const groups = groupedTickers();
+  container.innerHTML = groups.map(g => `
+    <div class="group-section">
+      <h2>${g.group}</h2>
+      <div class="group-charts" id="${containerId}-${g.group.replace(/[^a-zA-Z0-9]/g, '')}"></div>
+    </div>
+  `).join('');
+
+  groups.forEach(g => {
+    const sectionEl = document.getElementById(`${containerId}-${g.group.replace(/[^a-zA-Z0-9]/g, '')}`);
+    const charts = buildDatasetsForGroup(g);
+    sectionEl.className = 'group-charts' + (charts.length === 1 ? ' single' : '');
+    sectionEl.innerHTML = charts.map(c => `
+      <div class="card">
+        <h3>${c.title}</h3>
+        <div class="sub">${c.sub}</div>
+        <canvas id="${c.canvasId}"></canvas>
+      </div>
+    `).join('');
+    charts.forEach(c => drawChart(c.canvasId, c.type, dateLabels(), c.datasets, c.options || {}));
+  });
+}
+
 function renderHiring() {
-  const ticker = document.getElementById('companySelectHiring').value;
-  drawChart('chartJobs', 'line', dateLabels(), [
-    { label: 'Overall open roles', data: seriesFor(ticker, 'jobs_overall'), borderColor: COLORS[0], backgroundColor: COLORS[0], tension: 0.25 },
-    { label: 'AI/ML-titled roles', data: seriesFor(ticker, 'jobs_ai'), borderColor: COLORS[1], backgroundColor: COLORS[1], tension: 0.25 },
-  ]);
-  drawChart('chartJobs30d', 'bar', dateLabels(), [
-    { label: 'Jobs posted, trailing 30d', data: seriesFor(ticker, 'jobs_last_30d'), backgroundColor: COLORS[2] },
+  renderGroupedCharts('hiringGroups', (g) => [
+    {
+      canvasId: `jobsAI-${g.group.replace(/[^a-zA-Z0-9]/g, '')}`,
+      title: 'AI/ML-titled roles',
+      sub: 'Open roles matching AI/ML job titles',
+      type: 'line',
+      datasets: g.tickers.map((t, i) => ({
+        label: t, data: seriesFor(t, 'jobs_ai'),
+        borderColor: COLORS[i % COLORS.length], backgroundColor: COLORS[i % COLORS.length], tension: 0.25,
+      })),
+    },
+    {
+      canvasId: `jobsOverall-${g.group.replace(/[^a-zA-Z0-9]/g, '')}`,
+      title: 'Overall open roles',
+      sub: 'All open roles, any department',
+      type: 'line',
+      datasets: g.tickers.map((t, i) => ({
+        label: t, data: seriesFor(t, 'jobs_overall'),
+        borderColor: COLORS[i % COLORS.length], backgroundColor: COLORS[i % COLORS.length], tension: 0.25,
+      })),
+    },
   ]);
 }
 
 function renderMarket() {
-  const ticker = document.getElementById('companySelectMarket').value;
-  drawChart('chartPrice', 'line', dateLabels(), [
-    { label: `${ticker} close`, data: seriesFor(ticker, 'stock_price'), borderColor: COLORS[0], backgroundColor: COLORS[0], tension: 0.25 },
-  ]);
-  drawChart('chartVolume', 'bar', dateLabels(), [
-    { label: `${ticker} volume`, data: seriesFor(ticker, 'stock_volume'), backgroundColor: COLORS[3] },
-  ]);
+  renderGroupedCharts('marketGroups', (g) => {
+    const indexed = groupPriceIndexSeries(g.tickers);
+    return [{
+      canvasId: `price-${g.group.replace(/[^a-zA-Z0-9]/g, '')}`,
+      title: 'Stock price, indexed',
+      sub: '% change from first tracked day \u2014 makes differently-priced stocks comparable',
+      type: 'line',
+      datasets: indexed.map((d, i) => ({
+        label: d.ticker, data: d.series,
+        borderColor: COLORS[i % COLORS.length], backgroundColor: COLORS[i % COLORS.length], tension: 0.25,
+      })),
+      options: { scales: {
+        x: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
+        y: { ticks: { color: '#8A9BA3', callback: (v) => v + '%' }, grid: { color: '#263139' } },
+      } },
+    }];
+  });
 }
 
 function renderCapex() {

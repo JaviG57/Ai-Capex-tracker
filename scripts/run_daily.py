@@ -100,6 +100,11 @@ def main():
 
     storage.save_history(history)
     print("Done. data/history.json updated.")
+
+    # Company metadata (name/group) for the dashboard's grouped layout --
+    # written fresh each run so it's always in sync with companies.py.
+    meta_path = pathlib.Path(__file__).resolve().parent.parent / "data" / "companies_meta.json"
+    meta_path.write_text(json.dumps(companies, indent=2))
     print("\n--- Summary preview ---\n" + summary)
 
 
