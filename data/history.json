@@ -351,116 +351,114 @@
     "date": "2026-09-18",
     "companies": {
       "MSFT": {
-        "stock_price": 490.3,
-        "stock_volume": 16670300,
+        "stock_price": 493.38,
+        "stock_volume": 11219493,
         "sec_8k_filings_today": 0
       },
       "GOOGL": {
-        "stock_price": 342.87,
-        "stock_volume": 18928900,
+        "stock_price": 349.89,
+        "stock_volume": 22317856,
         "sec_8k_filings_today": 0
       },
       "AMZN": {
-        "stock_price": 245.96,
-        "stock_volume": 33488500,
+        "stock_price": 253.55,
+        "stock_volume": 23818091,
         "sec_8k_filings_today": 0
       },
       "META": {
-        "stock_price": 673.31,
-        "stock_volume": 17217800,
+        "stock_price": 670.29,
+        "stock_volume": 13175754,
         "sec_8k_filings_today": 0
       },
       "NVDA": {
-        "stock_price": 213.9,
-        "stock_volume": 96563600,
+        "stock_price": 219.72,
+        "stock_volume": 58923658,
         "sec_8k_filings_today": 0
       },
       "AVGO": {
-        "stock_price": 339.51,
-        "stock_volume": 23152500,
+        "stock_price": 354.3,
+        "stock_volume": 15117297,
         "sec_8k_filings_today": 0
       },
       "AMD": {
-        "stock_price": 512.5,
-        "stock_volume": 22317700,
+        "stock_price": 545.08,
+        "stock_volume": 12242243,
         "sec_8k_filings_today": 0
       },
       "TSM": {
-        "stock_price": 417.72,
-        "stock_volume": 10490900,
+        "stock_price": 429.61,
+        "stock_volume": 3882287,
         "sec_8k_filings_today": 0
       },
       "ASML": {
-        "stock_price": 1602.22,
-        "stock_volume": 1334100,
+        "stock_price": 1645.35,
+        "stock_volume": 649555,
         "sec_8k_filings_today": 0
       },
       "ARM": {
-        "stock_price": 243.98,
-        "stock_volume": 2759400,
+        "stock_price": 268.28,
+        "stock_volume": 2380132,
         "sec_8k_filings_today": 0
       },
       "ORCL": {
-        "stock_price": 143.16,
-        "stock_volume": 34366400,
+        "stock_price": 145.57,
+        "stock_volume": 15030347,
         "sec_8k_filings_today": 0
       },
       "DELL": {
-        "stock_price": 563.29,
-        "stock_volume": 13108100,
+        "stock_price": 579.04,
+        "stock_volume": 3267669,
         "sec_8k_filings_today": 0
       },
       "SMCI": {
-        "stock_price": 36.85,
-        "stock_volume": 31390500,
+        "stock_price": 38.67,
+        "stock_volume": 24245452,
         "sec_8k_filings_today": 0
       },
       "CRWV": {
-        "stock_price": 83.35,
-        "stock_volume": 18787600,
+        "stock_price": 80.18,
+        "stock_volume": 39442566,
         "sec_8k_filings_today": 0
       },
       "DLR": {
-        "stock_price": 181.07,
-        "stock_volume": 2634700,
+        "stock_price": 184.18,
+        "stock_volume": 643486,
         "sec_8k_filings_today": 0
       },
       "EQIX": {
-        "stock_price": 1016.16,
-        "stock_volume": 436600,
+        "stock_price": 1026.88,
+        "stock_volume": 185428,
         "sec_8k_filings_today": 0
       },
       "VRT": {
-        "stock_price": 239.41,
-        "stock_volume": 5514600,
+        "stock_price": 247.11,
+        "stock_volume": 2762651,
         "sec_8k_filings_today": 0
       },
       "ETN": {
-        "stock_price": 397.8,
-        "stock_volume": 1810600,
         "sec_8k_filings_today": 0
       }
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 73
+        "commits_last_24h": 83
       },
       "huggingface/transformers": {
-        "commits_last_24h": 21
+        "commits_last_24h": 14
       },
       "vllm-project/vllm": {
-        "commits_last_24h": 86
+        "commits_last_24h": 65
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 18
+        "commits_last_24h": 14
       },
       "NVIDIA/TensorRT-LLM": {
-        "commits_last_24h": 46
+        "commits_last_24h": 40
       },
       "microsoft/DeepSpeed": {
-        "commits_last_24h": 9
+        "commits_last_24h": 8
       }
     },
-    "summary": "Today is a broad, one-directional risk-off day across the entire AI-infrastructure complex, with only one-day data available for essentially every metric \u2014 so treat this as a snapshot of sentiment, not a trend. Every name in the dataset fell except CRWV, which rose 4.8% on volume that actually collapsed 63.1%, an odd pairing worth flagging but not leaning on. The steepest declines came from the chip and hardware layer: ARM dropped 7.4%, AMD fell 6.5%, SMCI slid 9.3%, and ORCL and DELL each lost roughly 4%. Volume tells the more interesting story than price here \u2014 MSFT, GOOGL, AMZN, META, AVGO, TSM, and DELL all saw trading volume roughly double (107-124% above baseline), while DLR and EQIX, the two datacenter REITs, saw volume spike far more violently (+696% and +353% respectively) despite comparatively modest price moves of -1.5% and -0.9%. That combination \u2014 muted price, extreme volume \u2014 suggests repositioning or index-related flow in the physical-infrastructure names rather than a fundamental repricing.\n\nThe clearest cross-company pattern is the volume surge itself: it's not confined to one sub-sector but spans hyperscalers (MSFT, GOOGL, AMZN, META), foundry/chip (TSM, AVGO), and enterprise hardware (DELL, ORCL) simultaneously, which points to a market-wide event rather than company-specific news, though nothing in this dataset identifies what that catalyst was. SMCI and ARM stand out as the two names where price damage outpaced the volume story, suggesting idiosyncratic selling on top of the broader move.\n\nOn the open-source/compute-utilization side, commit activity on PyTorch, Transformers, v"
+    "summary": "Today's data is thin on the fundamentals side \u2014 no hiring, power, or utilization figures came through, and every 8-K filing count sits at zero with no multi-day history to lean on, so this is essentially a market-action-only day. The standout moves are in trading volume rather than price: GOOGL volume jumped 144.4% and MSFT, META, DLR and EQIX all saw volume roughly double or more (up 50-94%), while price moves stayed modest across the board (GOOGL +1.4%, META -1.1%, MSFT -0.3%). Oracle was the session's biggest price loser at -2.8%, and SMCI fell -4.9% on volume that actually dropped 48.6% \u2014 a decline on thinning interest rather than a rush for the exits. AMD, TSM, ASML, and ARM all saw volume fall sharply (-17% to -32%) even as three of those four posted small price gains, an odd but not alarming pairing.\n\nThe clearest cross-company pattern is the volume surge: MSFT, GOOGL, AMZN, META, AVGO, DLR and EQIX all logged meaningfully higher volume today, spanning hyperscalers, a chip supplier, and two data-center REITs \u2014 a broad, same-day pickup in trading activity that's worth noting as a shared signal even though price direction wasn't uniform (some up, some down). Meanwhile chip-adjacent names with high AI exposure (TSM, ASML, ARM, AMD) moved the opposite way on volume, quieting down together.\n\nOn the open-source/compute-tooling side, activity cooled broadly: commits fell at Hugging Face Transformers (-36.4%), llama.cpp (-30%), vLLM (-25.3%), and TensorRT-LLM (-14.9%), with only PyTorch (+2.5%) and De"
   }
 ]

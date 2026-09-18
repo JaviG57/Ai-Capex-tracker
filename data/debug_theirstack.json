@@ -1,5 +1,6 @@
 {
-  "error": null,
+  "error": "429 Client Error: Too Many Requests for url: https://api.theirstack.com/v1/jobs/search",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/run_daily.py\", line 33, in main\n    jobs = fetch_jobs_theirstack.fetch_all(theirstack_companies)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 133, in fetch_all\n    counts = fetch_company_job_counts(c[\"domain\"])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 92, in fetch_company_job_counts\n    result = _post({\n             ^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 84, in _post\n    resp.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.theirstack.com/v1/jobs/search\n",
   "companies_queried": [
     "MSFT",
     "GOOGL",
@@ -20,7 +21,6 @@
     "VRT",
     "ETN"
   ],
-  "jobs_returned": {},
   "request_log": [
     {
       "payload": {
@@ -42,8 +42,216 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 402,
-      "body_snippet": "{\"request_id\":55001414,\"error\":{\"code\":\"E-019\",\"title\":\"Team has no api credits left\",\"description\":\"You have no api credits left. Please add api credits to your account.\"}}"
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846977975,\"job_title\":\"Technical Support Engineer - AI Lead\",\"url\":\"https://www.linkedin.com/jobs/view/4450236890/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"Microsoft\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4450236890/\",\"location\":\"Redmond, WA\",\"short_location\":\"Redmond, WA\",\"long_location\":\"Redmond, WA\",\"state_code\":\"WA\",\"latitude"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":821519187,\"job_title\":\"Test Engineer / Test Lead -- AI-Powered Hardware Systems\",\"url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"date_posted\":\"2026-08-27\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"location\":\"Portland, Oregon Metropolitan Area\",\"short_location\":\"Portland, Oregon Me"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amazon.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amazon.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846944955,\"job_title\":\"Enrichment Sports Coach & Game Host\",\"url\":\"https://www.linkedin.com/jobs/view/4467124297/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"Basement Sports\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467124297/\",\"location\":\"Jersey City, NJ\",\"short_location\":\"Jersey City, NJ\",\"long_location\":\"Jersey City, NJ\",\"state_cod"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "meta.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "meta.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":834829489,\"job_title\":\"writer\",\"url\":\"https://www.linkedin.com/jobs/view/4463568329/\",\"date_posted\":\"2026-09-08\",\"has_blurred_data\":false,\"company\":\"Facebook\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4463568329/\",\"location\":\"California\",\"short_location\":\"California\",\"long_location\":\"California\",\"state_code\":\"MD\",\"latitude\":38.30039978027344,\"longitude\":-7"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "nvidia.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846916014,\"job_title\":\"Senior DFT Methodology - Data Analytics and Applied AI Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4448259448/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4448259448/\",\"location\":\"Santa Clara, CA\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Cl"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "broadcom.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":838822855,\"job_title\":\"AI Software Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4428765521/\",\"date_posted\":\"2026-09-11\",\"has_blurred_data\":false,\"company\":\"Broadcom\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4428765521/\",\"location\":\"Fort Collins, CO\",\"short_location\":\"Fort Collins, CO\",\"long_location\":\"Fort Collins, CO\",\"state_code\":\"CO\",\"latitude\":"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amd.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846330603,\"job_title\":\"Technical Program Manager, AI Research Engineering\",\"url\":\"https://www.linkedin.com/jobs/view/4466627926/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4466627926/\",\"location\":\"Santa Clara, CA\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Clara, CA\",\"state_"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "tsmc.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846656631,\"job_title\":\"AI Memory Design Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"TSMC\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"location\":\"Munich, Bavaria\",\"short_location\":\"Munich, Bavaria\",\"long_location\":\"Munich, Bavaria\",\"state_code\":\"BY\",\"latitude\":48"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "asml.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 429,
+      "body_snippet": "{\"request_id\":null,\"error\":{\"code\":\"E-016\",\"title\":\"Too many requests\",\"description\":\"You're sending requests too quickly. Try again after the current window resets. See RateLimit headers in this response for details. Current policy: \\\"per-minute\\\";q=10;w=60 (10/1minute - per-minute). If you need higher limits, upgrade at https://app.theirstack.com/settings/billing/purchase\"}}"
     }
   ]
 }
