@@ -1,6 +1,5 @@
 {
-  "error": "429 Client Error: Too Many Requests for url: https://api.theirstack.com/v1/jobs/search",
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/run_daily.py\", line 33, in main\n    jobs = fetch_jobs_theirstack.fetch_all(theirstack_companies)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 133, in fetch_all\n    counts = fetch_company_job_counts(c[\"domain\"])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 92, in fetch_company_job_counts\n    result = _post({\n             ^^^^^^^\n  File \"/home/runner/work/Ai-Capex-tracker/Ai-Capex-tracker/scripts/fetch_jobs_theirstack.py\", line 84, in _post\n    resp.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.theirstack.com/v1/jobs/search\n",
+  "error": null,
   "companies_queried": [
     "MSFT",
     "GOOGL",
@@ -21,6 +20,98 @@
     "VRT",
     "ETN"
   ],
+  "jobs_returned": {
+    "MSFT": {
+      "jobs_overall": 68674,
+      "jobs_ai": null,
+      "jobs_last_30d": 2114
+    },
+    "GOOGL": {
+      "jobs_overall": 713,
+      "jobs_ai": null,
+      "jobs_last_30d": 16
+    },
+    "AMZN": {
+      "jobs_overall": 2,
+      "jobs_ai": 0,
+      "jobs_last_30d": 2
+    },
+    "META": {
+      "jobs_overall": 238,
+      "jobs_ai": 0,
+      "jobs_last_30d": 1
+    },
+    "NVDA": {
+      "jobs_overall": 36647,
+      "jobs_ai": null,
+      "jobs_last_30d": 1938
+    },
+    "AVGO": {
+      "jobs_overall": 6015,
+      "jobs_ai": null,
+      "jobs_last_30d": 231
+    },
+    "AMD": {
+      "jobs_overall": 26104,
+      "jobs_ai": null,
+      "jobs_last_30d": 1080
+    },
+    "TSM": {
+      "jobs_overall": 3939,
+      "jobs_ai": null,
+      "jobs_last_30d": 392
+    },
+    "ASML": {
+      "jobs_overall": 13728,
+      "jobs_ai": null,
+      "jobs_last_30d": 660
+    },
+    "ARM": {
+      "jobs_overall": 10059,
+      "jobs_ai": null,
+      "jobs_last_30d": 317
+    },
+    "ORCL": {
+      "jobs_overall": 73297,
+      "jobs_ai": 0,
+      "jobs_last_30d": 1461
+    },
+    "DELL": {
+      "jobs_overall": 10029,
+      "jobs_ai": null,
+      "jobs_last_30d": 159
+    },
+    "SMCI": {
+      "jobs_overall": 4941,
+      "jobs_ai": null,
+      "jobs_last_30d": 458
+    },
+    "CRWV": {
+      "jobs_overall": 0,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
+    },
+    "DLR": {
+      "jobs_overall": 0,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
+    },
+    "EQIX": {
+      "jobs_overall": 0,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
+    },
+    "VRT": {
+      "jobs_overall": 0,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
+    },
+    "ETN": {
+      "jobs_overall": 0,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
+    }
+  },
   "request_log": [
     {
       "payload": {
@@ -296,8 +387,20 @@
         "limit": 1,
         "page": 0
       },
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "oracle.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847777824,\"job_title\":\"Platform Software Engineer - Agentic AI Project\",\"url\":\"https://www.linkedin.com/jobs/view/4450787507/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"Oracle\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4450787507/\",\"location\":\"Nashville, TN\",\"short_location\":\"Nashville, TN\",\"long_location\":\"Nashville, TN\",\"state_code\":"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847739505,\"job_title\":\"Consulting Project Technical Director\",\"url\":\"https://www.linkedin.com/jobs/view/4458420131/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"Oracle\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458420131/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude"
     },
     {
       "payload": {
@@ -365,8 +468,20 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":845378941,\"job_title\":\"Senior Software Engineer- AI Workload Orchestration\",\"url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"date_posted\":\"2026-09-17\",\"has_blurred_data\":false,\"company\":\"CoreWeave\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":null,\"latitude\":1.28966999"
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "coreweave.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     },
     {
       "payload": {
@@ -388,8 +503,8 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[]}"
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     },
     {
       "payload": {
@@ -400,8 +515,8 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847887191,\"job_title\":\"Facility Engineer, Critical Infrastructure (f/m/d)\",\"url\":\"https://www.linkedin.com/jobs/view/4432984179/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432984179/\",\"location\":\"Frankfurt am Main, Hesse\",\"short_location\":\"Frankfurt am Main, Hesse\",\"long_locati"
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     },
     {
       "payload": {
@@ -423,8 +538,20 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":844531873,\"job_title\":\"Senior Principal Engineer, Enterprise Networking Architecture, Automation and AI\",\"url\":\"https://equinix.wd1.myworkdayjobs.com/External/job/Dallas-Infomart-Office-DAI/Sr-Principal-Engineer--Enterprise-Networking-Architecture_JR-163188\",\"date_posted\":\"2026-09-16\",\"has_blurred_data\":false,\"company\":\"Equinix\",\"final_url\":\"https://equinix.wd1.myworkdayjobs.com/"
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "equinix.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     },
     {
       "payload": {
@@ -446,8 +573,20 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":837403728,\"job_title\":\"Data Engineer - Cloud/AI\",\"url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"date_posted\":\"2026-09-10\",\"has_blurred_data\":false,\"company\":\"Vertiv\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"location\":\"Westerville, OH\",\"short_location\":\"Westerville, OH\",\"long_location\":\"Westerville, OH\",\"state_code\":\"OH\",\"latitude\":4"
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "vertiv.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     },
     {
       "payload": {
@@ -470,7 +609,19 @@
         "page": 0
       },
       "status_code": 429,
-      "body_snippet": "{\"request_id\":null,\"error\":{\"code\":\"E-016\",\"title\":\"Too many requests\",\"description\":\"You're sending requests too quickly. Try again after the current window resets. See RateLimit headers in this response for details. Current policy: \\\"per-minute\\\";q=10;w=60 (10/1minute - per-minute). If you need higher limits, upgrade at https://app.theirstack.com/settings/billing/purchase\"}}"
+      "body_snippet": "rate limited, retries exhausted"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 429,
+      "body_snippet": "rate limited, retries exhausted"
     }
   ]
 }
