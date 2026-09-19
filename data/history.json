@@ -465,145 +465,94 @@
     "date": "2026-09-19",
     "companies": {
       "MSFT": {
-        "jobs_overall": 68674,
-        "jobs_ai": null,
-        "jobs_last_30d": 2114,
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
         "stock_price": 493.78,
         "stock_volume": 39544100,
         "sec_8k_filings_today": 0
       },
       "GOOGL": {
-        "jobs_overall": 713,
-        "jobs_ai": null,
-        "jobs_last_30d": 16,
         "stock_price": 349.54,
         "stock_volume": 47526100,
         "sec_8k_filings_today": 0
       },
       "AMZN": {
-        "jobs_overall": 2,
-        "jobs_ai": 0,
-        "jobs_last_30d": 2,
         "stock_price": 253.71,
         "stock_volume": 52148900,
         "sec_8k_filings_today": 0
       },
       "META": {
-        "jobs_overall": 238,
-        "jobs_ai": 0,
-        "jobs_last_30d": 1,
         "stock_price": 665.75,
         "stock_volume": 27548000,
         "sec_8k_filings_today": 0
       },
       "NVDA": {
-        "jobs_overall": 36647,
-        "jobs_ai": null,
-        "jobs_last_30d": 1938,
         "stock_price": 222.27,
         "stock_volume": 189683500,
         "sec_8k_filings_today": 0
       },
       "AVGO": {
-        "jobs_overall": 6015,
-        "jobs_ai": null,
-        "jobs_last_30d": 231,
         "stock_price": 357.61,
         "stock_volume": 43948400,
         "sec_8k_filings_today": 0
       },
       "AMD": {
-        "jobs_overall": 26104,
-        "jobs_ai": null,
-        "jobs_last_30d": 1080,
         "stock_price": 559.82,
         "stock_volume": 31785700,
         "sec_8k_filings_today": 0
       },
       "TSM": {
-        "jobs_overall": 3939,
-        "jobs_ai": null,
-        "jobs_last_30d": 392,
         "stock_price": 434.67,
         "stock_volume": 12884300,
         "sec_8k_filings_today": 0
       },
       "ASML": {
-        "jobs_overall": 13728,
-        "jobs_ai": null,
-        "jobs_last_30d": 660,
         "stock_price": 1679.92,
         "stock_volume": 2523800,
         "sec_8k_filings_today": 0
       },
       "ARM": {
-        "jobs_overall": 10059,
-        "jobs_ai": null,
-        "jobs_last_30d": 317,
         "stock_price": 275.61,
         "stock_volume": 6943100,
         "sec_8k_filings_today": 0
       },
       "ORCL": {
-        "jobs_overall": 73297,
-        "jobs_ai": 0,
-        "jobs_last_30d": 1461,
         "stock_price": 147.61,
         "stock_volume": 39215400,
         "sec_8k_filings_today": 0
       },
       "DELL": {
-        "jobs_overall": 10029,
-        "jobs_ai": null,
-        "jobs_last_30d": 159,
         "stock_price": 568.06,
         "stock_volume": 11709400,
         "sec_8k_filings_today": 0
       },
       "SMCI": {
-        "jobs_overall": 4941,
-        "jobs_ai": null,
-        "jobs_last_30d": 458,
         "stock_price": 39.09,
         "stock_volume": 47970800,
         "sec_8k_filings_today": 0
       },
       "CRWV": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
         "stock_price": 81.36,
         "stock_volume": 66213900,
         "sec_8k_filings_today": 0
       },
       "DLR": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
         "stock_price": 182.12,
         "stock_volume": 4556100,
         "sec_8k_filings_today": 0
       },
       "EQIX": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
         "stock_price": 1021.34,
         "stock_volume": 679800,
         "sec_8k_filings_today": 0
       },
       "VRT": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
         "stock_price": 249.39,
         "stock_volume": 7825900,
         "sec_8k_filings_today": 0
       },
       "ETN": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
         "stock_price": 424.77,
         "stock_volume": 4612300,
         "sec_8k_filings_today": 0
@@ -629,6 +578,6 @@
         "commits_last_24h": 2
       }
     },
-    "summary": "Only 1-day deltas are populated across this dataset \u2014 no 7d or 30d history yet \u2014 so today's read is necessarily thin and prone to noise, especially on the low-volume items.\n\nThe most conspicuous pattern is mechanical, not fundamental: every single company in the set saw stock volume spike well above baseline \u2014 MSFT +252%, TSM +232%, ASML +288%, DELL +258%, and DLR the outlier at +608% on a stock that otherwise moved just -1.1%. That's a market-wide volume event hitting hyperscalers, chipmakers, and data-center REITs simultaneously, which points to a broad macro or sector-wide catalyst (likely a rate move, index rebalancing, or a widely-read earnings/guidance event elsewhere) rather than anything company-specific \u2014 worth flagging as a thing to check against news, not a signal about any one name's AI capex trajectory. Price action was mixed and unremarkable by comparison: AMD (+2.7%) and ARM (+2.7%) led gainers, DELL (-1.9%) and DLR (-1.1%) lagged, all within normal single-day noise.\n\nNo company shows any 8-K filings today, and job-posting figures (MSFT's 68,674 overall, ORCL's 73,297) have no day-over-day comparison yet, so nothing there rises above \"watch this space.\"\n\nThe one softer signal worth noting: open-source ML repo commit activity fell across the board \u2014 HuggingFace transformers -92.9%, DeepSpeed -75%, vLLM -55.4%, TensorRT-LLM -47.5%, llama.cpp -7.1%, PyTorch -1.2%. A synchronized pullback across every tracked repo on the same day looks more like a calendar effect (weekend/holiday lull) than a genuine deceleration in AI"
+    "summary": "Today's dashboard is dominated by a single, market-wide phenomenon rather than any company-specific story: trading volume exploded across essentially every AI-infrastructure name simultaneously, while price moves stayed modest. Digital Realty saw volume jump 608% on the day even as its stock slipped 1.1%, ASML volume rose 288.5% against a 2.1% price gain, MSFT volume was up 252.5% on a flat 0.1% move, and TSM, EQIX, AMD, ARM, SMCI, and NVDA all posted 1-day volume increases north of 190% with price changes mostly under 3% in either direction. That's a striking volume-without-price pattern spanning hyperscalers (MSFT), foundry/equipment (TSM, ASML), chipmakers (NVDA, AMD, ARM), and data-center REITs (DLR, EQIX) at once \u2014 a synchronized liquidity event, not a synchronized directional bet, and likely reflects a broad market-wide trading day (index rebalancing, options expiry, macro data) rather than anything AI-capex-specific. Worth flagging, not concluding.\n\nOn price, the moves were mixed and unremarkable: AMD (+2.7%), ARM (+2.7%), ASML (+2.1%) led gainers, while DELL (-1.9%) and DLR (-1.1%) lagged \u2014 nothing here breaks from noise-level daily variation.\n\nJobs and 8-K data are empty or zero across every company today (no postings, no filings), so there's nothing to say on hiring or capex-disclosure activity this cycle \u2014 that's an absence of signal, not a signal of cooling.\n\nThe open-source AI infra repos tell a separate, if equally noisy, story: commit activity fell sharply overnight across the board \u2014 HuggingFace Transformers down "
   }
 ]
