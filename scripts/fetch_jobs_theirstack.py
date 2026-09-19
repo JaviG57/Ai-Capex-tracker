@@ -79,7 +79,7 @@ def _post(payload: dict, retries: int = 3) -> dict | str | None:
         _DEBUG_LOG.append({
             "payload": payload,
             "status_code": resp.status_code,
-            "body_snippet": resp.text[:500],
+            "body_snippet": resp.text[:3000],
         })
         if resp.status_code == 402:
             print("[theirstack] out of credits for this billing period -- skipping remainder")
