@@ -159,7 +159,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846916014,\"job_title\":\"Senior DFT Methodology - Data Analytics and Applied AI Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4448259448/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4448259448/\",\"location\":\"Santa Clara, CA\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Cl"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847416664,\"job_title\":\"Senior Context Fusion AI Engineer - Autonomous Vehicles\",\"url\":\"https://www.linkedin.com/jobs/view/4468033704/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4468033704/\",\"location\":\"Seattle, WA\",\"short_location\":\"Seattle, WA\",\"long_location\":\"Seattle, WA\",\"state_code"
     },
     {
       "payload": {
@@ -205,7 +205,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846330603,\"job_title\":\"Technical Program Manager, AI Research Engineering\",\"url\":\"https://www.linkedin.com/jobs/view/4466627926/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4466627926/\",\"location\":\"Santa Clara, CA\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Clara, CA\",\"state_"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847208470,\"job_title\":\"ML Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4466914786/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4466914786/\",\"location\":\"Warsaw, Mazowieckie\",\"short_location\":\"Warsaw, Mazowieckie\",\"long_location\":\"Warsaw, Mazowieckie\",\"state_code\":\"MZ\",\"latitude\":52.22"
     },
     {
       "payload": {
