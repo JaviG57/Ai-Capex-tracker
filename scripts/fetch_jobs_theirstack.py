@@ -103,6 +103,7 @@ def fetch_company_job_counts(domain: str) -> dict | None:
         "company_domain_or": [domain],
         "job_title_or": AI_JOB_TITLE_TERMS,
         "posted_at_max_age_days": 60,
+        "include_total_results": True,
         "limit": 1,
         "page": 0,
     })
