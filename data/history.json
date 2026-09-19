@@ -510,6 +510,8 @@
         "sec_8k_filings_today": 0
       },
       "ARM": {
+        "stock_price": 275.61,
+        "stock_volume": 6943100,
         "sec_8k_filings_today": 0
       },
       "ORCL": {
@@ -555,24 +557,24 @@
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 85
+        "commits_last_24h": 82
       },
       "huggingface/transformers": {
-        "commits_last_24h": 2
+        "commits_last_24h": 1
       },
       "vllm-project/vllm": {
-        "commits_last_24h": 31
+        "commits_last_24h": 29
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 12
+        "commits_last_24h": 13
       },
       "NVIDIA/TensorRT-LLM": {
-        "commits_last_24h": 23
+        "commits_last_24h": 21
       },
       "microsoft/DeepSpeed": {
         "commits_last_24h": 2
       }
     },
-    "summary": "Today's data is almost entirely a one-day, single-metric snapshot \u2014 stock prices and trading volumes only, with no 7d or 30d comparisons available yet \u2014 so the honest read is that we're looking at market noise, not an infrastructure-spending signal.\n\nThat said, the volume pattern is striking enough to note even as a single day's data: nearly every name in the dashboard saw trading volume roughly double to sextuple versus baseline \u2014 MSFT up 252%, NVDA up 222%, TSM up 232%, ASML up 289%, and DLR a standout at 608% \u2014 while price moves stayed muted (mostly under 2% in either direction, GOOGL and META even slipped fractionally). A market-wide volume spike hitting hyperscalers (MSFT, GOOGL, AMZN, META), chipmakers (NVDA, AVGO, AMD, TSM, ASML), and data-center/power names (DLR, EQIX, VRT) simultaneously, without a corresponding directional price move, smells like a broad macro or index-driven event (rebalancing, options expiry, a rate print) rather than anything AI-capex-specific \u2014 worth flagging, not concluding on. Zero 8-K filings across all eighteen companies today, which is unremarkable on its own given typical filing cadence.\n\nThe open-source AI tooling side shows the opposite texture: commit activity fell sharply across several major repos in the same 24 hours \u2014 vLLM down 52%, TensorRT-LLM down 43%, DeepSpeed down 75%, transformers down 86% \u2014 while PyTorch was essentially flat (+2%). A synchronized commit slowdown across independent projects is worth watching, but single-day repo activity is notoriously noisy (weekends, holidays, release cycles), so this shouldn't be read as a deceleration in AI development effort yet."
+    "summary": "Today's data is almost entirely price and volume, and the standout feature is a broad, same-day volume spike across nearly every name on the board rather than any single company's move. MSFT, GOOGL, AMZN, META, NVDA, AVGO, AMD, TSM, ASML, ARM, ORCL, DELL, SMCI, EQIX, and DLR all show one-day volume increases ranging roughly from 98% (SMCI) to over 600% (DLR), with ASML (+289%), TSM (+232%), MSFT (+253%), and DELL (+258%) among the largest. A single day of elevated volume across one name would be unremarkable, but seeing it synchronized across chipmakers, hyperscalers, and data-center/power names simultaneously is a genuine pattern worth noting \u2014 it suggests a market-wide repricing event or index-level flow rather than anything company-specific playing out today. Price moves, by contrast, were mostly modest and mixed: AMD (+2.7%), ARM (+2.7%), ASML (+2.1%) and NVDA (+1.2%) led gains, while DELL (-1.9%), DLR (-1.1%), and META (-0.7%) slipped, so the volume surge wasn't accompanied by a uniformly directional price move.\n\nNo 8-K filings were logged today for any tracked company, so there's no capex-disclosure signal to weigh against the trading activity.\n\nOn the open-source/compute-tooling side, commit activity fell sharply across the board: vLLM (-55%), TensorRT-LLM (-48%), DeepSpeed (-75%), and Hugging Face Transformers (-93%) all posted steep single-day drops, with only PyTorch (-1.2%) and llama.cpp (-7.1%) roughly holding steady. Single-day commit counts are low-"
   }
 ]

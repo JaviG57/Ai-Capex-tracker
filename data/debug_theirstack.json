@@ -136,7 +136,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":834829489,\"job_title\":\"writer\",\"url\":\"https://www.linkedin.com/jobs/view/4463568329/\",\"date_posted\":\"2026-09-08\",\"has_blurred_data\":false,\"company\":\"Facebook\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4463568329/\",\"location\":\"California\",\"short_location\":\"California\",\"long_location\":\"California\",\"state_code\":\"MD\",\"latitude\":38.30039978027344,\"longitude\":-7"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847957400,\"job_title\":\"Data Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4468026292/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"Facebook\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4468026292/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude\":-98.5,\"postal_code\":"
     },
     {
       "payload": {
@@ -159,7 +159,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847416664,\"job_title\":\"Senior Context Fusion AI Engineer - Autonomous Vehicles\",\"url\":\"https://www.linkedin.com/jobs/view/4468033704/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4468033704/\",\"location\":\"Seattle, WA\",\"short_location\":\"Seattle, WA\",\"long_location\":\"Seattle, WA\",\"state_code"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847957734,\"job_title\":\"DL Performance Software Engineer - LLM Inference\",\"url\":\"https://www.linkedin.com/jobs/view/4450018115/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4450018115/\",\"location\":\"Toronto, Ontario\",\"short_location\":\"Toronto, Ontario\",\"long_location\":\"Toronto, Ontario\",\"st"
     },
     {
       "payload": {
@@ -234,6 +234,225 @@
       "payload": {
         "company_domain_or": [
           "asml.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":828858478,\"job_title\":\"Machine Learning Algo Intern (internship)\",\"url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"date_posted\":\"2026-09-03\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"location\":\"Shenzhen, Guangdong\",\"short_location\":\"Shenzhen, Guangdong\",\"long_location\":\"Shenzhen, Guangdong\",\"st"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "arm.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":845518431,\"job_title\":\"Senior Software Engineer - AI Enablement\",\"url\":\"https://www.linkedin.com/jobs/view/4467553119/\",\"date_posted\":\"2026-09-17\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467553119/\",\"location\":\"Manchester, England\",\"short_location\":\"Manchester, England\",\"long_location\":\"Manchester, England\",\"stat"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "oracle.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847777824,\"job_title\":\"Platform Software Engineer - Agentic AI Project\",\"url\":\"https://www.linkedin.com/jobs/view/4450787507/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"Oracle\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4450787507/\",\"location\":\"Nashville, TN\",\"short_location\":\"Nashville, TN\",\"long_location\":\"Nashville, TN\",\"state_code\":"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "dell.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":844813207,\"job_title\":\"Technical Support Engineer 2 - AI Networking\",\"url\":\"https://enterpriseplatform.dell.com:443/hcmUI/CandidateExperience/en/job/298110\",\"date_posted\":\"2026-09-16\",\"has_blurred_data\":false,\"company\":\"Dell Technologies\",\"final_url\":\"https://enterpriseplatform.dell.com:443/hcmUI/CandidateExperience/en/job/298110\",\"source_url\":\"https://indeed.com/viewjob?jk=70e6f"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "supermicro.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":844002594,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-09-15\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitu"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "coreweave.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":845378941,\"job_title\":\"Senior Software Engineer- AI Workload Orchestration\",\"url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"date_posted\":\"2026-09-17\",\"has_blurred_data\":false,\"company\":\"CoreWeave\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":null,\"latitude\":1.28966999"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847887191,\"job_title\":\"Facility Engineer, Critical Infrastructure (f/m/d)\",\"url\":\"https://www.linkedin.com/jobs/view/4432984179/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432984179/\",\"location\":\"Frankfurt am Main, Hesse\",\"short_location\":\"Frankfurt am Main, Hesse\",\"long_locati"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "equinix.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":844531873,\"job_title\":\"Senior Principal Engineer, Enterprise Networking Architecture, Automation and AI\",\"url\":\"https://equinix.wd1.myworkdayjobs.com/External/job/Dallas-Infomart-Office-DAI/Sr-Principal-Engineer--Enterprise-Networking-Architecture_JR-163188\",\"date_posted\":\"2026-09-16\",\"has_blurred_data\":false,\"company\":\"Equinix\",\"final_url\":\"https://equinix.wd1.myworkdayjobs.com/"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "vertiv.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":837403728,\"job_title\":\"Data Engineer - Cloud/AI\",\"url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"date_posted\":\"2026-09-10\",\"has_blurred_data\":false,\"company\":\"Vertiv\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"location\":\"Westerville, OH\",\"short_location\":\"Westerville, OH\",\"long_location\":\"Westerville, OH\",\"state_code\":\"OH\",\"latitude\":4"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
         ],
         "job_title_or": [
           "machine learning",
