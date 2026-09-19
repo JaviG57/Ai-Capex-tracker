@@ -57,7 +57,7 @@ manufacturing a narrative out of noise.
 """
 
 
-def generate(deltas: dict) -> str:
+def generate(deltas: dict, context_note: str = "") -> str:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return "(No ANTHROPIC_API_KEY set -- skipping daily summary generation.)"
@@ -65,13 +65,13 @@ def generate(deltas: dict) -> str:
         return "(Not enough data yet to generate a summary -- check back after a few days of collection.)"
 
     client = anthropic.Anthropic(api_key=api_key)
+    user_content = f"Today's metric deltas:\n{json.dumps(deltas, indent=2)}"
+    if context_note:
+        user_content = f"{context_note}\n\n{user_content}"
     message = client.messages.create(
         model=MODEL,
         max_tokens=600,
         system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": f"Today's metric deltas:\n{json.dumps(deltas, indent=2)}",
-        }],
+        messages=[{"role": "user", "content": user_content}],
     )
     return "".join(block.text for block in message.content if block.type == "text")

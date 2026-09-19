@@ -19,10 +19,33 @@ def save_history(history: list[dict]) -> None:
 
 
 def upsert_today(history: list[dict], today_record: dict) -> list[dict]:
-    """Replace today's entry if the workflow re-runs same-day, else append."""
+    """
+    Merge today's entry if one already exists, else append.
+
+    MERGE (not replace) matters: if a run fetches only some sources -- a
+    rate-limited API, a debug run limited to a few companies, a transient
+    outage -- replacing would silently discard metrics an earlier run that
+    day already collected successfully. Merging keeps whatever we had and
+    layers the new values on top.
+    """
     today = today_record["date"]
-    history = [h for h in history if h["date"] != today]
-    history.append(today_record)
+    existing = next((h for h in history if h["date"] == today), None)
+    if existing:
+        merged = dict(existing)
+        for section in ("companies", "macro"):
+            section_merged = dict(existing.get(section, {}))
+            for entity, metrics in today_record.get(section, {}).items():
+                combined = dict(section_merged.get(entity, {}))
+                combined.update({k: v for k, v in metrics.items() if v is not None})
+                section_merged[entity] = combined
+            merged[section] = section_merged
+        for key, value in today_record.items():
+            if key not in ("companies", "macro"):
+                merged[key] = value
+        history = [h for h in history if h["date"] != today]
+        history.append(merged)
+    else:
+        history.append(today_record)
     history.sort(key=lambda h: h["date"])
     return history
 
@@ -39,6 +62,12 @@ def compute_deltas(history: list[dict], lookback_days: tuple = (1, 7, 30)) -> di
     for every company + macro metric, comparing today's values against the
     entries `lookback_days` ago. This is what gets sent to Claude for the
     daily summary -- NOT the full raw history -- to keep input tokens small.
+
+    `price_date` is excluded from the output (it's bookkeeping, not a
+    metric), but it IS used to suppress stale price deltas: on a weekend or
+    holiday the price carried over from the last open session would
+    otherwise be reported as a real 0% "move today", implying trading
+    happened when it didn't.
     """
     if not history:
         return {}
@@ -58,7 +87,10 @@ def compute_deltas(history: list[dict], lookback_days: tuple = (1, 7, 30)) -> di
         series = _get_metric_series(section)
         dates = [h["date"] for h in history]
         for entity, metrics in series.items():
+            price_dates = metrics.get("price_date", {})
             for metric, by_date in metrics.items():
+                if metric == "price_date":
+                    continue
                 current = by_date.get(today["date"])
                 if current is None:
                     continue
@@ -66,8 +98,13 @@ def compute_deltas(history: list[dict], lookback_days: tuple = (1, 7, 30)) -> di
                 row = {"current": current}
                 for n in lookback_days:
                     idx = len(dates) - 1 - n
-                    if idx >= 0:
-                        past_value = by_date.get(dates[idx])
-                        row[f"d{n}"] = _pct_change(past_value, current)
+                    if idx < 0:
+                        continue
+                    past_date = dates[idx]
+                    if metric == "stock_price" and price_dates:
+                        # Same underlying trading session -> not a real move.
+                        if price_dates.get(today["date"]) == price_dates.get(past_date):
+                            continue
+                    row[f"d{n}"] = _pct_change(by_date.get(past_date), current)
                 deltas[key] = row
     return deltas

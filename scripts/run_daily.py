@@ -95,7 +95,20 @@ def main():
     deltas = storage.compute_deltas(history)
 
     print("-> Generating daily summary (Claude Sonnet 5)")
-    summary = generate_summary.generate(deltas)
+    # Tell the summary writer when prices are carried over from a prior
+    # session, so it doesn't narrate a closed market as a flat trading day.
+    price_dates = {m.get("price_date") for m in per_company.values() if m.get("price_date")}
+    context_note = ""
+    if price_dates and today_str not in price_dates:
+        last_close = sorted(price_dates)[-1]
+        context_note = (
+            f"NOTE: Today is {today_str} and US markets were CLOSED (weekend or holiday). "
+            f"All stock prices shown are the last close from {last_close}, carried over. "
+            f"Do not describe price levels as today's trading action, and do not treat the "
+            f"absence of price movement as a market signal. Focus on non-market metrics."
+        )
+        print(f"   (markets closed today; prices carried from {last_close})")
+    summary = generate_summary.generate(deltas, context_note)
     history[-1]["summary"] = summary
 
     storage.save_history(history)
