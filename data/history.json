@@ -560,7 +560,7 @@
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 82
+        "commits_last_24h": 81
       },
       "huggingface/transformers": {
         "commits_last_24h": 1
@@ -569,7 +569,7 @@
         "commits_last_24h": 29
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 13
+        "commits_last_24h": 15
       },
       "NVIDIA/TensorRT-LLM": {
         "commits_last_24h": 21
@@ -578,6 +578,6 @@
         "commits_last_24h": 2
       }
     },
-    "summary": "Today's dashboard is dominated by a single, market-wide phenomenon rather than any company-specific story: trading volume exploded across essentially every AI-infrastructure name simultaneously, while price moves stayed modest. Digital Realty saw volume jump 608% on the day even as its stock slipped 1.1%, ASML volume rose 288.5% against a 2.1% price gain, MSFT volume was up 252.5% on a flat 0.1% move, and TSM, EQIX, AMD, ARM, SMCI, and NVDA all posted 1-day volume increases north of 190% with price changes mostly under 3% in either direction. That's a striking volume-without-price pattern spanning hyperscalers (MSFT), foundry/equipment (TSM, ASML), chipmakers (NVDA, AMD, ARM), and data-center REITs (DLR, EQIX) at once \u2014 a synchronized liquidity event, not a synchronized directional bet, and likely reflects a broad market-wide trading day (index rebalancing, options expiry, macro data) rather than anything AI-capex-specific. Worth flagging, not concluding.\n\nOn price, the moves were mixed and unremarkable: AMD (+2.7%), ARM (+2.7%), ASML (+2.1%) led gainers, while DELL (-1.9%) and DLR (-1.1%) lagged \u2014 nothing here breaks from noise-level daily variation.\n\nJobs and 8-K data are empty or zero across every company today (no postings, no filings), so there's nothing to say on hiring or capex-disclosure activity this cycle \u2014 that's an absence of signal, not a signal of cooling.\n\nThe open-source AI infra repos tell a separate, if equally noisy, story: commit activity fell sharply overnight across the board \u2014 HuggingFace Transformers down "
+    "summary": "Today's data is dominated by a single mechanical artifact: essentially every stock in the coverage set \u2014 MSFT, GOOGL, AMZN, META, NVDA, AVGO, AMD, TSM, ASML, ARM, ORCL, DELL, SMCI, CRWV, DLR, EQIX, VRT \u2014 is showing 1-day volume \"changes\" ranging from roughly 68% (CRWV) to 608% (DLR), which almost certainly reflects a data-window or baseline artifact rather than a genuine, simultaneous liquidity event across seventeen unrelated names. Price moves, by contrast, are unremarkable and mixed: AMD (+2.7%), ARM (+2.7%), ASML (+2.1%) and NVDA (+1.2%) firmed up, while DELL (-1.9%), DLR (-1.1%) and META (-0.7%) softened, all within normal day-to-day noise. No company logged an 8-K today, and hiring metrics for MSFT are all reading zero with no history to compare against, so there's nothing to say yet on the labor side \u2014 worth flagging as a data-coverage gap rather than a signal of hiring freezing up.\n\nThe one real cluster worth naming is on the open-source/compute-tooling side: commit activity fell across nearly every major inference/training framework tracked \u2014 vLLM (-55.4%), NVIDIA's TensorRT-LLM (-47.5%), Microsoft's DeepSpeed (-75%), and Hugging Face Transformers (-92.9%), with only llama.cpp bucking the trend (+7.1%) and PyTorch roughly flat (-2.4%). A synchronized single-day pullback across four independent repos maintained by different organizations is notable as a pattern, though single-day commit counts are low-volume and noisy enough"
   }
 ]
