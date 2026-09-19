@@ -68,21 +68,31 @@ def pick_todays_subset(companies: list[dict], day_index: int, batch_size: int) -
     return (companies * 2)[start:start + batch_size]
 
 
-def _post(payload: dict) -> dict | None:
-    resp = requests.post(THEIRSTACK_API_URL, json=payload, headers=HEADERS, timeout=30)
-    _DEBUG_LOG.append({
-        "payload": payload,
-        "status_code": resp.status_code,
-        "body_snippet": resp.text[:500],
-    })
-    if resp.status_code == 402:
-        print("[theirstack] out of credits for this billing period -- skipping remainder")
-        return "OUT_OF_CREDITS"
-    if resp.status_code == 422:
-        print(f"[theirstack] request rejected: {resp.text[:300]}")
-        return None
-    resp.raise_for_status()
-    return resp.json()
+def _post(payload: dict, retries: int = 3) -> dict | str | None:
+    for attempt in range(retries):
+        resp = requests.post(THEIRSTACK_API_URL, json=payload, headers=HEADERS, timeout=30)
+        if resp.status_code == 429:
+            wait = int(resp.headers.get("Retry-After", 5 * (attempt + 1)))
+            print(f"[theirstack] rate limited, waiting {wait}s (attempt {attempt + 1}/{retries})")
+            time.sleep(wait)
+            continue
+        _DEBUG_LOG.append({
+            "payload": payload,
+            "status_code": resp.status_code,
+            "body_snippet": resp.text[:500],
+        })
+        if resp.status_code == 402:
+            print("[theirstack] out of credits for this billing period -- skipping remainder")
+            return "OUT_OF_CREDITS"
+        if resp.status_code == 422:
+            print(f"[theirstack] request rejected: {resp.text[:300]}")
+            return None
+        resp.raise_for_status()
+        return resp.json()
+    # Exhausted retries on repeated 429s -- log it and skip this one company
+    # rather than crashing the whole batch.
+    _DEBUG_LOG.append({"payload": payload, "status_code": 429, "body_snippet": "rate limited, retries exhausted"})
+    return None
 
 
 def fetch_company_job_counts(domain: str) -> dict | None:
@@ -130,10 +140,15 @@ def fetch_company_job_counts(domain: str) -> dict | None:
 def fetch_all(companies: list[dict]) -> dict:
     results = {}
     for c in companies:
-        counts = fetch_company_job_counts(c["domain"])
+        try:
+            counts = fetch_company_job_counts(c["domain"])
+        except Exception as e:
+            print(f"[theirstack] unexpected error for {c['ticker']}: {e}")
+            _DEBUG_LOG.append({"payload": {"domain": c["domain"]}, "status_code": None, "body_snippet": str(e)})
+            continue
         if counts == "STOP":
             break
         if counts:
             results[c["ticker"]] = counts
-        time.sleep(1)  # be polite to the API
+        time.sleep(2.5)  # spaced out to stay under TheirStack's rate limit
     return results
