@@ -1,13 +1,115 @@
 {
   "error": null,
   "companies_queried": [
-    "MSFT"
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "NVDA",
+    "AVGO",
+    "AMD",
+    "TSM",
+    "ASML",
+    "ARM",
+    "ORCL",
+    "DELL",
+    "SMCI",
+    "CRWV",
+    "DLR",
+    "EQIX",
+    "VRT",
+    "ETN"
   ],
   "jobs_returned": {
     "MSFT": {
-      "jobs_overall": 0,
+      "jobs_overall": 68760,
+      "jobs_ai": null,
+      "jobs_last_30d": 2133
+    },
+    "GOOGL": {
+      "jobs_overall": 716,
+      "jobs_ai": null,
+      "jobs_last_30d": 18
+    },
+    "AMZN": {
+      "jobs_overall": 2,
       "jobs_ai": 0,
-      "jobs_last_30d": 0
+      "jobs_last_30d": 2
+    },
+    "META": {
+      "jobs_overall": 239,
+      "jobs_ai": 0,
+      "jobs_last_30d": 2
+    },
+    "NVDA": {
+      "jobs_overall": 36693,
+      "jobs_ai": null,
+      "jobs_last_30d": 1919
+    },
+    "AVGO": {
+      "jobs_overall": 6020,
+      "jobs_ai": null,
+      "jobs_last_30d": 227
+    },
+    "AMD": {
+      "jobs_overall": 26115,
+      "jobs_ai": null,
+      "jobs_last_30d": 1051
+    },
+    "TSM": {
+      "jobs_overall": 4105,
+      "jobs_ai": null,
+      "jobs_last_30d": 553
+    },
+    "ASML": {
+      "jobs_overall": 13741,
+      "jobs_ai": null,
+      "jobs_last_30d": 644
+    },
+    "ARM": {
+      "jobs_overall": 10071,
+      "jobs_ai": null,
+      "jobs_last_30d": 315
+    },
+    "ORCL": {
+      "jobs_overall": 73343,
+      "jobs_ai": 0,
+      "jobs_last_30d": 1409
+    },
+    "DELL": {
+      "jobs_overall": 10031,
+      "jobs_ai": null,
+      "jobs_last_30d": 155
+    },
+    "SMCI": {
+      "jobs_overall": 4951,
+      "jobs_ai": null,
+      "jobs_last_30d": 465
+    },
+    "CRWV": {
+      "jobs_overall": 5147,
+      "jobs_ai": null,
+      "jobs_last_30d": 426
+    },
+    "DLR": {
+      "jobs_overall": 3866,
+      "jobs_ai": 0,
+      "jobs_last_30d": 164
+    },
+    "EQIX": {
+      "jobs_overall": 10499,
+      "jobs_ai": null,
+      "jobs_last_30d": 307
+    },
+    "VRT": {
+      "jobs_overall": 20757,
+      "jobs_ai": null,
+      "jobs_last_30d": 1693
+    },
+    "ETN": {
+      "jobs_overall": 265,
+      "jobs_ai": null,
+      "jobs_last_30d": 229
     }
   },
   "request_log": [
@@ -28,6 +130,271 @@
           "ml infrastructure"
         ],
         "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":170,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":848630388,\"job_title\":\"Solution Engineer - AI Business Process\",\"url\":\"https://www.linkedin.com/jobs/view/4469593640/\",\"date_posted\":\"2026-09-20\",\"has_blurred_data\":false,\"company\":\"Microsoft\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4469593640/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude\":-98.5,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-20T12:45:46.603000Z\",\"closed_at\":null,\"company_domain\":\"news.microsoft.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"microsoft-forefront\",\"microsoft-power-platform\",\"power-bi\",\"microsoft-azure\"],\"keyword_slugs\":[\"artificial-intelligence\",\"microsoft-forefront\",\"continuous-learning\",\"supply-chain\",\"power-and-cooling\",\"microsoft-power-platform\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"computer-science\",\"insurance-consulting-and-technology\",\"information-technology\",\"information-and-communication-technology-ict\",\"training-certification\",\"m365-microsoft-365\",\"power-bi\",\"business-intelligence\",\"microsoft-azure\",\"training-and-development\",\"data-security\",\"information-security\",\"salary-range\",\"hotels-accommodations\"],\"description\":\"**Overview**\\nOur purpose is to empower organizations to transform the way they work by harnessing the full potential of artificial intelligence. We guide customers through the evolving digital landscape, enabling them to unlock new opportunities, enhance productivity, and deliver exceptional employee and customer experiences. By integrating advanced AI capabilities across devices, cloud platforms, and everyday business applications, we help organizations realize seamless, innovative, and secure solutions that drive sustained growth and success in the AI era.\\n  \\n  \\nWe are looking for a\\n**Solution Engineer- AI**\\n**Business Process**\\nto join our team.\u202fHere,\u202fyou'll\u202fbe at the forefront of innovation, working on\u202fcutting-edge\u202fprojects that\u202fleverage\u202fthe latest technologies to drive meaningful impact. Join us and be part of a team that thrives on collaboration, creativity, and continuous learning.\\n  \\n  \\nAs a\\n**Solution Engineer \u2013 AI Business Process**\\n, you will specialize in one of the following categories:\\n**Finance & Supply Chain, Power Platform, and/or Sales & Services**\\ndepending on your experience. You will play a pivotal role in helping enterprise\u202fAI developers\u202funlock the full potential of Microsoft\u2019s\u202fAI-powered"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":10,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":4},\"data\":[{\"id\":821519187,\"job_title\":\"Test Engineer / Test Lead -- AI-Powered Hardware Systems\",\"url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"date_posted\":\"2026-08-27\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"location\":\"Portland, Oregon Metropolitan Area\",\"short_location\":\"Portland, Oregon Metropolitan Area\",\"long_location\":\"Portland, Oregon Metropolitan Area\",\"state_code\":\"OR\",\"latitude\":45.5234489440918,\"longitude\":-122.67620849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-08-28T11:09:06.757000Z\",\"closed_at\":null,\"company_domain\":\"mbg.com\",\"hiring_team\":[{\"first_name\":\"Jeff\",\"full_name\":\"Jeff Weintraub\",\"linkedin_url\":\"https://www.linkedin.com/in/jeffweintraub/\",\"role\":\"Northwest Regional Recruiting Manager\",\"image_url\":\"https://media.licdn.com/dms/image/v2/C5603AQEimNK5C-9SKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516265849393?e=1752105600&v=beta&t=AIuRMP6-3Mhrar1XSmOGyLCU9ctEI9LdW7QKIOpE918\",\"thumbnail_url\":\"https://media.licdn.com/dms/image/v2/D5603AQHJb7KRsgUj4w/profile-displayphoto-scale_400_400/B56Zo2OCG7JQAg-/0/1761846242866?e=2147483647&v=beta&t=x8XiCgEKmFvuLTnsMZS1aMTSC_YaojWShB8qgsfa8Mo\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"contract\"],\"easy_apply\":null,\"technology_slugs\":[\"intel\"],\"keyword_slugs\":[\"sensors-test-measurement\",\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"time-and-attendance\",\"sensors-feedback-devices\",\"crane-aerospace-electronics\",\"testing-and-analysis\",\"industrial-automation\",\"intel\",\"troubleshooting\",\"firmware\",\"networking-telecommunications\",\"laboratory-equipment\",\"oscilloscopes\",\"power-and-cooling\",\"power-supplies-test-power\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"planning-and-design\"],\"description\":\"Initial 6-month contract and potential contract to hire\\n\\n100% on-site in Portland, Oregon\\n\\nOpen to Test Engineer or Test Lead candidate (will lead 2 interns and a part-time tester)\\n\\nHelp test the complete hardware and software ecosystem behind an AI-powered manufacturing platform. You\u2019ll work hands-on with cameras, sensors, electronics, edge devices and industrial equipment -- recreating real customer scenarios and finding issues before systems reach the manufacturing floor.\\n\\nTop Skills\\n\\n- System-Level Testing across electronic or electromechanical systems: experience with hardware and experience in the semiconductor, electronics, industrial automation, aerospac"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amazon.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amazon.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":846944955,\"job_title\":\"Enrichment Sports Coach & Game Host\",\"url\":\"https://www.linkedin.com/jobs/view/4467124297/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"Basement Sports\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467124297/\",\"location\":\"Jersey City, NJ\",\"short_location\":\"Jersey City, NJ\",\"long_location\":\"Jersey City, NJ\",\"state_code\":\"NJ\",\"latitude\":40.7281608581543,\"longitude\":-74.07763671875,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-18T16:08:01.065000Z\",\"closed_at\":null,\"company_domain\":\"amazon.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"part_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"game-server\",\"insurance-consulting-and-technology\",\"trade-shows-events\",\"environment-health-and-safety-hsse\",\"coaching-mentoring\",\"health-promotion-recreation-wellness-benefits\",\"polyethylene\",\"ecology-environment\",\"background-investigations\",\"background-checks\",\"first-aid\",\"training-certification\",\"particulate-matter\",\"time-and-attendance\"],\"description\":\"**About Basement Sports & Superbase**\\n\\nBasement Sports is a sports technology and youth engagement company focused on making sports more accessible, interactive, and fun for kids. Basement Sports is also the company behind\\n**Superbase**\\n, our\\n**Sports. Tech. Arts.**\\nyouth activity and enrichment center in Downtown Jersey City.\\n\\nSuperbase is where kids come to learn, play, build skills, and make friends through sports, games, technology, arts, camps, enrichment programs, and special events.\\n\\nOur\\n**Superbase Enrichment**\\nprogram provides an active after-school experience combining homework support, organized sports, skill-building activities, games, and free play. We work with children of different ages and abilities, with an emphasis on keeping every child active, included, engaged, and having fun.\\n\\nThis position is employed by Basement Sports and based on-site at Superbase in Jersey City.\\n\\n**About the Role**\\n\\nWe\u2019re looking for an energetic, athletic, and engaging\\n**Enrichment Sports Coach & Game Host**\\nto join our team. We want someone who genuinely enjoys working with kids, can confidently lead sports and games, and brings the positive, team-first attitude we want our kids to learn from.\\n\\n**What We\u2019re Looking For**\\n\\n- Skilled in at least\\n  **3 sports:**\\n  basketball, cricket, soccer, football, baseball, tennis, or track & field\\n- Energetic, athletic, and great at engaging children of different ages and skill levels\\n-"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "meta.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "meta.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":847957400,\"job_title\":\"Data Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4468026292/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"Facebook\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4468026292/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude\":-98.5,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-19T16:27:06.241000Z\",\"closed_at\":null,\"company_domain\":\"meta.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"contract\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"form-w-2\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"data-pipeline\",\"analytics\",\"data-analytics\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"maintenance-repair-and-operations-mro\",\"data-warehouse\",\"sql\",\"data-quality\",\"business-metrics\",\"customer-self-service\",\"data-engineering\",\"data-model\",\"warehousing-and-distribution\",\"extract-transform-and-load-etl\",\"electronic-title\",\"extract-load-transform-elt\",\"policies-and-practices\",\"hours-of-work\",\"health-insurance\",\"vision-care\",\"vision-insurance\",\"dental-insurance\",\"retirement-savings-401-k\",\"sep-ira-401k\",\"401k\"],\"description\":\"**Data Engineer**\\n\\n**Remote | W2 Contract**\\n\\n**Overview**\\n\\nWe are hiring a Data Engineer to support a large scale data and analytics initiative. This role will focus on building reliable data systems that help teams make better decisions faster.\\n\\nYou will design and develop data pipelines, create analytics ready datasets, and build reporting layers used across business and operations teams. Your work will directly impact how performance is tracked, measured, and improved.\\n\\nThis is a high visibility role with strong cross functional collaboration.\\n\\n**What You Will Do**\\n\\n- Build and maintain scalable data pipelines for large datasets\\n- Design and optimize data warehouse architecture and models\\n- Develop clean, reliable datasets for analytics and reporting\\n- Write advanced SQL to support dashboards and business logic\\n- Implement data quality checks and monitoring systems\\n- Define and standardize business metrics across teams\\n- Build dashboards and self service reporting solutions\\n- Partner with stakeholders to translate business needs into data solutions\\n\\n**What You Bring**\\n\\n- Strong experience in data engineering or analytics engineering\\n- Advanced SQL skills\\n- Experience with data modeling and warehousing concepts\\n- Exp"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "nvidia.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":534,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":848726392,\"job_title\":\"Software Engineer, AI and DL Kernel Libraries\",\"url\":\"https://www.linkedin.com/jobs/view/4432120574/\",\"date_posted\":\"2026-09-20\",\"has_blurred_data\":false,\"company\":\"NVIDIA\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432120574/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-20T15:38:54.025000Z\",\"closed_at\":null,\"company_domain\":\"nvidia.com\",\"hiring_team\":[{\"first_name\":\"Wei\",\"full_name\":\"Wei Zhang\",\"linkedin_url\":\"https://www.linkedin.com/in/wei-zhang-b4925627/\",\"role\":\"\",\"image_url\":\"\",\"thumbnail_url\":\"https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"flashinfer\",\"vllm1\",\"sglang\",\"c10\",\"cplusplus\",\"python\",\"cuda\",\"pytorch\",\"tensorflow\",\"triton\"],\"keyword_slugs\":[\"artificial-intelligence\",\"scalability\",\"usability\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"large-language-model-llm\",\"generative-artificial-intelligence-generative-ai\",\"computer-vision\",\"image-recognition\",\"recommender\",\"deep-learning\",\"time-and-attendance\",\"graphics-processing-unit-gpu\",\"cabinet-construction-materials-hardware\",\"open-source\",\"flashinfer\",\"vllm1\",\"sglang\",\"computer-science\",\"electrical-engineering-and-planning\",\"software-development\",\"training-and-development\",\"machine-learning\",\"c10\",\"cplusplus\",\"python\",\"cuda\",\"pytorch\",\"google-tensorflow\",\"tensorflow\",\"testing-and-analysis\",\"monitor-and-analyze-performance\",\"credentialing-profiling\",\"system-architecture\",\"performance-optimization\",\"triton\",\"maritime-labour-convention\",\"training-certification\",\"education-training\",\"infrared-ir-camera\",\"investor-relations\",\"accelerators\",\"software-design\"],\"description\":\"We're looking for outstanding AI systems software engineers to develop groundbreaking technologies across the inference systems software stack. Our team builds core AI systems software that accelerates high-impact workloads on NVIDIA GPUs, from deep learning primitives and kernel libraries to LLM inference runtimes, serving abstractions, and code generation technologies. As a member of the team, you will help design, build, optimize, and ship production-quality software that powers NVIDIA's AI software stack.\\n  \\n  \\nThis role spans both foundational library engineering and next-genera"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "broadcom.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":6,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":838822855,\"job_title\":\"AI Software Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4428765521/\",\"date_posted\":\"2026-09-11\",\"has_blurred_data\":false,\"company\":\"Broadcom\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4428765521/\",\"location\":\"Fort Collins, CO\",\"short_location\":\"Fort Collins, CO\",\"long_location\":\"Fort Collins, CO\",\"state_code\":\"CO\",\"latitude\":40.58525848388672,\"longitude\":-105.08441925048828,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-11T22:17:40.548000Z\",\"closed_at\":null,\"company_domain\":\"broadcom.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"artificial-intelligence\",\"job-descriptions\",\"maintenance-repair-and-operations-mro\",\"clubs-organizations\",\"process-control\",\"performance-optimization\",\"time-and-attendance\",\"youth-organizations-resources\",\"r\",\"offshore-software-r-d\",\"research-and-development-test\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"insurance-consulting-and-technology\",\"errors-omissions-e-o\",\"downtime\",\"chatbots\",\"conversational-ai\",\"training-certification\",\"education-training\",\"training-and-development\",\"policies-and-practices\",\"large-language-model-llm\",\"microsoft-certification\",\"model-context-protocol-mcp\",\"computer-science\",\"machine-learning\",\"lean-six-sigma\",\"salary-range\"],\"description\":\"**Job Description:**\\nBroadcom is seeking an experienced AI Software Engineer to integrate commercial AI tools and agents into an existing design flow.\\n  \\n  \\n  \\n\\n- Monitor and maintain AI systems: Ensure AI systems are running smoothly and efficiently\\n- Integrate AI into workflows: Responsible for embedding AI tools into daily operations across the organization to ensure they deliver measurable value\\n- Coordinate AI agents: In a higher-level system, coordinate multiple AI agents to achieve an overarching process control\\n- Optimize performance: Analyze key performance indicators, adjust parameters in real-time, and optimize resource usage to improve performance\\n\\nYou will join a worldwide R&D team dedicated to getting products to market. This role is key to dramatically improving design productivity across the organization.\\n  \\n  \\n****Responsibilities:****\\n\\n- Quickly analyze existing VLSI design systems and methodologies to identify opportunities for AI integration and productivity improvement\\n- Develop and deploy commercial AI tools to enhance productivity within established design flows\\n- Design and impl"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amd.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":174,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":847208470,\"job_title\":\"ML Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4466914786/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4466914786/\",\"location\":\"Warsaw, Mazowieckie\",\"short_location\":\"Warsaw, Mazowieckie\",\"long_location\":\"Warsaw, Mazowieckie\",\"state_code\":\"MZ\",\"latitude\":52.22977066040039,\"longitude\":21.01177978515625,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"Poland\",\"country_codes\":[\"PL\"],\"country_code\":\"PL\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-18T21:22:19.860000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"cplusplus\"],\"keyword_slugs\":[\"machine-learning\",\"artificial-intelligence\",\"generative-artificial-intelligence-generative-ai\",\"cyber-intelligence\",\"software-development\",\"training-and-development\",\"workflow\",\"customer-intelligence-ci\",\"continuous-integration\",\"python\",\"cplusplus\",\"object-oriented-programming-oop\",\"knowledge-distillation\",\"distillation\",\"source-code-control\",\"embedded-control-automation\",\"effective-communication\",\"computer-science\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**The Role**\\nA seasoned ML Engineer to Architect Machine learning Models for Generative AI related research\\n  \\n  \\n**The Person**\\nThe ideal candidate should be passionate about Generative AI and Neural Networks and its application in graphics technology, skills to drive sophisticated issues to resolution. Able to communicate effectively and work optimally with different teams across AMD. Applied Research and Engineering team is looking for the following\\n  \\n  \\n**Key Responsibilities**\\n\\n- Proficiency in machine learning and Artificial Intelligence especially around model architecture\\n- General software development workflow knowledge: git, cmake, C"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "tsmc.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":24,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":846656631,\"job_title\":\"AI Memory Design Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"date_posted\":\"2026-09-18\",\"has_blurred_data\":false,\"company\":\"TSMC\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"location\":\"Munich, Bavaria\",\"short_location\":\"Munich, Bavaria\",\"long_location\":\"Munich, Bavaria\",\"state_code\":\"BY\",\"latitude\":48.137428283691406,\"longitude\":11.57548999786377,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"Germany\",\"country_codes\":[\"DE\"],\"country_code\":\"DE\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-18T10:23:18.857000Z\",\"closed_at\":null,\"company_domain\":\"tsmc.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"wellspring\"],\"keyword_slugs\":[\"artificial-intelligence\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"sensors-test-measurement\",\"i-o-memory-peripheral-connectors\",\"intellectual-property\",\"testing-and-analysis\",\"scalability\",\"circuit-design\",\"debugging\",\"it-support\",\"technical-support-tech-support\",\"electrical-engineering-and-planning\",\"electronic-design-automation-eda\",\"event-driven-architecture-eda\",\"wellspring\",\"policies-and-practices\"],\"description\":\"Taiwan Semiconductor Manufacturing Company Ltd. (\u201cTSMC\u201d) is the world\u2019s leading semiconductor foundry. Headquartered in Taiwan, the Company has operation facilities worldwide and the largest logic chip manufacturing capacity in global semiconductor industry. The Company employs a global workforce of over 89.000 and recorded revenue over US$122 billion in 2025. TSMC produces the chips that are found in smart phones, tablets, computers, smart TVs, cars, laptops, games consoles, data centers and many more applications. TSMC sells to a wide variety of customers, including most leading semiconductor companies.\\n  \\n  \\nAt the TSMC EU Design Center, you\u2019ll work in an exceptional technology and design team to refine your technical and leadership skills within the world's most advanced design service ecosystem. You'll be contributing to the forefront of semiconductor technology, including cutting-edge nonvolatile memory solutions like MRAM and RRAM. Your main focus will be to assist our leading customers in delivering state-of-the-art products that have a transformative impact on people's lives.\\n  \\n  \\n**Job Responsibilities**\\nYour work will enable chip innovation possible by developing and optimizing all aspects in the pre-silicon design flow, including:\\n  \\n  \\n\\n- Develop memory IP and compilers targeting AI applications optimized with TSMC pro"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "asml.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":5,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":848010403,\"job_title\":\"Physics Informed Machine Learning Scientist\",\"url\":\"https://www.linkedin.com/jobs/view/4432415743/\",\"date_posted\":\"2026-09-19\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432415743/\",\"location\":\"San Diego, CA\",\"short_location\":\"San Diego, CA\",\"long_location\":\"San Diego, CA\",\"state_code\":\"CA\",\"latitude\":32.7157096862793,\"longitude\":-117.16471862792969,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$135.4k - $225.6k per year\",\"min_annual_salary\":135375,\"min_annual_salary_usd\":135375.0,\"max_annual_salary\":225625,\"max_annual_salary_usd\":225625.0,\"avg_annual_salary_usd\":180500.0,\"salary_currency\":\"USD\",\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-19T18:00:13.490000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"nodejs\",\"python\",\"elearning-lms\",\"pytorch\",\"c10\",\"cplusplus\",\"matlab\",\"ml-flow\",\"mlflow\",\"microsoft-azure\",\"kubernetes\",\"azure-kubernetes-service\",\"azure-kubernetes-service-aks\",\"spark\",\"azure-databricks\",\"databricks\"],\"keyword_slugs\":[\"machine-learning\",\"laser-photonic\",\"power-and-cooling\",\"team-building\",\"insurance-consulting-and-technology\",\"data-pipeline\",\"testing-and-analysis\",\"data-analytics\",\"sensors-test-measurement\",\"data-management\",\"data-quality\",\"seamless-integration\",\"maintenance-repair-and-operations-mro\",\"objectives-and-key-results\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"troubleshooting\",\"distribution-and-storage\",\"training-and-development\",\"nodejs\",\"deep-learning\",\"training-certification\",\"education-training\",\"software-development\",\"python\",\"elearning-lms\",\"pytorch\",\"c10\",\"cplusplus\",\"matlab\",\"ml-flow\",\"mlflow\",\"microsoft-azure\",\"kubernetes\",\"azure-kubernetes-service\",\"azure-kubernetes-service-aks\",\"spark\",\"azure-databricks\",\"databricks\",\"dating-personals\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"hotels-accommodations\",\"disabilities-ada\",\"lift-and-shift\",\"hardware-peripherals\",\"time-and-attendance\",\"workstations\",\"salary-range\",\"market-data\",\"assessment-assessment-tools\",\"life-insurance\",\"401k\",\"sep-ira-401k\",\"retirement-savings-401-k\",\"holidays-seasonal-events\",\"laws-and-regulations\",\"r\",\"diversity\"],\"description\":\"ASML US, LP brings together the most creative minds in science and technology to develop lithography machines that are key to producing faster, cheaper, more energy-efficient microchips. We design, develop, integrate, market and service these advanced machines, which enable our customers - the world\u2019s leading chipmakers - to reduce the size and increase the functionality of their microchips, which in turn "
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "arm.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":65,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":848713432,\"job_title\":\"Staff Machine Learning Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4459718763/\",\"date_posted\":\"2026-09-20\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4459718763/\",\"location\":\"Austin, TX\",\"short_location\":\"Austin, TX\",\"long_location\":\"Austin, TX\",\"state_code\":\"TX\",\"latitude\":30.26715087890625,\"longitude\":-97.74305725097656,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"staff\",\"discovered_at\":\"2026-09-20T15:17:44.087000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"tensorflow\",\"pytorch\"],\"keyword_slugs\":[\"machine-learning\",\"training-and-development\",\"cabinet-construction-materials-hardware\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"electrical-engineering-and-planning\",\"computer-science\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"programming-languages\",\"python\",\"deep-learning\",\"google-tensorflow\",\"tensorflow\",\"pytorch\",\"training-certification\",\"education-training\",\"graphics-processing-unit-gpu\",\"payouts\",\"salary-range\"],\"description\":\"**Job Overview**\\nThe mission of the Central Technology ML (CTML) team is to pioneer and implement the technology roadmap that paves the way for the future of machine learning computing on Arm architecture. We believe that innovative ML technology necessitates joint development across hardware, software, and ML algorithms. We will collaborate on what is the best way to balance among all these constrains?\\n  \\n  \\nAs a member of the CTML Content and Algorithm team, the candidate will play a key role within the Center of Excellence for Machine Learning. They will actively supply to this joint development initiative, conducting in-depth analyses of complex neural networks on ARM's computing platforms and devising algorithms that will elevate us to the forefront of future.\\n  \\n  \\n**Responsibilities**\\nDevelop in depth understanding of current and future ML workload on ARM compute platforms with a focus on their PPA (performance, power, and area).\\n  \\n  \\n\\n- Architecture exploration necessitates the joint development of hardware, software, and algorithms. This role serves as the ML Algorithm experts within the exploration process. This includes algorithm innovation and prototyping to drive and validate architectural features.\\n- Develop hardware aware optimization algorithm that can make state-of-the art networks on Arm platform"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "oracle.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
         "limit": 1,
         "page": 0
       },
@@ -37,14 +404,194 @@
     {
       "payload": {
         "company_domain_or": [
-          "microsoft.com"
+          "oracle.com"
         ],
         "posted_at_max_age_days": 60,
         "limit": 1,
         "page": 0
       },
-      "status_code": 429,
-      "body_snippet": "rate limited, retries exhausted"
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":848569025,\"job_title\":\"Consulting Technical Manager, AI Data Engineer - Government, Defense & Intelligence\",\"url\":\"https://www.linkedin.com/jobs/view/4430212122/\",\"date_posted\":\"2026-09-20\",\"has_blurred_data\":false,\"company\":\"Oracle\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4430212122/\",\"location\":\"Reston, VA\",\"short_location\":\"Reston, VA\",\"long_location\":\"Reston, VA\",\"state_code\":\"VA\",\"latitude\":38.968719482421875,\"longitude\":-77.34110260009766,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-09-20T10:58:18.424000Z\",\"closed_at\":null,\"company_domain\":\"oracle.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"kubernetes\",\"python\",\"json\",\"microsoft-graph\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cyber-intelligence\",\"job-descriptions\",\"total-station\",\"computer-science\",\"data-engineering\",\"extract-transform-and-load-etl\",\"training-and-development\",\"database-management\",\"retrieval-augmented-generation-rag\",\"microsoft-certification\",\"model-context-protocol-mcp\",\"etl-pipelines\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"kubernetes\",\"scripting\",\"python\",\"data-governance\",\"metadata-management\",\"enterprise-information-integration-metadata-management\",\"data-lineage\",\"policies-and-practices\",\"database-as-a-service-dbaas\",\"json\",\"microsoft-graph\",\"data-security\",\"compliance\",\"regulatory-compliance\",\"development-operations-devops\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"integrated-circuit-ic\",\"immunization\",\"environment-health-and-safety-hsse\",\"occupational-safety-health-oh-s\",\"occupational-medicine\",\"drug-and-alcohol-testing-treatment\",\"testing-and-analysis\",\"vision-care\",\"vision-insurance\",\"life-insurance\",\"accidental-death-and-dismemberment-insurance-ad-d\",\"health-care\",\"flexible-spending-accounts-fsa\",\"401k\",\"sep-ira-401k\",\"retirement-savings-401-k\",\"time-and-attendance\",\"paid-time-off\",\"holidays-seasonal-events\",\"sick-leave\",\"carried-interest\",\"employee-stock-purchase-plan-espp\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"financial-planning\",\"voluntary-benefits\",\"insurance-voluntary-benefits-home-auto-etc\",\"pet-insurance\"],\"description\":\"**Job Description**\\nWe are seeking a highly experienced and motivated AI Data Engineer to join our team. The ideal candidate will play a critical role in designing, building, and optimizing cloud-based data pipelines and AI data platforms that support our enterpr"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "dell.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":12,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":844813207,\"job_title\":\"Technical Support Engineer 2 - AI Networking\",\"url\":\"https://enterpriseplatform.dell.com:443/hcmUI/CandidateExperience/en/job/298110\",\"date_posted\":\"2026-09-16\",\"has_blurred_data\":false,\"company\":\"Dell Technologies\",\"final_url\":\"https://enterpriseplatform.dell.com:443/hcmUI/CandidateExperience/en/job/298110\",\"source_url\":\"https://indeed.com/viewjob?jk=70e6fbe9bed991a2\",\"location\":\"Oklahoma City, OK\",\"short_location\":\"Oklahoma City, OK\",\"long_location\":\"Oklahoma City, OK\",\"state_code\":\"OK\",\"latitude\":35.467559814453125,\"longitude\":-97.51643371582031,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$74,205 - $96,030 a year\",\"min_annual_salary\":74205,\"min_annual_salary_usd\":74205.0,\"max_annual_salary\":96030,\"max_annual_salary_usd\":96030.0,\"avg_annual_salary_usd\":85117.5,\"salary_currency\":\"USD\",\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-16T23:39:55.295000Z\",\"closed_at\":null,\"company_domain\":\"karriere.dell.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"nvidia\",\"amazon-web-services\",\"microsoft-azure\"],\"keyword_slugs\":[\"it-support\",\"technical-support-tech-support\",\"artificial-intelligence\",\"networking-telecommunications\",\"nvidia\",\"networking-solutions\",\"data-center\",\"distribution-and-storage\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"operational-excellence\",\"training-certification\",\"education-training\",\"training-and-development\",\"mentoring\",\"coaching-mentoring\",\"troubleshooting\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"cloud-computing\",\"software-defined-wide-area-network-sd-wan\",\"wide-area-networking-wan\",\"linux\",\"ports-terminals\",\"routing-and-switching\",\"routing-protocols\",\"emerging-technologies\",\"border-gateway-protocol-bgp\",\"amazon-web-services\",\"microsoft-azure\",\"policies-and-practices\",\"job-posting\"],\"description\":\"**Technical Support Engineer 2 \u2013 Dell & Nvidia AI Networking**\\n\\nAt Dell Technologies, world-class service doesn\u2019t end when a customer purchases our innovative products. Our Technical Support team is there for them whenever they need help \u2013 by phone or email, online and on social media. No matter how complex the challenge is we rise to it. We answer questions about the installation, operation, configuration, customization and use of Dell Technologies products. For critical matters, we use our systems to provide remote diagnostic technical support. If there\u2019s an issue with a customer\u2019s product, we\u2019ll analyze it, identify the cause, recommend a solution and document the problem.\\n\\nJoin us to do the best work of your career and make a profound social impact as a **Technical Support Engineer 2** on our **Solutions Support** as a **Service "
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "supermicro.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":7,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":844002594,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-09-15\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-09-16T10:21:53.224000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"docker\",\"langchain\"],\"keyword_slugs\":[\"artificial-intelligence\",\"agentic-ai\",\"instructional-design-id\",\"customer-support\",\"data-processing\",\"computer-science\",\"information-technology\",\"python\",\"machine-learning\",\"large-language-model-llm\",\"linux\",\"docker\",\"sql\",\"nosql\",\"vector-database\",\"langchain\",\"machine-learning-ops-mlops\",\"policies-and-practices\",\"assessment-assessment-tools\",\"salary-range\",\"education-training\",\"training-certification\",\"training-and-development\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30248****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nSupermicro is seeking a top-notch hands-on Sr. Software Engineer to work on PCIe, SAS/SATA, USB and other HW related areas of storage and server products. As part of our small but important software engineering team, you will be responsible for leading the projects and provide technical expertise and recommendations to support and enhance our development projects.\\n  \\n  \\n**Essential Duties And Responsibilities**\\n\\n- Create and maintain several end-to-end AI agent pipelines that handle high-volume customer support and technical tickets-\\n- Connect and process data from various internal and external data sources\\n- Present demonstrations and updates to internal stakeholders\\n- Define success metrics an"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "coreweave.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":43,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":845378941,\"job_title\":\"Senior Software Engineer- AI Workload Orchestration\",\"url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"date_posted\":\"2026-09-17\",\"has_blurred_data\":false,\"company\":\"CoreWeave\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467191475/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":null,\"latitude\":1.2896699905395508,\"longitude\":103.85006713867188,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"Singapore\",\"country_codes\":[\"SG\"],\"country_code\":\"SG\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-09-17T09:42:57.950000Z\",\"closed_at\":null,\"company_domain\":\"coreweave.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"kubernetes\",\"kubernetes-native\"],\"keyword_slugs\":[\"artificial-intelligence\",\"service-management-and-orchestration-smo\",\"graphics-processing-unit-gpu\",\"gpu-clusters\",\"kubernetes\",\"scalability\",\"developer-experience\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"observability\",\"capacity-management\",\"operational-excellence\",\"mentoring\",\"clubs-organizations\",\"distributed-computing\",\"youth-organizations-resources\",\"mission-critical\",\"kubernetes-native\",\"ai-infrastructure\",\"machine-learning\",\"ml-platform\",\"supercomputing\",\"high-performance-computing\",\"open-source\"],\"description\":\"CoreWeave is The Essential Cloud for AI\u2122. Built for pioneers by pioneers, CoreWeave delivers a platform of technology, tools, and teams that enables innovators to build and scale AI with confidence. Trusted by leading AI labs, startups, and global enterprises, CoreWeave combines superior infrastructure performance with deep technical expertise to accelerate breakthroughs and turn compute into capability. Founded in 2017, CoreWeave became a publicly traded company (Nasdaq: CRWV) in March 2025. Learn more at www.coreweave.com.\\n  \\n  \\n**What You\u2019ll Do**\\nAs a\\n**Senior Software Engineer**\\non the\\n**AI Workload Orchestration Platform**\\nteam, you will act as a technical leader for CoreWeave\u2019s Kubernetes-native orchestration strategy for AI workloads.\\n  \\n  \\nYou will define and evolve the architecture for how AI workloads are admitted, scheduled, and governed across large GPU clusters using frameworks such as\\n**Kueue, Volcano, and Ray**\\n. This platform serves as a strategic complement to\\n**SUNK (Slurm on Kubernetes)**\\nand underpins both training and inference workloads across the CoreWeave cloud.\\n  \\n  \\nThis role requires strong systems thinking, cross-team influence, and a long-term view of platform scalability, reliability, and developer exp"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":848721491,\"job_title\":\"Datacenter Fiber Technician\",\"url\":\"https://www.linkedin.com/jobs/view/4414145308/\",\"date_posted\":\"2026-09-20\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4414145308/\",\"location\":\"Athens, Attiki\",\"short_location\":\"Athens, Attiki\",\"long_location\":\"Athens, Attiki\",\"state_code\":\"I\",\"latitude\":37.983760833740234,\"longitude\":23.727840423583984,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"Greece\",\"country_codes\":[\"GR\"],\"country_code\":\"GR\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-20T15:31:51.621000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"data-center\",\"job-descriptions\",\"maintenance-repair-and-operations-mro\",\"environment-health-and-safety-hsse\",\"compliance\",\"customer-satisfaction\",\"customer-support\",\"continuous-improvement-process-cip\",\"it-support\",\"technical-support-tech-support\",\"labeling\",\"packaging-labeling\",\"testing-and-analysis\",\"troubleshooting\",\"service-delivery\",\"implementation-services\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"networking-telecommunications\",\"telecom\",\"information-technology\",\"network-infrastructure\",\"sensors-test-measurement\",\"fiber-optics\",\"customer-communications\",\"customer-centricity\",\"clubs-organizations\",\"health-and-safety\",\"workplace-safety\",\"effective-communication\",\"server-farms\",\"ecology-environment\",\"education-training\",\"training-certification\",\"itil\",\"training-and-development\"],\"description\":\"**Job Description**\\n**Role**\\nAs a Datacenter Technician, you will play a key role in ensuring the operational continuity and reliability of client infrastructure. You will work on equipment, cabling, maintenance, and technical projects while ensuring safety, compliance, and customer satisfaction.\\n  \\n  \\nYou will collaborate closely with the Remote Hands and operations teams to deliver high-quality, reliable services to clients.\\n  \\n  \\n**Responsibilities**\\n\\n- Provide technical customer support and perform operational interventions, including handling Remote Hands requests.\\n- Assist in technical projects and support activities: setup, deinstallation, and documentation of equipment.\\n- Document progress, issues, and outcomes, and contribute to continuous improvement initiatives.\\n- Provide technical support and execute operational interventions requested by clients.\\n- Customer equipment migration: labeling, installation, documentation, and testing.\\n- Emergency troubleshootin"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "equinix.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":22,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":844531873,\"job_title\":\"Senior Principal Engineer, Enterprise Networking Architecture, Automation and AI\",\"url\":\"https://equinix.wd1.myworkdayjobs.com/External/job/Dallas-Infomart-Office-DAI/Sr-Principal-Engineer--Enterprise-Networking-Architecture_JR-163188\",\"date_posted\":\"2026-09-16\",\"has_blurred_data\":false,\"company\":\"Equinix\",\"final_url\":\"https://equinix.wd1.myworkdayjobs.com/External/job/Dallas-Infomart-Office-DAI/Sr-Principal-Engineer--Enterprise-Networking-Architecture_JR-163188\",\"source_url\":\"https://equinix.wd1.myworkdayjobs.com/external/job/Sr-Principal-Engineer--Enterprise-Networking-Architecture_JR-163188\",\"location\":\"Dallas Infomart Office DAI\",\"short_location\":\"Dallas Infomart Office DAI\",\"long_location\":\"Dallas Infomart Office DAI\",\"state_code\":\"CA\",\"latitude\":37.48522186279297,\"longitude\":-122.2363510131836,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":\"$177k - $265k per year\",\"min_annual_salary\":177000,\"min_annual_salary_usd\":177000.0,\"max_annual_salary\":265000,\"max_annual_salary_usd\":265000.0,\"avg_annual_salary_usd\":221000.0,\"salary_currency\":\"USD\",\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-09-16T19:02:51.655000Z\",\"closed_at\":null,\"company_domain\":\"equinix.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":true,\"technology_slugs\":[\"python\",\"guardrails\",\"ansible\",\"terraform\",\"drift\",\"nodejs\",\"redwood\",\"workday\"],\"keyword_slugs\":[\"networking-telecommunications\",\"artificial-intelligence\",\"network-architecture\",\"python\",\"cyber-intelligence\",\"state-local-municipal\",\"planning-and-design\",\"visual-art-design\",\"network-design\",\"enterprise-network\",\"local-area-networking-lan\",\"wide-area-networking-wan\",\"data-center\",\"server-farms\",\"network-security\",\"reference-architecture\",\"product-development-and-design\",\"guardrails\",\"racking-protection\",\"safety-barriers\",\"policies-and-practices\",\"technical-debt\",\"emerging-technologies\",\"scalability\",\"routing-and-switching\",\"border-gateway-protocol-bgp\",\"open-shortest-path-first-ospf\",\"intrinsic-safety-is\",\"network-load-balancing-nlb\",\"software-defined-wide-area-network-sd-wan\",\"troubleshooting\",\"network-automation\",\"data-processing\",\"software-developers\",\"ansible\",\"terraform\",\"gitops\",\"testing-and-analysis\",\"drift\",\"compliance\",\"interoperability\",\"observability\",\"analytics\",\"data-analytics\",\"trade-shows-events\",\"network-visibility\",\"digital-twin\",\"maintenance-repair-and-operations-mro\",\"anomaly-detection\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"capacity-planning\",\"student-retention-remediation-in-higher-education\",\"remediation\",\"explainability\",\"scripting\",\"ai-for-marketing\",\"software-development\",\"training-and-development\",\"cyber-security\",\"enterprise-architecture\",\"mentoring\",\"nod"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "vertiv.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":2,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":837403728,\"job_title\":\"Data Engineer - Cloud/AI\",\"url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"date_posted\":\"2026-09-10\",\"has_blurred_data\":false,\"company\":\"Vertiv\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4369954288/\",\"location\":\"Westerville, OH\",\"short_location\":\"Westerville, OH\",\"long_location\":\"Westerville, OH\",\"state_code\":\"OH\",\"latitude\":40.12617111206055,\"longitude\":-82.92906951904297,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-10T21:34:02.338000Z\",\"closed_at\":null,\"company_domain\":\"Vertiv.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"spark\",\"pyspark\",\"hadoop\",\"apache-hadoop\",\"amazon-redshift\",\"python\",\"airflow\",\"apache-airflow\",\"luigi\",\"amazon-web-services\",\"aws-glue\",\"microsoft-azure\",\"google-cloud-platform\",\"pytest\",\"unittest\",\"selenium\"],\"keyword_slugs\":[\"artificial-intelligence\",\"job-descriptions\",\"data-pipeline\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"data-processing\",\"distribution-and-storage\",\"policies-and-practices\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"data-extraction\",\"troubleshooting\",\"data-quality\",\"computer-science\",\"data-engineering\",\"training-and-development\",\"extract-transform-and-load-etl\",\"spark\",\"pyspark\",\"hadoop\",\"apache-hadoop\",\"amazon-redshift\",\"python\",\"airflow\",\"apache-airflow\",\"luigi\",\"amazon-web-services\",\"aws-glue\",\"warehousing-and-distribution\",\"data-warehouse\",\"sql\",\"microsoft-azure\",\"google-cloud-platform\",\"good-clinical-practice-gcp\",\"emerging-technologies\",\"generative-artificial-intelligence-generative-ai\",\"data-architecture\",\"data-management\",\"data-mesh\",\"data-fabric\",\"data-model\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"testing-and-analysis\",\"pytest\",\"unittest\",\"selenium\",\"batch-processing-batch-services\",\"time-and-attendance\",\"training-certification\",\"operational-excellence\",\"continuous-improvement-process-cip\"],\"description\":\"**Job Summary**\\n**JOB DESCRIPTION**\\nAs a\\n***Data Engineer - Cloud/Gen AI***\\n, you will be responsible for designing, building, and maintaining scalable and robust data pipelines and architectures. You will work in a dynamic environment, using the latest data processing and storage technologies and best practices. You will work with data scientists, analysts, and product teams to ensure data is accurate, consistent, complete, and accessible. Ultimately, you will collaborate with various teams to develop and enhance data"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":10,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":841373447,\"job_title\":\"AI Engineer - MDM\",\"url\":\"https://www.naukri.com/job-listings-ai-engineer-mdm-eaton-technologies-pvt-ltd-pune-4-to-6-years-140926501505\",\"date_posted\":\"2026-09-14\",\"has_blurred_data\":false,\"company\":\"Eaton Technologies\",\"final_url\":null,\"source_url\":\"https://www.naukri.com/job-listings-ai-engineer-mdm-eaton-technologies-pvt-ltd-pune-4-to-6-years-140926501505\",\"location\":\"Pune\",\"short_location\":\"Pune\",\"long_location\":\"Pune\",\"state_code\":\"MH\",\"latitude\":18.519569396972656,\"longitude\":73.8553466796875,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"Not Disclosed\",\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":\"INR\",\"countries\":[],\"country\":\"India\",\"country_codes\":[\"IN\"],\"country_code\":\"IN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-14T11:04:32.184000Z\",\"closed_at\":null,\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"snowflake\",\"power-bi\",\"sap\"],\"keyword_slugs\":[\"artificial-intelligence\",\"master-data-management-mdm\",\"mobile-device-management\",\"master-data\",\"data-management\",\"data-quality\",\"analytics\",\"data-analytics\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"maintenance-repair-and-operations-mro\",\"information-technology\",\"continuous-improvement-process-cip\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"workflow\",\"testing-and-analysis\",\"responsible-ai\",\"data-privacy-and-protection\",\"cyber-security\",\"access-control\",\"human-in-the-loop-hitl\",\"insurance-consulting-and-technology\",\"computer-science\",\"data-science\",\"machine-learning\",\"data-governance\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"product-data-management\",\"generative-artificial-intelligence-generative-ai\",\"prompt-engineering\",\"product-information-management-pim\",\"product-information-management\",\"privileged-identity-management-pim\",\"database-migration-and-conversion\",\"data-migration\",\"python\",\"sql\",\"snowflake\",\"power-and-cooling\",\"power-bi\",\"business-intelligence\",\"sap\",\"automated-workflow\",\"workflow-automation\",\"dating-personals\",\"training-and-development\",\"personal-development\",\"job-posting\",\"corporate-website\"],\"description\":\"What you ll do:\\n\\nThis position will be responsible for developing and maintaining AI-enablement capabilities to support Master Data Management processes, with a focus on improving data quality, consistency, completeness, automation, and stewardship effectiveness for data used across Eaton s enterprise systems, digital platforms, analytics, and business initiatives.\\n\\n\\\"- Design, develop, and maintain AI-enabled solutions to support master data management, data quality, stewardship op"
     }
   ]
 }
