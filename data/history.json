@@ -749,5 +749,177 @@
       }
     },
     "summary": "Today's readout is thin on genuine signal: it's a weekend data pull, so the flat stock prices across MSFT, GOOGL, AMZN, META, NVDA and the rest of the complex simply reflect Friday's (9/18) closes carried forward, not market inaction worth interpreting. Zero 8-K filings across every name in the set is unremarkable for a Saturday. That leaves hiring data and open-source commit activity as the only metrics with real texture, and neither shows a large 1-day, 7-day, or 30-day move worth flagging \u2014 the payload only gives current levels and d1 for jobs figures with no percent deltas, so there's no basis to say hiring is accelerating or decelerating anywhere today.\n\nThe one place with actual day-over-day movement is developer activity on core AI infrastructure repos, and it's a mixed, fairly noisy bag: PyTorch commits rose 8.6% to 88, DeepSpeed doubled off a tiny base (2 to 4 commits), while TensorRT-LLM fell 38.1% to 13, llama.cpp dropped 33.3% to 10, and Hugging Face Transformers went to zero commits (-100%) for the day. Given these are all low-volume, single-day counts, none of this should be read as a slowdown in model-serving or training-framework development \u2014 it's the kind of swing that's routine for weekend commit cadence on any given repo.\n\nNo synchronized cross-company pattern is visible today \u2014 hiring levels (Microsoft's 68,760 open roles and 2,133 in the last 30 days, Oracle's 73,343 and 1,409, Nvidia's 36,693 and 1,919) are simply snapshots without comparable deltas, so nothing can be said about hiring cooling or heating up in tandem across hyperscalers or chipmakers this cycle. With"
+  },
+  {
+    "date": "2026-09-21",
+    "companies": {
+      "MSFT": {
+        "jobs_overall": 68760,
+        "jobs_ai": null,
+        "jobs_last_30d": 2133,
+        "stock_price": 493.78,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "GOOGL": {
+        "jobs_overall": 716,
+        "jobs_ai": null,
+        "jobs_last_30d": 18,
+        "stock_price": 349.54,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "AMZN": {
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
+        "stock_price": 253.71,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "META": {
+        "jobs_overall": 239,
+        "jobs_ai": 0,
+        "jobs_last_30d": 2,
+        "stock_price": 665.75,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "NVDA": {
+        "jobs_overall": 36693,
+        "jobs_ai": null,
+        "jobs_last_30d": 1919,
+        "stock_price": 222.27,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "AVGO": {
+        "jobs_overall": 6020,
+        "jobs_ai": null,
+        "jobs_last_30d": 227,
+        "stock_price": 357.61,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "AMD": {
+        "jobs_overall": 26115,
+        "jobs_ai": null,
+        "jobs_last_30d": 1051,
+        "stock_price": 559.82,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "TSM": {
+        "jobs_overall": 611,
+        "jobs_ai": 0,
+        "jobs_last_30d": 93,
+        "stock_price": 434.67,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "ASML": {
+        "jobs_overall": 13741,
+        "jobs_ai": null,
+        "jobs_last_30d": 644,
+        "stock_price": 1679.92,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "ARM": {
+        "jobs_overall": 10071,
+        "jobs_ai": null,
+        "jobs_last_30d": 315,
+        "stock_price": 275.61,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "ORCL": {
+        "jobs_overall": 73343,
+        "jobs_ai": null,
+        "jobs_last_30d": 1409,
+        "stock_price": 147.61,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "DELL": {
+        "jobs_overall": 10031,
+        "jobs_ai": null,
+        "jobs_last_30d": 155,
+        "stock_price": 568.06,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "SMCI": {
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
+        "stock_price": 39.09,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "CRWV": {
+        "jobs_overall": 292,
+        "jobs_ai": 15,
+        "jobs_last_30d": 0,
+        "jobs_source": "greenhouse",
+        "stock_price": 81.36,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "DLR": {
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
+        "stock_price": 182.12,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "EQIX": {
+        "jobs_overall": 283,
+        "jobs_ai": 17,
+        "jobs_last_30d": 0,
+        "jobs_source": "workday",
+        "stock_price": 1021.34,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "VRT": {
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
+        "stock_price": 249.39,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      },
+      "ETN": {
+        "jobs_overall": 0,
+        "jobs_ai": 0,
+        "jobs_last_30d": 0,
+        "stock_price": 424.77,
+        "price_date": "2026-09-18",
+        "sec_8k_filings_today": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 41
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 0
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 29
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 7
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 13
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 5
+      }
+    },
+    "summary": "Today's data is thin on genuine signal, and it's worth being upfront about that: since US markets were closed for the weekend, every stock price is simply Friday's (9/18) close carried forward, and 8-K filings are flat at zero across all sixteen tracked companies \u2014 unsurprising for a Sunday, not a statement about capex disclosure activity.\n\nThe one cluster of moves worth flagging is a batch of jobs-posting figures that collapsed to zero or near-zero on the same day: Amazon, Super Micro, Digital Realty, Vertiv, and Eaton all show jobs_overall and jobs_last_30d dropping -100%, while CoreWeave (-94.3% overall, -100% 30-day) and Equinix (-97.3% overall, -100% 30-day) show similar near-total wipeouts. That's seven companies simultaneously hitting zero or near-zero postings, spanning hyperscalers, power/cooling names, and data-center REITs \u2014 a pattern that looks far more like a scraper or data-source outage (several of these lean on Greenhouse/Workday feeds) than a genuine synchronized hiring freeze across unrelated sectors. TSMC's jobs figures also dropped sharply (-85.1% overall, -83.2% 30-day), fitting the same suspicious pattern. Meanwhile Microsoft, Google, Meta, Nvidia, Broadcom, AMD, ASML, Arm, Oracle, and Dell all show flat (0.0%) day-over-day changes in both overall and 30-day postings \u2014 which, on a Sunday, is exactly what you'd expect from data that simply hasn't refreshed, not evidence of stable hiring.\n\nOn the code side, PyTorch commits fell 53.4% and llama.cpp fell 30% day-over-day, while vLLM ("
   }
 ]
