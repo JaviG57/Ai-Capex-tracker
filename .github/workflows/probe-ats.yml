@@ -2,7 +2,11 @@ name: Probe ATS Endpoints (one-off discovery)
 
 # Manual only -- this is a discovery tool, not part of the daily pipeline.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Which probe script to run"
+        default: "probe_ats.py"
 
 permissions:
   contents: write
@@ -19,7 +23,7 @@ jobs:
         run: pip install requests
       - name: Run ATS probe
         working-directory: scripts
-        run: python probe_ats.py
+        run: python "${{ inputs.script }}"
       - name: Commit probe results
         run: |
           git config user.name "github-actions[bot]"
