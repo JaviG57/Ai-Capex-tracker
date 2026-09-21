@@ -754,172 +754,172 @@
     "date": "2026-09-21",
     "companies": {
       "MSFT": {
-        "jobs_overall": 68760,
-        "jobs_ai": null,
-        "jobs_last_30d": 2133,
-        "stock_price": 493.78,
-        "price_date": "2026-09-18",
+        "jobs_overall": 68773,
+        "jobs_ai": 168,
+        "jobs_last_30d": 2063,
+        "stock_price": 498.28,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "GOOGL": {
         "jobs_overall": 716,
-        "jobs_ai": null,
+        "jobs_ai": 10,
         "jobs_last_30d": 18,
-        "stock_price": 349.54,
-        "price_date": "2026-09-18",
+        "stock_price": 355.25,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "AMZN": {
-        "jobs_overall": 0,
+        "jobs_overall": 16,
         "jobs_ai": 0,
         "jobs_last_30d": 0,
-        "stock_price": 253.71,
-        "price_date": "2026-09-18",
+        "stock_price": 258.28,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "META": {
         "jobs_overall": 239,
         "jobs_ai": 0,
         "jobs_last_30d": 2,
-        "stock_price": 665.75,
-        "price_date": "2026-09-18",
+        "stock_price": 747.56,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "NVDA": {
-        "jobs_overall": 36693,
-        "jobs_ai": null,
-        "jobs_last_30d": 1919,
-        "stock_price": 222.27,
-        "price_date": "2026-09-18",
+        "jobs_overall": 36749,
+        "jobs_ai": 542,
+        "jobs_last_30d": 1931,
+        "stock_price": 227.38,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "AVGO": {
         "jobs_overall": 6020,
-        "jobs_ai": null,
-        "jobs_last_30d": 227,
-        "stock_price": 357.61,
-        "price_date": "2026-09-18",
+        "jobs_ai": 6,
+        "jobs_last_30d": 219,
+        "stock_price": 361.63,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "AMD": {
-        "jobs_overall": 26115,
-        "jobs_ai": null,
-        "jobs_last_30d": 1051,
-        "stock_price": 559.82,
-        "price_date": "2026-09-18",
+        "jobs_overall": 26139,
+        "jobs_ai": 176,
+        "jobs_last_30d": 1003,
+        "stock_price": 609.3,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "TSM": {
-        "jobs_overall": 611,
-        "jobs_ai": 0,
-        "jobs_last_30d": 93,
-        "stock_price": 434.67,
-        "price_date": "2026-09-18",
+        "jobs_overall": 4111,
+        "jobs_ai": 24,
+        "jobs_last_30d": 551,
+        "stock_price": 442.8,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "ASML": {
-        "jobs_overall": 13741,
-        "jobs_ai": null,
-        "jobs_last_30d": 644,
-        "stock_price": 1679.92,
-        "price_date": "2026-09-18",
+        "jobs_overall": 13745,
+        "jobs_ai": 5,
+        "jobs_last_30d": 620,
+        "stock_price": 1711.91,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "ARM": {
-        "jobs_overall": 10071,
-        "jobs_ai": null,
+        "jobs_overall": 10079,
+        "jobs_ai": 67,
         "jobs_last_30d": 315,
-        "stock_price": 275.61,
-        "price_date": "2026-09-18",
+        "stock_price": 319.25,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "ORCL": {
-        "jobs_overall": 73343,
-        "jobs_ai": null,
-        "jobs_last_30d": 1409,
-        "stock_price": 147.61,
-        "price_date": "2026-09-18",
+        "jobs_overall": 73346,
+        "jobs_ai": 60,
+        "jobs_last_30d": 1370,
+        "stock_price": 148.74,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "DELL": {
-        "jobs_overall": 10031,
-        "jobs_ai": null,
-        "jobs_last_30d": 155,
-        "stock_price": 568.06,
-        "price_date": "2026-09-18",
+        "jobs_overall": 10032,
+        "jobs_ai": 12,
+        "jobs_last_30d": 148,
+        "stock_price": 580.74,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "SMCI": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
-        "stock_price": 39.09,
-        "price_date": "2026-09-18",
+        "jobs_overall": 4962,
+        "jobs_ai": 7,
+        "jobs_last_30d": 467,
+        "stock_price": 41.0,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "CRWV": {
-        "jobs_overall": 292,
+        "jobs_overall": 297,
         "jobs_ai": 15,
-        "jobs_last_30d": 0,
+        "jobs_last_30d": 417,
         "jobs_source": "greenhouse",
-        "stock_price": 81.36,
-        "price_date": "2026-09-18",
+        "stock_price": 86.81,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "DLR": {
-        "jobs_overall": 0,
+        "jobs_overall": 3868,
         "jobs_ai": 0,
-        "jobs_last_30d": 0,
-        "stock_price": 182.12,
-        "price_date": "2026-09-18",
+        "jobs_last_30d": 158,
+        "stock_price": 187.12,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "EQIX": {
-        "jobs_overall": 283,
-        "jobs_ai": 17,
-        "jobs_last_30d": 0,
+        "jobs_overall": 277,
+        "jobs_ai": 16,
+        "jobs_last_30d": 312,
         "jobs_source": "workday",
-        "stock_price": 1021.34,
-        "price_date": "2026-09-18",
+        "stock_price": 1055.2,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "VRT": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
-        "stock_price": 249.39,
-        "price_date": "2026-09-18",
+        "jobs_overall": 20787,
+        "jobs_ai": 2,
+        "jobs_last_30d": 1640,
+        "stock_price": 252.93,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       },
       "ETN": {
-        "jobs_overall": 0,
-        "jobs_ai": 0,
-        "jobs_last_30d": 0,
-        "stock_price": 424.77,
-        "price_date": "2026-09-18",
+        "jobs_overall": 265,
+        "jobs_ai": 9,
+        "jobs_last_30d": 228,
+        "stock_price": 435.45,
+        "price_date": "2026-09-21",
         "sec_8k_filings_today": 0
       }
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 41
+        "commits_last_24h": 87
       },
       "huggingface/transformers": {
-        "commits_last_24h": 0
+        "commits_last_24h": 16
       },
       "vllm-project/vllm": {
-        "commits_last_24h": 29
+        "commits_last_24h": 54
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 7
+        "commits_last_24h": 29
       },
       "NVIDIA/TensorRT-LLM": {
-        "commits_last_24h": 13
+        "commits_last_24h": 34
       },
       "microsoft/DeepSpeed": {
-        "commits_last_24h": 5
+        "commits_last_24h": 8
       }
     },
-    "summary": "Today's data is thin on genuine signal, and it's worth being upfront about that: since US markets were closed for the weekend, every stock price is simply Friday's (9/18) close carried forward, and 8-K filings are flat at zero across all sixteen tracked companies \u2014 unsurprising for a Sunday, not a statement about capex disclosure activity.\n\nThe one cluster of moves worth flagging is a batch of jobs-posting figures that collapsed to zero or near-zero on the same day: Amazon, Super Micro, Digital Realty, Vertiv, and Eaton all show jobs_overall and jobs_last_30d dropping -100%, while CoreWeave (-94.3% overall, -100% 30-day) and Equinix (-97.3% overall, -100% 30-day) show similar near-total wipeouts. That's seven companies simultaneously hitting zero or near-zero postings, spanning hyperscalers, power/cooling names, and data-center REITs \u2014 a pattern that looks far more like a scraper or data-source outage (several of these lean on Greenhouse/Workday feeds) than a genuine synchronized hiring freeze across unrelated sectors. TSMC's jobs figures also dropped sharply (-85.1% overall, -83.2% 30-day), fitting the same suspicious pattern. Meanwhile Microsoft, Google, Meta, Nvidia, Broadcom, AMD, ASML, Arm, Oracle, and Dell all show flat (0.0%) day-over-day changes in both overall and 30-day postings \u2014 which, on a Sunday, is exactly what you'd expect from data that simply hasn't refreshed, not evidence of stable hiring.\n\nOn the code side, PyTorch commits fell 53.4% and llama.cpp fell 30% day-over-day, while vLLM ("
+    "summary": "It was a strong day for the AI-infrastructure trade, but almost entirely on the stock-price side, not the underlying operational signals. Every name in the basket closed higher, led by ARM (+15.8%), META (+12.3%), and AMD (+8.8%), with SMCI (+4.9%) and CRWV (+6.7%) also standing out. That's a broad, same-direction move across chipmakers, hyperscalers, and power/cooling suppliers alike \u2014 the kind of synchronized repricing that suggests a sector-wide catalyst (likely macro or rate-related) rather than any single company's news, though nothing in this data set identifies a cause.\n\nHiring data tells a quieter, arguably softer story. Several companies show 30-day job-posting counts declining at the same time: MSFT (-3.3%), AVGO (-3.5%), AMD (-4.6%), ASML (-3.7%), ORCL (-2.8%), DELL (-4.5%), VRT (-3.1%), and DLR (-3.7%) all posted negative 30-day changes. That's eight independent companies spanning cloud, chips, EDA/fab tooling, and data-center infrastructure all cooling on hiring volume in the same window \u2014 worth noting as a genuine cross-sector pattern, even without a clear read on why. NVDA and SMCI are the exceptions, both flat-to-slightly-up on 30-day postings. The CRWV and EQIX overall-jobs figures (-94.2% and -97.4%) are likely artifacts of source/listing resets (Greenhouse and Workday feeds respectively) rather than real signal, so I wouldn't read into those.\n\nMeanwhile, open-source ML infrastructure activity picked up sharply: vLLM (+92.9%), llama.cpp (+190%), TensorRT"
   }
 ]
