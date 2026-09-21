@@ -11,6 +11,7 @@ import traceback
 
 import companies as companies_module
 import fetch_jobs_theirstack
+import fetch_jobs_ats
 import fetch_market_data
 import fetch_sec_edgar
 import fetch_github_activity
@@ -49,7 +50,10 @@ def main():
     debug_path.write_text(json.dumps(debug_payload, indent=2, default=str))
     print(f"-> wrote debug file to {debug_path} ({debug_path.stat().st_size} bytes)")
 
-    print("-> Market data (price/volume)")
+    print("-> Direct ATS job boards (companies TheirStack doesn't cover)")
+    ats_jobs = fetch_jobs_ats.fetch_all(companies)
+
+    print("-> Market data (price)")
     market = fetch_market_data.fetch_all(companies)
 
     print("-> SEC EDGAR 8-K filings")
@@ -70,6 +74,7 @@ def main():
         t = c["ticker"]
         merged = {}
         merged.update(jobs.get(t, {}))
+        merged.update(ats_jobs.get(t, {}))  # direct ATS wins where available
         merged.update(market.get(t, {}))
         merged.update(sec.get(t, {}))
         if merged:
