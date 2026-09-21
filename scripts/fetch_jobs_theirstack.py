@@ -111,9 +111,14 @@ def fetch_company_job_counts(domain: str) -> dict | None:
         return "STOP"
     if result and result.get("data"):
         company = result["data"][0].get("company_object", {})
+        # The AI-filtered count comes from metadata.total_results (the count
+        # of jobs matching THIS query's title filter), which is populated by
+        # include_total_results. company_object.num_jobs_found is not
+        # returned by this endpoint despite what the field name suggests.
+        ai_count = (result.get("metadata") or {}).get("total_results")
         return {
             "jobs_overall": company.get("num_jobs"),
-            "jobs_ai": company.get("num_jobs_found"),
+            "jobs_ai": ai_count,
             "jobs_last_30d": company.get("num_jobs_last_30_days"),
         }
 
