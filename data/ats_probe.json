@@ -1,0 +1,158 @@
+{
+  "CRWV": {
+    "name": "CoreWeave",
+    "sniff": {
+      "url": "https://www.coreweave.com/careers",
+      "ok": true,
+      "final_url": "https://www.coreweave.com/careers",
+      "found": {},
+      "status": 200
+    },
+    "probes": [
+      {
+        "ats": "greenhouse",
+        "endpoint": "https://boards-api.greenhouse.io/v1/boards/coreweave/jobs",
+        "works": true,
+        "job_count": 292
+      }
+    ]
+  },
+  "DLR": {
+    "name": "Digital Realty",
+    "sniff": {
+      "url": "https://careers.digitalrealty.com",
+      "ok": false,
+      "final_url": null,
+      "found": {},
+      "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+    },
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://digitalrealty.wd1.myworkdayjobs.com/wday/cxs/digitalrealty/Digital_Realty_Careers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://digitalrealty.wd1.myworkdayjobs.com/wday/cxs/digitalrealty/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://digitalrealty.wd5.myworkdayjobs.com/wday/cxs/digitalrealty/Digital_Realty_Careers/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "EQIX": {
+    "name": "Equinix",
+    "sniff": {
+      "url": "https://careers.equinix.com",
+      "ok": true,
+      "final_url": "https://careers.equinix.com/",
+      "found": {},
+      "status": 200
+    },
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://equinix.wd1.myworkdayjobs.com/wday/cxs/equinix/EQXCareers/jobs",
+        "works": false,
+        "status": 404
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://equinix.wd1.myworkdayjobs.com/wday/cxs/equinix/External/jobs",
+        "works": true,
+        "job_count": 283
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://equinix.wd5.myworkdayjobs.com/wday/cxs/equinix/EQXCareers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://equinix.wd1.myworkdayjobs.com/wday/cxs/equinix/Equinix_Careers/jobs",
+        "works": false,
+        "status": 404
+      }
+    ]
+  },
+  "VRT": {
+    "name": "Vertiv",
+    "sniff": {
+      "url": "https://www.vertiv.com/en-us/about/careers/",
+      "ok": true,
+      "final_url": "https://www.vertiv.com/en-us/about/career-center/",
+      "found": {},
+      "status": 200
+    },
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://vertiv.wd5.myworkdayjobs.com/wday/cxs/vertiv/Vertiv_Careers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://vertiv.wd1.myworkdayjobs.com/wday/cxs/vertiv/Vertiv_Careers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://vertiv.wd5.myworkdayjobs.com/wday/cxs/vertiv/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://vertiv.wd1.myworkdayjobs.com/wday/cxs/vertiv/External/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "ETN": {
+    "name": "Eaton",
+    "sniff": {
+      "url": "https://www.eaton.com/us/en-us/company/careers.html",
+      "ok": false,
+      "final_url": null,
+      "found": {},
+      "error": "HTTPSConnectionPool(host='www.eaton.com', port=443): Read timed out. (read timeout=25)"
+    },
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://eaton.wd1.myworkdayjobs.com/wday/cxs/eaton/Eaton_Careers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://eaton.wd1.myworkdayjobs.com/wday/cxs/eaton/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://eaton.wd5.myworkdayjobs.com/wday/cxs/eaton/Eaton_Careers/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://eaton.wd1.myworkdayjobs.com/wday/cxs/eaton/EatonCareers/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  }
+}
