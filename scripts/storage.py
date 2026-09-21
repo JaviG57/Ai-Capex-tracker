@@ -53,6 +53,8 @@ def upsert_today(history: list[dict], today_record: dict) -> list[dict]:
 def _pct_change(old, new):
     if old in (None, 0) or new is None:
         return None
+    if not isinstance(old, (int, float)) or not isinstance(new, (int, float)):
+        return None
     return round((new - old) / old * 100, 1)
 
 
@@ -89,10 +91,15 @@ def compute_deltas(history: list[dict], lookback_days: tuple = (1, 7, 30)) -> di
         for entity, metrics in series.items():
             price_dates = metrics.get("price_date", {})
             for metric, by_date in metrics.items():
-                if metric == "price_date":
+                # Annual 10-K headcount is flat day to day; trending it would
+                # just feed the summary a wall of "0% change" noise.
+                if metric in ("price_date", "headcount"):
                     continue
                 current = by_date.get(today["date"])
-                if current is None:
+                # Only numeric metrics get trend deltas. Labels like
+                # jobs_source ("greenhouse") or dates are bookkeeping, and
+                # doing arithmetic on them would crash the run.
+                if current is None or isinstance(current, bool) or not isinstance(current, (int, float)):
                     continue
                 key = f"{section}.{entity}.{metric}"
                 row = {"current": current}

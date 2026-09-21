@@ -1,0 +1,39 @@
+name: Daily WARN Layoff Notices
+
+# Runs 2 hours BEFORE the main daily pull (13:00 UTC) so the main run reads
+# fresh WARN data. Kept separate on purpose: state government sites break
+# independently, and a broken state here must never block the main pipeline.
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-data-writes
+  cancel-in-progress: false
+
+jobs:
+  warn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install warn-scraper requests
+      - name: Scrape WARN notices
+        working-directory: scripts
+        run: python fetch_warn.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/warn_notices.json
+          git commit -m "WARN notices update $(date -u +%Y-%m-%d)" || echo "Nothing to commit"
+          git pull --rebase origin main
+          git push

@@ -42,6 +42,19 @@ not just within one (e.g. hiring decelerating while 8-K/capex-signal \
 activity holds steady or accelerates would be a notable divergence worth \
 flagging as a thing to watch, not a conclusion to draw).
 
+Reading the workforce metrics correctly:
+- jobs_overall / jobs_ai = open postings (demand for new people), not headcount.
+- jobs_new / jobs_closed = posting churn vs. the prior day, available only for
+companies pulled directly from their applicant tracking system. A "closed"
+posting was filled OR cancelled -- the source can't tell which, so never
+describe closures as hires. Many new postings with few closures reads as
+expansion; closures with no replacement postings reads as a freeze forming.
+- warn_notices_90d / warn_employees_90d = state WARN Act layoff filings in the
+last 90 days. These are real, large layoff events. Zero does NOT mean no one
+left -- WARN misses ordinary attrition, small cuts, and non-US layoffs.
+- Annual headcount (10-K) is provided separately as context, not as a daily
+metric; it does not move day to day, so don't describe it as changing.
+
 Ground rules:
 - 200-350 words total, plain prose, no headers, no bullet lists.
 - Never claim causation between two metrics unless it's a plainly \
@@ -57,7 +70,7 @@ manufacturing a narrative out of noise.
 """
 
 
-def generate(deltas: dict, context_note: str = "") -> str:
+def generate(deltas: dict, context_note: str = "", headcount: dict | None = None) -> str:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return "(No ANTHROPIC_API_KEY set -- skipping daily summary generation.)"
@@ -66,6 +79,10 @@ def generate(deltas: dict, context_note: str = "") -> str:
 
     client = anthropic.Anthropic(api_key=api_key)
     user_content = f"Today's metric deltas:\n{json.dumps(deltas, indent=2)}"
+    if headcount:
+        compact = {t: {"headcount": v.get("headcount"), "as_of": v.get("as_of")}
+                   for t, v in headcount.items() if v.get("headcount")}
+        user_content += f"\n\nAnnual headcount from latest 10-K/20-F (context only):\n{json.dumps(compact)}"
     if context_note:
         user_content = f"{context_note}\n\n{user_content}"
     message = client.messages.create(

@@ -11,6 +11,11 @@ on:
 permissions:
   contents: write
 
+# Shares a queue with the WARN workflow so the two never push over each other.
+concurrency:
+  group: repo-data-writes
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -39,4 +44,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           git commit -m "Daily data update $(date -u +%Y-%m-%d)" || echo "Nothing to commit"
+          git pull --rebase origin main
           git push

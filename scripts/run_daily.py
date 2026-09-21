@@ -12,6 +12,7 @@ import traceback
 import companies as companies_module
 import fetch_jobs_theirstack
 import fetch_jobs_ats
+import fetch_headcount_10k
 import fetch_market_data
 import fetch_sec_edgar
 import fetch_github_activity
@@ -19,6 +20,31 @@ import fetch_grid_load
 import fetch_cloud_pricing
 import storage
 import generate_summary
+
+
+WARN_PATH = pathlib.Path(__file__).resolve().parent.parent / "data" / "warn_notices.json"
+
+
+def load_warn_summary(today_str: str, window_days: int = 90) -> dict:
+    """Roll WARN notices up to a trailing 90-day count per company. Reads the
+    file the WARN workflow commits; if it's missing or stale we still return
+    zeros rather than failing the whole run."""
+    try:
+        payload = json.loads(WARN_PATH.read_text())
+    except Exception:
+        print("   no WARN file yet -- WARN workflow hasn't run")
+        return {}
+    cutoff = (datetime.date.fromisoformat(today_str) - datetime.timedelta(days=window_days)).isoformat()
+    out = {}
+    for n in payload.get("notices", []):
+        if not n.get("date") or n["date"] < cutoff:
+            continue
+        row = out.setdefault(n["ticker"], {"warn_notices_90d": 0, "warn_employees_90d": 0})
+        row["warn_notices_90d"] += 1
+        row["warn_employees_90d"] += n.get("employees_affected") or 0
+    print(f"   {payload.get('states_ok')}/{payload.get('states_total')} states, "
+          f"{sum(r['warn_notices_90d'] for r in out.values())} notices in last {window_days}d")
+    return out
 
 
 def main():
@@ -59,6 +85,16 @@ def main():
     print("-> SEC EDGAR 8-K filings")
     sec = fetch_sec_edgar.fetch_all(companies, today_str)
 
+    print("-> Annual headcount (10-K / 20-F, cached per filing)")
+    try:
+        headcount = fetch_headcount_10k.fetch_all(companies, fetch_sec_edgar.get_cik_map())
+    except Exception as e:
+        print(f"   headcount fetch failed, using cache: {e}")
+        headcount = fetch_headcount_10k.load_cache()
+
+    print("-> WARN layoff notices (read from the separate WARN workflow's output)")
+    warn = load_warn_summary(today_str)
+
     print("-> GitHub AI-repo activity (macro)")
     github_activity = fetch_github_activity.fetch_all(companies_module.GITHUB_AI_REPOS)
 
@@ -77,6 +113,11 @@ def main():
         merged.update(ats_jobs.get(t, {}))  # direct ATS wins where available
         merged.update(market.get(t, {}))
         merged.update(sec.get(t, {}))
+        hc = headcount.get(t, {})
+        if hc.get("headcount"):
+            merged["headcount"] = hc["headcount"]
+            merged["headcount_as_of"] = hc.get("as_of")
+        merged.update(warn.get(t, {"warn_notices_90d": 0, "warn_employees_90d": 0}))
         if merged:
             per_company[t] = merged
 
@@ -113,7 +154,7 @@ def main():
             f"absence of price movement as a market signal. Focus on non-market metrics."
         )
         print(f"   (markets closed today; prices carried from {last_close})")
-    summary = generate_summary.generate(deltas, context_note)
+    summary = generate_summary.generate(deltas, context_note, headcount)
     history[-1]["summary"] = summary
 
     storage.save_history(history)
