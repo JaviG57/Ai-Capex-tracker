@@ -1,0 +1,51 @@
+{
+  "DLR": {
+    "sniff": [
+      {
+        "url": "https://www.digitalrealty.com/careers",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SS"
+      },
+      {
+        "url": "https://careers.digitalrealty.com/",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SS"
+      },
+      {
+        "url": "https://www.digitalrealty.com/about/careers",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SS"
+      }
+    ],
+    "working": []
+  },
+  "VRT": {
+    "sniff": [
+      {
+        "url": "https://www.vertiv.com/en-us/about/career-center/",
+        "status": 200,
+        "final_url": "https://www.vertiv.com/en-us/about/career-center/"
+      },
+      {
+        "url": "https://careers.vertiv.com/",
+        "error": "HTTPSConnectionPool(host='careers.vertiv.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionErro"
+      }
+    ],
+    "working": []
+  },
+  "ETN": {
+    "sniff": [
+      {
+        "url": "https://www.eaton.com/us/en-us/company/careers.html",
+        "error": "HTTPSConnectionPool(host='www.eaton.com', port=443): Read timed out. (read timeout=25)"
+      },
+      {
+        "url": "https://careers.eaton.com/",
+        "error": "HTTPSConnectionPool(host='careers.eaton.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError"
+      },
+      {
+        "url": "https://jobs.eaton.com/",
+        "status": 200,
+        "final_url": "https://eaton.eightfold.ai/careers"
+      }
+    ],
+    "working": []
+  }
+}
