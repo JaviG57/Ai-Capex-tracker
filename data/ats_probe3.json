@@ -1,0 +1,85 @@
+{
+  "DLR": {
+    "sniff": [
+      {
+        "url": "https://careers.digitalrealty.com/",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SS"
+      },
+      {
+        "url": "https://www.digitalrealty.com/about/careers",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SS"
+      },
+      {
+        "url": "https://careers.digitalrealty.com/search",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: /search (Caused by SSLError(SSLCertVerificationError(1"
+      }
+    ],
+    "probes": []
+  },
+  "VRT": {
+    "sniff": [
+      {
+        "url": "https://www.vertiv.com/en-us/about/career-center/",
+        "status": 200,
+        "final_url": "https://www.vertiv.com/en-us/about/career-center/",
+        "hits": {
+          "oraclecloud": "channels.ocs.oraclecloud.com"
+        }
+      },
+      {
+        "url": "https://careers.vertiv.com/",
+        "error": "HTTPSConnectionPool(host='careers.vertiv.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='caree"
+      },
+      {
+        "url": "https://jobs.vertiv.com/",
+        "error": "HTTPSConnectionPool(host='jobs.vertiv.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='jobs.ver"
+      }
+    ],
+    "probes": [
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://channels.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "works": false,
+        "error": "HTTPSConnectionPool(host='channels.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /"
+      },
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://channels.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "works": false,
+        "error": "HTTPSConnectionPool(host='channels.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /"
+      },
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://channels.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "works": false,
+        "error": "HTTPSConnectionPool(host='channels.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /"
+      }
+    ]
+  },
+  "ETN": {
+    "sniff": [
+      {
+        "url": "https://eaton.eightfold.ai/careers",
+        "status": 200,
+        "final_url": "https://eaton.eightfold.ai/careers",
+        "hits": {
+          "eightfold": "eaton.eightfold.ai"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "eightfold",
+        "endpoint": "https://eaton.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": 403
+      },
+      {
+        "ats": "eightfold",
+        "endpoint": "https://eaton.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": 403
+      }
+    ]
+  }
+}
