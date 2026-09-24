@@ -113,6 +113,9 @@
   td.trend { width: 90px; padding: 4px 16px; }
   td.trend canvas { height: 26px !important; width: 70px !important; }
   .ticker-name { color: var(--text-muted); font-size: 11px; display: block; }
+  .sub-cell { display: block; color: var(--text-muted); font-size: 11px; font-weight: 400; }
+  .table-scroll { overflow-x: auto; }
+  .table-scroll table { min-width: 620px; }
 </style>
 </head>
 <body>
@@ -437,57 +440,112 @@ function buildSectorTab(config) {
   });
 }
 
+function windowSum(ticker, metric, days) {
+  const slice = history.slice(-days);
+  const vals = slice.map(d => (d.companies && d.companies[ticker] ? d.companies[ticker][metric] : null))
+                    .filter(v => v != null);
+  return vals.length ? vals.reduce((a, b) => a + b, 0) : null;
+}
+
+function latestField(ticker, field) {
+  for (let i = history.length - 1; i >= 0; i--) {
+    const c = history[i].companies && history[i].companies[ticker];
+    if (c && c[field] != null) return c[field];
+  }
+  return null;
+}
+
+const DASH = '<span style="color:var(--text-muted);">&ndash;</span>';
+
+// Column definitions per tab. `get` returns {sort, html} so a column can
+// show rich content (value + sub-label) while still sorting on a number.
+const HIRING_COLUMNS = [
+  { key: 'headcount', label: 'Headcount', get: t => {
+      const v = latestField(t, 'headcount'), as = latestField(t, 'headcount_as_of');
+      if (v == null) return { sort: null, html: DASH };
+      const yr = as ? new Date(as).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : '';
+      return { sort: v, html: `${v.toLocaleString()}<span class="sub-cell">${yr}</span>` };
+    } },
+  { key: 'jobs_overall', label: 'Open roles', get: t => {
+      const s = seriesFor(t, 'jobs_overall'), v = lastValue(s), d7 = pctChange(s, 7);
+      if (v == null) return { sort: null, html: DASH };
+      return { sort: v, html: `${v.toLocaleString()}<span class="sub-cell">${d7 == null ? '' : fmtDelta(d7, '%')}</span>` };
+    } },
+  { key: 'jobs_ai', label: 'AI roles', get: t => {
+      const v = lastValue(seriesFor(t, 'jobs_ai')), tot = lastValue(seriesFor(t, 'jobs_overall'));
+      if (v == null) return { sort: null, html: DASH };
+      const share = tot ? ((v / tot) * 100).toFixed(1) + '% share' : '';
+      return { sort: v, html: `${v.toLocaleString()}<span class="sub-cell">${share}</span>` };
+    } },
+  { key: 'churn', label: 'Postings 7d', get: t => {
+      const nw = windowSum(t, 'jobs_new', 7), cl = windowSum(t, 'jobs_closed', 7);
+      if (nw == null && cl == null) {
+        return { sort: null, html: `<span style="color:var(--text-muted);font-size:11px;">n/a</span>` };
+      }
+      return { sort: (nw || 0) - (cl || 0),
+               html: `<span class="delta up">+${nw || 0}</span> / <span class="delta down">-${cl || 0}</span>` };
+    } },
+  { key: 'warn', label: 'WARN 90d', get: t => {
+      const n = lastValue(seriesFor(t, 'warn_notices_90d'));
+      const emp = lastValue(seriesFor(t, 'warn_employees_90d'));
+      if (!n) return { sort: 0, html: `<span style="color:var(--text-muted);">none</span>` };
+      return { sort: n, html: `<span class="delta down">${n}</span><span class="sub-cell">${(emp || 0).toLocaleString()} people</span>` };
+    } },
+];
+
+const MARKET_COLUMNS = [
+  { key: 'price', label: 'Price', get: t => {
+      const v = lastValue(seriesFor(t, 'stock_price'));
+      return { sort: v, html: v == null ? DASH : v.toLocaleString(undefined, { minimumFractionDigits: 2 }) };
+    } },
+  { key: 'd1', label: '1d', get: t => { const d = pctChange(seriesFor(t, 'stock_price'), 1); return { sort: d, html: fmtDelta(d, '%') }; } },
+  { key: 'd7', label: '7d', get: t => { const d = pctChange(seriesFor(t, 'stock_price'), 7); return { sort: d, html: fmtDelta(d, '%') }; } },
+  { key: 'd30', label: '30d', get: t => { const d = pctChange(seriesFor(t, 'stock_price'), 30); return { sort: d, html: fmtDelta(d, '%') }; } },
+];
+
 function renderSectorTable(g, config) {
-  const { metric, valueLabel, idPrefix } = config;
+  const { idPrefix, columns, sparkMetric } = config;
   const safe = g.group.replace(/[^a-zA-Z0-9]/g, '');
   const el = document.getElementById(`${idPrefix}-detail-${safe}`);
   if (!el) return;
 
   const rows = g.tickers.map(t => {
-    const s = seriesFor(t, metric);
-    return {
-      ticker: t, name: companyName(t), series: s,
-      current: lastValue(s),
-      d1: pctChange(s, 1), d7: pctChange(s, 7), d30: pctChange(s, 30),
-    };
+    const cells = {};
+    columns.forEach(c => { cells[c.key] = c.get(t); });
+    return { ticker: t, name: companyName(t), cells, series: seriesFor(t, sparkMetric) };
   });
 
   const key = `${idPrefix}-${safe}`;
-  const st = sortState[key] || { col: 'current', dir: -1 };
+  const st = sortState[key] || { col: columns[0].key, dir: -1 };
   rows.sort((a, b) => {
-    const av = a[st.col], bv = b[st.col];
+    if (st.col === 'ticker') return st.dir * a.ticker.localeCompare(b.ticker);
+    const av = a.cells[st.col] ? a.cells[st.col].sort : null;
+    const bv = b.cells[st.col] ? b.cells[st.col].sort : null;
     if (av == null && bv == null) return 0;
     if (av == null) return 1;
     if (bv == null) return -1;
-    if (st.col === 'ticker') return st.dir * String(av).localeCompare(String(bv));
     return st.dir * (av - bv);
   });
 
   const arrow = c => st.col === c ? `<span class="arrow">${st.dir === 1 ? '\u25B2' : '\u25BC'}</span>` : '';
-  el.innerHTML = `<table>
+  el.innerHTML = `<div class="table-scroll"><table>
     <thead><tr>
       <th data-sort="ticker" data-key="${key}">Company ${arrow('ticker')}</th>
-      <th data-sort="current" data-key="${key}">${valueLabel} ${arrow('current')}</th>
-      <th data-sort="d1" data-key="${key}">1d ${arrow('d1')}</th>
-      <th data-sort="d7" data-key="${key}">7d ${arrow('d7')}</th>
-      <th data-sort="d30" data-key="${key}">30d ${arrow('d30')}</th>
+      ${columns.map(c => `<th data-sort="${c.key}" data-key="${key}">${c.label} ${arrow(c.key)}</th>`).join('')}
       <th>Trend</th>
     </tr></thead>
     <tbody>${rows.map(r => `<tr>
       <td><strong>${r.ticker}</strong><span class="ticker-name">${r.name}</span></td>
-      <td class="num">${r.current == null ? '&ndash;' : Math.round(r.current).toLocaleString()}</td>
-      <td>${fmtDelta(r.d1, '%')}</td>
-      <td>${fmtDelta(r.d7, '%')}</td>
-      <td>${fmtDelta(r.d30, '%')}</td>
+      ${columns.map(c => `<td class="num">${r.cells[c.key].html}</td>`).join('')}
       <td class="trend"><canvas id="sp-${idPrefix}-${r.ticker}"></canvas></td>
-    </tr>`).join('')}</tbody></table>`;
+    </tr>`).join('')}</tbody></table></div>`;
 
   rows.forEach((r, i) => drawSparkline(`sp-${idPrefix}-${r.ticker}`, r.series, COLORS[i % COLORS.length]));
 
   el.querySelectorAll('th[data-sort]').forEach(th => {
     th.addEventListener('click', () => {
       const col = th.dataset.sort, k = th.dataset.key;
-      const cur = sortState[k] || { col: 'current', dir: -1 };
+      const cur = sortState[k] || { col: columns[0].key, dir: -1 };
       sortState[k] = { col, dir: cur.col === col ? -cur.dir : -1 };
       renderSectorTable(g, config);
     });
@@ -502,14 +560,16 @@ function renderHiring() {
     : "Equal-weighted average of each company's % change from its first tracked day";
   buildSectorTab({
     aggCanvasId: 'hiringAggChart', containerId: 'hiringSectors',
-    metric: hiringMetric, calc: hiringCalc, valueLabel: 'Roles', idPrefix: 'hiring',
+    metric: hiringMetric, calc: hiringCalc, idPrefix: 'hiring',
+    columns: HIRING_COLUMNS, sparkMetric: hiringMetric,
   });
 }
 
 function renderMarket() {
   buildSectorTab({
     aggCanvasId: 'marketAggChart', containerId: 'marketSectors',
-    metric: 'stock_price', calc: 'indexed', valueLabel: 'Price', idPrefix: 'market',
+    metric: 'stock_price', calc: 'indexed', idPrefix: 'market',
+    columns: MARKET_COLUMNS, sparkMetric: 'stock_price',
   });
 }
 
