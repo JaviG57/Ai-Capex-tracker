@@ -1,0 +1,182 @@
+{
+  "MSFT": {
+    "headcount": 223000,
+    "as_of": "2026-06-30",
+    "form": "10-K",
+    "filing_date": "2026-07-29",
+    "accession": "0001193125-26-323660",
+    "method": "text",
+    "evidence": "HUMAN CAPITAL RESOURCES As of June 30, 2026, we employed approximately 223,000 people on a full-time basis, 121,000 in the U.",
+    "checked_at": "2026-09-24"
+  },
+  "GOOGL": {
+    "headcount": 190820,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-05",
+    "accession": "0001652044-26-000018",
+    "method": "text",
+    "evidence": "g and individual support. As of December 31, 2025, Alphabet had 190,820 employees. We have work councils and statutory em",
+    "checked_at": "2026-09-24"
+  },
+  "AMZN": {
+    "headcount": 1576000,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-06",
+    "accession": "0001018724-26-000004",
+    "method": "text",
+    "evidence": "most customer-centric company. As of December 31, 2025, we employed approximately 1,576,000 full-time and part-time employees. Additionally, we use independent contr",
+    "checked_at": "2026-09-24"
+  },
+  "META": {
+    "headcount": 78865,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-01-29",
+    "accession": "0001628280-26-003942",
+    "method": "text",
+    "evidence": "closer, and we are proud of our unique company culture. We had a global workforce of 78,865 employees as of December 31, 2025, and we have of",
+    "checked_at": "2026-09-24"
+  },
+  "NVDA": {
+    "headcount": 42000,
+    "as_of": "2026-01-25",
+    "form": "10-K",
+    "filing_date": "2026-02-25",
+    "accession": "0001045810-26-000021",
+    "method": "text",
+    "evidence": "an Capital Management As of the end of fiscal year 2026, we had approximately 42,000 employees in 38 countries; 31,000 were engaged in",
+    "checked_at": "2026-09-24"
+  },
+  "AVGO": {
+    "headcount": 33000,
+    "as_of": "2025-11-02",
+    "form": "10-K",
+    "filing_date": "2025-12-18",
+    "accession": "0001730168-25-000121",
+    "method": "text",
+    "evidence": "research and development roles. As of November 2, 2025, we had approximately 33,000 employees worldwide, with approximately 57% in re",
+    "checked_at": "2026-09-24"
+  },
+  "AMD": {
+    "headcount": 31000,
+    "as_of": "2025-12-27",
+    "form": "10-K",
+    "filing_date": "2026-02-04",
+    "accession": "0000002488-26-000018",
+    "method": "text",
+    "evidence": "Human Capital As of December 27, 2025, we had approximately 31,000 employees in our global workforce. We believe we",
+    "checked_at": "2026-09-24"
+  },
+  "TSM": {
+    "headcount": 103073,
+    "as_of": "2025-12-31",
+    "form": "20-F",
+    "filing_date": "2026-04-16",
+    "accession": "0001628280-26-025362",
+    "method": "text",
+    "evidence": "ion to year 2024 profits. In 2025 and 2026 , we distributed employees\u2019 business performance bonus of NT$ 103,073 million (US$ 3,286 million) to our employees in relation to year 2025 profits. Emplo",
+    "checked_at": "2026-09-24"
+  },
+  "ASML": {
+    "headcount": 42416,
+    "as_of": "2025-12-31",
+    "form": "20-F",
+    "filing_date": "2026-02-25",
+    "accession": "0001628280-26-011378",
+    "method": "xbrl",
+    "evidence": null,
+    "checked_at": "2026-09-24"
+  },
+  "ARM": {
+    "headcount": 9584,
+    "as_of": "2026-03-31",
+    "form": "20-F",
+    "filing_date": "2026-05-26",
+    "accession": "0001973239-26-000097",
+    "method": "text",
+    "evidence": "force that spans across 19 countries. As of March 31, 2026, approximately 84% of our 9,584 global employees were engaged in engineering activities",
+    "checked_at": "2026-09-24"
+  },
+  "ORCL": {
+    "headcount": 141000,
+    "as_of": "2026-05-31",
+    "form": "10-K",
+    "filing_date": "2026-06-22",
+    "accession": "0001193125-26-277521",
+    "method": "text",
+    "evidence": "acquisition and retention. Workforce As of May 31, 2026, we employed approximately 141,000 full-time employees, of which approximately 49,000 were emp",
+    "checked_at": "2026-09-24"
+  },
+  "DELL": {
+    "headcount": 97000,
+    "as_of": "2026-01-30",
+    "form": "10-K",
+    "filing_date": "2026-03-16",
+    "accession": "0001571996-26-000008",
+    "method": "text",
+    "evidence": "ion as a best-in-class employer. As of January 30, 2026, we had approximately 97,000 employees. Throughout Fiscal 2026, we remained co",
+    "checked_at": "2026-09-24"
+  },
+  "SMCI": {
+    "headcount": 7000,
+    "as_of": "2026-06-30",
+    "form": "10-K",
+    "filing_date": "2026-08-31",
+    "accession": "0001375365-26-000022",
+    "method": "text",
+    "evidence": "our business success. Demographics As of June 30, 2026, we employed over 7,000 employees, consisting of approximately 3,500 empl",
+    "checked_at": "2026-09-24"
+  },
+  "CRWV": {
+    "headcount": 2189,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-03-02",
+    "accession": "0001769628-26-000104",
+    "method": "text",
+    "evidence": "re than we could ever do alone. As of December 31, 2025, we had 2,189 employees, with 1,967 in the United States and 22",
+    "checked_at": "2026-09-24"
+  },
+  "DLR": {
+    "headcount": 4282,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-13",
+    "accession": "0001104659-26-015365",
+    "method": "text",
+    "evidence": "n Capital Resource Management \u200b As of December 31, 2025, we had 4,282 full-time employees. The geographic distribution of our glo",
+    "checked_at": "2026-09-24"
+  },
+  "EQIX": {
+    "headcount": 13716,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-11",
+    "accession": "0001101239-26-000032",
+    "method": "text",
+    "evidence": "Human Capital As of December 31, 2025, we had 13,716 employees worldwide with 5,917 based in the Ameri",
+    "checked_at": "2026-09-24"
+  },
+  "VRT": {
+    "headcount": 34000,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-13",
+    "accession": "0001674101-26-000008",
+    "method": "text",
+    "evidence": "Human Capital Resources As of December 31, 2025, we employed approximately 34,000 full-time and part-time employees. Approximately 41% of our employees are",
+    "checked_at": "2026-09-24"
+  },
+  "ETN": {
+    "headcount": 97000,
+    "as_of": "2025-12-31",
+    "form": "10-K",
+    "filing_date": "2026-02-26",
+    "accession": "0001551182-26-000007",
+    "method": "text",
+    "evidence": "Human Capital Management Eaton has approximately 97,000 employees globally. The number of persons employe",
+    "checked_at": "2026-09-24"
+  }
+}
