@@ -1,0 +1,2618 @@
+{
+  "generated_at": "2026-09-24T02:01:11.091813Z",
+  "lookback_days": 365,
+  "states_ok": 31,
+  "states_total": 41,
+  "state_status": {
+    "ak": "ok",
+    "al": "ok",
+    "az": "ok",
+    "ca": "ok",
+    "co": "no output (exit 1): rs/co.py\", line 292, in scrape\n    standardized_key = header_crosswalk[key]\n                       ~~~~~~~~~~~~~~~~^^^^^\nKeyError: 'CO Notifications'\n",
+    "ct": "ok",
+    "dc": "no output (exit 1): ingSchema(\nrequests.exceptions.MissingSchema: Invalid URL '/page/rapid-response': No scheme supplied. Perhaps you meant https:///page/rapid-response?\n",
+    "de": "ok",
+    "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
+    "ga": "ok",
+    "hi": "no output (exit 1): 2eb': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#9df9f1f4efb3eaf2eff6fbf2effef8b3f9f8ebf8f1f2edddf5fceafcf4f4b3faf2eb?\n",
+    "ia": "ok",
+    "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
+    "il": "ok",
+    "in": "ok",
+    "ks": "ok",
+    "ky": "no output (exit 1): thon3.11/site-packages/warn/scrapers/ky.py\", line 8, in <module>\n    from pyquery import PyQuery as pq\nModuleNotFoundError: No module named 'pyquery'\n",
+    "la": "no output (exit 1): n/3.11.16/x64/lib/python3.11/site-packages/warn/cache.py\", line 138, in write\n    fh.write(content)\nTypeError: write() argument must be str, not None\n",
+    "md": "ok",
+    "me": "ok",
+    "mi": "no output (exit 1): thon3.11/site-packages/warn/scrapers/mi.py\", line 6, in <module>\n    from pyquery import PyQuery as pq\nModuleNotFoundError: No module named 'pyquery'\n",
+    "mo": "ok",
+    "mt": "ok",
+    "ne": "ok",
+    "nj": "ok",
+    "nm": "ok",
+    "ny": "ok",
+    "oh": "no output (exit 1): otFound(\nbs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?\n",
+    "ok": "ok",
+    "or": "ok",
+    "pa": "ok",
+    "ri": "ok",
+    "sc": "ok",
+    "sd": "ok",
+    "tn": "ok",
+    "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
+    "ut": "ok",
+    "va": "ok",
+    "vt": "ok",
+    "wa": "ok",
+    "wi": "ok"
+  },
+  "notices": [
+    {
+      "ticker": "ORCL",
+      "state": "WA",
+      "date": "2026-11-13",
+      "employees_affected": 359,
+      "raw": {
+        "Company": "Oracle America, Inc.",
+        "Location": "Seattle",
+        "Layoff Start Date": "11/13/2026",
+        "# of Workers": "359",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "9/14/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-10-01",
+      "employees_affected": 121,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Seattle, Bellevue, Sumner",
+        "Layoff Start Date": "10/1/2026",
+        "# of Workers": "121",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "8/31/2026"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-09-14",
+      "employees_affected": 63,
+      "raw": {
+        "notice_date": "09/14/2026",
+        "effective_date": "11/13/2026",
+        "received_date": "09/15/2026",
+        "company": "Oracle Pleasanton Campus (Pleasanton Campus)",
+        "num_employees": "63",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Alameda County",
+        "address": "5815 Owens Drive  Pleasanton CA 94588"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-09-14",
+      "employees_affected": 279,
+      "raw": {
+        "notice_date": "09/14/2026",
+        "effective_date": "11/13/2026",
+        "received_date": "09/15/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "279",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "address": "500 Oracle Parkway  Redwood City CA 94065"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-09-14",
+      "employees_affected": 99,
+      "raw": {
+        "notice_date": "09/14/2026",
+        "effective_date": "11/13/2026",
+        "received_date": "09/15/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "99",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "address": "4230 Leonard Stocking Drive  Santa Clara CA 95054"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "WA",
+      "date": "2026-09-06",
+      "employees_affected": 52,
+      "raw": {
+        "Company": "Google",
+        "Location": "Various locations in Washington",
+        "Layoff Start Date": "9/6/2026",
+        "# of Workers": "52",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "8/5/2026"
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "state": "WA",
+      "date": "2026-09-04",
+      "employees_affected": 605,
+      "raw": {
+        "Company": "Microsoft",
+        "Location": "Redmond",
+        "Layoff Start Date": "9/4/2026",
+        "# of Workers": "605",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "7/6/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-08-28",
+      "employees_affected": 70,
+      "raw": {
+        "notice_date": "08/28/2026",
+        "effective_date": "10/20/2026",
+        "received_date": "08/31/2026",
+        "company": "Amazon - SJC13",
+        "num_employees": "70",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "address": "1160 Enterprise Way  Sunnyvale CA 94089"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-08-28",
+      "employees_affected": 78,
+      "raw": {
+        "notice_date": "08/28/2026",
+        "effective_date": "10/20/2026",
+        "received_date": "08/31/2026",
+        "company": "Amazon - SF019",
+        "num_employees": "78",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Francisco County",
+        "address": "350 Bush Street  San Francisco CA 94104"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-08-03",
+      "employees_affected": 57,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Seattle, Bellevue",
+        "Layoff Start Date": "8/3/2026",
+        "# of Workers": "57",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "7/2/2026"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "WA",
+      "date": "2026-07-22",
+      "employees_affected": 1395,
+      "raw": {
+        "Company": "Meta Platforms, Inc",
+        "Location": "King County",
+        "Layoff Start Date": "7/22/2026",
+        "# of Workers": "1395",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "5/22/2026"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "NY",
+      "date": "2026-07-01",
+      "employees_affected": 62,
+      "raw": {
+        "Business Legal Name": "Oracle America, Inc.",
+        "Date Layoff/Closure Starts": "2026-07-01",
+        "Date of WARN Notice ": "2026-04-02",
+        "Date Posted  ": "2026-07-10",
+        "Impacted Site Address": "100 Woods Road  Valhalla, NY, 10595",
+        "Impacted Site County": "Westchester",
+        "Layoff or Closure?": "Layoff",
+        "Permanent or Temporary Layoff?": "Permanent"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "WA",
+      "date": "2026-06-01",
+      "employees_affected": 475,
+      "raw": {
+        "Company": "Oracle America, Inc.",
+        "Location": "Seattle and Remote",
+        "Layoff Start Date": "6/1/2026",
+        "# of Workers": "475",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "3/31/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NY",
+      "date": "2026-05-30",
+      "employees_affected": 542,
+      "raw": {
+        "Business Legal Name": "Amazon (Western)",
+        "Date Layoff/Closure Starts": "2026-05-30",
+        "Date of WARN Notice ": "2026-02-27",
+        "Date Posted  ": "2026-03-17",
+        "Impacted Site Address": "4201 Walden Ave  Lancaster, NY, 14086",
+        "Impacted Site County": "Erie",
+        "Layoff or Closure?": "Closure",
+        "Permanent or Temporary Layoff?": "Permanent"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 81,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/22/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "81",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Alameda County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 338,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/22/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "338",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 252,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/22/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "252",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Francisco County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 74,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/26/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "74",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 2212,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/26/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "2,212",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-05-22",
+      "employees_affected": 313,
+      "raw": {
+        "notice_date": "05/22/2026",
+        "effective_date": "07/22/2026",
+        "received_date": "05/26/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "313",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "WA",
+      "date": "2026-05-08",
+      "employees_affected": 168,
+      "raw": {
+        "Company": "Meta Platforms, Inc",
+        "Location": "Seattle, Bellevue, Redmond",
+        "Layoff Start Date": "5/8/2026",
+        "# of Workers": "168",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "3/31/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NJ",
+      "date": "2026-04-28",
+      "employees_affected": 240,
+      "raw": {
+        "Company": "Amazon",
+        "City": "Passaic, Bergen, Monmouth, Hudson, Statewide",
+        "Month Posted": "January",
+        "Effective Date": "2026-04-28 00:00:00",
+        "Workforce Affected": "240 (Passaic), 417 (Bergen), 141 (Monmouth), 44 (Hudson), 29 (Statewide)"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NY",
+      "date": "2026-04-28",
+      "employees_affected": 135,
+      "raw": {
+        "Business Legal Name": "Amazon",
+        "Date Layoff/Closure Starts": "2026-04-28",
+        "Date of WARN Notice ": "2026-01-28",
+        "Date Posted  ": "2026-02-17",
+        "Impacted Site Address": "1440 Broadway  New York City, NY, 10018",
+        "Impacted Site County": "New York",
+        "Layoff or Closure?": "Layoff",
+        "Permanent or Temporary Layoff?": "Permanent"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NY",
+      "date": "2026-04-28",
+      "employees_affected": 71,
+      "raw": {
+        "Business Legal Name": "Amazon (Long Island)",
+        "Date Layoff/Closure Starts": "2026-04-28",
+        "Date of WARN Notice ": "2026-01-27",
+        "Date Posted  ": "2026-02-24",
+        "Impacted Site Address": "3620 Long Beach Rd  Oceanside, NY, 11572",
+        "Impacted Site County": "Nassau",
+        "Layoff or Closure?": "Closure",
+        "Permanent or Temporary Layoff?": "Permanent"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NY",
+      "date": "2026-04-28",
+      "employees_affected": 44,
+      "raw": {
+        "Business Legal Name": "Amazon (Long Island)",
+        "Date Layoff/Closure Starts": "2026-04-28",
+        "Date of WARN Notice ": "2026-01-27",
+        "Date Posted  ": "2026-02-24",
+        "Impacted Site Address": "4054 Nesconset Highway  East Setauket, NY, 11733",
+        "Impacted Site County": "Suffolk",
+        "Layoff or Closure?": "Closure",
+        "Permanent or Temporary Layoff?": "Permanent"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "PA",
+      "date": "2026-04-28",
+      "employees_affected": 983,
+      "raw": {
+        "addressfull": "555 Spring Garden St Philadelphia, PA 19123 (approx. 205 employees affected)\r, 1837 Street Rd Bensalem, PA 19020 (approx. 161 employees affected)\r, 389 Easton Road Warrington, PA 18976 (approx. 144 employees affected)\r, 102 Park Ave Willow Grove, PA 19090 (approx. 127 employees affected)\r, 2924 Springfield Rd Broomall, PA 19008 (approx. 189 employees affected)\r, 2424 E. Lincoln Hwy Langhorne, PA 19047 (approx. 157 employees affected)",
+        "closure_or_layoff": "Layoff",
+        "company": "Amazon Fresh",
+        "county": "Bucks, Delaware, Montgomery and Philadelphia",
+        "date_effective": "4/28/26",
+        "jobs": "983"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-04-28",
+      "employees_affected": 2198,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Various locations in Washington",
+        "Layoff Start Date": "4/28/2026",
+        "# of Workers": "2198",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "1/30/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-04-28",
+      "employees_affected": 401,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Various locations in Washington",
+        "Layoff Start Date": "4/28/2026",
+        "# of Workers": "401",
+        "Closure Layoff": "Closure",
+        "Type of Layoff": "Permanent",
+        "Received Date": "1/28/2026"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-04-01",
+      "employees_affected": 158,
+      "raw": {
+        "notice_date": "04/01/2026",
+        "effective_date": "06/01/2026",
+        "received_date": "04/02/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "158",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Alameda County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-04-01",
+      "employees_affected": 50,
+      "raw": {
+        "notice_date": "04/01/2026",
+        "effective_date": "06/01/2026",
+        "received_date": "04/02/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "50",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-04-01",
+      "employees_affected": 310,
+      "raw": {
+        "notice_date": "04/01/2026",
+        "effective_date": "06/01/2026",
+        "received_date": "04/02/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "310",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2026-04-01",
+      "employees_affected": 184,
+      "raw": {
+        "notice_date": "04/01/2026",
+        "effective_date": "06/01/2026",
+        "received_date": "04/02/2026",
+        "company": "Oracle America, Inc.",
+        "num_employees": "184",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "MO",
+      "date": "2026-03-31",
+      "employees_affected": 539,
+      "raw": {
+        "Received Sort descending": "03/31/2026",
+        "Title": "Oracle",
+        "Industry": "Software Publisher",
+        "Location(s)": "Kansas City",
+        "County": "Jackson",
+        "Region": "Kansas City",
+        "Type": "Layoff",
+        "Layoff date(s)": "05/26/2026 06/01/2026"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-03-30",
+      "employees_affected": 124,
+      "raw": {
+        "notice_date": "03/30/2026",
+        "effective_date": "05/22/2026",
+        "received_date": "04/01/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "124",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-03-30",
+      "employees_affected": 74,
+      "raw": {
+        "notice_date": "03/30/2026",
+        "effective_date": "05/29/2026",
+        "received_date": "04/01/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "74",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "WA",
+      "date": "2026-03-20",
+      "employees_affected": 331,
+      "raw": {
+        "Company": "Meta Platforms, Inc",
+        "Location": "King County",
+        "Layoff Start Date": "3/20/2026",
+        "# of Workers": "331",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "1/19/2026"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-02-02",
+      "employees_affected": 39,
+      "raw": {
+        "notice_date": "02/02/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "02/03/2026",
+        "company": "Meta Platforms, Inc. - 305 Constitution",
+        "num_employees": "39",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-02-02",
+      "employees_affected": 6,
+      "raw": {
+        "notice_date": "02/02/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "02/03/2026",
+        "company": "Meta Platforms, Inc. - 1 Hacker",
+        "num_employees": "6",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-02-02",
+      "employees_affected": 2,
+      "raw": {
+        "notice_date": "02/02/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "02/03/2026",
+        "company": "Meta Platforms, Inc. - 180 Jefferson",
+        "num_employees": "2",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-02-02",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "02/02/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "02/03/2026",
+        "company": "Meta Platforms, Inc. - 190 Jefferson",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-02-02",
+      "employees_affected": 52,
+      "raw": {
+        "notice_date": "02/02/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "02/03/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "52",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-02-02",
+      "employees_affected": 84,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Seattle & Bellevue",
+        "Layoff Start Date": "2/2/2026",
+        "# of Workers": "84",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "12/13/2025"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 2,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (LAX10)",
+        "num_employees": "2",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 46,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (LAX16)",
+        "num_employees": "46",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 45,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (LAX78)",
+        "num_employees": "45",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 43,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (SJC25)",
+        "num_employees": "43",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 141,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (SJC38)",
+        "num_employees": "141",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 49,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon (SJC44)",
+        "num_employees": "49",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 72,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "72",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 32,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "32",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 3,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "3",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 11,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "11",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 58,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "58",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 87,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "87",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 81,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "81",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 89,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon",
+        "num_employees": "89",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 5,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SNA12",
+        "num_employees": "5",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 24,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SNA 16",
+        "num_employees": "24",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SNA 17",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 25,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SNA 20",
+        "num_employees": "25",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 34,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SNA 3",
+        "num_employees": "34",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 38,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SAN 13",
+        "num_employees": "38",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 19,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SAN 17",
+        "num_employees": "19",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 13,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SAN 18",
+        "num_employees": "13",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-29",
+      "employees_affected": 84,
+      "raw": {
+        "notice_date": "01/29/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/30/2026",
+        "company": "Amazon - SFO 28",
+        "num_employees": "84",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Francisco County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 215,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAB1",
+        "num_employees": "215",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 131,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAB4",
+        "num_employees": "131",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 184,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAB5",
+        "num_employees": "184",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 168,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAC9",
+        "num_employees": "168",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 201,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAF3",
+        "num_employees": "201",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 196,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAF8",
+        "num_employees": "196",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 155,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAF9",
+        "num_employees": "155",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 185,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAG1",
+        "num_employees": "185",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 134,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAK9",
+        "num_employees": "134",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 191,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAB8",
+        "num_employees": "191",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 175,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAC2",
+        "num_employees": "175",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 181,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MBA6",
+        "num_employees": "181",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 174,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAQ9",
+        "num_employees": "174",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Placer County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 172,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAH8",
+        "num_employees": "172",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Riverside County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 182,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAI8",
+        "num_employees": "182",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Riverside County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 160,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAJ8",
+        "num_employees": "160",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Riverside County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 179,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAM9",
+        "num_employees": "179",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Sacramento County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 163,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAQ8",
+        "num_employees": "163",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Sacramento County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 190,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAF5",
+        "num_employees": "190",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "San Bernardino County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 189,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAO6",
+        "num_employees": "189",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "San Bernardino County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-01-28",
+      "employees_affected": 139,
+      "raw": {
+        "notice_date": "01/28/2026",
+        "effective_date": "04/28/2026",
+        "received_date": "01/28/2026",
+        "company": "Amazon - MAM7",
+        "num_employees": "139",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Ventura County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 132,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "3116 Route 59 Hwy, Suite 104 ",
+        "Location City": "Naperville",
+        "Location State": "IL",
+        "Location Zipcode": "60564",
+        "County": "Will County",
+        "LWIA #": "10"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 134,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "16 E Golf Rd. ",
+        "Location City": "Schaumburg",
+        "Location State": "IL",
+        "Location Zipcode": "60173",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 179,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "6939 Dempster St ",
+        "Location City": "Morton Grove",
+        "Location State": "IL",
+        "Location Zipcode": "60053-2021",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 220,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "4031 W 95TH St ",
+        "Location City": "Oak Lawn",
+        "Location State": "IL",
+        "Location Zipcode": "60453-2611",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 173,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "4211 N Harlem Ave ",
+        "Location City": "Norridge",
+        "Location State": "IL",
+        "Location Zipcode": "60706-1212",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 155,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "7201 W 24TH St ",
+        "Location City": "North Riverside",
+        "Location State": "IL",
+        "Location Zipcode": "60546-1591",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 118,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "1351 E Ogden Ave ",
+        "Location City": "Naperville",
+        "Location State": "IL",
+        "Location Zipcode": "60563-1637",
+        "County": "Du Page County",
+        "LWIA #": "6"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "IL",
+      "date": "2026-01-28",
+      "employees_affected": 170,
+      "raw": {
+        "Location Name": "Amazonfresh LLC",
+        "Doing Business As Name": "Amazon Fresh",
+        "Location Address": "16017 Harlem Ave ",
+        "Location City": "Tinley Park",
+        "Location State": "IL",
+        "Location Zipcode": "60477-1611",
+        "County": "Cook County",
+        "LWIA #": "7"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "VA",
+      "date": "2026-01-28",
+      "employees_affected": 691,
+      "raw": {
+        "Company": "Amazon",
+        "Notice Date": "01/28/2026",
+        "Impact Date": "04/27/2026",
+        "Employees Affected": "691",
+        "Location": "Fairfax, Franconia, Lorton, Alexandria &amp; Falls church VA",
+        "Contact Person": "Lindsey Winter",
+        "Notice Type": "Layoff"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "04/12/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (BRGAS1265)",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 2,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "03/29/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (MP1)",
+        "num_employees": "2",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 3,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "03/22/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (MP2)",
+        "num_employees": "3",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 27,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "03/29/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (MP3)",
+        "num_employees": "27",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 24,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "03/15/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (MP4)",
+        "num_employees": "24",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2026-01-26",
+      "employees_affected": 19,
+      "raw": {
+        "notice_date": "01/26/2026",
+        "effective_date": "03/15/2026",
+        "received_date": "01/27/2026",
+        "company": "Google (MPD237)",
+        "num_employees": "19",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "NJ",
+      "date": "2026-01-26",
+      "employees_affected": 72,
+      "raw": {
+        "Company": "Amazon",
+        "City": "Jersey City",
+        "Month Posted": "October",
+        "Effective Date": "2026-01-26 00:00:00",
+        "Workforce Affected": "72"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "WA",
+      "date": "2026-01-26",
+      "employees_affected": 2303,
+      "raw": {
+        "Company": "Amazon",
+        "Location": "Various locations in Washington",
+        "Layoff Start Date": "1/26/2026",
+        "# of Workers": "2303",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "10/28/2025"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-01-16",
+      "employees_affected": 53,
+      "raw": {
+        "notice_date": "01/16/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "01/21/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "53",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2026-01-16",
+      "employees_affected": 219,
+      "raw": {
+        "notice_date": "01/16/2026",
+        "effective_date": "03/20/2026",
+        "received_date": "01/21/2026",
+        "company": "Meta Platforms, Inc.",
+        "num_employees": "219",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "WA",
+      "date": "2025-12-22",
+      "employees_affected": 101,
+      "raw": {
+        "Company": "Meta Platforms, Inc",
+        "Location": "Seattle, Bellevue, Redmond",
+        "Layoff Start Date": "12/22/2025",
+        "# of Workers": "101",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "10/23/2025"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "VA",
+      "date": "2025-11-14",
+      "employees_affected": 247,
+      "raw": {
+        "Company": "Amazon-BWI1",
+        "Notice Date": "11/14/2025",
+        "Impact Date": "01/30/2026",
+        "Employees Affected": "247",
+        "Location": "Sterling VA",
+        "Contact Person": "Lindsay  Winter",
+        "Notice Type": "Closure"
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "state": "WA",
+      "date": "2025-11-07",
+      "employees_affected": 42,
+      "raw": {
+        "Company": "Microsoft",
+        "Location": "Redmond",
+        "Layoff Start Date": "11/7/2025",
+        "# of Workers": "42",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "9/8/2025"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "WA",
+      "date": "2025-11-03",
+      "employees_affected": 4,
+      "raw": {
+        "Company": "Oracle America, Inc.",
+        "Location": "Seattle",
+        "Layoff Start Date": "11/3/2025",
+        "# of Workers": "4",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "10/1/2025"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "WA",
+      "date": "2025-11-03",
+      "employees_affected": 101,
+      "raw": {
+        "Company": "Oracle America, Inc.",
+        "Location": "Seattle",
+        "Layoff Start Date": "11/3/2025",
+        "# of Workers": "101",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "9/2/2025"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 65,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX22",
+        "num_employees": "65",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 7,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2025",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX18",
+        "num_employees": "7",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 43,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX21",
+        "num_employees": "43",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 37,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2025",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX 35",
+        "num_employees": "37",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 62,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX10",
+        "num_employees": "62",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 3,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon LAX16",
+        "num_employees": "3",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 138,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC10)",
+        "num_employees": "138",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 28,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC11)",
+        "num_employees": "28",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 33,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC13)",
+        "num_employees": "33",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 80,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC14)",
+        "num_employees": "80",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 27,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC31)",
+        "num_employees": "27",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 85,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SJC32)",
+        "num_employees": "85",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 18,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SFO12",
+        "num_employees": "18",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 69,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SFO22",
+        "num_employees": "69",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 75,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SFO24",
+        "num_employees": "75",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 12,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SFO36",
+        "num_employees": "12",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 2,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SFO39",
+        "num_employees": "2",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 8,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SJC25",
+        "num_employees": "8",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 50,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SJC38",
+        "num_employees": "50",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 178,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA11",
+        "num_employees": "178",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 17,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA12",
+        "num_employees": "17",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 64,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA16",
+        "num_employees": "64",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA18",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 16,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA19",
+        "num_employees": "16",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 45,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon SNA3",
+        "num_employees": "45",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 24,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SAN 13)",
+        "num_employees": "24",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 61,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SAN 17)",
+        "num_employees": "61",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 5,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SAN 21)",
+        "num_employees": "5",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Diego County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 41,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SFO13)",
+        "num_employees": "41",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Francisco County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-28",
+      "employees_affected": 71,
+      "raw": {
+        "notice_date": "10/28/2025",
+        "effective_date": "01/26/2026",
+        "received_date": "10/29/2025",
+        "company": "Amazon (SFO28)",
+        "num_employees": "71",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Francisco County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2025-10-22",
+      "employees_affected": 22,
+      "raw": {
+        "notice_date": "10/22/2025",
+        "effective_date": "12/22/2025",
+        "received_date": "10/23/2025",
+        "company": "Meta Platforms, Inc. (1 Hacker Way)",
+        "num_employees": "22",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2025-10-22",
+      "employees_affected": 261,
+      "raw": {
+        "notice_date": "10/22/2025",
+        "effective_date": "12/22/2025",
+        "received_date": "10/23/2025",
+        "company": "Meta Platforms, Inc. (1 Meta Way)",
+        "num_employees": "261",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2025-10-22",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "10/22/2025",
+        "effective_date": "12/22/2025",
+        "received_date": "10/23/2025",
+        "company": "Meta Platforms, Inc. (180 Jefferson Drive)",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2025-10-22",
+      "employees_affected": 21,
+      "raw": {
+        "notice_date": "10/22/2025",
+        "effective_date": "12/22/2025",
+        "received_date": "10/23/2025",
+        "company": "Meta Platforms, Inc. (190 Jefferson Drive)",
+        "num_employees": "21",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "META",
+      "state": "CA",
+      "date": "2025-10-22",
+      "employees_affected": 3,
+      "raw": {
+        "notice_date": "10/22/2025",
+        "effective_date": "12/22/2025",
+        "received_date": "10/23/2025",
+        "company": "Meta Platforms, Inc. (305 Constitution Drive)",
+        "num_employees": "3",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AVGO",
+      "state": "CA",
+      "date": "2025-10-17",
+      "employees_affected": 247,
+      "raw": {
+        "notice_date": "10/17/2025",
+        "effective_date": "12/19/2025",
+        "received_date": "10/20/2025",
+        "company": "Broadcom Inc.",
+        "num_employees": "247",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "WA",
+      "date": "2025-10-13",
+      "employees_affected": 161,
+      "raw": {
+        "Company": "Oracle America, Inc.",
+        "Location": "Seattle",
+        "Layoff Start Date": "10/13/2025",
+        "# of Workers": "161",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "8/13/2025"
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "state": "WA",
+      "date": "2025-10-03",
+      "employees_affected": 40,
+      "raw": {
+        "Company": "Microsoft",
+        "Location": "Redmond",
+        "Layoff Start Date": "10/3/2025",
+        "# of Workers": "40",
+        "Closure Layoff": "Layoff",
+        "Type of Layoff": "Permanent",
+        "Received Date": "8/4/2025"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-02",
+      "employees_affected": 149,
+      "raw": {
+        "notice_date": "10/02/2025",
+        "effective_date": "01/06/2026",
+        "received_date": "10/02/2025",
+        "company": "Amazon",
+        "num_employees": "149",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-02",
+      "employees_affected": 107,
+      "raw": {
+        "notice_date": "10/02/2025",
+        "effective_date": "01/06/2026",
+        "received_date": "10/03/2025",
+        "company": "Amazon",
+        "num_employees": "107",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-02",
+      "employees_affected": 126,
+      "raw": {
+        "notice_date": "10/02/2025",
+        "effective_date": "01/06/2026",
+        "received_date": "10/03/2025",
+        "company": "Amazon",
+        "num_employees": "126",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Los Angeles County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2025-10-02",
+      "employees_affected": 173,
+      "raw": {
+        "notice_date": "10/02/2025",
+        "effective_date": "01/06/2026",
+        "received_date": "10/03/2025",
+        "company": "Amazon",
+        "num_employees": "173",
+        "layoff_or_closure": "Closure Permanent",
+        "county": "Orange County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2025-10-01",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "10/01/2025",
+        "effective_date": "11/05/2025",
+        "received_date": "10/02/2025",
+        "company": "Oracle America, Inc.",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Alameda County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "CA",
+      "date": "2025-10-01",
+      "employees_affected": 4,
+      "raw": {
+        "notice_date": "10/01/2025",
+        "effective_date": "11/10/2025",
+        "received_date": "10/02/2025",
+        "company": "Oracle America, Inc.",
+        "num_employees": "4",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "San Mateo County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 9,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google - 1265",
+        "num_employees": "9",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 1,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google -1225",
+        "num_employees": "1",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 20,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google - 242",
+        "num_employees": "20",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 8,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google - 1190",
+        "num_employees": "8",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 4,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google -1160",
+        "num_employees": "4",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "state": "CA",
+      "date": "2025-09-29",
+      "employees_affected": 2,
+      "raw": {
+        "notice_date": "09/29/2025",
+        "effective_date": "11/09/2025",
+        "received_date": "09/30/2025",
+        "company": "Google - 237",
+        "num_employees": "2",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Santa Clara County",
+        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "MD",
+      "date": null,
+      "employees_affected": null,
+      "raw": {
+        "null": [
+          "01/28/2026",
+          "454110",
+          "Amazon - MAF1 facility",
+          "5463 Wisconsin Ave. Chevy Chase, MD 20815",
+          "Montgomery County",
+          "129",
+          "04/28/2026",
+          "Plant Closure"
+        ]
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "MD",
+      "date": null,
+      "employees_affected": null,
+      "raw": {
+        "null": [
+          "9/29/2023",
+          "513210",
+          "Oracle America, Inc.",
+          "12200-12211 Plum Orchard Dr. Silver Spring, MD 20904",
+          "Montgomery",
+          "102",
+          "11/30/2023",
+          "Mass Layoff - No Recall"
+        ]
+      }
+    }
+  ]
+}
