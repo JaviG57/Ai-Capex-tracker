@@ -144,16 +144,38 @@ def main():
     # Tell the summary writer when prices are carried over from a prior
     # session, so it doesn't narrate a closed market as a flat trading day.
     price_dates = {m.get("price_date") for m in per_company.values() if m.get("price_date")}
-    context_note = ""
+    notes = []
+    weekday = datetime.date.fromisoformat(today_str).weekday()  # 5=Sat, 6=Sun
+
     if price_dates and today_str not in price_dates:
         last_close = sorted(price_dates)[-1]
-        context_note = (
-            f"NOTE: Today is {today_str} and US markets were CLOSED (weekend or holiday). "
-            f"All stock prices shown are the last close from {last_close}, carried over. "
-            f"Do not describe price levels as today's trading action, and do not treat the "
-            f"absence of price movement as a market signal. Focus on non-market metrics."
+        notes.append(
+            f"US markets were CLOSED today. All stock prices are the last close from "
+            f"{last_close}, carried over. Do not describe price levels as today's trading "
+            f"action, and do not treat the absence of price movement as a market signal."
         )
-        print(f"   (markets closed today; prices carried from {last_close})")
+
+    if weekday >= 5:
+        # Several sources are structurally suppressed at weekends. Without
+        # this, a normal Saturday reads as a broad slowdown -- the same
+        # artifact-as-signal failure as stale carried-over prices.
+        notes.append(
+            "Today is a WEEKEND. Several metrics are structurally suppressed and today's "
+            "levels carry no information about underlying activity:\n"
+            "- 8-K filings are necessarily ZERO: the SEC does not accept filings on "
+            "weekends. Do not call this a quiet news day.\n"
+            "- Job posting churn (jobs_new / jobs_closed) is near zero because companies "
+            "rarely post or close roles at weekends. Do not read this as a hiring freeze.\n"
+            "- Ecosystem commit counts drop at weekends on a regular weekly cycle. Do not "
+            "read this as slowing development.\n"
+            "Rely on the 7d and 30d figures, which compare like-for-like against the same "
+            "weekday, and say plainly that it is a weekend with little new information "
+            "rather than manufacturing a narrative from the dip."
+        )
+
+    context_note = ("NOTE: " + " ".join(notes)) if notes else ""
+    if notes:
+        print(f"   context flags: markets_closed={today_str not in price_dates}, weekend={weekday >= 5}")
     summary = generate_summary.generate(deltas, context_note, headcount)
     history[-1]["summary"] = summary
 
