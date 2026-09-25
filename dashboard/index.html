@@ -84,7 +84,8 @@
   }
   .toggle-bar button.active { color: var(--text); border-color: var(--accent); }
   .agg-chart-card { margin-bottom: 20px; }
-  .agg-chart-card canvas { max-height: 260px; }
+  .chart-box { position: relative; height: 280px; width: 100%; }
+  .chart-box canvas { height: 100% !important; width: 100% !important; }
   .sector-row {
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 10px; margin-bottom: 8px; overflow: hidden;
@@ -159,7 +160,7 @@
       <div class="card agg-chart-card">
         <h3 id="hiringAggTitle">Sector trend</h3>
         <div class="sub" id="hiringAggSub"></div>
-        <canvas id="hiringAggChart"></canvas>
+        <div class="chart-box"><canvas id="hiringAggChart"></canvas></div>
       </div>
       <div id="hiringSectors"></div>
     </section>
@@ -168,7 +169,7 @@
       <div class="card agg-chart-card">
         <h3>Sector trend &mdash; indexed price</h3>
         <div class="sub">Equal-weighted average of each company's % change from its first tracked day</div>
-        <canvas id="marketAggChart"></canvas>
+        <div class="chart-box"><canvas id="marketAggChart"></canvas></div>
       </div>
       <div id="marketSectors"></div>
     </section>
@@ -177,7 +178,7 @@
       <div class="card">
         <h3>8-K filings across tracked companies</h3>
         <div class="sub">Daily count &mdash; a spike often precedes a capex/spending disclosure</div>
-        <canvas id="chart8k"></canvas>
+        <div class="chart-box"><canvas id="chart8k"></canvas></div>
       </div>
     </section>
 
@@ -185,7 +186,7 @@
       <div class="card">
         <h3>Commits across curated AI infra repos</h3>
         <div class="sub">pytorch, transformers, vllm, llama.cpp, TensorRT-LLM, DeepSpeed</div>
-        <canvas id="chartGithub"></canvas>
+        <div class="chart-box"><canvas id="chartGithub"></canvas></div>
       </div>
     </section>
   </div>
@@ -315,6 +316,7 @@ function drawChart(canvasId, type, labels, datasets, extraOptions = {}) {
   const el = document.getElementById(canvasId);
   if (!el) return;
   if (charts[canvasId]) charts[canvasId].destroy();
+  try {
   charts[canvasId] = new Chart(el.getContext('2d'), {
     type, data: { labels, datasets },
     options: Object.assign({
@@ -327,12 +329,14 @@ function drawChart(canvasId, type, labels, datasets, extraOptions = {}) {
       },
     }, extraOptions),
   });
+  } catch (e) { console.error('chart failed:', canvasId, e); }
 }
 
 function drawSparkline(canvasId, series, color) {
   const el = document.getElementById(canvasId);
   if (!el) return;
   if (charts[canvasId]) charts[canvasId].destroy();
+  try {
   charts[canvasId] = new Chart(el.getContext('2d'), {
     type: 'line',
     data: { labels: dateLabels(), datasets: [{ data: series, borderColor: color, borderWidth: 1.5, pointRadius: 0, tension: 0.3 }] },
@@ -342,6 +346,7 @@ function drawSparkline(canvasId, series, color) {
       scales: { x: { display: false }, y: { display: false } },
     },
   });
+  } catch (e) { console.error('sparkline failed:', canvasId, e); }
 }
 
 const pctAxis = { scales: {
@@ -392,19 +397,10 @@ function renderBriefing() {
 // ---------- sector tabs (aggregate + expandable tables) ----------
 function buildSectorTab(config) {
   const groups = groupedTickers();
-  const { aggCanvasId, containerId, metric, calc, valueLabel, idPrefix } = config;
+  const { aggCanvasId, containerId, metric, calc, idPrefix } = config;
 
-  // Sector aggregate chart: one line per group
-  const datasets = groups.map(g => ({
-    label: g.group,
-    data: calc === 'raw' ? groupRawSum(g.tickers, metric) : groupIndexedAvg(g.tickers, metric),
-    borderColor: GROUP_COLORS[g.group] || COLORS[0],
-    backgroundColor: GROUP_COLORS[g.group] || COLORS[0],
-    tension: 0.25, borderWidth: 2.5, pointRadius: 0,
-  }));
-  drawChart(aggCanvasId, 'line', dateLabels(), datasets, calc === 'raw' ? {} : pctAxis);
-
-  // Expandable rows
+  // Expandable sector rows FIRST -- if the aggregate chart below ever fails,
+  // the per-company tables are still on screen.
   const container = document.getElementById(containerId);
   container.innerHTML = groups.map(g => {
     const safe = g.group.replace(/[^a-zA-Z0-9]/g, '');
@@ -431,13 +427,21 @@ function buildSectorTab(config) {
     h.addEventListener('click', () => {
       const row = document.getElementById(h.dataset.toggle);
       row.classList.toggle('open');
-      // Charts can't measure a hidden container, so (re)draw on open.
       if (row.classList.contains('open')) {
         const g = groups.find(g => h.dataset.toggle.endsWith(g.group.replace(/[^a-zA-Z0-9]/g, '')));
-        if (g) renderSectorTable(g, config);
+        if (g) renderSectorTable(g, config);   // redraw: canvases can't size while hidden
       }
     });
   });
+
+  const datasets = groups.map(g => ({
+    label: g.group,
+    data: calc === 'raw' ? groupRawSum(g.tickers, metric) : groupIndexedAvg(g.tickers, metric),
+    borderColor: GROUP_COLORS[g.group] || COLORS[0],
+    backgroundColor: GROUP_COLORS[g.group] || COLORS[0],
+    tension: 0.25, borderWidth: 2.5, pointRadius: 0,
+  }));
+  drawChart(aggCanvasId, 'line', dateLabels(), datasets, calc === 'raw' ? {} : pctAxis);
 }
 
 function windowSum(ticker, metric, days) {
@@ -457,8 +461,8 @@ function latestField(ticker, field) {
 
 const DASH = '<span style="color:var(--text-muted);">&ndash;</span>';
 
-// Column definitions per tab. `get` returns {sort, html} so a column can
-// show rich content (value + sub-label) while still sorting on a number.
+// Column definitions per tab. `get` returns {sort, html} so a column can show
+// rich content (value + sub-label) while still sorting on a plain number.
 const HIRING_COLUMNS = [
   { key: 'headcount', label: 'Headcount', get: t => {
       const v = latestField(t, 'headcount'), as = latestField(t, 'headcount_as_of');
@@ -479,16 +483,14 @@ const HIRING_COLUMNS = [
     } },
   { key: 'churn', label: 'Postings 7d', get: t => {
       const nw = windowSum(t, 'jobs_new', 7), cl = windowSum(t, 'jobs_closed', 7);
-      if (nw == null && cl == null) {
-        return { sort: null, html: `<span style="color:var(--text-muted);font-size:11px;">n/a</span>` };
-      }
+      if (nw == null && cl == null) return { sort: null, html: '<span style="color:var(--text-muted);font-size:11px;">n/a</span>' };
       return { sort: (nw || 0) - (cl || 0),
                html: `<span class="delta up">+${nw || 0}</span> / <span class="delta down">-${cl || 0}</span>` };
     } },
   { key: 'warn', label: 'WARN 90d', get: t => {
       const n = lastValue(seriesFor(t, 'warn_notices_90d'));
       const emp = lastValue(seriesFor(t, 'warn_employees_90d'));
-      if (!n) return { sort: 0, html: `<span style="color:var(--text-muted);">none</span>` };
+      if (!n) return { sort: 0, html: '<span style="color:var(--text-muted);">none</span>' };
       return { sort: n, html: `<span class="delta down">${n}</span><span class="sub-cell">${(emp || 0).toLocaleString()} people</span>` };
     } },
 ];
