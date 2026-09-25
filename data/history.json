@@ -1169,5 +1169,253 @@
       }
     },
     "summary": ""
+  },
+  {
+    "date": "2026-09-25",
+    "companies": {
+      "MSFT": {
+        "jobs_overall": 69091,
+        "jobs_ai": 167,
+        "jobs_last_30d": 2273,
+        "stock_price": 515.81,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 223000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 2,
+        "warn_employees_90d": 882
+      },
+      "GOOGL": {
+        "jobs_overall": 720,
+        "jobs_ai": 10,
+        "jobs_last_30d": 22,
+        "stock_price": 343.97,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 190820,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 1,
+        "warn_employees_90d": 52
+      },
+      "AMZN": {
+        "jobs_overall": 24,
+        "jobs_ai": 0,
+        "jobs_last_30d": 4,
+        "stock_price": 250.01,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 1576000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 4,
+        "warn_employees_90d": 326
+      },
+      "META": {
+        "jobs_overall": 239,
+        "jobs_ai": 0,
+        "jobs_last_30d": 2,
+        "stock_price": 750.17,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 78865,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 1,
+        "warn_employees_90d": 1395
+      },
+      "NVDA": {
+        "jobs_overall": 37050,
+        "jobs_ai": 505,
+        "jobs_last_30d": 2093,
+        "stock_price": 224.68,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 42000,
+        "headcount_as_of": "2026-01-25",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AVGO": {
+        "jobs_overall": 6051,
+        "jobs_ai": 6,
+        "jobs_last_30d": 223,
+        "stock_price": 352.9,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 33000,
+        "headcount_as_of": "2025-11-02",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AMD": {
+        "jobs_overall": 26294,
+        "jobs_ai": 181,
+        "jobs_last_30d": 1073,
+        "stock_price": 629.36,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 31000,
+        "headcount_as_of": "2025-12-27",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "TSM": {
+        "jobs_overall": 4149,
+        "jobs_ai": 26,
+        "jobs_last_30d": 589,
+        "stock_price": 451.1,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 103073,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ASML": {
+        "jobs_overall": 15034,
+        "jobs_ai": 5,
+        "jobs_last_30d": 962,
+        "stock_price": 1741.43,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 42416,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ARM": {
+        "jobs_overall": 10135,
+        "jobs_ai": 71,
+        "jobs_last_30d": 351,
+        "stock_price": 315.42,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 9584,
+        "headcount_as_of": "2026-03-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ORCL": {
+        "jobs_overall": 73550,
+        "jobs_ai": 64,
+        "jobs_last_30d": 1482,
+        "stock_price": 138.31,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 141000,
+        "headcount_as_of": "2026-05-31",
+        "warn_notices_90d": 5,
+        "warn_employees_90d": 862
+      },
+      "DELL": {
+        "jobs_overall": 10141,
+        "jobs_ai": 6,
+        "jobs_last_30d": 145,
+        "stock_price": 570.93,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2026-01-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "SMCI": {
+        "jobs_overall": 5022,
+        "jobs_ai": 7,
+        "jobs_last_30d": 488,
+        "stock_price": 43.16,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 7000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "CRWV": {
+        "jobs_overall": 307,
+        "jobs_ai": 15,
+        "jobs_last_30d": 441,
+        "jobs_source": "greenhouse",
+        "jobs_new": 10,
+        "jobs_closed": 3,
+        "stock_price": 87.5,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 2189,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "DLR": {
+        "jobs_overall": 3895,
+        "jobs_ai": 0,
+        "jobs_last_30d": 177,
+        "stock_price": 179.76,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 4282,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "EQIX": {
+        "jobs_overall": 274,
+        "jobs_ai": 15,
+        "jobs_last_30d": 327,
+        "jobs_source": "workday",
+        "jobs_new": 6,
+        "jobs_closed": 9,
+        "stock_price": 1021.93,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 13716,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "VRT": {
+        "jobs_overall": 21044,
+        "jobs_ai": 2,
+        "jobs_last_30d": 1734,
+        "stock_price": 251.82,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 34000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ETN": {
+        "jobs_overall": 284,
+        "jobs_ai": 9,
+        "jobs_last_30d": 247,
+        "stock_price": 439.02,
+        "price_date": "2026-09-25",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 70
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 12
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 81
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 24
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 1
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 7
+      }
+    },
+    "summary": "The week's clearest story is on the equity side, not hiring: ARM is up 28% over seven days, AMD up 20.5%, TSM up 8.1%, ASML up 8.7%, and Meta up 10.9% despite a 2.5% pullback today \u2014 a broad, synchronized rally across chip designers, foundry/equipment names, and hyperscalers alike that reads as the market re-underwriting the AI-capex cycle rather than reacting to any single filing (no 8-Ks posted anywhere in the tracked set today). Dell's 6.8% single-day pop stands out against a flatter 7-day trend, worth flagging but not yet a pattern.\n\nOn workforce data, nothing looks like a genuine inflection. The jobs_overall and jobs_ai deltas across Microsoft, Google, Nvidia, AMD, TSM, ASML, Oracle and the rest are mostly sub-1% noise around already-small denominators \u2014 Amazon's \"71.4%\" jump in jobs_overall is 24 postings, and Eaton's apparent -99.4% jobs_overall / -88.2% jobs_last_30d reads as a data or category artifact, not a hiring freeze, given no matching signal elsewhere. Where a real trend does emerge, it's directional consistency in jobs_last_30d: Microsoft, AMD, ASML, Oracle, Dell, SMCI and Vertiv all show small (+2-5%) upticks in trailing-30-day postings simultaneously \u2014 a mild, synchronized expansion signal across both hyperscalers and the power/cooling supply chain (Vertiv, Eaton's data aside) that's consistent with continued infrastructure buildout rather than pullback.\n\nMicrosoft's WARN filings doubled (1\u21922 notices, 882 employees affected) \u2014 a real signal,"
   }
 ]
