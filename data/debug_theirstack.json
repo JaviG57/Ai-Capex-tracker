@@ -20,23 +20,7 @@
     "VRT",
     "ETN"
   ],
-  "jobs_returned": {
-    "MSFT": {
-      "jobs_overall": 69182,
-      "jobs_ai": 167,
-      "jobs_last_30d": 2299
-    },
-    "GOOGL": {
-      "jobs_overall": 720,
-      "jobs_ai": 10,
-      "jobs_last_30d": 21
-    },
-    "AMZN": {
-      "jobs_overall": 2124,
-      "jobs_ai": 0,
-      "jobs_last_30d": 14
-    }
-  },
+  "jobs_returned": {},
   "request_log": [
     {
       "payload": {
@@ -59,104 +43,8 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":167,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":854594912,\"job_title\":\"Solution Engineer, Data & AI\",\"url\":\"https://microsoft.eightfold.ai/careers/job/1970393557006292\",\"date_posted\":\"2026-09-25\",\"has_blurred_data\":false,\"company\":\"Microsoft\",\"final_url\":\"https://microsoft.eightfold.ai/careers/job/1970393557006292\",\"source_url\":\"https://microsoft.eightfold.ai/careers/job/1970393557006292\",\"location\":\"Denmark, Capital Region, Copenhagen\",\"short_location\":\"Denmark, Capital Region, Copenhagen\",\"long_location\":\"Denmark, Capital Region, Copenhagen\",\"state_code\":\"84\",\"latitude\":55.675941467285156,\"longitude\":12.565529823303223,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"Denmark\",\"country_codes\":[\"DK\"],\"country_code\":\"DK\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-25T17:18:13.057000Z\",\"closed_at\":null,\"company_domain\":\"news.microsoft.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[],\"easy_apply\":null,\"technology_slugs\":[\"eightfold-ai\"],\"keyword_slugs\":[\"artificial-intelligence\",\"clubs-organizations\",\"rapid-prototyping\",\"insurance-consulting-and-technology\",\"startups\",\"business-outcomes\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"ibm-security-soar\",\"analytics\",\"data-analytics\",\"data-engineering\",\"customer-analytics\",\"customer-insight\",\"policies-and-practices\",\"database-solutions\",\"customer-needs\",\"scalability\",\"expense-optimization\",\"data-architecture\",\"data-integration\",\"salary-range\",\"eightfold-ai\"],\"description\":\"**Overview**  \\n\\n**Solution Engineer, Data & AI**\\n\\n**Help Denmark\u2019s leading organizations turn data into real-world impact**\\n\\nDo you believe the best Data & AI solutions are built by people who are curious, pragmatic and willing to challenge conventional thinking?\\n\\nWe are looking for a\u00a0**Solution Engineer, Data & AI** to join Microsoft\u2019s Cloud & AI Solution Engineering team in Denmark. You will work with some of Denmark\u2019s most ambitious organisations, helping them modernise their data platforms, prepare their data for AI and turn new technology into measurable business outcomes.\\n\\nThis is not a traditional pre-sales role. You will combine deep technical expertise with creativity, commercial understanding and a hands-on approach. You will engage directly with customers, shape technical strategy and prove what is possible through architecture workshops, demonstrations, rapid prototyping, proofs of concept and collaborative build engagements.\\n\\nYou may come from a large technology company, a consultancy, a scale-up or a startup where you have helped build new platforms, products or capabilities from the ground up. What matters most is your ability to learn quickly"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "google.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":10,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":4},\"data\":[{\"id\":821519187,\"job_title\":\"Test Engineer / Test Lead -- AI-Powered Hardware Systems\",\"url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"date_posted\":\"2026-08-27\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"location\":\"Portland, Oregon Metropolitan Area\",\"short_location\":\"Portland, Oregon Metropolitan Area\",\"long_location\":\"Portland, Oregon Metropolitan Area\",\"state_code\":\"OR\",\"latitude\":45.5234489440918,\"longitude\":-122.67620849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-08-28T11:09:06.757000Z\",\"closed_at\":\"2026-09-19T11:17:58Z\",\"company_domain\":\"mbg.com\",\"hiring_team\":[{\"first_name\":\"Jeff\",\"full_name\":\"Jeff Weintraub\",\"linkedin_url\":\"https://www.linkedin.com/in/jeffweintraub/\",\"role\":\"Northwest Regional Recruiting Manager\",\"image_url\":\"https://media.licdn.com/dms/image/v2/C5603AQEimNK5C-9SKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516265849393?e=1752105600&v=beta&t=AIuRMP6-3Mhrar1XSmOGyLCU9ctEI9LdW7QKIOpE918\",\"thumbnail_url\":\"https://media.licdn.com/dms/image/v2/D5603AQHJb7KRsgUj4w/profile-displayphoto-scale_400_400/B56Zo2OCG7JQAg-/0/1761846242866?e=2147483647&v=beta&t=x8XiCgEKmFvuLTnsMZS1aMTSC_YaojWShB8qgsfa8Mo\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"contract\"],\"easy_apply\":null,\"technology_slugs\":[\"intel\"],\"keyword_slugs\":[\"sensors-test-measurement\",\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"time-and-attendance\",\"sensors-feedback-devices\",\"crane-aerospace-electronics\",\"testing-and-analysis\",\"industrial-automation\",\"intel\",\"troubleshooting\",\"firmware\",\"networking-telecommunications\",\"laboratory-equipment\",\"oscilloscopes\",\"power-and-cooling\",\"power-supplies-test-power\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"planning-and-design\"],\"description\":\"Initial 6-month contract and potential contract to hire\\n\\n100% on-site in Portland, Oregon\\n\\nOpen to Test Engineer or Test Lead candidate (will lead 2 interns and a part-time tester)\\n\\nHelp test the complete hardware and software ecosystem behind an AI-powered manufacturing platform. You\u2019ll work hands-on with cameras, sensors, electronics, edge devices and industrial equipment -- recreating real customer scenarios and finding issues before systems reach the manufacturing floor.\\n\\nTop Skills\\n\\n- System-Level Testing across electronic or electromechanical systems: experience with hardware and experience in the semiconductor, electronics, industrial au"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "amazon.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "amazon.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":855062538,\"job_title\":\"Quick Ship Warehouse Associate\",\"url\":\"https://hiring.amazon.com/app\",\"date_posted\":\"2026-09-25\",\"has_blurred_data\":false,\"company\":\"Amazon Warehouse\",\"final_url\":\"https://hiring.amazon.com/app\",\"source_url\":\"https://indeed.com/viewjob?jk=eba5376f796e1d73\",\"location\":\"Seattle, WA 98107\",\"short_location\":\"Seattle, WA\",\"long_location\":\"Seattle, WA 98107\",\"state_code\":\"WA\",\"latitude\":47.66950988769531,\"longitude\":-122.3832015991211,\"postal_code\":\"98107\",\"remote\":false,\"hybrid\":false,\"salary_string\":\"$22.50 an hour\",\"min_annual_salary\":45760,\"min_annual_salary_usd\":45760.0,\"max_annual_salary\":45760,\"max_annual_salary_usd\":45760.0,\"avg_annual_salary_usd\":45760.0,\"salary_currency\":\"USD\",\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-09-26T03:06:11.686000Z\",\"closed_at\":null,\"company_domain\":\"hiring.amazon.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"part_time\",\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"workspace\"],\"keyword_slugs\":[\"lift-and-shift\",\"hotels-accommodations\",\"meat-seafood\",\"payouts\",\"workspace\",\"maintenance-repair-and-operations-mro\",\"time-and-attendance\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"pallets\",\"insurance-consulting-and-technology\",\"health-care\",\"onboarding\",\"training-certification\",\"education-training\",\"training-and-development\",\"on-the-job-training-ojt\",\"corporate-training\",\"home-storage-shelving\",\"disabilities-ada\",\"speech-recognition\",\"mobility-aids\",\"scooters-mopeds\",\"ethnicity-national-origin\",\"sexual-orientation\"],\"description\":\"Job Overview\\n  \\n  \\nAs an Amazon Quick Ship Warehouse Associate, you\u2019ll enhance the customer shopping experience by working at the core of Amazon\u2019s fastest delivery operation. Youll work in a retail warehouse environment, similar in size to a grocery store, where customers can order groceries and everyday essentials for ultra-fast delivery. Youll work alongside team members and delivery partners to ensure smooth operations and excellent customer service. The environment includes room temperature spaces, with reach-in refrigeration and freezer spaces. We will provide appropriate safety gear for all work areas.Please Note: This role requires flexibility to work at different Quick Ship Warehouse locations near your primary work location. You will need to pick up shifts at any of the available locations to meet the required minimum of four hours per week. Available shifts vary by location and are based on customer demand.\\n  \\nBasic Job Requirements\\n  \\n  \\n\\n- Be 18 years or older\\n- Understand and follow instructions in the required language\\n- Lift up to 49 pounds with or without reasonable accommodation\\n- Stand, walk, push, pull, squat, bend, and reach for up to five hours during sh"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "meta.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "meta.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
       "status_code": 402,
-      "body_snippet": "{\"request_id\":56546333,\"error\":{\"code\":\"E-007\",\"title\":\"Not enough credits to perform this action\",\"description\":\"You need to upgrade your plan to perform this action. Required: 1 API credits. You currently have 0 API credits. You need 1 more API credits.\"}}"
+      "body_snippet": "{\"request_id\":56613331,\"error\":{\"code\":\"E-007\",\"title\":\"Not enough credits to perform this action\",\"description\":\"You need to upgrade your plan to perform this action. Required: 1 API credits. You currently have 0 API credits. You need 1 more API credits.\"}}"
     }
   ]
 }
