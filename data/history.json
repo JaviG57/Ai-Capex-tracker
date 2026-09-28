@@ -1822,5 +1822,203 @@
       }
     },
     "summary": "It's a weekend, so the day's near-zero 8-K counts, flat job-posting churn at CoreWeave and Equinix, and the weekend dip in ecosystem commit activity are all structural artifacts of the calendar, not signals \u2014 no news is being made because filings can't post and companies don't churn listings on Saturdays. The one thing worth reading is the 7-day price action, carried over from Friday's close, which shows real dispersion across the AI-capex complex: AMD and ARM are both up 15.7% on the week, Meta up 12.1%, Super Micro up 11.9%, and CoreWeave up 9.2%, while Oracle is down 5.8%, Dell down 2.8%, and Digital Realty down 3.0%. That's a fairly stark split between chip/compute names (AMD, ARM, Nvidia +2.4%, TSMC +4.9%, ASML +6.0%) rallying together and a cluster of infrastructure/leasing names (Oracle, Dell, Digital Realty, Equinix -1.8%) drifting lower over the same week \u2014 a synchronized divergence between \"who makes the chips\" and \"who's renting the buildings\" that's worth watching rather than a story on its own.\n\nOn the workforce side there's nothing new today, but the standing WARN totals are worth keeping in view as context: Oracle still shows 5 notices covering 862 employees over the trailing 90 days, Meta 1 notice but 1,395 employees, and Microsoft 2 notices covering 882 employees, while Nvidia, AMD, TSMC, ASML, and the datacenter REITs show zero WARN activity in the window. None of that moved today or this week, and WARN filings only catch large formal layoffs, not attrition \u2014 so the absence of new filings at the chipmakers shouldn't be read as tight labor conditions"
+  },
+  {
+    "date": "2026-09-28",
+    "companies": {
+      "MSFT": {
+        "stock_price": 509.43,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 223000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 2,
+        "warn_employees_90d": 882
+      },
+      "GOOGL": {
+        "stock_price": 342.7,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 190820,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 1,
+        "warn_employees_90d": 52
+      },
+      "AMZN": {
+        "stock_price": 246.27,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 1576000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 4,
+        "warn_employees_90d": 326
+      },
+      "META": {
+        "stock_price": 715.58,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 78865,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 1,
+        "warn_employees_90d": 1395
+      },
+      "NVDA": {
+        "stock_price": 228.84,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 42000,
+        "headcount_as_of": "2026-01-25",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AVGO": {
+        "stock_price": 349.69,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 33000,
+        "headcount_as_of": "2025-11-02",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AMD": {
+        "stock_price": 608.24,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 31000,
+        "headcount_as_of": "2025-12-27",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "TSM": {
+        "stock_price": 452.55,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 103073,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ASML": {
+        "stock_price": 1772.38,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 42416,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ARM": {
+        "stock_price": 283.39,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 9584,
+        "headcount_as_of": "2026-03-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ORCL": {
+        "stock_price": 132.74,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 141000,
+        "headcount_as_of": "2026-05-31",
+        "warn_notices_90d": 5,
+        "warn_employees_90d": 862
+      },
+      "DELL": {
+        "stock_price": 543.36,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2026-01-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "SMCI": {
+        "stock_price": 41.77,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 7000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "CRWV": {
+        "jobs_overall": 310,
+        "jobs_ai": 14,
+        "jobs_source": "greenhouse",
+        "jobs_new": 6,
+        "jobs_closed": 1,
+        "stock_price": 85.03,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 2189,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "DLR": {
+        "stock_price": 177.12,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 4282,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "EQIX": {
+        "jobs_overall": 269,
+        "jobs_ai": 15,
+        "jobs_source": "workday",
+        "jobs_new": 6,
+        "jobs_closed": 11,
+        "stock_price": 1011.08,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 13716,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "VRT": {
+        "stock_price": 244.38,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 34000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ETN": {
+        "stock_price": 430.75,
+        "price_date": "2026-09-28",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 55
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 14
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 52
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 18
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 15
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 9
+      }
+    },
+    "summary": "Today's session is dominated by a broad-based selloff across the AI-infrastructure complex, with equity moves far outpacing anything happening in the underlying operational data. ARM fell 8.7% on the day (still up 2.8% on the week, so this reads as a sharp single-day repricing rather than a trend), while Oracle is the standout laggard on the week, down 10.1% over 7 days on top of a 3.2% daily drop \u2014 the worst multi-day slide in the group. AMD, despite an 8.6% weekly gain, gave back 3.6% today, and Meta similarly sits up 7.5% on the week but down 4.8% today, suggesting profit-taking after strong runs rather than a change in underlying view. Nvidia and ASML are the notable exceptions, both green on the day and the week (+1.7%/+3.0% and +1.6%/+5.5% respectively), holding up while peers slide.\n\nThe synchronized pattern worth flagging: nearly every name in the dataset \u2014 hyperscalers (MSFT, GOOGL, AMZN), chipmakers (AMD, AVGO), and power/cooling suppliers (VRT, ETN, DELL, SMCI, CRWV) \u2014 posted negative 1-day returns simultaneously, a market-wide risk-off move rather than anything company-specific. WARN filings remain low and unchanged across the board (Oracle's 862 employees and Microsoft's 882 over the trailing 90 days are the largest, both flat day-over-day), so there's no fresh layoff signal accompanying the stock weakness.\n\nCross-category, the interesting divergence is between price action and everything else: zero 8-K filings fired anywhere today, hiring metrics at CoreWeave and Equinix show no dramatic shifts (Equinix's 11 closed postings against 6 new is wor"
   }
 ]
