@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T16:46:20.227729Z",
+  "generated_at": "2026-09-30T16:37:14.360342Z",
   "lookback_days": 365,
   "states_ok": 31,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 56c': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#1a7e767368346d7568717c7568797f347e7f6c7f76756a5a727b6d7b7373347d756c?\n",
+    "hi": "no output (exit 1): 3ea': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#9cf8f0f5eeb2ebf3eef7faf3eefff9b2f8f9eaf9f0f3ecdcf4fdebfdf5f5b2fbf3ea?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -2494,102 +2494,6 @@
         "num_employees": "4",
         "layoff_or_closure": "Layoff Permanent",
         "county": "San Mateo County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 9,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google - 1265",
-        "num_employees": "9",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 1,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google -1225",
-        "num_employees": "1",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 20,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google - 242",
-        "num_employees": "20",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 8,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google - 1190",
-        "num_employees": "8",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 4,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google -1160",
-        "num_employees": "4",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "state": "CA",
-      "date": "2025-09-29",
-      "employees_affected": 2,
-      "raw": {
-        "notice_date": "09/29/2025",
-        "effective_date": "11/09/2025",
-        "received_date": "09/30/2025",
-        "company": "Google - 237",
-        "num_employees": "2",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "Santa Clara County",
         "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
       }
     },
