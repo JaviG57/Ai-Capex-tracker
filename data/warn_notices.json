@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T16:37:14.360342Z",
+  "generated_at": "2026-10-01T17:13:45.886240Z",
   "lookback_days": 365,
   "states_ok": 31,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 3ea': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#9cf8f0f5eeb2ebf3eef7faf3eefff9b2f8f9eaf9f0f3ecdcf4fdebfdf5f5b2fbf3ea?\n",
+    "hi": "no output (exit 1): 71e': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#680c04011a461f071a030e071a0b0d460c0d1e0d0407182800091f090101460f071e?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
