@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T16:26:51.748743Z",
+  "generated_at": "2026-10-03T15:00:49.154053Z",
   "lookback_days": 365,
   "states_ok": 31,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): a03': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#7511191c075b021a071e131a0716105b11100310191a05351d1402141c1c5b121a03?\n",
+    "hi": "no output (exit 1): 52c': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#5a3e363328742d3528313c3528393f743e3f2c3f36352a1a323b2d3b3333743d352c?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -2399,70 +2399,6 @@
         "Closure Layoff": "Layoff",
         "Type of Layoff": "Permanent",
         "Received Date": "8/4/2025"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "CA",
-      "date": "2025-10-02",
-      "employees_affected": 149,
-      "raw": {
-        "notice_date": "10/02/2025",
-        "effective_date": "01/06/2026",
-        "received_date": "10/02/2025",
-        "company": "Amazon",
-        "num_employees": "149",
-        "layoff_or_closure": "Closure Permanent",
-        "county": "Orange County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "CA",
-      "date": "2025-10-02",
-      "employees_affected": 107,
-      "raw": {
-        "notice_date": "10/02/2025",
-        "effective_date": "01/06/2026",
-        "received_date": "10/03/2025",
-        "company": "Amazon",
-        "num_employees": "107",
-        "layoff_or_closure": "Closure Permanent",
-        "county": "Los Angeles County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "CA",
-      "date": "2025-10-02",
-      "employees_affected": 126,
-      "raw": {
-        "notice_date": "10/02/2025",
-        "effective_date": "01/06/2026",
-        "received_date": "10/03/2025",
-        "company": "Amazon",
-        "num_employees": "126",
-        "layoff_or_closure": "Closure Permanent",
-        "county": "Los Angeles County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "CA",
-      "date": "2025-10-02",
-      "employees_affected": 173,
-      "raw": {
-        "notice_date": "10/02/2025",
-        "effective_date": "01/06/2026",
-        "received_date": "10/03/2025",
-        "company": "Amazon",
-        "num_employees": "173",
-        "layoff_or_closure": "Closure Permanent",
-        "county": "Orange County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
       }
     },
     {
