@@ -322,6 +322,7 @@ function drawChart(canvasId, type, labels, datasets, extraOptions = {}) {
     options: Object.assign({
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
+      spanGaps: true,
       plugins: { legend: { labels: { color: '#8A9BA3', boxWidth: 12 } } },
       scales: {
         x: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
@@ -343,6 +344,7 @@ function drawSparkline(canvasId, series, color) {
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      spanGaps: true,
       scales: { x: { display: false }, y: { display: false } },
     },
   });

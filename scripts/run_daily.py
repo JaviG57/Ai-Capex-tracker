@@ -52,9 +52,25 @@ def main():
     companies = companies_module.COMPANIES
     print(f"=== AI Capex Tracker daily run: {today_str} ===")
 
-    print("-> TheirStack job postings")
+    print("-> TheirStack job postings (only companies without a direct job-board API)")
+    # Companies with a direct API are fetched for free below; TheirStack is
+    # now only needed for the rest. Its free tier is 200 credits/month, so
+    # those remaining companies are ROTATED -- a fixed slice each day -- which
+    # keeps us inside the quota instead of exhausting it in ~11 days and then
+    # silently returning nothing for everyone (which is what happened before).
     debug_limit = int(os.environ.get("THEIRSTACK_DEBUG_LIMIT", "0"))
-    theirstack_companies = companies[:debug_limit] if debug_limit else companies
+    uncovered = [c for c in companies if c["ticker"] not in fetch_jobs_ats.ATS_SOURCES]
+    per_day = int(os.environ.get("THEIRSTACK_PER_DAY", "5"))
+    if debug_limit:
+        theirstack_companies = uncovered[:debug_limit]
+    elif per_day and per_day < len(uncovered):
+        day_index = datetime.date.fromisoformat(today_str).toordinal()
+        start = (day_index * per_day) % len(uncovered)
+        theirstack_companies = (uncovered * 2)[start:start + per_day]
+        print(f"   rotating {per_day}/{len(uncovered)} today: "
+              f"{[c['ticker'] for c in theirstack_companies]}")
+    else:
+        theirstack_companies = uncovered
     debug_path = (pathlib.Path(__file__).resolve().parent.parent / "data" / "debug_theirstack.json")
     try:
         jobs = fetch_jobs_theirstack.fetch_all(theirstack_companies)
