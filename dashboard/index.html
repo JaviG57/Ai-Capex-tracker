@@ -475,7 +475,12 @@ const HIRING_COLUMNS = [
   { key: 'jobs_overall', label: 'Open roles', get: t => {
       const s = seriesFor(t, 'jobs_overall'), v = lastValue(s), d7 = pctChange(s, 7);
       if (v == null) return { sort: null, html: DASH };
-      return { sort: v, html: `${v.toLocaleString()}<span class="sub-cell">${d7 == null ? '' : fmtDelta(d7, '%')}</span>` };
+      // Some job boards refuse to report past a ceiling, so the figure is a
+      // floor. Show it as "10,000+ (board limit)" rather than implying exactness.
+      const capped = latestField(t, 'jobs_capped');
+      const shown = capped ? `${v.toLocaleString()}+` : v.toLocaleString();
+      const sub = capped ? 'board limit' : (d7 == null ? '' : fmtDelta(d7, '%'));
+      return { sort: v, html: `${shown}<span class="sub-cell">${sub}</span>` };
     } },
   { key: 'jobs_ai', label: 'AI roles', get: t => {
       const v = lastValue(seriesFor(t, 'jobs_ai')), tot = lastValue(seriesFor(t, 'jobs_overall'));

@@ -34,6 +34,13 @@ import requests
 
 from fetch_jobs_theirstack import AI_JOB_TITLE_TERMS
 
+# Several job boards refuse to report a total beyond a fixed ceiling
+# (Workday stops at 2000, amazon.jobs at 10000). Hitting the ceiling means
+# the figure is a FLOOR, not a count: the trend line would sit flat forever,
+# and for a "most recent N" window the set slides daily, which would
+# manufacture huge fake posting churn. We detect it, label it, and skip churn.
+KNOWN_CAPS = {"workday": 2000, "amazon_jobs": 10000, "oracle": None, "greenhouse": None}
+
 UA = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/120.0 Safari/537.36",
@@ -176,10 +183,12 @@ def fetch_amazon(max_jobs: int = 12000) -> dict | None:
             if total is not None and offset >= total:
                 break
             time.sleep(0.3)
+        capped = total is not None and total >= KNOWN_CAPS["amazon_jobs"]
         complete = total is not None and len(titles) >= 0.95 * min(total, max_jobs)
         return {"jobs_overall": total if total is not None else len(titles),
                 "jobs_ai": sum(1 for t in titles if _is_ai_title(t)),
-                "jobs_source": "amazon_jobs", "_ids": ids, "_complete": complete}
+                "jobs_source": "amazon_jobs", "jobs_capped": capped,
+                "_ids": ids, "_complete": complete and not capped}
     except Exception as e:
         print(f"[ats] amazon failed: {e}")
         return None
@@ -242,6 +251,7 @@ def fetch_all(companies: list[dict]) -> dict:
             ids, complete = res.pop("_ids", []), res.pop("_complete", False)
             res.update(compute_churn(c["ticker"], ids, complete, datetime.date.today().isoformat()))
             results[c["ticker"]] = res
+            cap = "  [CAPPED by API - floor, not exact; churn skipped]" if res.get("jobs_capped") else ""
             print(f"[ats] {c['ticker']}: {res['jobs_overall']} roles, {res['jobs_ai']} AI-titled, "
-                  f"+{res['jobs_new']} new / -{res['jobs_closed']} closed")
+                  f"+{res['jobs_new']} new / -{res['jobs_closed']} closed{cap}")
     return results
