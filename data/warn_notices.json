@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T15:00:49.154053Z",
+  "generated_at": "2026-10-04T15:36:01.284869Z",
   "lookback_days": 365,
   "states_ok": 31,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 52c': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#5a3e363328742d3528313c3528393f743e3f2c3f36352a1a323b2d3b3333743d352c?\n",
+    "hi": "no output (exit 1): d84': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#f2969e9b80dc859d8099949d809197dc969784979e9d82b29a9385939b9bdc959d84?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -2384,21 +2384,6 @@
         "Closure Layoff": "Layoff",
         "Type of Layoff": "Permanent",
         "Received Date": "8/13/2025"
-      }
-    },
-    {
-      "ticker": "MSFT",
-      "state": "WA",
-      "date": "2025-10-03",
-      "employees_affected": 40,
-      "raw": {
-        "Company": "Microsoft",
-        "Location": "Redmond",
-        "Layoff Start Date": "10/3/2025",
-        "# of Workers": "40",
-        "Closure Layoff": "Layoff",
-        "Type of Layoff": "Permanent",
-        "Received Date": "8/4/2025"
       }
     },
     {
