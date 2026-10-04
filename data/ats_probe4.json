@@ -1,0 +1,366 @@
+{
+  "MSFT": {
+    "sniff": [
+      {
+        "url": "https://jobs.careers.microsoft.com/global/en/search",
+        "status": 200,
+        "final_url": "https://apply.careers.microsoft.com/careers",
+        "hits": {
+          "eightfold": "app.eightfold.ai"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "ms_careers",
+        "endpoint": "https://gcsservices.careers.microsoft.com/search/api/v1/search",
+        "works": false,
+        "error": "HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max ret"
+      },
+      {
+        "ats": "eightfold",
+        "endpoint": "https://app.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": 403
+      }
+    ]
+  },
+  "GOOGL": {
+    "sniff": [
+      {
+        "url": "https://www.google.com/about/careers/applications/jobs/results/",
+        "status": 200,
+        "final_url": "https://www.google.com/about/careers/applications/jobs/results/",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "google_careers",
+        "endpoint": "careers.google.com api",
+        "works": false
+      }
+    ]
+  },
+  "AMZN": {
+    "sniff": [
+      {
+        "url": "https://www.amazon.jobs/en/search",
+        "status": 200,
+        "final_url": "https://www.amazon.jobs/en/search",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "amazon_jobs",
+        "endpoint": "https://www.amazon.jobs/search.json",
+        "works": true,
+        "job_count": 10000
+      }
+    ]
+  },
+  "META": {
+    "sniff": [
+      {
+        "url": "https://www.metacareers.com/jobs",
+        "status": 400,
+        "final_url": "https://www.metacareers.com/jobs",
+        "hits": {}
+      }
+    ],
+    "probes": []
+  },
+  "NVDA": {
+    "sniff": [
+      {
+        "url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+        "status": 200,
+        "final_url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+        "works": true,
+        "job_count": 2000
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/External/jobs",
+        "works": false,
+        "status": 404
+      }
+    ]
+  },
+  "AVGO": {
+    "sniff": [
+      {
+        "url": "https://www.broadcom.com/company/careers",
+        "status": 200,
+        "final_url": "https://www.broadcom.com/company/careers",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs",
+        "works": true,
+        "job_count": 359
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External/jobs",
+        "works": false,
+        "status": 404
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://broadcom.wd5.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "AMD": {
+    "sniff": [
+      {
+        "url": "https://careers.amd.com/",
+        "status": 200,
+        "final_url": "https://careers.amd.com/careers-home/jobs",
+        "hits": {
+          "icims": "internal-amd.icims.com"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://amd.wd1.myworkdayjobs.com/wday/cxs/amd/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://amd.wd5.myworkdayjobs.com/wday/cxs/amd/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://amd.wd1.myworkdayjobs.com/wday/cxs/amd/AMD_External/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "TSM": {
+    "sniff": [
+      {
+        "url": "https://www.tsmc.com/english/careers",
+        "status": 404,
+        "final_url": "https://www.tsmc.com/english/careers",
+        "hits": {}
+      },
+      {
+        "url": "https://careers.tsmc.com/careers",
+        "status": 200,
+        "final_url": "https://careers.tsmc.com/en_US/careers",
+        "hits": {}
+      }
+    ],
+    "probes": []
+  },
+  "ASML": {
+    "sniff": [
+      {
+        "url": "https://www.asml.com/en/careers/find-your-job",
+        "status": 200,
+        "final_url": "https://www.asml.com/en/careers/find-your-job",
+        "hits": {}
+      }
+    ],
+    "probes": []
+  },
+  "ARM": {
+    "sniff": [
+      {
+        "url": "https://careers.arm.com/",
+        "status": 200,
+        "final_url": "https://careers.arm.com/",
+        "hits": {
+          "icims": "earlycareers-arm.icims.com"
+        }
+      },
+      {
+        "url": "https://www.arm.com/careers",
+        "status": 200,
+        "final_url": "https://careers.arm.com/",
+        "hits": {
+          "icims": "earlycareers-arm.icims.com"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://arm.wd3.myworkdayjobs.com/wday/cxs/arm/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://arm.wd1.myworkdayjobs.com/wday/cxs/arm/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://arm.wd3.myworkdayjobs.com/wday/cxs/arm/ARM_External/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "ORCL": {
+    "sniff": [
+      {
+        "url": "https://careers.oracle.com/jobs/",
+        "status": 200,
+        "final_url": "https://careers.oracle.com/en/sites/jobsearch",
+        "hits": {
+          "oraclecloud": "eeho.fa.us2.oraclecloud.com"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "site": "CX_1",
+        "works": true,
+        "job_count": 2228
+      }
+    ]
+  },
+  "DELL": {
+    "sniff": [
+      {
+        "url": "https://jobs.dell.com/",
+        "status": 200,
+        "final_url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://dell.wd1.myworkdayjobs.com/wday/cxs/dell/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://dell.wd1.myworkdayjobs.com/wday/cxs/dell/ExternalCareerSite/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://dell.wd5.myworkdayjobs.com/wday/cxs/dell/External/jobs",
+        "works": false,
+        "status": 422
+      }
+    ]
+  },
+  "SMCI": {
+    "sniff": [
+      {
+        "url": "https://www.supermicro.com/en/about/careers",
+        "status": 403,
+        "final_url": "https://www.supermicro.com/en/about/careers",
+        "hits": {}
+      }
+    ],
+    "probes": [
+      {
+        "ats": "workday",
+        "endpoint": "https://supermicro.wd1.myworkdayjobs.com/wday/cxs/supermicro/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "workday",
+        "endpoint": "https://smci.wd1.myworkdayjobs.com/wday/cxs/smci/External/jobs",
+        "works": false,
+        "status": 422
+      },
+      {
+        "ats": "greenhouse",
+        "endpoint": "https://boards-api.greenhouse.io/v1/boards/supermicro/jobs",
+        "works": false,
+        "status": 404
+      }
+    ]
+  },
+  "DLR": {
+    "sniff": [
+      {
+        "url": "https://careers.digitalrealty.com/",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SS"
+      },
+      {
+        "url": "https://www.digitalrealty.com/careers",
+        "error": "HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SS"
+      }
+    ],
+    "probes": []
+  },
+  "VRT": {
+    "sniff": [
+      {
+        "url": "https://www.vertiv.com/en-us/about/career-center/",
+        "status": 200,
+        "final_url": "https://www.vertiv.com/en-us/about/career-center/",
+        "hits": {
+          "oraclecloud": "ee.channels.ocs.oraclecloud.com"
+        }
+      },
+      {
+        "url": "https://careers.vertiv.com/",
+        "error": "HTTPSConnectionPool(host='careers.vertiv.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionErro"
+      }
+    ],
+    "probes": [
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://ee.channels.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "works": false,
+        "status": 404
+      }
+    ]
+  },
+  "ETN": {
+    "sniff": [
+      {
+        "url": "https://eaton.eightfold.ai/careers",
+        "status": 200,
+        "final_url": "https://eaton.eightfold.ai/careers",
+        "hits": {
+          "eightfold": "eaton.eightfold.ai"
+        }
+      }
+    ],
+    "probes": [
+      {
+        "ats": "eightfold",
+        "endpoint": "https://eaton.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": 403
+      }
+    ]
+  }
+}
