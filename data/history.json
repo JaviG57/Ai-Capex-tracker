@@ -3044,7 +3044,8 @@
         "headcount": 1576000,
         "headcount_as_of": "2025-12-31",
         "warn_notices_90d": 4,
-        "warn_employees_90d": 326
+        "warn_employees_90d": 326,
+        "jobs_capped": true
       },
       "META": {
         "stock_price": 728.08,
@@ -3057,7 +3058,7 @@
       },
       "NVDA": {
         "jobs_overall": 2000,
-        "jobs_ai": 226,
+        "jobs_ai": 227,
         "jobs_source": "workday",
         "jobs_new": null,
         "jobs_closed": null,
@@ -3134,8 +3135,8 @@
         "warn_employees_90d": 800
       },
       "DELL": {
-        "jobs_overall": 380,
-        "jobs_ai": 21,
+        "jobs_overall": 382,
+        "jobs_ai": 22,
         "jobs_source": "oracle",
         "jobs_new": null,
         "jobs_closed": null,
@@ -3194,8 +3195,8 @@
         "warn_employees_90d": 0
       },
       "VRT": {
-        "jobs_overall": 2261,
-        "jobs_ai": 39,
+        "jobs_overall": 2271,
+        "jobs_ai": 40,
         "jobs_source": "oracle",
         "jobs_new": null,
         "jobs_closed": null,
@@ -3219,7 +3220,7 @@
     },
     "macro": {
       "pytorch/pytorch": {
-        "commits_last_24h": 29
+        "commits_last_24h": 15
       },
       "huggingface/transformers": {
         "commits_last_24h": 1
@@ -3228,15 +3229,15 @@
         "commits_last_24h": 17
       },
       "ggerganov/llama.cpp": {
-        "commits_last_24h": 11
+        "commits_last_24h": 15
       },
       "NVIDIA/TensorRT-LLM": {
-        "commits_last_24h": 6
+        "commits_last_24h": 3
       },
       "microsoft/DeepSpeed": {
-        "commits_last_24h": 1
+        "commits_last_24h": 2
       }
     },
-    "summary": "It's a quiet weekend by construction: 8-K counts are all zero because the SEC doesn't accept filings Saturday/Sunday, and job-posting churn (CRWV's and EQIX's jobs_new/jobs_closed both showing -100% d1) simply reflects that nobody posts or closes reqs on weekends \u2014 none of that is a freeze signal. Same goes for the commit-count dip pattern across repos (pytorch -62.3% d1, vllm -43.3%, TensorRT-LLM -50.0%); that's the normal weekly cycle, not a slowdown in model/infra development.\n\nWhat's actually worth noting is in the 7-day columns, which compare like weekdays. ASML's stock is up 7.1% over the week and TSM 4.9%, the two biggest moves on the board, with NVDA also up 3.9% \u2014 a reasonably synchronized rally across the chip/equipment side of the stack. Oracle stands out on the layoff side: warn_notices_90d fell 20% and warn_employees_90d fell 7.2% over the week (now 4 notices, 800 employees), the only names with any WARN movement at all this week \u2014 worth watching simply because Oracle is one of the more capex-exposed names on this list. Meta's stock is the lone decliner of note, down 3.1% on the week while every other hyperscaler/chipmaker is flat-to-up.\n\nOn hiring, open-posting counts are mostly static snapshots without enough history to trend yet (AMZN's 463 AI openings, NVDA's 226, ORCL's 49), except EQIX, where jobs_ai fell 6.7% and jobs_overall 2.6% over seven days \u2014 a real pullback in open AI-related reqs at a major data-center operator, small in absolute terms (14 AI postings) but notable given EQIX otherwise sh"
+    "summary": "It's a weekend, and that shows up mechanically across the dataset: every 8-K filing count sits at zero (the SEC simply doesn't accept filings on Saturdays or Sundays, so this is not a quiet news day, just a closed one), job posting churn at CoreWeave and Equinix is flat or -100% on the day because almost nobody posts or closes a req on a weekend, and commit activity on PyTorch (-80.5% d1), Hugging Face Transformers (-75% d1), TensorRT-LLM (-75% d1) and vLLM (-43.3% d1) all dropped hard intraday \u2014 the usual weekly cycle, not a slowdown in model development. None of that is signal; read the 7d/30d columns instead, and even those are thin today.\n\nOn the few numbers that do carry information: Oracle's WARN filings have eased over the past week, with 90-day notices down 20% and affected employees down 7.2%, a mild de-escalation worth tracking given Oracle sits at the center of several large AI-compute buildout deals. Equinix's open AI-tagged postings fell 6.7% over seven days (on a small base of 14), alongside a 2.6% dip in overall postings \u2014 not dramatic, but a possible early freeze signal at a company whose capacity is directly downstream of hyperscaler capex. Stock moves (last close, Friday Oct 2, carried flat over the weekend) showed real dispersion over the week: ASML +7.1%, TSM +4.9%, NVDA +3.9%, Oracle +3.8% on one side, Meta -3.1% on the other \u2014 a chip/equipment-vs-hyperscaler split rather than a uniform AI trade.\n\nNo synchronized hiring pattern is visible across hyperscalers today \u2014 most lack fresh d7 jobs data, and CRWV's +2"
   }
 ]
