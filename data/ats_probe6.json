@@ -1,0 +1,53 @@
+{
+  "VRT": {
+    "ats": "oraclecloud",
+    "endpoint": "https://egup.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+    "site": "CX_1",
+    "works": true,
+    "job_count": 2261
+  },
+  "SMCI": {
+    "ats": "successfactors",
+    "endpoint": "https://career4.successfactors.com/career",
+    "company": "supermicro",
+    "works": true,
+    "job_count": 15,
+    "sample": null
+  },
+  "MSFT": {
+    "ats": "ms",
+    "works": false,
+    "tries": [
+      {
+        "url": "https://gcsservices.careers.microsoft.com/search/api/v1/search",
+        "error": "HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries excee"
+      },
+      {
+        "url": "https://apply.careers.microsoft.com/api/apply/v2/jobs",
+        "status": 403,
+        "body": "{\"message\": \"Not authorized for PCSX\"}\n"
+      }
+    ]
+  },
+  "GOOGL": {
+    "ats": "google",
+    "works": false,
+    "tries": [
+      {
+        "url": "https://careers.google.com/api/v3/search/",
+        "status": 404,
+        "body": "{\"detail\":\"Not Found\"}"
+      },
+      {
+        "url": "https://www.google.com/about/careers/applications/api/v3/search/",
+        "status": 404,
+        "body": "<html lang=\"en\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-"
+      },
+      {
+        "url": "https://careers.google.com/api/v2/jobs/search/",
+        "status": 404,
+        "body": "<html lang=\"en\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-"
+      }
+    ]
+  }
+}
