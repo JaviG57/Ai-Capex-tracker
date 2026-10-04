@@ -1,0 +1,113 @@
+{
+  "probes": {
+    "MSFT": [
+      {
+        "ats": "eightfold",
+        "endpoint": "https://apply.careers.microsoft.com/api/apply/v2/jobs",
+        "works": false,
+        "status": "403/err all variants"
+      },
+      {
+        "ats": "eightfold",
+        "endpoint": "https://app.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": "403/err all variants"
+      }
+    ],
+    "ETN": [
+      {
+        "ats": "eightfold",
+        "endpoint": "https://eaton.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": "403/err all variants"
+      },
+      {
+        "ats": "eightfold",
+        "endpoint": "https://app.eightfold.ai/api/apply/v2/jobs",
+        "works": false,
+        "status": "403/err all variants"
+      }
+    ],
+    "DELL": [
+      {
+        "ats": "oraclecloud",
+        "endpoint": "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+        "site": "CX_1",
+        "works": true,
+        "job_count": 380
+      }
+    ],
+    "AMD": [
+      {
+        "ats": "icims",
+        "endpoint": "internal-amd",
+        "works": false
+      },
+      {
+        "ats": "icims",
+        "endpoint": "amd",
+        "works": false
+      }
+    ],
+    "ARM": [
+      {
+        "ats": "icims",
+        "endpoint": "earlycareers-arm",
+        "works": false
+      },
+      {
+        "ats": "icims",
+        "endpoint": "arm",
+        "works": false
+      }
+    ],
+    "GOOGL": [
+      {
+        "ats": "google_careers",
+        "works": false,
+        "attempts": [
+          {
+            "url": "https://careers.google.com/api/v3/search/",
+            "status": 404,
+            "body": "{\"detail\":\"Not Found\"}"
+          },
+          {
+            "url": "https://www.google.com/about/careers/applications/api/v3/search/",
+            "status": 404,
+            "body": "<html lang=\"en\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"><title>Error 404 (Not F"
+          }
+        ]
+      }
+    ]
+  },
+  "sniffs": {
+    "TSM": {
+      "iframe": [
+        "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-NHMTHSDB\""
+      ]
+    },
+    "ASML": {},
+    "DLR": {
+      "errors": [
+        "HTTPSConnectionPool(host='careers.digitalrealty.com', port=4"
+      ]
+    },
+    "VRT": {
+      "oracle_orc": [
+        "egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience"
+      ],
+      "iframe": [
+        "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-WVQJS6\"",
+        "<iframe src=\"https://www.youtube.com/embed/AtAbgZCKGRg?playsinline=1&amp;color=white&amp;autohide=1&amp;showinfo=0\""
+      ]
+    },
+    "SMCI": {
+      "successfactors": [
+        "career4.successfactors.com",
+        "performancemanager4.successfactors.com",
+        "rmkcdn.successfactors.com"
+      ]
+    },
+    "META": {}
+  }
+}
