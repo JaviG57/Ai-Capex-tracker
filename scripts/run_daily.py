@@ -13,6 +13,7 @@ import companies as companies_module
 import fetch_jobs_theirstack
 import fetch_jobs_ats
 import fetch_headcount_10k
+import fetch_capex
 import fetch_market_data
 import fetch_sec_edgar
 import fetch_github_activity
@@ -108,6 +109,16 @@ def main():
         print(f"   headcount fetch failed, using cache: {e}")
         headcount = fetch_headcount_10k.load_cache()
 
+    print("-> Quarterly capex (SEC XBRL -- the actual spend, not a proxy)")
+    try:
+        capex = fetch_capex.fetch_all(companies, fetch_sec_edgar.get_cik_map())
+    except Exception as e:
+        print(f"   capex fetch failed, using cache: {e}")
+        try:
+            capex = json.loads(fetch_capex.CACHE.read_text())
+        except Exception:
+            capex = {}
+
     print("-> WARN layoff notices (read from the separate WARN workflow's output)")
     warn = load_warn_summary(today_str)
 
@@ -192,7 +203,7 @@ def main():
     context_note = ("NOTE: " + " ".join(notes)) if notes else ""
     if notes:
         print(f"   context flags: markets_closed={today_str not in price_dates}, weekend={weekday >= 5}")
-    summary = generate_summary.generate(deltas, context_note, headcount)
+    summary = generate_summary.generate(deltas, context_note, headcount, capex)
     history[-1]["summary"] = summary
 
     storage.save_history(history)

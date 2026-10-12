@@ -42,6 +42,17 @@ not just within one (e.g. hiring decelerating while 8-K/capex-signal \
 activity holds steady or accelerates would be a notable divergence worth \
 flagging as a thing to watch, not a conclusion to draw).
 
+Reading capex correctly:
+- Capex is the ACTUAL money these companies spent on property, plant and
+equipment -- data centres, chips, land, power. It is the single best answer to
+"is AI capex accelerating or decelerating", so lead with it whenever fresh
+figures are present, and treat the daily metrics as supporting colour.
+- It is QUARTERLY and does not change day to day. Do not describe it as moving
+today; cite the quarter it covers and its QoQ / YoY growth. Note when a
+company's latest quarter is older than its peers' (fiscal calendars differ).
+- Decelerating capex means GROWTH SLOWING (e.g. +100% YoY falling to +40%),
+not negative spend. Say which it is.
+
 Reading the workforce metrics correctly:
 - jobs_overall / jobs_ai = open postings (demand for new people), not headcount.
 - jobs_new / jobs_closed = posting churn vs. the prior day, available only for
@@ -70,7 +81,8 @@ manufacturing a narrative out of noise.
 """
 
 
-def generate(deltas: dict, context_note: str = "", headcount: dict | None = None) -> str:
+def generate(deltas: dict, context_note: str = "", headcount: dict | None = None,
+             capex: dict | None = None) -> str:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return "(No ANTHROPIC_API_KEY set -- skipping daily summary generation.)"
@@ -79,6 +91,14 @@ def generate(deltas: dict, context_note: str = "", headcount: dict | None = None
 
     client = anthropic.Anthropic(api_key=api_key)
     user_content = f"Today's metric deltas:\n{json.dumps(deltas, indent=2)}"
+    if capex:
+        compact = {t: {"latest_quarter": v.get("latest_end"),
+                       "capex_usd_bn": round((v.get("latest_value") or 0) / 1e9, 2),
+                       "qoq_pct": v.get("qoq_pct"), "yoy_pct": v.get("yoy_pct")}
+                   for t, v in capex.items() if v.get("latest_value")}
+        user_content += ("\n\nACTUAL quarterly capital expenditure from SEC filings "
+                         "(the real spend -- everything else here is a proxy):\n"
+                         + json.dumps(compact))
     if headcount:
         compact = {t: {"headcount": v.get("headcount"), "as_of": v.get("as_of")}
                    for t, v in headcount.items() if v.get("headcount")}

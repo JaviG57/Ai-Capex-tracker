@@ -124,6 +124,7 @@
 <nav>
   <div class="brand">AI Capex Tracker</div>
   <button data-tab="briefing" class="active">Today's briefing</button>
+  <button data-tab="capex_actual">Capex (actual)</button>
   <button data-tab="hiring">Hiring</button>
   <button data-tab="market">Market</button>
   <button data-tab="capex">Capex Signals</button>
@@ -147,6 +148,20 @@
       <div class="grid-5" id="briefingSparks"></div>
       <h3 style="margin:28px 0 4px;font-size:14px;color:var(--text-muted);font-weight:600;">Previous briefings</h3>
       <div id="summaryList"></div>
+    </section>
+
+    <section class="tab-panel" id="tab-capex_actual">
+      <div class="card agg-chart-card">
+        <h3>Quarterly capital expenditure</h3>
+        <div class="sub">Actual cash spent on property, plant &amp; equipment, from SEC filings &mdash; the real measure, not a proxy. Top 8 spenders.</div>
+        <div class="chart-box"><canvas id="capexChart"></canvas></div>
+      </div>
+      <div class="card agg-chart-card">
+        <h3>Year-over-year growth</h3>
+        <div class="sub">Growth rate of the latest reported quarter vs. the same quarter a year earlier. Deceleration shows up here first.</div>
+        <div class="chart-box"><canvas id="capexGrowthChart"></canvas></div>
+      </div>
+      <div id="capexTable"></div>
     </section>
 
     <section class="tab-panel" id="tab-hiring">
@@ -199,6 +214,7 @@ const GROUP_ORDER = ['Hyperscalers', 'Chipmakers', 'Infra / OEM', 'Power / Data 
 
 let history = [];
 let companyMeta = [];
+let capexData = {};
 let charts = {};
 let renderedTabs = {};
 let hiringMetric = 'jobs_ai';
@@ -582,6 +598,52 @@ function renderMarket() {
   });
 }
 
+function renderCapexActual() {
+  const entries = Object.entries(capexData)
+    .filter(([, v]) => v && v.quarters && v.quarters.length)
+    .sort((a, b) => (b[1].latest_value || 0) - (a[1].latest_value || 0));
+  if (!entries.length) {
+    document.getElementById('capexTable').innerHTML =
+      '<div class="empty-state">No capex data yet.</div>';
+    return;
+  }
+
+  // Quarterly spend, top 8 by latest quarter. Quarter-end labels are shared
+  // across companies; fiscal calendars differ so dates won't align exactly.
+  const top = entries.slice(0, 8);
+  const labels = [...new Set(top.flatMap(([, v]) => v.quarters.map(q => q.end)))].sort();
+  drawChart('capexChart', 'line', labels, top.map(([t, v], i) => {
+    const byEnd = Object.fromEntries(v.quarters.map(q => [q.end, q.value / 1e9]));
+    return { label: t, data: labels.map(l => (l in byEnd ? byEnd[l] : null)),
+             borderColor: COLORS[i % COLORS.length], backgroundColor: COLORS[i % COLORS.length],
+             tension: 0.25, borderWidth: 2, pointRadius: 2 };
+  }), { scales: {
+      x: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
+      y: { ticks: { color: '#8A9BA3', callback: v => '$' + v + 'B' }, grid: { color: '#263139' } } } });
+
+  const growth = entries.filter(([, v]) => v.yoy_pct != null).slice(0, 12);
+  drawChart('capexGrowthChart', 'bar', growth.map(([t]) => t), [{
+    label: 'YoY capex growth, latest quarter',
+    data: growth.map(([, v]) => v.yoy_pct),
+    backgroundColor: growth.map(([, v]) => (v.yoy_pct >= 0 ? '#4FD1C5' : '#E2725B')),
+  }], { plugins: { legend: { display: false } }, scales: {
+      x: { ticks: { color: '#8A9BA3' }, grid: { color: '#263139' } },
+      y: { ticks: { color: '#8A9BA3', callback: v => v + '%' }, grid: { color: '#263139' } } } });
+
+  document.getElementById('capexTable').innerHTML = `<div class="card"><div class="table-scroll"><table>
+    <thead><tr><th>Company</th><th>Latest quarter</th><th>Capex</th><th>QoQ</th><th>YoY</th><th>Trend</th></tr></thead>
+    <tbody>${entries.map(([t, v]) => `<tr>
+      <td><strong>${t}</strong><span class="ticker-name">${companyName(t)}</span></td>
+      <td class="num">${v.latest_end}</td>
+      <td class="num">${(v.latest_value / 1e9).toFixed(2)}B${v.unit !== 'USD' ? ' ' + v.unit : ''}</td>
+      <td class="num">${fmtDelta(v.qoq_pct, '%')}</td>
+      <td class="num">${fmtDelta(v.yoy_pct, '%')}</td>
+      <td class="trend"><canvas id="cxsp-${t}"></canvas></td>
+    </tr>`).join('')}</tbody></table></div></div>`;
+  entries.forEach(([t, v], i) =>
+    drawSparkline(`cxsp-${t}`, v.quarters.map(q => q.value / 1e9), COLORS[i % COLORS.length]));
+}
+
 function renderCapex() {
   drawChart('chart8k', 'bar', dateLabels(), [{
     label: '8-K filings (all tracked companies)',
@@ -600,8 +662,8 @@ function renderEcosystem() {
 
 // ---------- tab switching (render on activate: Chart.js can't size a hidden canvas) ----------
 const RENDERERS = {
-  briefing: renderBriefing, hiring: renderHiring, market: renderMarket,
-  capex: renderCapex, ecosystem: renderEcosystem,
+  briefing: renderBriefing, capex_actual: renderCapexActual, hiring: renderHiring,
+  market: renderMarket, capex: renderCapex, ecosystem: renderEcosystem,
 };
 
 function activateTab(name) {
@@ -635,6 +697,7 @@ document.querySelectorAll('[data-hiring-calc]').forEach(b => {
 async function loadData() {
   try { history = await (await fetch('../data/history.json')).json(); } catch (e) { history = []; }
   try { companyMeta = await (await fetch('../data/companies_meta.json')).json(); } catch (e) { companyMeta = []; }
+  try { capexData = await (await fetch('../data/capex.json')).json(); } catch (e) { capexData = {}; }
 
   if (!history.length) {
     document.getElementById('loadError').style.display = 'block';
