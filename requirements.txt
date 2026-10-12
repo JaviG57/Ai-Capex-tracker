@@ -1,3 +1,4 @@
 requests>=2.31
 yfinance>=0.2.40
 anthropic>=0.40
+playwright>=1.40

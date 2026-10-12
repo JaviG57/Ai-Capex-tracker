@@ -36,38 +36,60 @@ def _is_ai_title(title: str) -> bool:
 
 
 def _fetch_microsoft(page) -> dict | None:
+    """Try the page's own search API from inside its session first; if that
+    returns nothing, fall back to the job count the page displays."""
+    import re
     page.goto("https://jobs.careers.microsoft.com/global/en/search",
               wait_until="networkidle", timeout=60000)
-    page.wait_for_timeout(3000)
+    page.wait_for_timeout(4000)
 
-    # Run the search from inside the page so its session/cookies apply.
-    titles = page.evaluate("""async () => {
-        const out = []; let start = 0, total = null;
-        while (start < 4000) {
-            const u = 'https://apply.careers.microsoft.com/api/pcsx/search'
-                    + '?domain=microsoft.com&query=&location=&start=' + start
-                    + '&num=100&sort_by=relevance';
-            const r = await fetch(u, { credentials: 'include' });
-            if (!r.ok) break;
-            const d = await r.json();
-            if (total === null) total = d.count ?? d.total ?? null;
-            const rows = d.positions || d.jobs || [];
-            if (!rows.length) break;
-            for (const p of rows) out.push(p.name || p.title || '');
-            start += rows.length;
-            if (total !== null && start >= total) break;
-            await new Promise(s => setTimeout(s, 300));
-        }
-        return { titles: out, total };
-    }""")
-    if not titles or not titles.get("titles"):
+    data = page.evaluate("""async () => {
+        try {
+            const out = []; let start = 0, total = null;
+            while (start < 4000) {
+                const u = 'https://apply.careers.microsoft.com/api/pcsx/search'
+                        + '?domain=microsoft.com&query=&location=&start=' + start
+                        + '&num=100&sort_by=relevance';
+                const r = await fetch(u, { credentials: 'include' });
+                if (!r.ok) break;
+                const d = await r.json();
+                if (total === null) total = d.count ?? d.total ?? null;
+                const rows = d.positions || d.jobs || [];
+                if (!rows.length) break;
+                for (const p of rows) out.push(p.name || p.title || '');
+                start += rows.length;
+                if (total !== null && start >= total) break;
+                await new Promise(s => setTimeout(s, 300));
+            }
+            return { titles: out, total };
+        } catch (e) { return { error: String(e) }; }
+    }""") or {}
+
+    if data.get("titles"):
+        ts = data["titles"]
+        return {"jobs_overall": data.get("total") or len(ts),
+                "jobs_ai": sum(1 for t in ts if _is_ai_title(t)),
+                "jobs_source": "ms_careers_browser", "jobs_approx": False}
+
+    # Fallback: read the count the page itself renders ("2246 jobs").
+    m = re.search(r"([\d,]+)\s+jobs\b", page.inner_text("body"), re.I)
+    if not m:
         return None
-    ts = titles["titles"]
-    total = titles.get("total") or len(ts)
-    return {"jobs_overall": total,
-            "jobs_ai": sum(1 for t in ts if _is_ai_title(t)),
-            "jobs_source": "ms_careers_browser",
-            "jobs_approx": False}
+    overall = int(m.group(1).replace(",", ""))
+    ai = None
+    try:
+        page.goto("https://jobs.careers.microsoft.com/global/en/search?q=machine%20learning",
+                  wait_until="networkidle", timeout=60000)
+        page.wait_for_timeout(4000)
+        m2 = re.search(r"([\d,]+)\s+jobs\b", page.inner_text("body"), re.I)
+        if m2:
+            n = int(m2.group(1).replace(",", ""))
+            # Only trust it if the query actually narrowed the result set.
+            ai = n if n < overall else None
+    except Exception:
+        pass
+    return {"jobs_overall": overall, "jobs_ai": ai,
+            "jobs_source": "ms_careers_browser", "jobs_approx": True}
 
 
 def _meta_count(page, url) -> int | None:

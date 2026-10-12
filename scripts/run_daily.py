@@ -12,6 +12,7 @@ import traceback
 import companies as companies_module
 import fetch_jobs_theirstack
 import fetch_jobs_ats
+import fetch_jobs_browser
 import fetch_headcount_10k
 import fetch_capex
 import fetch_market_data
@@ -60,7 +61,8 @@ def main():
     # keeps us inside the quota instead of exhausting it in ~11 days and then
     # silently returning nothing for everyone (which is what happened before).
     debug_limit = int(os.environ.get("THEIRSTACK_DEBUG_LIMIT", "0"))
-    uncovered = [c for c in companies if c["ticker"] not in fetch_jobs_ats.ATS_SOURCES]
+    covered = set(fetch_jobs_ats.ATS_SOURCES) | {"MSFT", "META"}
+    uncovered = [c for c in companies if c["ticker"] not in covered]
     per_day = int(os.environ.get("THEIRSTACK_PER_DAY", "5"))
     if debug_limit:
         theirstack_companies = uncovered[:debug_limit]
@@ -95,6 +97,13 @@ def main():
 
     print("-> Direct ATS job boards (companies TheirStack doesn't cover)")
     ats_jobs = fetch_jobs_ats.fetch_all(companies)
+
+    print("-> Browser-rendered job boards (MSFT, META)")
+    try:
+        browser_jobs = fetch_jobs_browser.fetch_all(companies)
+    except Exception as e:
+        print(f"   browser job fetch failed: {e}")
+        browser_jobs = {}
 
     print("-> Market data (price)")
     market = fetch_market_data.fetch_all(companies)
@@ -138,6 +147,7 @@ def main():
         merged = {}
         merged.update(jobs.get(t, {}))
         merged.update(ats_jobs.get(t, {}))  # direct ATS wins where available
+        merged.update(browser_jobs.get(t, {}))  # browser-rendered sources
         merged.update(market.get(t, {}))
         merged.update(sec.get(t, {}))
         hc = headcount.get(t, {})
