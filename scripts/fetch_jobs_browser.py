@@ -126,5 +126,9 @@ def fetch_all(companies) -> dict:
 
 
 if __name__ == "__main__":
+    import pathlib
     import companies as cm
-    print(json.dumps(fetch_all(cm.COMPANIES), indent=2))
+    res = fetch_all(cm.COMPANIES)
+    pathlib.Path(__file__).resolve().parent.parent.joinpath(
+        "data/browser_jobs_test.json").write_text(json.dumps(res, indent=2, default=str))
+    print(json.dumps(res, indent=2))
