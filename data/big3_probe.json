@@ -1,0 +1,64 @@
+{
+  "MSFT": {
+    "tries": [
+      {
+        "url": "https://gcsservices.careers.microsoft.com/search/api/v1/search",
+        "error": "HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with u"
+      },
+      {
+        "url": "https://jobs.careers.microsoft.com/global/en/search",
+        "status": 200,
+        "total": null,
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link href=\"https://static.vscdn.net/fonts/css/eightfold-font-base.css\" rel=\"stylesheet\" integrity=\"\" crossorigin=\"anonymous\">\n"
+      }
+    ],
+    "discovered": [
+      "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31&#34;},",
+      "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31&#34;}],",
+      "https://www.recaptcha.net/recaptcha/api.js?render=6LfwboYUAAAAAJb6QcVuRXi7R9pTqgGKF6TnNzia"
+    ]
+  },
+  "GOOGL": {
+    "tries": [
+      {
+        "url": "https://www.google.com/about/careers/applications/api/v3/search/",
+        "status": 404,
+        "body": "<html lang=\"en\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"><title>Error 404 (Not F"
+      },
+      {
+        "url": "https://careers.google.com/api/v3/search/",
+        "status": 404,
+        "body": "{\"detail\":\"Not Found\"}"
+      },
+      {
+        "url": "https://www.google.com/about/careers/applications/api/v2/jobs/search",
+        "status": 404,
+        "body": "<html lang=\"en\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"><title>Error 404 (Not F"
+      }
+    ],
+    "discovered": [
+      "https://careers.google.com/jobs/dist/legal/EEOC_KnowYourRights_10_20.pdf",
+      "https://careers.google.com/jobs/results/",
+      "https://www.google.com/about/careers/applications/jobs/results",
+      "https://www.google.com/about/careers/applications/jobs/results/",
+      "https://www.google.com/about/careers/applications/jobs/results/&amp;followup=https://www.google.com/about/careers/",
+      "https://www.google.com/about/careers/applications/jobs/results/?page=2",
+      "https://www.linkedin.com/company/google/jobs/"
+    ]
+  },
+  "META": {
+    "tries": [
+      {
+        "url": "https://www.metacareers.com/jobs",
+        "status": 400,
+        "body": "<?xml version=\"1.0\"?>\n<!DOCTYPE html>\n<html lang=\"en\" id=\"facebook\">\n  <head>\n    <title>Error</title>\n    <meta charset=\"utf-8\"/>\n    <meta http-equi"
+      },
+      {
+        "url": "https://www.metacareers.com/api/jobs",
+        "status": 429,
+        "body": "<!DOCTYPE html><html id=\"facebook\" class=\"_a4ch _aber _auh9 _av9d\" lang=\"en\" dir=\"ltr\"><head><link data-default-icon=\"https://static.xx.fbcdn.net/rsrc"
+      }
+    ],
+    "discovered": []
+  }
+}
