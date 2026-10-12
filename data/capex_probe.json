@@ -1,0 +1,636 @@
+{
+  "GOOGL": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 36,
+          "9mo": 22,
+          "3mo": 42,
+          "6mo": 22
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            63596000000
+          ],
+          [
+            "2025-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            91447000000
+          ],
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            35674000000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            80598000000
+          ]
+        ]
+      }
+    }
+  },
+  "AMZN": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 72,
+          "6mo": 16,
+          "3mo": 48,
+          "9mo": 16
+        },
+        "last4": [
+          [
+            "2016-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            4731000000
+          ],
+          [
+            "2016-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            6737000000
+          ],
+          [
+            "2017-03-31",
+            "12mo",
+            "Q1",
+            "10-Q",
+            7417000000
+          ],
+          [
+            "2017-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            1861000000
+          ]
+        ]
+      },
+      "us-gaap:PaymentsToAcquireProductiveAssets": {
+        "durations": {
+          "12mo": 72,
+          "9mo": 16,
+          "3mo": 48,
+          "6mo": 16
+        },
+        "last4": [
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            44203000000
+          ],
+          [
+            "2026-06-30",
+            "12mo",
+            "Q2",
+            "10-Q",
+            173028000000
+          ],
+          [
+            "2026-06-30",
+            "3mo",
+            "Q2",
+            "10-Q",
+            54208000000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            98411000000
+          ]
+        ]
+      }
+    }
+  },
+  "META": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "srt",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 42,
+          "6mo": 30,
+          "9mo": 28,
+          "3mo": 28
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            48308000000
+          ],
+          [
+            "2025-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            69691000000
+          ],
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            18997000000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            49113000000
+          ]
+        ]
+      }
+    }
+  },
+  "NVDA": {
+    "taxonomies": [
+      "dei",
+      "invest",
+      "us-gaap",
+      "srt",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 3,
+          "3mo": 18,
+          "6mo": 18,
+          "9mo": 16
+        },
+        "last4": [
+          [
+            "2019-07-28",
+            "6mo",
+            "Q2",
+            "10-Q",
+            241000000
+          ],
+          [
+            "2019-10-27",
+            "9mo",
+            "Q3",
+            "10-Q",
+            344000000
+          ],
+          [
+            "2020-04-26",
+            "3mo",
+            "Q1",
+            "10-Q",
+            155000000
+          ],
+          [
+            "2020-07-26",
+            "6mo",
+            "Q2",
+            "10-Q",
+            372000000
+          ]
+        ]
+      },
+      "us-gaap:PaymentsToAcquireProductiveAssets": {
+        "durations": {
+          "9mo": 10,
+          "3mo": 8,
+          "6mo": 8,
+          "12mo": 9
+        },
+        "last4": [
+          [
+            "2025-10-26",
+            "9mo",
+            "Q3",
+            "10-Q",
+            4758000000
+          ],
+          [
+            "2026-01-25",
+            "12mo",
+            "FY",
+            "10-K",
+            6042000000
+          ],
+          [
+            "2026-04-26",
+            "3mo",
+            "Q1",
+            "10-Q",
+            1757000000
+          ],
+          [
+            "2026-07-26",
+            "6mo",
+            "Q2",
+            "10-Q",
+            4434000000
+          ]
+        ]
+      }
+    }
+  },
+  "AMD": {
+    "taxonomies": [
+      "dei",
+      "invest",
+      "us-gaap",
+      "srt",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 48,
+          "6mo": 34,
+          "9mo": 32,
+          "3mo": 32
+        },
+        "last4": [
+          [
+            "2025-09-27",
+            "9mo",
+            "Q3",
+            "10-Q",
+            752000000
+          ],
+          [
+            "2025-12-27",
+            "12mo",
+            "FY",
+            "10-K",
+            974000000
+          ],
+          [
+            "2026-03-28",
+            "3mo",
+            "Q1",
+            "10-Q",
+            389000000
+          ],
+          [
+            "2026-06-27",
+            "6mo",
+            "Q2",
+            "10-Q",
+            1197000000
+          ]
+        ]
+      }
+    }
+  },
+  "TSM": {
+    "taxonomies": [
+      "dei",
+      "ifrs-full",
+      "srt"
+    ],
+    "tags": {}
+  },
+  "ASML": {
+    "taxonomies": [
+      "dei",
+      "us-gaap"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {},
+        "last4": []
+      }
+    }
+  },
+  "ARM": {
+    "taxonomies": [
+      "us-gaap",
+      "dei",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 9,
+          "6mo": 6,
+          "9mo": 6,
+          "3mo": 6
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "6mo",
+            "Q2",
+            "6-K",
+            292000000
+          ],
+          [
+            "2025-12-31",
+            "9mo",
+            "Q3",
+            "6-K",
+            471000000
+          ],
+          [
+            "2026-03-31",
+            "12mo",
+            "FY",
+            "20-F",
+            545000000
+          ],
+          [
+            "2026-06-30",
+            "3mo",
+            "Q1",
+            "6-K",
+            197000000
+          ]
+        ]
+      }
+    }
+  },
+  "ORCL": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "ecd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 45,
+          "3mo": 32,
+          "6mo": 30,
+          "9mo": 30
+        },
+        "last4": [
+          [
+            "2025-11-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            20535000000
+          ],
+          [
+            "2026-02-28",
+            "9mo",
+            "Q3",
+            "10-Q",
+            39170000000
+          ],
+          [
+            "2026-05-31",
+            "12mo",
+            "FY",
+            "10-K",
+            55663000000
+          ],
+          [
+            "2026-08-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            28499000000
+          ]
+        ]
+      }
+    }
+  },
+  "SMCI": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "srt",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 45,
+          "3mo": 30,
+          "6mo": 30,
+          "9mo": 30
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "3mo",
+            "Q1",
+            "10-Q",
+            32270000
+          ],
+          [
+            "2025-12-31",
+            "6mo",
+            "Q2",
+            "10-Q",
+            53491000
+          ],
+          [
+            "2026-03-31",
+            "9mo",
+            "Q3",
+            "10-Q",
+            133769000
+          ],
+          [
+            "2026-06-30",
+            "12mo",
+            "FY",
+            "10-K",
+            161999000
+          ]
+        ]
+      }
+    }
+  },
+  "CRWV": {
+    "taxonomies": [
+      "us-gaap",
+      "dei",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 3,
+          "3mo": 4,
+          "6mo": 4,
+          "9mo": 2
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            6249239000
+          ],
+          [
+            "2025-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            10309000000
+          ],
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            7695000000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            14117000000
+          ]
+        ]
+      }
+    }
+  },
+  "DLR": {
+    "taxonomies": [
+      "dei",
+      "invest",
+      "srt",
+      "us-gaap",
+      "ecd",
+      "ffd"
+    ],
+    "tags": {}
+  },
+  "VRT": {
+    "taxonomies": [
+      "dei",
+      "us-gaap",
+      "ecd"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 21,
+          "3mo": 18,
+          "6mo": 14,
+          "9mo": 12
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            126700000
+          ],
+          [
+            "2025-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            220000000
+          ],
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            112600000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            285900000
+          ]
+        ]
+      }
+    }
+  },
+  "ETN": {
+    "taxonomies": [
+      "dei",
+      "us-gaap"
+    ],
+    "tags": {
+      "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment": {
+        "durations": {
+          "12mo": 45,
+          "3mo": 28,
+          "6mo": 30,
+          "9mo": 26
+        },
+        "last4": [
+          [
+            "2025-09-30",
+            "9mo",
+            "Q3",
+            "10-Q",
+            527000000
+          ],
+          [
+            "2025-12-31",
+            "12mo",
+            "FY",
+            "10-K",
+            919000000
+          ],
+          [
+            "2026-03-31",
+            "3mo",
+            "Q1",
+            "10-Q",
+            193000000
+          ],
+          [
+            "2026-06-30",
+            "6mo",
+            "Q2",
+            "10-Q",
+            446000000
+          ]
+        ]
+      }
+    }
+  }
+}
