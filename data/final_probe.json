@@ -1,0 +1,42 @@
+{
+  "MSFT": {
+    "all": {
+      "status": 429,
+      "count": null,
+      "returned": 0,
+      "keys": [],
+      "sample_title": null
+    },
+    "machine learning": {
+      "status": 429,
+      "count": null,
+      "returned": 0,
+      "keys": [],
+      "sample_title": null
+    },
+    "artificial intelligence": {
+      "status": 429,
+      "count": null,
+      "returned": 0,
+      "keys": [],
+      "sample_title": null
+    }
+  },
+  "META": {
+    "all": {
+      "pages": 114,
+      "explicit_total": 114,
+      "links_on_page": 0
+    },
+    "machine learning": {
+      "pages": 13,
+      "explicit_total": 13,
+      "links_on_page": 0
+    },
+    "ai": {
+      "pages": 11,
+      "explicit_total": 11,
+      "links_on_page": 0
+    }
+  }
+}
