@@ -1,0 +1,56 @@
+{
+  "GOOGL": [
+    {
+      "url": "https://www.google.com/about/careers/applications/jobs/results/",
+      "robots": "DISALLOWED by https://www.google.com/robots.txt",
+      "skipped": true
+    },
+    {
+      "url": "https://www.google.com/about/careers/applications/jobs/results/?q=%22machine%20learning%22",
+      "robots": "DISALLOWED by https://www.google.com/robots.txt",
+      "skipped": true
+    }
+  ],
+  "MSFT": [
+    {
+      "url": "https://jobs.careers.microsoft.com/global/en/search",
+      "robots": "ALLOWED by https://jobs.careers.microsoft.com/robots.txt",
+      "status": 200,
+      "final_url": "https://apply.careers.microsoft.com/careers",
+      "len": 680325,
+      "job_links_in_html": 0,
+      "sample": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\"> <link href=\"https://static.vscdn.net/fonts/css/eightfold-font-base.css\" rel=\"stylesheet\" integrity=\"\" crossorigin=\"anonymous\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=6.0\"> <m"
+    },
+    {
+      "url": "https://gcsservices.careers.microsoft.com/search/api/v1/search",
+      "error": "HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/s"
+    },
+    {
+      "url": "https://jobs.careers.microsoft.com/widgets",
+      "status": 200,
+      "total": null,
+      "ctype": "text/html; charset=utf-8",
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link href=\"https://static.vscdn.net/fonts/css/eightfold-font-base.css\" rel=\"stylesheet\" integrity=\"\" crossorigin=\"anonymous\">\n"
+    }
+  ],
+  "META": [
+    {
+      "url": "https://www.metacareers.com/jobs/",
+      "robots": "ALLOWED by https://www.metacareers.com/robots.txt",
+      "status": 200,
+      "final_url": "https://www.metacareers.com/jobsearch/",
+      "len": 447940,
+      "job_links_in_html": 0,
+      "sample": "<!DOCTYPE html><html id=\"facebook\" class=\"_9dls _9t1d\" lang=\"en\" dir=\"ltr\"><head><link data-default-icon=\"https://static.xx.fbcdn.net/rsrc.php/y3/r/iUyd7C5uqWN.webp\" rel=\"shortcut icon\" href=\"https://static.xx.fbcdn.net/rsrc.php/y3/r/iUyd7C5uqWN.webp\" /><meta name=\"bingbot\" content=\"noarchive\" /><me"
+    },
+    {
+      "url": "https://www.metacareers.com/jobs",
+      "robots": "ALLOWED by https://www.metacareers.com/robots.txt",
+      "status": 200,
+      "final_url": "https://www.metacareers.com/jobsearch/",
+      "len": 447934,
+      "job_links_in_html": 0,
+      "sample": "<!DOCTYPE html><html id=\"facebook\" class=\"_9dls _9t1d\" lang=\"en\" dir=\"ltr\"><head><link data-default-icon=\"https://static.xx.fbcdn.net/rsrc.php/y3/r/iUyd7C5uqWN.webp\" rel=\"shortcut icon\" href=\"https://static.xx.fbcdn.net/rsrc.php/y3/r/iUyd7C5uqWN.webp\" /><meta name=\"bingbot\" content=\"noarchive\" /><me"
+    }
+  ]
+}
