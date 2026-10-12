@@ -1,0 +1,125 @@
+{
+  "MSFT": {
+    "url": {
+      "text_head": "Skip to main content Careers Locations Professions Programs Life at Microsoft Hiring tips Join talent network Sign in Jobs Search jobs Job cart 0 Work site Experience level Profession Discipline All filters Clear All Get personalized job recommendations Use AI to see how you match and get help on your career journey Upload your resume 2246 jobs Sort: Latest Turn on job alerts for this search Manage Director Sales - Scaling AI Digital Natives Singapore, Singapore, Singapore Posted 30 minutes ago ",
+      "candidates": [
+        [
+          2246,
+          "atch and get help on your career journey\nUpload your resume\n2246 jobs\nSort: Latest\nTurn on job aler"
+        ],
+        [
+          225,
+          "ions, Multiple Locations + 1 more\nPosted an hour ago\nPage 1 of 225\n1 of 225\nDirector Sales - Sca"
+        ],
+        [
+          225,
+          "tiple Locations + 1 more\nPosted an hour ago\nPage 1 of 225\n1 of 225\nDirector Sales - Scaling AI D"
+        ]
+      ]
+    },
+    "ai_url": {
+      "text_head": "Skip to main content Careers Locations Professions Programs Life at Microsoft Hiring tips Join talent network Sign in Jobs Search jobs Job cart 0 Work site Experience level Profession Discipline All filters Clear All Get personalized job recommendations Use AI to see how you match and get help on your career journey Upload your resume 2246 jobs Sort: Latest Turn on job alerts for this search Manage Director Sales - Scaling AI Digital Natives Singapore, Singapore, Singapore Posted 30 minutes ago ",
+      "candidates": [
+        [
+          2246,
+          "atch and get help on your career journey\nUpload your resume\n2246 jobs\nSort: Latest\nTurn on job aler"
+        ],
+        [
+          225,
+          "ions, Multiple Locations + 1 more\nPosted an hour ago\nPage 1 of 225\n1 of 225\nDirector Sales - Sca"
+        ],
+        [
+          225,
+          "tiple Locations + 1 more\nPosted an hour ago\nPage 1 of 225\n1 of 225\nDirector Sales - Scaling AI D"
+        ]
+      ]
+    },
+    "xhr": [
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/job_cart?domain=microsoft.com",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=&start=0&",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/match_details?position_id=1970393557021838&domain=microsoft.com",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/position_details?position_id=1970393557021838&domain=microsoft.com&hl=en",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/position_insights?position_id=1970393557021838&domain=microsoft.com",
+        200
+      ],
+      [
+        "GET",
+        "https://uhf-exp-fd-gbcrdgggfbggh0g3.b02.azurefd.net/api/v1/tas",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/overrides?position_id=1970393557021838&domain=microsoft.com&hl=en",
+        200
+      ],
+      [
+        "GET",
+        "https://apply.careers.microsoft.com/api/pcsx/similar_positions?domain=microsoft.com&position_id=1970393557021838",
+        200
+      ],
+      [
+        "POST",
+        "https://apply.careers.microsoft.com/vslog?event=pageInteractiveTime&namespace=pcsx_job_search",
+        200
+      ]
+    ]
+  },
+  "META": {
+    "url": {
+      "text_head": "Skip to main content Jobs Teams Career Programs Working at Meta Blog Podcasts Get personalized job recommendations from AI The Meta AI recruiting assistant can recommend jobs based on your resume, location, and role preferences. Upload resume for job recommendations Hide filters 1137 Items Save this search Sort by Relevance Newest Technologies Facebook Messenger Instagram WhatsApp Meta Quest Teams Advertising Technology AR/VR Artificial Intelligence Business Development & Partnerships Communicat",
+      "candidates": [
+        [
+          114,
+          "arning\nSingapore\nSoftware Engineering\nEngineering\nPage 1 of 114\nJob Search\nTechnology Teams\nArtif"
+        ],
+        [
+          114,
+          " Learning\nSingapore\nSoftware Engineering\nEngineering\nPage 1 of 114\nJob Search\nTechnology Teams\nA"
+        ]
+      ]
+    },
+    "ai_url": {
+      "text_head": "Skip to main content Jobs Teams Career Programs Working at Meta Blog Podcasts Get personalized job recommendations from AI The Meta AI recruiting assistant can recommend jobs based on your resume, location, and role preferences. Upload resume for job recommendations Hide filters 124 Items Save this search Sort by Relevance Newest Technologies Facebook Messenger Instagram WhatsApp Meta Quest Teams Advertising Technology AR/VR Artificial Intelligence Business Development & Partnerships Communicati",
+      "candidates": [
+        [
+          13,
+          "ew York, NY\nSoftware Engineering\nMachine Learning\nPage 1 of 13\nJob Search\nTechnology Teams\nArtif"
+        ],
+        [
+          13,
+          "\u22c5\nNew York, NY\nSoftware Engineering\nMachine Learning\nPage 1 of 13\nJob Search\nTechnology Teams\nA"
+        ]
+      ]
+    },
+    "xhr": [
+      [
+        "POST",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-M13JT8ZZ31&gtm=45je6a72v868974666za208zd868974666xf1&_p=1791810315833&gcd=13l3l3l3l1l1&npa=0&dma=",
+        204
+      ],
+      [
+        "POST",
+        "https://www.metacareers.com/graphql",
+        200
+      ]
+    ]
+  }
+}
