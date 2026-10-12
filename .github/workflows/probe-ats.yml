@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          pip install requests
+          pip install playwright && python -m playwright install --with-deps chromium
       - name: Run ATS probe
         working-directory: scripts
         run: python "${{ inputs.script }}"
