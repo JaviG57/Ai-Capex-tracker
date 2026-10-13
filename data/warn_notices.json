@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T20:05:39.823765Z",
+  "generated_at": "2026-10-13T17:54:00.193031Z",
   "lookback_days": 365,
-  "states_ok": 31,
+  "states_ok": 30,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 5cc': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#baded6d3c894cdd5c8d1dcd5c8d9df94dedfccdfd6d5cafad2dbcddbd3d394ddd5cc?\n",
+    "hi": "no output (exit 1): c15': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#63070f0a114d140c1108050c1100064d070615060f0c13230b0214020a0a4d040c15?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -35,7 +35,7 @@
     "ok": "ok",
     "or": "ok",
     "pa": "ok",
-    "ri": "ok",
+    "ri": "no output (exit 1): ignore\")\n                                 ^^^^^^^^^\nUnboundLocalError: cannot access local variable 'headers' where it is not associated with a value\n",
     "sc": "ok",
     "sd": "ok",
     "tn": "ok",
