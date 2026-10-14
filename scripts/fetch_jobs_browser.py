@@ -76,18 +76,28 @@ def _fetch_microsoft(page) -> dict | None:
     if not m:
         return None
     overall = int(m.group(1).replace(",", ""))
+    # The ?q= URL parameter does not filter this SPA, so drive the search box
+    # the way a person would: type the term, submit, read the updated count.
     ai = None
-    try:
-        page.goto("https://jobs.careers.microsoft.com/global/en/search?q=machine%20learning",
-                  wait_until="networkidle", timeout=60000)
-        page.wait_for_timeout(4000)
-        m2 = re.search(r"([\d,]+)\s+jobs\b", page.inner_text("body"), re.I)
-        if m2:
-            n = int(m2.group(1).replace(",", ""))
-            # Only trust it if the query actually narrowed the result set.
-            ai = n if n < overall else None
-    except Exception:
-        pass
+    for term in ("machine learning", "artificial intelligence"):
+        try:
+            box = page.locator("input[type='search'], input[placeholder*='Search'], "
+                               "input[aria-label*='Search']").first
+            box.wait_for(timeout=15000)
+            box.click()
+            box.fill("")
+            box.type(term, delay=40)
+            page.keyboard.press("Enter")
+            page.wait_for_timeout(5000)
+            m2 = re.search(r"([\d,]+)\s+jobs\b", page.inner_text("body"), re.I)
+            if m2:
+                n = int(m2.group(1).replace(",", ""))
+                # Only trust a figure that actually narrowed the result set;
+                # an unchanged total means the search never applied.
+                if n < overall:
+                    ai = max(ai or 0, n)   # max, not sum: the sets overlap
+        except Exception as e:
+            print(f"[browser] MSFT search '{term}' failed: {str(e)[:80]}")
     return {"jobs_overall": overall, "jobs_ai": ai,
             "jobs_source": "ms_careers_browser", "jobs_approx": True}
 
