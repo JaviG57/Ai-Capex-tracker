@@ -1,18 +1,18 @@
 {
   "error": null,
   "companies_queried": [
+    "ASML",
+    "ARM",
+    "SMCI",
     "DLR",
-    "ETN",
-    "GOOGL",
-    "AMD",
-    "TSM"
+    "ETN"
   ],
   "jobs_returned": {},
   "request_log": [
     {
       "payload": {
         "company_domain_or": [
-          "digitalrealty.com"
+          "asml.com"
         ],
         "job_title_or": [
           "machine learning",
@@ -30,20 +30,8 @@
         "limit": 1,
         "page": 0
       },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
       "status_code": 402,
-      "body_snippet": "{\"request_id\":60023100,\"error\":{\"code\":\"E-007\",\"title\":\"Not enough credits to perform this action\",\"description\":\"You need to upgrade your plan to perform this action. Required: 1 API credits. You currently have 0 API credits. You need 1 more API credits.\"}}"
+      "body_snippet": "{\"request_id\":60270004,\"error\":{\"code\":\"E-007\",\"title\":\"Not enough credits to perform this action\",\"description\":\"You need to upgrade your plan to perform this action. Required: 1 API credits. You currently have 0 API credits. You need 1 more API credits.\"}}"
     }
   ]
 }
