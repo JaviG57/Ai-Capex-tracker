@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T17:54:00.193031Z",
+  "generated_at": "2026-10-14T15:41:55.501834Z",
   "lookback_days": 365,
   "states_ok": 30,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): c15': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#63070f0a114d140c1108050c1100064d070615060f0c13230b0214020a0a4d040c15?\n",
+    "hi": "no output (exit 1): 9c0': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#b6d2dadfc498c1d9c4ddd0d9c4d5d398d2d3c0d3dad9c6f6ded7c1d7dfdf98d1d9c0?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -2369,21 +2369,6 @@
         "layoff_or_closure": "Layoff Permanent",
         "county": "Santa Clara County",
         "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "ORCL",
-      "state": "WA",
-      "date": "2025-10-13",
-      "employees_affected": 161,
-      "raw": {
-        "Company": "Oracle America, Inc.",
-        "Location": "Seattle",
-        "Layoff Start Date": "10/13/2025",
-        "# of Workers": "161",
-        "Closure Layoff": "Layoff",
-        "Type of Layoff": "Permanent",
-        "Received Date": "8/13/2025"
       }
     },
     {
