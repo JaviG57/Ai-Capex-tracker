@@ -1,7 +1,13 @@
 {
+  "MSFT": {
+    "jobs_overall": 2436,
+    "jobs_ai": null,
+    "jobs_source": "ms_careers_browser",
+    "jobs_approx": true
+  },
   "META": {
-    "jobs_overall": 2280,
-    "jobs_ai": 260,
+    "jobs_overall": 2400,
+    "jobs_ai": 280,
     "jobs_source": "metacareers_browser",
     "jobs_approx": true
   }
