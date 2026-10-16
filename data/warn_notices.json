@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-15T15:26:40.983273Z",
+  "generated_at": "2026-10-16T15:06:48.952227Z",
   "lookback_days": 365,
-  "states_ok": 30,
+  "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -38,7 +38,7 @@
     "ri": "no output (exit 1): ignore\")\n                                 ^^^^^^^^^\nUnboundLocalError: cannot access local variable 'headers' where it is not associated with a value\n",
     "sc": "ok",
     "sd": "ok",
-    "tn": "ok",
+    "tn": "no output (exit 1): che/Python/3.11.17/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
     "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
     "ut": "ok",
     "va": "ok",
