@@ -1,40 +1,112 @@
 {
   "error": null,
   "companies_queried": [
+    "ETN",
+    "GOOGL",
+    "AMD",
     "TSM",
-    "ASML",
-    "ARM",
-    "SMCI",
-    "DLR"
+    "ASML"
   ],
   "jobs_returned": {
+    "ETN": {
+      "jobs_overall": 48015,
+      "jobs_ai": 14,
+      "jobs_last_30d": 2250
+    },
+    "GOOGL": {
+      "jobs_overall": 734,
+      "jobs_ai": 8,
+      "jobs_last_30d": 20
+    },
+    "AMD": {
+      "jobs_overall": 27165,
+      "jobs_ai": 180,
+      "jobs_last_30d": 1038
+    },
     "TSM": {
-      "jobs_overall": 4391,
+      "jobs_overall": 4396,
       "jobs_ai": 19,
-      "jobs_last_30d": 462
+      "jobs_last_30d": 467
     },
     "ASML": {
-      "jobs_overall": 15804,
+      "jobs_overall": 15813,
       "jobs_ai": 10,
-      "jobs_last_30d": 1023
-    },
-    "ARM": {
-      "jobs_overall": 10628,
-      "jobs_ai": 68,
-      "jobs_last_30d": 325
-    },
-    "SMCI": {
-      "jobs_overall": 5315,
-      "jobs_ai": 7,
-      "jobs_last_30d": 398
-    },
-    "DLR": {
-      "jobs_overall": 4010,
-      "jobs_ai": 0,
-      "jobs_last_30d": 163
+      "jobs_last_30d": 1032
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":14,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":887825440,\"job_title\":\"Senior Software Engineer, AI Governance\",\"url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"date_posted\":\"2026-10-16\",\"has_blurred_data\":false,\"company\":\"Eaton\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"location\":\"Menomonee Falls, WI\",\"short_location\":\"Menomonee Falls, WI\",\"long_location\":\"Menomonee Falls, WI\",\"state_code\":\"WI\",\"latitude\":43.17890167236328,\"longitude\":-88.1173095703125,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-16T10:27:06.672000Z\",\"closed_at\":null,\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"aws-control-tower\",\"tower\",\"drift\",\"attribution\",\"servicenow\",\"github\",\"gitHub-copilot\",\"bolt\",\"langgraph\",\"guardrails\",\"amazon-web-services\",\"google-cloud-platform\",\"python\",\"typescript\",\"microsoft-typescript\",\"javascript\",\"dot-net\",\"java\",\"snowflake\",\"microsoft-azure\",\"azure-data-factory\",\"graphql\",\"terraform\",\"opentelemetry\",\"oauth\",\"openai\",\"claude-by-anthropic\"],\"keyword_slugs\":[\"artificial-intelligence\",\"ai-governance\",\"aws-control-tower\",\"tower\",\"microsoft-most-valuable-professional-mvp\",\"minimum-viable-product-mvp\",\"audits\",\"audit-trail\",\"power-and-cooling\",\"observability\",\"assessment-assessment-tools\",\"drift\",\"incident-response\",\"cloud-finops\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"digital-token\",\"credit-and-collections\",\"use-case\",\"attribution\",\"policies-and-practices\",\"fashion-designers-collections\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"infrastructure-as-code-iac\",\"servicenow\",\"github\",\"gitHub-copilot\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"agile-sprint\",\"large-language-model-llm\",\"social-content-and-apps\",\"retrieval-augmented-generation-rag\",\"workflow-automation\",\"automated-workflow\",\"bolt\",\"data-structures\",\"distribution-and-storage\",\"scalability\",\"code-review\",\"coaching-mentoring\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"continuous-delivery\",\"software-development-lifecycle\",\"systems-development-life-cycle-sdlc\",\"testing-and-analysis\",\"automation-testing\",\"computer-science\",\"machine-learning\",\"langgraph\",\"search-and-retrieval\",\"prompt-engineering\",\"guardrails\",\"racking-protection\",\"safety-barriers\",\"environment-health-and-safety-hsse\",\"application-programming-interface-api\",\"api-d"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":8,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":3},\"data\":[{\"id\":821519187,\"job_title\":\"Test Engineer / Test Lead -- AI-Powered Hardware Systems\",\"url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"date_posted\":\"2026-08-27\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458652221/\",\"location\":\"Portland, Oregon Metropolitan Area\",\"short_location\":\"Portland, Oregon Metropolitan Area\",\"long_location\":\"Portland, Oregon Metropolitan Area\",\"state_code\":\"OR\",\"latitude\":45.5234489440918,\"longitude\":-122.67620849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-08-28T11:09:06.757000Z\",\"closed_at\":\"2026-09-19T11:17:58Z\",\"company_domain\":\"mbg.com\",\"hiring_team\":[{\"first_name\":\"Jeff\",\"full_name\":\"Jeff Weintraub\",\"linkedin_url\":\"https://www.linkedin.com/in/jeffweintraub/\",\"role\":\"Northwest Regional Recruiting Manager\",\"image_url\":\"https://media.licdn.com/dms/image/v2/C5603AQEimNK5C-9SKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516265849393?e=1752105600&v=beta&t=AIuRMP6-3Mhrar1XSmOGyLCU9ctEI9LdW7QKIOpE918\",\"thumbnail_url\":\"https://media.licdn.com/dms/image/v2/D5603AQHJb7KRsgUj4w/profile-displayphoto-scale_400_400/B56Zo2OCG7JQAg-/0/1761846242866?e=2147483647&v=beta&t=x8XiCgEKmFvuLTnsMZS1aMTSC_YaojWShB8qgsfa8Mo\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"contract\"],\"easy_apply\":null,\"technology_slugs\":[\"intel\"],\"keyword_slugs\":[\"sensors-test-measurement\",\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"time-and-attendance\",\"sensors-feedback-devices\",\"crane-aerospace-electronics\",\"testing-and-analysis\",\"industrial-automation\",\"intel\",\"troubleshooting\",\"firmware\",\"networking-telecommunications\",\"laboratory-equipment\",\"oscilloscopes\",\"power-and-cooling\",\"power-supplies-test-power\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"planning-and-design\"],\"description\":\"Initial 6-month contract and potential contract to hire\\n\\n100% on-site in Portland, Oregon\\n\\nOpen to Test Engineer or Test Lead candidate (will lead 2 interns and a part-time tester)\\n\\nHelp test the complete hardware and software ecosystem behind an AI-powered manufacturing platform. You\u2019ll work hands-on with cameras, sensors, electronics, edge devices and industrial equipment -- recreating real customer scenarios and finding issues before systems reach the manufacturing floor.\\n\\nTop Skills\\n\\n- System-Level Testing across electronic or electromechanical systems: experience with hardware and exp"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amd.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":180,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":891093282,\"job_title\":\"Senior Field Application Engineer \u2013 AI\",\"url\":\"https://www.linkedin.com/jobs/view/4441550983/\",\"date_posted\":\"2026-10-18\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4441550983/\",\"location\":\"Austin, TX\",\"short_location\":\"Austin, TX\",\"long_location\":\"Austin, TX\",\"state_code\":\"TX\",\"latitude\":30.26715087890625,\"longitude\":-97.74305725097656,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$194.6k - $291.8k per year\",\"min_annual_salary\":194560,\"min_annual_salary_usd\":194560.0,\"max_annual_salary\":291840,\"max_annual_salary_usd\":291840.0,\"avg_annual_salary_usd\":243200.0,\"salary_currency\":\"USD\",\"salary_period\":\"year\",\"min_salary\":194560.0,\"max_salary\":291840.0,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-18T10:22:58.866000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"pytorch\",\"tensorflow\",\"hugging-face\",\"jira\",\"kvm\",\"kubernetes\",\"openstack\",\"cuda\",\"python\",\"c10\",\"cplusplus\",\"fortran\",\"nodejs\"],\"keyword_slugs\":[\"artificial-intelligence\",\"training-certification\",\"education-training\",\"training-and-development\",\"time-and-attendance\",\"oral-and-maxillofacial\",\"pytorch\",\"google-tensorflow\",\"tensorflow\",\"eye-face-and-head\",\"hugging-face\",\"total-cost-of-ownership\",\"pricing\",\"jira\",\"machine-learning-ops-mlops\",\"kvm\",\"kernel-based-virtual-machine-kvm\",\"kubernetes\",\"openstack\",\"cabinet-construction-materials-hardware\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"hardware-design\",\"middleware\",\"customer-facing\",\"linux\",\"supercomputing\",\"high-performance-computing\",\"health-care\",\"cuda\",\"python\",\"c10\",\"cplusplus\",\"fortran\",\"nodejs\",\"neural-networks\",\"deep-learning\",\"machine-learning\",\"mechanical-enclosures-assembly\",\"i-o-memory-peripheral-connectors\",\"network-latency\",\"data-center\",\"computer-science\",\"electrical-engineering-and-planning\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**The"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -81,91 +153,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":10,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":886321886,\"job_title\":\"Machine Learning Algo Intern (internship)\",\"url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"date_posted\":\"2026-10-15\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"location\":\"Shenzhen, Guangdong\",\"short_location\":\"Shenzhen, Guangdong\",\"long_location\":\"Shenzhen, Guangdong\",\"state_code\":\"44\",\"latitude\":22.54553985595703,\"longitude\":114.06829833984375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-10-15T16:53:04.228000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"numpy\",\"pandas\"],\"keyword_slugs\":[\"machine-learning\",\"internships\",\"python\",\"numpy\",\"pandas\",\"diversity\"],\"description\":\"\u5de5\u4f5c\u804c\u8d23:\\n  \\n  \\n\\n- \u8fd0\u7528\u673a\u5668\u5b66\u4e60\u6280\u672f\u5f00\u53d1\u548c\u4f18\u5316\u7b97\u6cd5\uff0c\u4ece\u800c\u63d0\u9ad8\u82af\u7247\u5236\u9020\u7684\u6548\u7387\u548c\u8d28\u91cf\\n\\n\u5c97\u4f4d\u8981\u6c42:\\n  \\n  \\n\\n- \u8ba1\u7b97\u673a\u79d1\u5b66\uff0c\u6570\u5b66\uff0c\u7269\u7406\u53ca\u76f8\u5173\u4e13\u4e1a\u672c\u79d1\u53ca\u4ee5\u4e0a\u5b66\u5386\\n- \u719f\u6089Python\u548c\u673a\u5668\u5b66\u4e60\u76f8\u5173\u5de5\u5177\u5e93\uff0c\u5982numpy, pandas, sklearn\\n- \u719f\u6089\u7ecf\u5178\u673a\u5668\u5b66\u4e60\u7b97\u6cd5\\n- \u5177\u5907\u4e00\u5b9a\u7684\u82f1\u8bed\u542c\u8bf4\u8bfb\u5199\u80fd\u529b\\n- \u5de5\u4f5c\u79ef\u6781\u4e3b\u52a8\uff0c\u6709\u8d23\u4efb\u5fc3\uff0c\u6709\u8f83\u597d\u7684\u56e2\u961f\u534f\u4f5c\u80fd\u529b\\n- \u719f\u6089\u6df1\u5ea6\u5b66\u4e60\u8005\u4f18\u5148\\n\\n**Inclusion and diversity**\\nASML is an Equal Opportunity Employer that values and respects the importance of a diverse and inclusive workforce. It is the policy of the company to recruit, hire, train and promote persons in all job titles without regard to race, color, religion, sex, age, national origin, veteran status, disability, sexual orientation, or gender identity. We recognize that inclusion and diversity is a driving force in the success of our company.\\n  \\n  \\nNeed to know more about applying for a job at ASML? Read our frequently asked questions.\",\"company_object\":{\"id\":\"Yw51fXeztWsR1hX0lv7VRQ==\",\"name\":\"ASML\",\"domain\":\"asml.com\",\"industry\":\"Semiconductor Manufacturing\",\"country\":\"Netherlands\",\"country_code\":\"NL\",\"employee_count\":39000,\"logo\":\"https://media.theirstack.com/company/logo/domain/asml.com.jpeg\",\"num_jobs\":15804,\"num_technologies\":771,\"num_keywords\":0,\"num_buying_intent_topics\":-771,\"possible_domains\":[\"asml.com\"],\"url\":\"https://asml.com\",\"industry_id\":7,\"linkedin_url\":\"https://www.linkedin.com/company/asml/\",\"num_jobs_last_30_days\":1023,\"num_jobs_found\":null,\"yc_batch\":null,\"apollo_id\":\"5f448e2875800e0001c3fd3f\",\"linkedin_id\":\"3894\",\"url_source\":null,\"is_recruiting_agency\":false,\"founded_year\":1984,\"annual_revenue_usd\":22601965000.0,\"annual_revenue_usd_readable\":\"22.6B\",\"total_funding_usd\":null,\"last_funding_round_date\":\"2022-05-10\",\"last_funding_round_amount_readable\":null,\"employee_count_range\":\"10,000+"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "arm.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":68,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":886416721,\"job_title\":\"Staff ML HW Modelling Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4460622637/\",\"date_posted\":\"2026-10-15\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4460622637/\",\"location\":\"Raanana, Center District\",\"short_location\":\"Raanana, Center District\",\"long_location\":\"Raanana, Center District\",\"state_code\":\"M\",\"latitude\":32.18360137939453,\"longitude\":34.87385940551758,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Israel\",\"country_codes\":[\"IL\"],\"country_code\":\"IL\",\"cities\":[],\"continents\":[],\"seniority\":\"staff\",\"discovered_at\":\"2026-10-15T17:51:45.780000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"cplusplus\",\"c10\",\"python\",\"gerrit\"],\"keyword_slugs\":[\"machine-learning\",\"neural-processing-unit-npu\",\"training-and-development\",\"cabinet-construction-materials-hardware\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"hardware-design\",\"mentoring\",\"coaching-mentoring\",\"electrical-engineering-and-planning\",\"computer-science\",\"cplusplus\",\"c10\",\"python\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"http-live-streaming-hls\",\"source-code-control\",\"software-version-management\",\"revision-management\",\"version-control\",\"gerrit\",\"repurchase-agreement-rp\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"sensors-test-measurement\",\"embedded-control-automation\",\"payouts\",\"artificial-intelligence\",\"recruiting-career-management\",\"hotels-accommodations\"],\"description\":\"**Job Overview**\\nAre you passionate about Machine Learning and Artificial Intelligence? This is a great opportunity to work at the forefront of technologies shaping the future of computing, while playing a key role in establishing and growing a new ML hardware modelling team in Ra'anana. The role focuses on cutting-edge Arm IP, developing technology that will power the next generation of mobile applications, portable devices, home automation, smart cities, autonomous vehicles, and much more.\\n  \\n  \\nArm is entering a new growth phase to develop innovative technologies and products for existing and new markets. To do this we need hardworking and motivated people to join our team. Working with the world\u2019s best companies as they build sector-leading products from our designs. You\u2019ll share ideas with and learn new skills from the best engineers in the world. We work in small teams, so your contributions will make a difference. This role offer"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "supermicro.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":7,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":844002594,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-09-15\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-09-16T10:21:53.224000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"docker\",\"langchain\"],\"keyword_slugs\":[\"artificial-intelligence\",\"agentic-ai\",\"instructional-design-id\",\"customer-support\",\"data-processing\",\"computer-science\",\"information-technology\",\"python\",\"machine-learning\",\"large-language-model-llm\",\"linux\",\"docker\",\"sql\",\"nosql\",\"vector-database\",\"langchain\",\"machine-learning-ops-mlops\",\"policies-and-practices\",\"assessment-assessment-tools\",\"salary-range\",\"education-training\",\"training-certification\",\"training-and-development\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30248****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nSupermicro is seeking a top-notch hands-on Sr. Software Engineer to work on PCIe, SAS/SATA, USB and other HW related areas of storage and server products. As part of our small but important software engineering team, you will be responsible for leading the projects and provide technical expertise and recommendations to support and enhance our development projects.\\n  \\n  \\n**Essential Duties And Responsibilities**\\n\\n- Create and maintain several end-to-end AI agent pipelines that handle high-volume customer support and technical tickets-\\n- Connect and process data from various internal and external data sources\\n- Present demonstrations and upda"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":890020759,\"job_title\":\"Datacenter Mechanical Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4461976899/\",\"date_posted\":\"2026-10-17\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4461976899/\",\"location\":\"Athens, Attiki\",\"short_location\":\"Athens, Attiki\",\"long_location\":\"Athens, Attiki\",\"state_code\":\"I\",\"latitude\":37.983760833740234,\"longitude\":23.727840423583984,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Greece\",\"country_codes\":[\"GR\"],\"country_code\":\"GR\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-17T15:31:17.923000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"data-center\",\"job-descriptions\",\"hvac-heating-ventilation-and-air-conditioning\",\"server-farms\",\"mission-critical\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"maintenance-repair-and-operations-mro\",\"troubleshooting\",\"state-local-municipal\",\"operational-excellence\",\"service-delivery\",\"external-workforce\",\"energy-efficiency\",\"sustainability\",\"continuous-improvement-process-cip\",\"laws-and-regulations\",\"policies-and-practices\",\"training-certification\",\"education-training\",\"training-and-development\",\"assessment-assessment-tools\",\"audits\",\"company-values\",\"effective-communication\",\"apprenticeship\",\"electrical-engineering-and-planning\",\"accounts-payable\",\"routing-and-switching\"],\"description\":\"**Job Description**\\n**Datacetner HVAC/Mechanical Engineer \u2013 Data Center**\\n\ud83d\udccd Athens, Greece\\n  \\n  \\nAre you an Mechanical Engineer looking to develop your career in a mission-critical environment? Join our Data Center Operations team in Athens and play a key role in ensuring the reliability, availability, and efficiency of critical infrastructure that powers digital services across the region.\\n  \\n  \\nAs an Electrical Engineer, you will support the day-to-day operation, maintenance, and troubleshooting of electrical and electromechanical systems within a state-of-the-art Data Center. Working closely with the Engineering Operations team, you will help maintain the highest standards of performance, safety, and operational excellence.\\n  \\n  \\n**Key Responsibilities**\\n\\n- Perform preventive and corrective maintenance on critical mechanical infrastructure and associated systems.\\n- Troubleshoot equipment and support the resolution of technical incidents.\\n- Monitor infrastructure performance and proactively identify potential issues or risks.\\n- Sup"
+      "body_snippet": "{\"metadata\":{\"total_results\":10,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":886321886,\"job_title\":\"Machine Learning Algo Intern (internship)\",\"url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"date_posted\":\"2026-10-15\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4426329022/\",\"location\":\"Shenzhen, Guangdong\",\"short_location\":\"Shenzhen, Guangdong\",\"long_location\":\"Shenzhen, Guangdong\",\"state_code\":\"44\",\"latitude\":22.54553985595703,\"longitude\":114.06829833984375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-10-15T16:53:04.228000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"numpy\",\"pandas\"],\"keyword_slugs\":[\"machine-learning\",\"internships\",\"python\",\"numpy\",\"pandas\",\"diversity\"],\"description\":\"\u5de5\u4f5c\u804c\u8d23:\\n  \\n  \\n\\n- \u8fd0\u7528\u673a\u5668\u5b66\u4e60\u6280\u672f\u5f00\u53d1\u548c\u4f18\u5316\u7b97\u6cd5\uff0c\u4ece\u800c\u63d0\u9ad8\u82af\u7247\u5236\u9020\u7684\u6548\u7387\u548c\u8d28\u91cf\\n\\n\u5c97\u4f4d\u8981\u6c42:\\n  \\n  \\n\\n- \u8ba1\u7b97\u673a\u79d1\u5b66\uff0c\u6570\u5b66\uff0c\u7269\u7406\u53ca\u76f8\u5173\u4e13\u4e1a\u672c\u79d1\u53ca\u4ee5\u4e0a\u5b66\u5386\\n- \u719f\u6089Python\u548c\u673a\u5668\u5b66\u4e60\u76f8\u5173\u5de5\u5177\u5e93\uff0c\u5982numpy, pandas, sklearn\\n- \u719f\u6089\u7ecf\u5178\u673a\u5668\u5b66\u4e60\u7b97\u6cd5\\n- \u5177\u5907\u4e00\u5b9a\u7684\u82f1\u8bed\u542c\u8bf4\u8bfb\u5199\u80fd\u529b\\n- \u5de5\u4f5c\u79ef\u6781\u4e3b\u52a8\uff0c\u6709\u8d23\u4efb\u5fc3\uff0c\u6709\u8f83\u597d\u7684\u56e2\u961f\u534f\u4f5c\u80fd\u529b\\n- \u719f\u6089\u6df1\u5ea6\u5b66\u4e60\u8005\u4f18\u5148\\n\\n**Inclusion and diversity**\\nASML is an Equal Opportunity Employer that values and respects the importance of a diverse and inclusive workforce. It is the policy of the company to recruit, hire, train and promote persons in all job titles without regard to race, color, religion, sex, age, national origin, veteran status, disability, sexual orientation, or gender identity. We recognize that inclusion and diversity is a driving force in the success of our company.\\n  \\n  \\nNeed to know more about applying for a job at ASML? Read our frequently asked questions.\",\"company_object\":{\"id\":\"Yw51fXeztWsR1hX0lv7VRQ==\",\"name\":\"ASML\",\"domain\":\"asml.com\",\"industry\":\"Semiconductor Manufacturing\",\"country\":\"Netherlands\",\"country_code\":\"NL\",\"employee_count\":39000,\"logo\":\"https://media.theirstack.com/company/logo/domain/asml.com.jpeg\",\"num_jobs\":15813,\"num_technologies\":771,\"num_keywords\":0,\"num_buying_intent_topics\":-771,\"possible_domains\":[\"asml.com\"],\"url\":\"https://asml.com\",\"industry_id\":7,\"linkedin_url\":\"https://www.linkedin.com/company/asml/\",\"num_jobs_last_30_days\":1032,\"num_jobs_found\":null,\"yc_batch\":null,\"apollo_id\":\"5f448e2875800e0001c3fd3f\",\"linkedin_id\":\"3894\",\"url_source\":null,\"is_recruiting_agency\":false,\"founded_year\":1984,\"annual_revenue_usd\":22601965000.0,\"annual_revenue_usd_readable\":\"22.6B\",\"total_funding_usd\":null,\"last_funding_round_date\":\"2022-05-10\",\"last_funding_round_amount_readable\":null,\"employee_count_range\":\"10,000+"
     }
   ]
 }
