@@ -60,7 +60,7 @@
     "latest_value": 35802000000,
     "yoy_pct": 109.6,
     "qoq_pct": 16.0,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "GOOGL": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -123,7 +123,7 @@
     "latest_value": 44924000000,
     "yoy_pct": 100.1,
     "qoq_pct": 25.9,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "AMZN": {
     "tag": "us-gaap:PaymentsToAcquireProductiveAssets",
@@ -186,7 +186,7 @@
     "latest_value": 54208000000,
     "yoy_pct": 68.4,
     "qoq_pct": 22.6,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "META": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -249,7 +249,7 @@
     "latest_value": 30116000000,
     "yoy_pct": 82.1,
     "qoq_pct": 58.5,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "NVDA": {
     "tag": "us-gaap:PaymentsToAcquireProductiveAssets",
@@ -312,7 +312,7 @@
     "latest_value": 2677000000,
     "yoy_pct": 41.3,
     "qoq_pct": 52.4,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "AVGO": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -375,7 +375,7 @@
     "latest_value": 532000000,
     "yoy_pct": 274.6,
     "qoq_pct": 130.3,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "AMD": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -438,7 +438,7 @@
     "latest_value": 808000000,
     "yoy_pct": 186.5,
     "qoq_pct": 107.7,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "TSM": {
     "error": "no_tag"
@@ -507,7 +507,7 @@
     "latest_value": 197000000,
     "yoy_pct": 27.9,
     "qoq_pct": 166.2,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "ORCL": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -570,7 +570,7 @@
     "latest_value": 28499000000,
     "yoy_pct": 235.2,
     "qoq_pct": 72.8,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "DELL": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -633,7 +633,7 @@
     "latest_value": 1239000000,
     "yoy_pct": 83.6,
     "qoq_pct": 28.7,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "SMCI": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -696,7 +696,7 @@
     "latest_value": 28230000,
     "yoy_pct": 24.5,
     "qoq_pct": -64.8,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "CRWV": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -747,7 +747,7 @@
     "latest_value": 6422000000,
     "yoy_pct": 161.8,
     "qoq_pct": -16.5,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "DLR": {
     "tag": "us-gaap:PaymentsToDevelopRealEstateAssets",
@@ -810,7 +810,7 @@
     "latest_value": 870038000,
     "yoy_pct": 10.5,
     "qoq_pct": -13.2,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "EQIX": {
     "tag": "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
@@ -873,7 +873,7 @@
     "latest_value": 1578000000,
     "yoy_pct": 59.6,
     "qoq_pct": 25.6,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "VRT": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -936,7 +936,7 @@
     "latest_value": 173300000,
     "yoy_pct": 285.1,
     "qoq_pct": 53.9,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   },
   "ETN": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -999,6 +999,6 @@
     "latest_value": 253000000,
     "yoy_pct": 25.2,
     "qoq_pct": 31.1,
-    "checked_at": "2026-10-18"
+    "checked_at": "2026-10-19"
   }
 }
