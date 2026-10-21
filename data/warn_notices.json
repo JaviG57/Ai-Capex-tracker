@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T15:30:01.520658Z",
+  "generated_at": "2026-10-21T15:47:55.925073Z",
   "lookback_days": 365,
-  "states_ok": 30,
+  "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 44d': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#3b5f575249154c5449505d5449585e155f5e4d5e57544b7b535a4c5a5252155c544d?\n",
+    "hi": "no output (exit 1): 73e': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#482c24213a663f273a232e273a2b2d662c2d3e2d2427380820293f292121662f273e?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -38,7 +38,7 @@
     "ri": "no output (exit 1): ignore\")\n                                 ^^^^^^^^^\nUnboundLocalError: cannot access local variable 'headers' where it is not associated with a value\n",
     "sc": "ok",
     "sd": "ok",
-    "tn": "ok",
+    "tn": "no output (exit 1): che/Python/3.11.17/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
     "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
     "ut": "ok",
     "va": "ok",
