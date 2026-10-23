@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:46:06.231651Z",
+  "generated_at": "2026-10-23T15:34:11.754403Z",
   "lookback_days": 365,
   "states_ok": 30,
   "states_total": 41,
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 71e': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#680c04011a461f071a030e071a0b0d460c0d1e0d0407182800091f090101460f071e?\n",
+    "hi": "no output (exit 1): a43': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#3551595c471b425a475e535a4756501b51504350595a45755d5442545c5c1b525a43?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -2272,86 +2272,6 @@
         "num_employees": "71",
         "layoff_or_closure": "Layoff Permanent",
         "county": "San Francisco County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "META",
-      "state": "CA",
-      "date": "2025-10-22",
-      "employees_affected": 22,
-      "raw": {
-        "notice_date": "10/22/2025",
-        "effective_date": "12/22/2025",
-        "received_date": "10/23/2025",
-        "company": "Meta Platforms, Inc. (1 Hacker Way)",
-        "num_employees": "22",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "San Mateo County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "META",
-      "state": "CA",
-      "date": "2025-10-22",
-      "employees_affected": 261,
-      "raw": {
-        "notice_date": "10/22/2025",
-        "effective_date": "12/22/2025",
-        "received_date": "10/23/2025",
-        "company": "Meta Platforms, Inc. (1 Meta Way)",
-        "num_employees": "261",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "San Mateo County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "META",
-      "state": "CA",
-      "date": "2025-10-22",
-      "employees_affected": 1,
-      "raw": {
-        "notice_date": "10/22/2025",
-        "effective_date": "12/22/2025",
-        "received_date": "10/23/2025",
-        "company": "Meta Platforms, Inc. (180 Jefferson Drive)",
-        "num_employees": "1",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "San Mateo County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "META",
-      "state": "CA",
-      "date": "2025-10-22",
-      "employees_affected": 21,
-      "raw": {
-        "notice_date": "10/22/2025",
-        "effective_date": "12/22/2025",
-        "received_date": "10/23/2025",
-        "company": "Meta Platforms, Inc. (190 Jefferson Drive)",
-        "num_employees": "21",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "San Mateo County",
-        "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
-      }
-    },
-    {
-      "ticker": "META",
-      "state": "CA",
-      "date": "2025-10-22",
-      "employees_affected": 3,
-      "raw": {
-        "notice_date": "10/22/2025",
-        "effective_date": "12/22/2025",
-        "received_date": "10/23/2025",
-        "company": "Meta Platforms, Inc. (305 Constitution Drive)",
-        "num_employees": "3",
-        "layoff_or_closure": "Layoff Permanent",
-        "county": "San Mateo County",
         "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
       }
     },
