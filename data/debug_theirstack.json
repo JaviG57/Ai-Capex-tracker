@@ -1,40 +1,124 @@
 {
   "error": null,
   "companies_queried": [
+    "SMCI",
+    "DLR",
+    "ETN",
     "GOOGL",
-    "AMD",
-    "TSM",
-    "ASML",
-    "ARM"
+    "AMD"
   ],
   "jobs_returned": {
-    "GOOGL": {
-      "jobs_overall": 744,
+    "SMCI": {
+      "jobs_overall": 5576,
+      "jobs_ai": 8,
+      "jobs_last_30d": 469
+    },
+    "DLR": {
+      "jobs_overall": 4065,
       "jobs_ai": 0,
-      "jobs_last_30d": 20
+      "jobs_last_30d": 137
+    },
+    "ETN": {
+      "jobs_overall": 49065,
+      "jobs_ai": 13,
+      "jobs_last_30d": 2219
+    },
+    "GOOGL": {
+      "jobs_overall": 747,
+      "jobs_ai": 0,
+      "jobs_last_30d": 23
     },
     "AMD": {
-      "jobs_overall": 27611,
-      "jobs_ai": 185,
-      "jobs_last_30d": 1031
-    },
-    "TSM": {
-      "jobs_overall": 4621,
-      "jobs_ai": 23,
-      "jobs_last_30d": 418
-    },
-    "ASML": {
-      "jobs_overall": 16384,
-      "jobs_ai": 18,
-      "jobs_last_30d": 1119
-    },
-    "ARM": {
-      "jobs_overall": 10585,
-      "jobs_ai": 91,
-      "jobs_last_30d": 363
+      "jobs_overall": 27619,
+      "jobs_ai": 181,
+      "jobs_last_30d": 1037
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "supermicro.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":8,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":912189419,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-10-29\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-30T10:58:37.406000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"docker\",\"langchain\"],\"keyword_slugs\":[\"artificial-intelligence\",\"agentic-ai\",\"instructional-design-id\",\"customer-support\",\"data-processing\",\"computer-science\",\"information-technology\",\"python\",\"machine-learning\",\"large-language-model-llm\",\"linux\",\"docker\",\"sql\",\"nosql\",\"vector-database\",\"langchain\",\"machine-learning-ops-mlops\",\"policies-and-practices\",\"assessment-assessment-tools\",\"salary-range\",\"education-training\",\"training-certification\",\"training-and-development\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30248****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nSupermicro is seeking a top-notch hands-on Sr. Software Engineer to work on PCIe, SAS/SATA, USB and other HW related areas of storage and server products. As part of our small but important software engineering team, you will be responsible for leading the projects and provide technical expertise and recommendations to support and enhance our development projects.\\n  \\n  \\n**Essential Duties And Responsibilities**\\n\\n- Create and maintain several end-to-end AI agent pipelines that handle high-volume customer support and technical tickets-\\n- Connect and process data from various internal and external data sources\\n- Present demonstrations and upda"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":915896848,\"job_title\":\"Technicien m\u00e9thodes maintenance 3*8 (H/F/X)\",\"url\":\"https://www.linkedin.com/jobs/view/4414149228/\",\"date_posted\":\"2026-11-01\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4414149228/\",\"location\":\"Paris, \u00cele-de-\",\"short_location\":\"Paris, \u00cele-de-\",\"long_location\":\"Paris, \u00cele-de-\",\"state_code\":\"IDF\",\"latitude\":48.85340881347656,\"longitude\":2.34879994392395,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"France\",\"country_codes\":[\"FR\"],\"country_code\":\"FR\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-01T15:48:03.160000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"maintenance-repair-and-operations-mro\",\"job-descriptions\",\"clinical-documentation-improvement-cdi\",\"data-center\",\"lift-and-shift\",\"reconnaissance-surveillance\",\"performance-indicator\",\"service-level-agreement-sla\",\"service-level-assurance-sla\",\"chillers\",\"drycoolers\",\"server-farms\"],\"description\":\"**Job Description**\\n**Technicien de maintenance \u00e9lectrique (H/F)**\\nLieu du poste : IDF (La Courneuve)\\n  \\n  \\nContrat : CDI, en 3\\\\*8\\n  \\n  \\n**LE CONTEXTE DU POSTE**\\nEn tant que\\n**Technicien de maintenance \u00e9lectrique en 3\\\\*8**\\n, votre r\u00f4le consistera \u00e0 r\u00e9aliser les maintenances de premier niveau, superviser et garantir l\u2019exploitation des infrastructures du datacenter, sous la direction du Shift Manager.\\n  \\n  \\nVous serez en charge de l\u2019organisation, du pilotage des actions de maintenance et d\u2019am\u00e9lioration, en mettant l\u2019accent sur deux axes majeurs : \u00e9lectricit\u00e9 et CVC (refroidissement et ventilation). Vous assurerez \u00e9galement le suivi des incidents, des maintenances de premier niveau.\\n*Le rythme 3\\\\*8 est le suivant : 6h-14h / 14h-22h / 22h-6h*\\n**VOS MISSIONS**\\n\\n- \u00catre responsable des maintenances de premier niveau (changements de filtres, faire les rondes, consignations, v\u00e9rifications techniques, switchings) et de r\u00e9parations confi\u00e9es par la Direction des Op\u00e9rations, tout en suivant les instructions donn\u00e9es.\\n- Surveiller quotidiennement l\u2019infrastructure et organiser les inspections via des visites r\u00e9guli\u00e8res du site ainsi que de la surveillance du syst\u00e8me de gestion des b\u00e2timents (GTC/ GTB).\\n- Mettre \u00e0 jour les KPI permettant de mesurer l\u2019efficacit\u00e9 et la qualit\u00e9 des interventions r\u00e9alis\u00e9e\\n- G\u00e9rer les incidents en \u00e9troite collaboration avec le manager d\u2019astreinte.\\n- \u00catre responsable de l\u2019ex\u00e9cution des proc\u00e9dures op\u00e9ration"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":13,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":887825440,\"job_title\":\"Senior Software Engineer, AI Governance\",\"url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"date_posted\":\"2026-10-16\",\"has_blurred_data\":false,\"company\":\"Eaton\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"location\":\"Menomonee Falls, WI\",\"short_location\":\"Menomonee Falls, WI\",\"long_location\":\"Menomonee Falls, WI\",\"state_code\":\"WI\",\"latitude\":43.17890167236328,\"longitude\":-88.1173095703125,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-16T10:27:06.672000Z\",\"closed_at\":null,\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"aws-control-tower\",\"tower\",\"drift\",\"attribution\",\"servicenow\",\"github\",\"gitHub-copilot\",\"bolt\",\"langgraph\",\"guardrails\",\"amazon-web-services\",\"google-cloud-platform\",\"python\",\"typescript\",\"microsoft-typescript\",\"javascript\",\"dot-net\",\"java\",\"snowflake\",\"microsoft-azure\",\"azure-data-factory\",\"graphql\",\"terraform\",\"opentelemetry\",\"oauth\",\"openai\",\"claude-by-anthropic\"],\"keyword_slugs\":[\"artificial-intelligence\",\"ai-governance\",\"aws-control-tower\",\"tower\",\"microsoft-most-valuable-professional-mvp\",\"minimum-viable-product-mvp\",\"audits\",\"audit-trail\",\"power-and-cooling\",\"observability\",\"assessment-assessment-tools\",\"drift\",\"incident-response\",\"cloud-finops\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"digital-token\",\"credit-and-collections\",\"use-case\",\"attribution\",\"policies-and-practices\",\"fashion-designers-collections\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"infrastructure-as-code-iac\",\"servicenow\",\"github\",\"gitHub-copilot\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"agile-sprint\",\"large-language-model-llm\",\"social-content-and-apps\",\"retrieval-augmented-generation-rag\",\"workflow-automation\",\"automated-workflow\",\"bolt\",\"data-structures\",\"distribution-and-storage\",\"scalability\",\"code-review\",\"coaching-mentoring\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"continuous-delivery\",\"software-development-lifecycle\",\"systems-development-life-cycle-sdlc\",\"testing-and-analysis\",\"automation-testing\",\"computer-science\",\"machine-learning\",\"langgraph\",\"search-and-retrieval\",\"prompt-engineering\",\"guardrails\",\"racking-protection\",\"safety-barriers\",\"environment-health-and-safety-hsse\",\"application-programming-interface-api\",\"api-d"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -69,7 +153,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":914164291,\"job_title\":\"MID-LEVEL - Software Engineer - Python, gRPC - remote\",\"url\":\"https://www.linkedin.com/jobs/view/4484557754/\",\"date_posted\":\"2026-10-29\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4484557754/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude\":-98.5,\"postal_code\":null,\"remote\":true,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T11:30:58.678000Z\",\"closed_at\":null,\"company_domain\":\"mbg.com\",\"hiring_team\":[{\"first_name\":\"Jeff\",\"full_name\":\"Jeff Weintraub\",\"linkedin_url\":\"https://www.linkedin.com/in/jeffweintraub/\",\"role\":\"Northwest Regional Recruiting Manager\",\"image_url\":\"https://media.licdn.com/dms/image/v2/C5603AQEimNK5C-9SKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516265849393?e=1752105600&v=beta&t=AIuRMP6-3Mhrar1XSmOGyLCU9ctEI9LdW7QKIOpE918\",\"thumbnail_url\":\"https://media.licdn.com/dms/image/v2/D5603AQHJb7KRsgUj4w/profile-displayphoto-scale_400_400/B56Zo2OCG7JQAg-/0/1761846242866?e=2147483647&v=beta&t=x8XiCgEKmFvuLTnsMZS1aMTSC_YaojWShB8qgsfa8Mo\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"grpc\",\"protobuf\"],\"keyword_slugs\":[\"python\",\"grpc\",\"background-investigations\",\"background-checks\",\"artificial-intelligence\",\"microservices\",\"data-pipeline\",\"distributed-computing\",\"protobuf\",\"remote-procedure-call-rpc\",\"training-and-development\"],\"description\":\"100% remote\\n\\nUS Citizenship and background check required\\n\\n3 to 4+ years of professional experience\\n\\nBuild an AI powered manufacturing platform that improves US manufacturing -- you\u2019ll focus on backend architecture and develop scalable microservices and data pipelines\\n\\n- Python with distributed systems / microservices\\n- gRPC and Protobuf\\n- AI / agentic coding experience (do you know what your agent is doing?)\\n- Bonus points for exposure to: streaming RPC, contract-first development, strongly typed schemas, interceptors, service mesh, monorepo, HTTP/2\",\"company_object\":{\"id\":\"nF9Y84CqZtcsfaZ05VdTs/3oMBYct4aRysr+ebdYf0A=\",\"name\":\"Mainz Brady Group\",\"domain\":\"mbg.com\",\"industry\":\"Staffing and Recruiting\",\"country\":\"United States\",\"country_code\":\"US\",\"employee_count\":100,\"logo\":\"https://media.theirstack.com/company/logo/domain/mbg.com.jpeg\",\"num_jobs\":744,\"num_technologies\":0,\"num_keywords\":0,\"num_buying_intent_topics\":0,\"possible_domains\":"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":914164291,\"job_title\":\"MID-LEVEL - Software Engineer - Python, gRPC - remote\",\"url\":\"https://www.linkedin.com/jobs/view/4484557754/\",\"date_posted\":\"2026-10-29\",\"has_blurred_data\":false,\"company\":\"Mainz Brady Group\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4484557754/\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":39.7599983215332,\"longitude\":-98.5,\"postal_code\":null,\"remote\":true,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T11:30:58.678000Z\",\"closed_at\":null,\"company_domain\":\"mbg.com\",\"hiring_team\":[{\"first_name\":\"Jeff\",\"full_name\":\"Jeff Weintraub\",\"linkedin_url\":\"https://www.linkedin.com/in/jeffweintraub/\",\"role\":\"Northwest Regional Recruiting Manager\",\"image_url\":\"https://media.licdn.com/dms/image/v2/C5603AQEimNK5C-9SKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516265849393?e=1752105600&v=beta&t=AIuRMP6-3Mhrar1XSmOGyLCU9ctEI9LdW7QKIOpE918\",\"thumbnail_url\":\"https://media.licdn.com/dms/image/v2/D5603AQHJb7KRsgUj4w/profile-displayphoto-scale_400_400/B56Zo2OCG7JQAg-/0/1761846242866?e=2147483647&v=beta&t=x8XiCgEKmFvuLTnsMZS1aMTSC_YaojWShB8qgsfa8Mo\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"grpc\",\"protobuf\"],\"keyword_slugs\":[\"python\",\"grpc\",\"background-investigations\",\"background-checks\",\"artificial-intelligence\",\"microservices\",\"data-pipeline\",\"distributed-computing\",\"protobuf\",\"remote-procedure-call-rpc\",\"training-and-development\"],\"description\":\"100% remote\\n\\nUS Citizenship and background check required\\n\\n3 to 4+ years of professional experience\\n\\nBuild an AI powered manufacturing platform that improves US manufacturing -- you\u2019ll focus on backend architecture and develop scalable microservices and data pipelines\\n\\n- Python with distributed systems / microservices\\n- gRPC and Protobuf\\n- AI / agentic coding experience (do you know what your agent is doing?)\\n- Bonus points for exposure to: streaming RPC, contract-first development, strongly typed schemas, interceptors, service mesh, monorepo, HTTP/2\",\"company_object\":{\"id\":\"nF9Y84CqZtcsfaZ05VdTs/3oMBYct4aRysr+ebdYf0A=\",\"name\":\"Mainz Brady Group\",\"domain\":\"mbg.com\",\"industry\":\"Staffing and Recruiting\",\"country\":\"United States\",\"country_code\":\"US\",\"employee_count\":100,\"logo\":\"https://media.theirstack.com/company/logo/domain/mbg.com.jpeg\",\"num_jobs\":747,\"num_technologies\":0,\"num_keywords\":0,\"num_buying_intent_topics\":0,\"possible_domains\":"
     },
     {
       "payload": {
@@ -93,79 +177,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":185,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":913114856,\"job_title\":\"AI Software Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4446212648/\",\"date_posted\":\"2026-10-30\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4446212648/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-30T21:31:38.011000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"cplusplus\",\"vllm1\",\"nodejs\",\"microsoft-graph\",\"tensorflow\",\"pytorch\",\"python\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cplusplus\",\"cplusplus-developer\",\"training-and-development\",\"linux\",\"policies-and-practices\",\"reinforcement-learning\",\"vllm1\",\"open-source\",\"distributed-computing\",\"deep-learning\",\"graphics-processing-unit-gpu\",\"nodejs\",\"microsoft-graph\",\"machine-learning\",\"large-language-model-llm\",\"google-tensorflow\",\"tensorflow\",\"pytorch\",\"training-certification\",\"education-training\",\"vehicle-modification-tuning\",\"python\",\"debugging\",\"sensors-test-measurement\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"high-performance-computing\",\"supercomputing\",\"scalability\",\"performance-optimization\",\"computer-science\",\"electrical-engineering-and-planning\",\"software-development\",\"performance-engineering\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**THE ROLE:**\\n  \\n  \\nAs a core member of the team, you will play a pivotal role in optimizing and developing deep learning frameworks for AMD GPUs. Your experience will be critical in enhancing GPU kernels, deep lea"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "tsmc.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":23,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":914071333,\"job_title\":\"AI Memory Design Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"date_posted\":\"2026-10-31\",\"has_blurred_data\":false,\"company\":\"TSMC\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"location\":\"Munich, Bavaria\",\"short_location\":\"Munich, Bavaria\",\"long_location\":\"Munich, Bavaria\",\"state_code\":\"BY\",\"latitude\":48.137428283691406,\"longitude\":11.57548999786377,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Germany\",\"country_codes\":[\"DE\"],\"country_code\":\"DE\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T10:13:23.260000Z\",\"closed_at\":null,\"company_domain\":\"tsmc.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"wellspring\"],\"keyword_slugs\":[\"artificial-intelligence\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"sensors-test-measurement\",\"i-o-memory-peripheral-connectors\",\"intellectual-property\",\"testing-and-analysis\",\"scalability\",\"circuit-design\",\"debugging\",\"it-support\",\"technical-support-tech-support\",\"electrical-engineering-and-planning\",\"electronic-design-automation-eda\",\"event-driven-architecture-eda\",\"wellspring\",\"policies-and-practices\"],\"description\":\"Taiwan Semiconductor Manufacturing Company Ltd. (\u201cTSMC\u201d) is the world\u2019s leading semiconductor foundry. Headquartered in Taiwan, the Company has operation facilities worldwide and the largest logic chip manufacturing capacity in global semiconductor industry. The Company employs a global workforce of over 89.000 and recorded revenue over US$122 billion in 2025. TSMC produces the chips that are found in smart phones, tablets, computers, smart TVs, cars, laptops, games consoles, data centers and many more applications. TSMC sells to a wide variety of customers, including most leading semiconductor companies.\\n  \\n  \\nAt the TSMC EU Design Center, you\u2019ll work in an exceptional technology and design team to refine your technical and leadership skills within the world's most advanced design service ecosystem. You'll be contributing to the forefront of semiconductor technology, including cutting-edge nonvolatile memory solutions like MRAM and RRAM. Your main focus will be to assist our leading customers in delivering state-of-the-art products that have a transformative impact on people's lives.\\n  \\n  \\n**Job Responsibilities**\\nYour work will enable chip innovation possible by developing and optimizing all aspects in the pre-silicon design flow, including:\\n  \\n  \\n\\n- Develop memory IP and co"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "asml.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":18,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":909804760,\"job_title\":\"AI Engineer\",\"url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/San-Diego-CA-USA/AI-Engineer_J-00355214-1\",\"date_posted\":\"2026-10-28\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/San-Diego-CA-USA/AI-Engineer_J-00355214-1\",\"source_url\":\"https://asml.wd3.myworkdayjobs.com/asmlext1/job/AI-Engineer_J-00355214-1\",\"location\":\"San Diego, CA, USA\",\"short_location\":\"San Diego, CA, USA\",\"long_location\":\"San Diego, CA, USA\",\"state_code\":\"CA\",\"latitude\":32.7157096862793,\"longitude\":-117.16471862792969,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$129.2k - $189.5k per year\",\"min_annual_salary\":129188,\"min_annual_salary_usd\":129188.0,\"max_annual_salary\":189475,\"max_annual_salary_usd\":189475.0,\"avg_annual_salary_usd\":159331.5,\"salary_currency\":\"USD\",\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-29T06:54:10.887000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":true,\"technology_slugs\":[\"python\",\"microsoft-graph\",\"pytorch\",\"workday\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"machine-learning\",\"python\",\"testing-and-analysis\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"actionable-feedback-loops\",\"education-training\",\"materials-science\",\"microsoft-graph\",\"neural-networks\",\"foundation-models\",\"active-learning\",\"data-pipeline\",\"r\",\"offshore-software-r-d\",\"research-and-development-test\",\"pytorch\",\"salary-range\",\"market-data\",\"assessment-assessment-tools\",\"training-certification\",\"diversity\",\"hotels-accommodations\",\"workday\"],\"description\":\"**Introduction to the job**\\n\\nASML develops advanced lithography systems that enable semiconductor manufacturing. Our systems operate under demanding physical and chemical conditions, creating a continuous need for innovative materials with improved performance, reliability, and lifetime.\\n\\nAs an **AI Engineer** for materials discovery, you will develop and apply artificial intelligence, machine learning, and computational materials science methods to accelerate the discovery and optimization of materials for current and future ASML products. You will work at the intersection of AI, atomistic simulation, materials science, and experimental validation, collaborating with computational scientists, experimental researchers, and product engineering teams.\\n\\n**Role and responsibilitie**s\\n\\nAs an AI Engineer, Materials Discovery, you will:\\n\\n- Develop and execute high-throughput computational materials discovery and screening workflows.\\n- Apply emerging AI and machine learni"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "arm.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":91,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":913527931,\"job_title\":\"Dev Ops Engineer - Machine Learning\",\"url\":\"https://careers.arm.com/job/galway/dev-ops-engineer-machine-learning/33099/102645897712\",\"date_posted\":\"2026-10-30\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":\"https://careers.arm.com/job/galway/dev-ops-engineer-machine-learning/33099/102645897712\",\"source_url\":\"https://indeed.com/viewjob?jk=53e90e808a24a995\",\"location\":\"Galway, County Galway\",\"short_location\":\"Galway, County Galway\",\"long_location\":\"Galway, County Galway\",\"state_code\":\"G\",\"latitude\":53.27193832397461,\"longitude\":-9.048890113830566,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Ireland\",\"country_codes\":[\"IE\"],\"country_code\":\"IE\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T02:32:45.597000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[],\"easy_apply\":null,\"technology_slugs\":[\"macos\",\"python\",\"docker\",\"kubernetes\"],\"keyword_slugs\":[\"machine-learning\",\"instructional-design-id\",\"development-operations-devops\",\"policies-and-practices\",\"software-development\",\"training-and-development\",\"sensors-test-measurement\",\"power-and-cooling\",\"doors-windows\",\"linux\",\"macos\",\"humanoid-robot\",\"multicloud\",\"farms-ranches\",\"testing-and-analysis\",\"continuous-integration\",\"ci-cd\",\"continuous-delivery\",\"troubleshooting\",\"python\",\"scripting\",\"customer-intelligence-ci\",\"cd-certificate-of-deposit\",\"docker\",\"kubernetes\",\"debugging\",\"open-source\",\"dating-personals\",\"insurance-consulting-and-technology\",\"payouts\",\"artificial-intelligence\",\"recruiting-career-management\",\"hotels-accommodations\",\"salary-range\"],\"description\":\"**Job ID** 2026-19775 **Date posted** Oct. 30, 2026 **Location** Galway, Ireland **Category** Software Engineering\\n\\n  \\n\\n## **Job Overview**\\n\\nJoin the Machine Learning DevOps team and help ML software teams adopt effective DevOps practices. You will contribute to the infrastructure, automation and services that support software development, including cloud enablement and management of shared physical-device test infrastructure. This is an opportunity to work closely with engineers on technologies that help power the next generation of computing.\\n\\n## **Responsibilities**\\n\\n- Partner with Machine Learning software teams to understand their development and infrastructure needs and support the adoption of DevOps practices.\\n- Develop and maintain hybrid (Windows, Linux, MacOs, Android) infrastructure, automation and support services for software engineering workflows.\\n- Support multi-cloud enablement activities and board farm mana"
+      "body_snippet": "{\"metadata\":{\"total_results\":181,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":913114856,\"job_title\":\"AI Software Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4446212648/\",\"date_posted\":\"2026-10-30\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4446212648/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-30T21:31:38.011000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"cplusplus\",\"vllm1\",\"nodejs\",\"microsoft-graph\",\"tensorflow\",\"pytorch\",\"python\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cplusplus\",\"cplusplus-developer\",\"training-and-development\",\"linux\",\"policies-and-practices\",\"reinforcement-learning\",\"vllm1\",\"open-source\",\"distributed-computing\",\"deep-learning\",\"graphics-processing-unit-gpu\",\"nodejs\",\"microsoft-graph\",\"machine-learning\",\"large-language-model-llm\",\"google-tensorflow\",\"tensorflow\",\"pytorch\",\"training-certification\",\"education-training\",\"vehicle-modification-tuning\",\"python\",\"debugging\",\"sensors-test-measurement\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"high-performance-computing\",\"supercomputing\",\"scalability\",\"performance-optimization\",\"computer-science\",\"electrical-engineering-and-planning\",\"software-development\",\"performance-engineering\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**THE ROLE:**\\n  \\n  \\nAs a core member of the team, you will play a pivotal role in optimizing and developing deep learning frameworks for AMD GPUs. Your experience will be critical in enhancing GPU kernels, deep lea"
     }
   ]
 }
