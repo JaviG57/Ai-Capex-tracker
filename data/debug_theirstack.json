@@ -1,13 +1,28 @@
 {
   "error": null,
   "companies_queried": [
+    "ETN",
+    "GOOGL",
+    "AMD",
     "TSM",
-    "ASML",
-    "ARM",
-    "SMCI",
-    "DLR"
+    "ASML"
   ],
   "jobs_returned": {
+    "ETN": {
+      "jobs_overall": 49185,
+      "jobs_ai": 12,
+      "jobs_last_30d": 2174
+    },
+    "GOOGL": {
+      "jobs_overall": 116,
+      "jobs_ai": 0,
+      "jobs_last_30d": 12
+    },
+    "AMD": {
+      "jobs_overall": 27653,
+      "jobs_ai": 179,
+      "jobs_last_30d": 974
+    },
     "TSM": {
       "jobs_overall": 4633,
       "jobs_ai": 23,
@@ -17,24 +32,93 @@
       "jobs_overall": 16443,
       "jobs_ai": 19,
       "jobs_last_30d": 1087
-    },
-    "ARM": {
-      "jobs_overall": 10601,
-      "jobs_ai": 85,
-      "jobs_last_30d": 351
-    },
-    "SMCI": {
-      "jobs_overall": 5590,
-      "jobs_ai": 8,
-      "jobs_last_30d": 463
-    },
-    "DLR": {
-      "jobs_overall": 4076,
-      "jobs_ai": 0,
-      "jobs_last_30d": 131
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":12,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":887825440,\"job_title\":\"Senior Software Engineer, AI Governance\",\"url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"date_posted\":\"2026-10-16\",\"has_blurred_data\":false,\"company\":\"Eaton\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4460735139/\",\"location\":\"Menomonee Falls, WI\",\"short_location\":\"Menomonee Falls, WI\",\"long_location\":\"Menomonee Falls, WI\",\"state_code\":\"WI\",\"latitude\":43.17890167236328,\"longitude\":-88.1173095703125,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-16T10:27:06.672000Z\",\"closed_at\":null,\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"aws-control-tower\",\"tower\",\"drift\",\"attribution\",\"servicenow\",\"github\",\"gitHub-copilot\",\"bolt\",\"langgraph\",\"guardrails\",\"amazon-web-services\",\"google-cloud-platform\",\"python\",\"typescript\",\"microsoft-typescript\",\"javascript\",\"dot-net\",\"java\",\"snowflake\",\"microsoft-azure\",\"azure-data-factory\",\"graphql\",\"terraform\",\"opentelemetry\",\"oauth\",\"openai\",\"claude-by-anthropic\"],\"keyword_slugs\":[\"artificial-intelligence\",\"ai-governance\",\"aws-control-tower\",\"tower\",\"microsoft-most-valuable-professional-mvp\",\"minimum-viable-product-mvp\",\"audits\",\"audit-trail\",\"power-and-cooling\",\"observability\",\"assessment-assessment-tools\",\"drift\",\"incident-response\",\"cloud-finops\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"digital-token\",\"credit-and-collections\",\"use-case\",\"attribution\",\"policies-and-practices\",\"fashion-designers-collections\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"infrastructure-as-code-iac\",\"servicenow\",\"github\",\"gitHub-copilot\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"agile-sprint\",\"large-language-model-llm\",\"social-content-and-apps\",\"retrieval-augmented-generation-rag\",\"workflow-automation\",\"automated-workflow\",\"bolt\",\"data-structures\",\"distribution-and-storage\",\"scalability\",\"code-review\",\"coaching-mentoring\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"continuous-delivery\",\"software-development-lifecycle\",\"systems-development-life-cycle-sdlc\",\"testing-and-analysis\",\"automation-testing\",\"computer-science\",\"machine-learning\",\"langgraph\",\"search-and-retrieval\",\"prompt-engineering\",\"guardrails\",\"racking-protection\",\"safety-barriers\",\"environment-health-and-safety-hsse\",\"application-programming-interface-api\",\"api-d"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":918897601,\"job_title\":\"BlueYonder Monitoring Services Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4486049451/\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"US based Law Firm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4486049451/\",\"location\":\"Telangana\",\"short_location\":\"Telangana\",\"long_location\":\"Telangana\",\"state_code\":\"TG\",\"latitude\":17.833330154418945,\"longitude\":79.08332824707031,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"India\",\"country_codes\":[\"IN\"],\"country_code\":\"IN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-03T13:52:20.257000Z\",\"closed_at\":null,\"company_domain\":\"google.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"blue-yonder\",\"root-cause\"],\"keyword_slugs\":[\"blue-yonder\",\"time-and-attendance\",\"full-time-equivalent-fte\",\"alert-management\",\"troubleshooting\",\"continuous-improvement-process-cip\",\"continuous-availability\",\"environment-health-and-safety-hsse\",\"vehicle-modification-tuning\",\"incident-and-problem-management\",\"incident-breach-management\",\"root-cause\",\"root-cause-analysis-rca\",\"testing-and-analysis\",\"training-and-development\",\"maintenance-repair-and-operations-mro\",\"system-configuration-sc\",\"compliance\",\"policies-and-practices\",\"mentoring\",\"system-monitors\",\"system-availability\",\"monitor-and-analyze-performance\"],\"description\":\"Experience: 5\u20137 Years (Minimum 5+ Years)\\n\\nLocation: PAN India\\n\\nEmployment Type: Full-Time (FTE)\\n\\nBudget: Up to \u20b918 LPA\\n\\nPrimary & Secondary Key Skills: BlueYonder Monitoring Services\\n\\nRole Overview\\n\\n**Our client is seeking a skilled professional with 5\u20137 years of experience in BlueYonder Monitoring Services to ensure optimal system performance, availability, and reliability**\\n\\n. The candidate will be responsible for end-to-end monitoring, alert management, troubleshooting, and continuous improvement of BlueYonder systems.\\n\\n**Key Responsibilities**\\n\\nMonitor and manage BlueYonder systems to ensure continuous availability and optimal performance.\\n\\nAnalyze system alerts and logs to proactively identify and resolve issues.\\n\\nConfigure and optimize monitoring tools specific to BlueYonder environments.\\n\\nOversee end-to-end monitoring of BlueYonder services and infrastructure.\\n\\nTroubleshoot and resolve system alerts and incidents efficiently.\\n\\nConduct regular system health checks and performance tuning.\\n\\nDevelop and maintain monitoring dashboards and automated alerting mechanisms.\\n\\nParticipate in incident management and Root Cause Ana"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amd.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":179,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":918598015,\"job_title\":\"AI Optimization Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4449539868/\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4449539868/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-03T09:53:06.716000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"effective-software\",\"cplusplus\",\"python\",\"triton\",\"cuda\",\"gluon\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"insurance-consulting-and-technology\",\"effective-software\",\"emerging-technologies\",\"new-product-introduction\",\"it-support\",\"technical-support-tech-support\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"testing-and-analysis\",\"cplusplus\",\"python\",\"triton\",\"cuda\",\"gluon\",\"monitor-and-analyze-performance\",\"credentialing-profiling\",\"computer-science\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**The Role**\\nAMD is looking for a specialized software engineer who is passionate about improving the performance of key applications and benchmarks\\n**.**\\nYou will be a member of a core team of incredibly talented industry specialists and will work with the very latest hardware and software technology.\\n  \\n  \\n**The Person**\\nThe ideal candidate should be passionate about software engineering and possess leadership skills to drive sophisticated issues t"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -81,91 +165,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":19,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":916052175,\"job_title\":\"Physics Informed Machine Learning Scientist\",\"url\":\"https://www.linkedin.com/jobs/view/4432415743/\",\"date_posted\":\"2026-11-01\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432415743/\",\"location\":\"San Diego, CA\",\"short_location\":\"San Diego, CA\",\"long_location\":\"San Diego, CA\",\"state_code\":\"CA\",\"latitude\":32.7157096862793,\"longitude\":-117.16471862792969,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$135.4k - $225.6k per year\",\"min_annual_salary\":135375,\"min_annual_salary_usd\":135375.0,\"max_annual_salary\":225625,\"max_annual_salary_usd\":225625.0,\"avg_annual_salary_usd\":180500.0,\"salary_currency\":\"USD\",\"salary_period\":\"year\",\"min_salary\":135375.0,\"max_salary\":225625.0,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-01T18:42:53.966000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"nodejs\",\"python\",\"elearning-lms\",\"pytorch\",\"c10\",\"cplusplus\",\"matlab\",\"ml-flow\",\"mlflow\",\"microsoft-azure\",\"kubernetes\",\"azure-kubernetes-service\",\"azure-kubernetes-service-aks\",\"spark\",\"azure-databricks\",\"databricks\"],\"keyword_slugs\":[\"machine-learning\",\"laser-photonic\",\"power-and-cooling\",\"team-building\",\"insurance-consulting-and-technology\",\"data-pipeline\",\"testing-and-analysis\",\"data-analytics\",\"sensors-test-measurement\",\"data-management\",\"data-quality\",\"seamless-integration\",\"maintenance-repair-and-operations-mro\",\"objectives-and-key-results\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"troubleshooting\",\"distribution-and-storage\",\"training-and-development\",\"nodejs\",\"deep-learning\",\"training-certification\",\"education-training\",\"software-development\",\"python\",\"elearning-lms\",\"pytorch\",\"c10\",\"cplusplus\",\"matlab\",\"ml-flow\",\"mlflow\",\"microsoft-azure\",\"kubernetes\",\"azure-kubernetes-service\",\"azure-kubernetes-service-aks\",\"spark\",\"azure-databricks\",\"databricks\",\"dating-personals\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"hotels-accommodations\",\"disabilities-ada\",\"lift-and-shift\",\"hardware-peripherals\",\"time-and-attendance\",\"workstations\",\"salary-range\",\"market-data\",\"assessment-assessment-tools\",\"life-insurance\",\"401k\",\"sep-ira-401k\",\"retirement-savings-401-k\",\"holidays-seasonal-events\",\"laws-and-regulations\",\"r\",\"diversity\"],\"description\":\"ASML US, LP brings together the most creative minds in science and technology to develop lithography machines that are key to producing faster, cheaper, more energy-efficient microchips. We design, develop, integrate, market and service these advanced machines, which enable our customers - the world\u2019s leading chipmakers - to reduce the siz"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "arm.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":85,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":914595188,\"job_title\":\"Staff AI Research Scientist - Model Compression & Efficient AI\",\"url\":\"https://www.linkedin.com/jobs/view/4458655575/\",\"date_posted\":\"2026-10-31\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4458655575/\",\"location\":\"Raanana, Center District\",\"short_location\":\"Raanana, Center District\",\"long_location\":\"Raanana, Center District\",\"state_code\":\"M\",\"latitude\":32.18360137939453,\"longitude\":34.87385940551758,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Israel\",\"country_codes\":[\"IL\"],\"country_code\":\"IL\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T17:41:56.480000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"artificial-intelligence\",\"compressors\",\"instructional-design-id\",\"testing-and-analysis\",\"machine-learning-inference\",\"cabinet-construction-materials-hardware\",\"state-local-municipal\",\"prior-art\",\"computer-science\",\"electrical-engineering-and-planning\",\"cyber-intelligence\",\"academic-conferences-publications\",\"payouts\",\"recruiting-career-management\",\"hotels-accommodations\"],\"description\":\"**Job ID**\\n2026-19262\\n**Date posted**\\n27/08/2026\\n**Location**\\nRaanana, Israel\\n**Category**\\nResearch\\n  \\n  \\n**Job Overview**\\nAt Arm, our research is driving the future of AI, from edge to cloud. We are building the foundations of tomorrow's intelligent systems, spanning next-generation processors and accelerators, innovative machine learning models, and advanced AI tools. As a Research Scientist, you will join a distributed team pushing the boundaries of what is possible at the intersection of AI, computer architecture, and compute. We seek curious, collaborative researchers who are passionate about turning research ideas into top-tier publications and real-world impact. We are looking for Research Scientists interested in foundational advances in machine learning, quantization, efficient inference, and model optimization. Research areas can include, but are not limited to:\\n  \\n  \\n\\n- Quantization: Research of novel quantization algorithms, including theoretical analysis and optimization methods.\\n- Efficient Inference: Research on techniques for efficient model inference, including pruning, low-rank methods, and hardware-aware optimization.\\n\\n**Responsibilities**\\nThis role involves conducting research across a wide range of AI topics, collaborating with researchers to advance the state of the art, publishing at top co"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "supermicro.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":8,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":912189419,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-10-29\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-30T10:58:37.406000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"docker\",\"langchain\"],\"keyword_slugs\":[\"artificial-intelligence\",\"agentic-ai\",\"instructional-design-id\",\"customer-support\",\"data-processing\",\"computer-science\",\"information-technology\",\"python\",\"machine-learning\",\"large-language-model-llm\",\"linux\",\"docker\",\"sql\",\"nosql\",\"vector-database\",\"langchain\",\"machine-learning-ops-mlops\",\"policies-and-practices\",\"assessment-assessment-tools\",\"salary-range\",\"education-training\",\"training-certification\",\"training-and-development\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30248****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nSupermicro is seeking a top-notch hands-on Sr. Software Engineer to work on PCIe, SAS/SATA, USB and other HW related areas of storage and server products. As part of our small but important software engineering team, you will be responsible for leading the projects and provide technical expertise and recommendations to support and enhance our development projects.\\n  \\n  \\n**Essential Duties And Responsibilities**\\n\\n- Create and maintain several end-to-end AI agent pipelines that handle high-volume customer support and technical tickets-\\n- Connect and process data from various internal and external data sources\\n- Present demonstrations and upda"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":917539957,\"job_title\":\"Technicien Services G\u00e9n\u00e9raux et Logistique (H/F/X)\",\"url\":\"https://www.linkedin.com/jobs/view/4485752316/\",\"date_posted\":\"2026-11-02\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4485752316/\",\"location\":\"Paris, \u00cele-de-\",\"short_location\":\"Paris, \u00cele-de-\",\"long_location\":\"Paris, \u00cele-de-\",\"state_code\":\"IDF\",\"latitude\":48.85340881347656,\"longitude\":2.34879994392395,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"France\",\"country_codes\":[\"FR\"],\"country_code\":\"FR\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-02T18:45:40.958000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"cision\"],\"keyword_slugs\":[\"job-descriptions\",\"localization\",\"video-localization\",\"clinical-documentation-improvement-cdi\",\"data-center\",\"server-farms\",\"cision\",\"oral-and-maxillofacial\",\"r\",\"maintenance-repair-and-operations-mro\"],\"description\":\"**Job Description**\\n**Rejoignez l'Aventure en tant que Technicien Services G\u00e9n\u00e9raux et Logistique (H/F) chez Digital Realty !**\\n**Localisation :**\\nLa Courneuve\\n  \\n  \\n**Type de poste :**\\nTemps plein, CDI\\n  \\n  \\n**Qui sommes-nous ?**\\nDigital Realty est un acteur mondial incontournable dans l'univers des Data Center, fournissant l'infrastructure critique qui permet aux entreprises de prosp\u00e9rer \u00e0 l'\u00e8re num\u00e9rique. Nous sommes 4500 collaborateurs un peu partout dans le monde (25 pays sur 6 continents), dont 350 collaborateurs en France, r\u00e9partis sur 17 sites (en IDF et \u00e0 Marseille).\\n  \\n  \\nNous concevons, construisons et exploitons nos Data Centers. Notre infrastructure fonctionne gr\u00e2ce \u00e0 des \u00e9quipements \u00e9lectriques et CVC, sur lesquels nous portons toute notre attention en continu.\\n  \\n  \\nNotre mission ? Nous connectons les entreprises \u00e0 leurs clients et partenaires, tout en garantissant une infrastructure s\u00e9curis\u00e9e et fiable pour l'h\u00e9bergement des donn\u00e9es critiques, pour vous permettre de surfer sur Internet rapidement et sans coupure ! Nous sommes au c\u0153ur de la transformation num\u00e9rique, et nous cherchons des talents passionn\u00e9s pour nous accompagner dans cette mission ambitieuse.\\n  \\n  \\n**Votre r\u00f4le**\\nAu sein de notre \u00e9quipe op\u00e9rationnelle, vous jouerez un r\u00f4le essentiel dans la gestion logistique et des services g\u00e9n\u00e9raux de notre data center. Vous serez le point de contact privil\u00e9gi\u00e9 avec les transporteurs et les clients, assurant la r\u00e9ception, l'envoi et la gestion des colis. En collaboratio"
+      "body_snippet": "{\"metadata\":{\"total_results\":19,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":919295339,\"job_title\":\"Artificial Intelligence | Computer Science internship: AI-powered document review\",\"url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/Veldhoven-Netherlands/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/Veldhoven-Netherlands/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"source_url\":\"https://asml.wd3.myworkdayjobs.com/asmlext1/job/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"location\":\"Veldhoven, Netherlands\",\"short_location\":\"Veldhoven, Netherlands\",\"long_location\":\"Veldhoven, Netherlands\",\"state_code\":\"00\",\"latitude\":52.25,\"longitude\":5.75,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Netherlands\",\"country_codes\":[\"NL\"],\"country_code\":\"NL\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-03T18:57:55.353000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":true,\"technology_slugs\":[\"python\",\"workday\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cyber-intelligence\",\"computer-science\",\"internships\",\"document-review\",\"proof-of-concept\",\"proof-of-concept-poc\",\"errors-omissions-e-o\",\"python\",\"data-science\",\"machine-learning\",\"training-and-development\",\"developer-tools\",\"dating-personals\",\"cover-letters\",\"diversity\",\"workday\"],\"description\":\"## **Introduction**\\n\\nWithin ASML\u2019s EUV Factory organization in Veldhoven, the team is responsible for managing and reviewing customer infrastructure documentation required before system installation. These documents describe critical requirements related to utilities, facilities, cooling, power, and other installation interfaces. Today, reviewing and validating these large document packages is a manual process that can take up to three weeks and requires extensive expert effort. Because even small mistakes can lead to quality risks, delays, and significant costs, the team is looking for opportunities to improve both speed and accuracy. During this internship, you will explore how Artificial Intelligence can help automate document reviews and support faster, more reliable decision-making.\\n\\n## **Your assignment**\\n\\nIn this internship, you will investigate how AI can be applied to automate the review of customer requirement documentation. You will develop a proof of concept that demonstrates how AI can identify inconsist"
     }
   ]
 }
