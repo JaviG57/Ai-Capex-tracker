@@ -1,40 +1,124 @@
 {
   "error": null,
   "companies_queried": [
+    "ARM",
+    "SMCI",
+    "DLR",
     "ETN",
-    "GOOGL",
-    "AMD",
-    "TSM",
-    "ASML"
+    "GOOGL"
   ],
   "jobs_returned": {
+    "ARM": {
+      "jobs_overall": 10601,
+      "jobs_ai": 87,
+      "jobs_last_30d": 351
+    },
+    "SMCI": {
+      "jobs_overall": 5590,
+      "jobs_ai": 8,
+      "jobs_last_30d": 463
+    },
+    "DLR": {
+      "jobs_overall": 4076,
+      "jobs_ai": 0,
+      "jobs_last_30d": 131
+    },
     "ETN": {
       "jobs_overall": 49185,
       "jobs_ai": 12,
       "jobs_last_30d": 2174
     },
     "GOOGL": {
-      "jobs_overall": 116,
+      "jobs_overall": 184,
       "jobs_ai": 0,
-      "jobs_last_30d": 12
-    },
-    "AMD": {
-      "jobs_overall": 27653,
-      "jobs_ai": 179,
-      "jobs_last_30d": 974
-    },
-    "TSM": {
-      "jobs_overall": 4633,
-      "jobs_ai": 23,
-      "jobs_last_30d": 426
-    },
-    "ASML": {
-      "jobs_overall": 16443,
-      "jobs_ai": 19,
-      "jobs_last_30d": 1087
+      "jobs_last_30d": 1
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "arm.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":87,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":919042060,\"job_title\":\"Senior Developer-Relations Engineer (AI)\",\"url\":\"https://www.linkedin.com/jobs/view/4476854901/\",\"date_posted\":\"2026-10-31\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4476854901/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-03T15:35:56.177000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"pytorch\",\"aws-iot\",\"kubernetes\",\"serverless\"],\"keyword_slugs\":[\"artificial-intelligence\",\"instructional-design-id\",\"testing-and-analysis\",\"neural-networks\",\"large-language-model-llm\",\"machine-learning\",\"pytorch\",\"open-source\",\"humanoid-robot\",\"in-vehicle-infotainment-ivi\",\"advanced-driver-assistance-systems-adas\",\"cabinet-construction-materials-hardware\",\"i-o-memory-peripheral-connectors\",\"peripheral-component-interconnect-pci-express\",\"performance-optimization\",\"accelerators\",\"cloud-applications\",\"internet-of-things-iot\",\"aws-iot\",\"at-t-internet-of-things\",\"cloud-integration\",\"cloud-infrastructure\",\"kubernetes\",\"serverless\",\"recruiting-career-management\",\"hotels-accommodations\"],\"description\":\"**Job ID**\\n2026-17483\\n**Date posted**\\n09/10/2026\\n**Location**\\nShanghai, China; Shenzhen, China\\n**Category**\\nSoftware Engineering\\n  \\n  \\nAt Arm, we\u2019re enabling AI and applications from the most influence developers in China to run everywhere\u2014from cloud to edge \u2014powering billions of devices worldwide!\\n  \\n  \\nThis role sits at the intersection of machine learning, systems optimization, and developer experience, with a focus on enabling efficient deployment of AI models on Arm-based devices. You will work hands-on with model optimization techniques such as tiling, quantization, pruning etc. to help developers transform large foundation models into production-ready, resource-efficient versions that run locally on edge and mobile hardware. You will work on developer\u2019s applications based on standard software stacks and frameworks by integrating arm-based AI technologies to boost performance of their models and frameworks much earlier before the technologies go to market. You will do in-depth profiling and analysis of the whole solution stack all the way from application usage do"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "supermicro.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":8,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":912189419,\"job_title\":\"Sr. Software Engineer - Agentic AI\",\"url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"date_posted\":\"2026-10-29\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4467905199/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-10-30T10:58:37.406000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"docker\",\"langchain\"],\"keyword_slugs\":[\"artificial-intelligence\",\"agentic-ai\",\"instructional-design-id\",\"customer-support\",\"data-processing\",\"computer-science\",\"information-technology\",\"python\",\"machine-learning\",\"large-language-model-llm\",\"linux\",\"docker\",\"sql\",\"nosql\",\"vector-database\",\"langchain\",\"machine-learning-ops-mlops\",\"policies-and-practices\",\"assessment-assessment-tools\",\"salary-range\",\"education-training\",\"training-certification\",\"training-and-development\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30248****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nSupermicro is seeking a top-notch hands-on Sr. Software Engineer to work on PCIe, SAS/SATA, USB and other HW related areas of storage and server products. As part of our small but important software engineering team, you will be responsible for leading the projects and provide technical expertise and recommendations to support and enhance our development projects.\\n  \\n  \\n**Essential Duties And Responsibilities**\\n\\n- Create and maintain several end-to-end AI agent pipelines that handle high-volume customer support and technical tickets-\\n- Connect and process data from various internal and external data sources\\n- Present demonstrations and upda"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":920972464,\"job_title\":\"Contract Management - Contract Manager\",\"url\":\"https://hdep.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/9059/?mode=location\",\"date_posted\":\"2026-11-04\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":\"https://hdep.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/9059/?mode=location\",\"source_url\":\"https://indeed.com/viewjob?jk=b82abeba9a76768a\",\"location\":\"London EC2M 5TP\",\"short_location\":\"London\",\"long_location\":\"London EC2M 5TP\",\"state_code\":\"ENG\",\"latitude\":51.51705551147461,\"longitude\":-0.08752287179231644,\"postal_code\":\"EC2M 5TP\",\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United Kingdom\",\"country_codes\":[\"GB\"],\"country_code\":\"GB\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-04T15:26:13.153000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"contract\",\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"conga\",\"oracle-recruiting-cloud\"],\"keyword_slugs\":[\"contract-administration\",\"international-association-for-contract-and-commercial-management-iaccm\",\"contract-management\",\"contract-lifecycle-management\",\"policies-and-practices\",\"audits\",\"contract-drafting\",\"knowledge-management\",\"closed-loop-marketing-clm\",\"data-access\",\"service-delivery\",\"continuous-improvement-process-cip\",\"onboarding\",\"training-certification\",\"education-training\",\"training-and-development\",\"process-optimization\",\"compliance\",\"financial-turnaround\",\"data-management\",\"clubs-organizations\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"maintenance-repair-and-operations-mro\",\"coupons-and-deals\",\"single-source-of-truth-ssot\",\"scalability\",\"artificial-intelligence\",\"legal-operations\",\"laws-and-regulations\",\"stakeholder-management\",\"conga\",\"contract-negotiations\",\"data-center\",\"server-farms\",\"mba-programs\",\"oracle-recruiting-cloud\"],\"description\":\"Digital Realty is seeking a Manager Contract Management to support contract management activities across EMEA. The Contract Manager will be responsible for overseeing the end-to-end contract lifecycle across the organization. This role drives operational excellence, ensures compliance with legal and corporate policies, and partners closely with Legal, Sales, Finance, and other key stakeholders to enable efficient deal execution. This position will report to the Contract Management EMEA Leader and will be part of the global Contract Management team within the Legal, Risk, Sustainability and Compliance department.\\n\\n**Contract Lifecycle Management:**\\n\\n- Oversee t"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -93,79 +177,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":918897601,\"job_title\":\"BlueYonder Monitoring Services Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4486049451/\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"US based Law Firm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4486049451/\",\"location\":\"Telangana\",\"short_location\":\"Telangana\",\"long_location\":\"Telangana\",\"state_code\":\"TG\",\"latitude\":17.833330154418945,\"longitude\":79.08332824707031,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"India\",\"country_codes\":[\"IN\"],\"country_code\":\"IN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-03T13:52:20.257000Z\",\"closed_at\":null,\"company_domain\":\"google.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"blue-yonder\",\"root-cause\"],\"keyword_slugs\":[\"blue-yonder\",\"time-and-attendance\",\"full-time-equivalent-fte\",\"alert-management\",\"troubleshooting\",\"continuous-improvement-process-cip\",\"continuous-availability\",\"environment-health-and-safety-hsse\",\"vehicle-modification-tuning\",\"incident-and-problem-management\",\"incident-breach-management\",\"root-cause\",\"root-cause-analysis-rca\",\"testing-and-analysis\",\"training-and-development\",\"maintenance-repair-and-operations-mro\",\"system-configuration-sc\",\"compliance\",\"policies-and-practices\",\"mentoring\",\"system-monitors\",\"system-availability\",\"monitor-and-analyze-performance\"],\"description\":\"Experience: 5\u20137 Years (Minimum 5+ Years)\\n\\nLocation: PAN India\\n\\nEmployment Type: Full-Time (FTE)\\n\\nBudget: Up to \u20b918 LPA\\n\\nPrimary & Secondary Key Skills: BlueYonder Monitoring Services\\n\\nRole Overview\\n\\n**Our client is seeking a skilled professional with 5\u20137 years of experience in BlueYonder Monitoring Services to ensure optimal system performance, availability, and reliability**\\n\\n. The candidate will be responsible for end-to-end monitoring, alert management, troubleshooting, and continuous improvement of BlueYonder systems.\\n\\n**Key Responsibilities**\\n\\nMonitor and manage BlueYonder systems to ensure continuous availability and optimal performance.\\n\\nAnalyze system alerts and logs to proactively identify and resolve issues.\\n\\nConfigure and optimize monitoring tools specific to BlueYonder environments.\\n\\nOversee end-to-end monitoring of BlueYonder services and infrastructure.\\n\\nTroubleshoot and resolve system alerts and incidents efficiently.\\n\\nConduct regular system health checks and performance tuning.\\n\\nDevelop and maintain monitoring dashboards and automated alerting mechanisms.\\n\\nParticipate in incident management and Root Cause Ana"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "amd.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":179,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":918598015,\"job_title\":\"AI Optimization Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4449539868/\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4449539868/\",\"location\":\"Shanghai, Shanghai\",\"short_location\":\"Shanghai, Shanghai\",\"long_location\":\"Shanghai, Shanghai\",\"state_code\":\"31\",\"latitude\":31.222219467163086,\"longitude\":121.45806121826172,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"China\",\"country_codes\":[\"CN\"],\"country_code\":\"CN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-03T09:53:06.716000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"effective-software\",\"cplusplus\",\"python\",\"triton\",\"cuda\",\"gluon\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cabinet-construction-materials-hardware\",\"insurance-consulting-and-technology\",\"effective-software\",\"emerging-technologies\",\"new-product-introduction\",\"it-support\",\"technical-support-tech-support\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"testing-and-analysis\",\"cplusplus\",\"python\",\"triton\",\"cuda\",\"gluon\",\"monitor-and-analyze-performance\",\"credentialing-profiling\",\"computer-science\"],\"description\":\"**WHAT YOU DO AT AMD CHANGES EVERYTHING**\\nAt AMD, our mission is to build great products that accelerate next-generation computing experiences\u2014from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you\u2019ll discover the real differentiator is our culture. We push the limits of innovation to solve the world\u2019s most important challenges\u2014striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.\\n**Together, we advance your career.**\\n**The Role**\\nAMD is looking for a specialized software engineer who is passionate about improving the performance of key applications and benchmarks\\n**.**\\nYou will be a member of a core team of incredibly talented industry specialists and will work with the very latest hardware and software technology.\\n  \\n  \\n**The Person**\\nThe ideal candidate should be passionate about software engineering and possess leadership skills to drive sophisticated issues t"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "tsmc.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":23,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":914071333,\"job_title\":\"AI Memory Design Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"date_posted\":\"2026-10-31\",\"has_blurred_data\":false,\"company\":\"TSMC\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4432505283/\",\"location\":\"Munich, Bavaria\",\"short_location\":\"Munich, Bavaria\",\"long_location\":\"Munich, Bavaria\",\"state_code\":\"BY\",\"latitude\":48.137428283691406,\"longitude\":11.57548999786377,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Germany\",\"country_codes\":[\"DE\"],\"country_code\":\"DE\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-10-31T10:13:23.260000Z\",\"closed_at\":null,\"company_domain\":\"tsmc.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"wellspring\"],\"keyword_slugs\":[\"artificial-intelligence\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"integrated-circuit-ic\",\"sensors-test-measurement\",\"i-o-memory-peripheral-connectors\",\"intellectual-property\",\"testing-and-analysis\",\"scalability\",\"circuit-design\",\"debugging\",\"it-support\",\"technical-support-tech-support\",\"electrical-engineering-and-planning\",\"electronic-design-automation-eda\",\"event-driven-architecture-eda\",\"wellspring\",\"policies-and-practices\"],\"description\":\"Taiwan Semiconductor Manufacturing Company Ltd. (\u201cTSMC\u201d) is the world\u2019s leading semiconductor foundry. Headquartered in Taiwan, the Company has operation facilities worldwide and the largest logic chip manufacturing capacity in global semiconductor industry. The Company employs a global workforce of over 89.000 and recorded revenue over US$122 billion in 2025. TSMC produces the chips that are found in smart phones, tablets, computers, smart TVs, cars, laptops, games consoles, data centers and many more applications. TSMC sells to a wide variety of customers, including most leading semiconductor companies.\\n  \\n  \\nAt the TSMC EU Design Center, you\u2019ll work in an exceptional technology and design team to refine your technical and leadership skills within the world's most advanced design service ecosystem. You'll be contributing to the forefront of semiconductor technology, including cutting-edge nonvolatile memory solutions like MRAM and RRAM. Your main focus will be to assist our leading customers in delivering state-of-the-art products that have a transformative impact on people's lives.\\n  \\n  \\n**Job Responsibilities**\\nYour work will enable chip innovation possible by developing and optimizing all aspects in the pre-silicon design flow, including:\\n  \\n  \\n\\n- Develop memory IP and co"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "asml.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":19,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":919295339,\"job_title\":\"Artificial Intelligence | Computer Science internship: AI-powered document review\",\"url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/Veldhoven-Netherlands/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/Veldhoven-Netherlands/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"source_url\":\"https://asml.wd3.myworkdayjobs.com/asmlext1/job/Artificial-Intelligence---Computer-Science-internship--AI-powered-document-review_J-00355284\",\"location\":\"Veldhoven, Netherlands\",\"short_location\":\"Veldhoven, Netherlands\",\"long_location\":\"Veldhoven, Netherlands\",\"state_code\":\"00\",\"latitude\":52.25,\"longitude\":5.75,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Netherlands\",\"country_codes\":[\"NL\"],\"country_code\":\"NL\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-03T18:57:55.353000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":true,\"technology_slugs\":[\"python\",\"workday\"],\"keyword_slugs\":[\"artificial-intelligence\",\"cyber-intelligence\",\"computer-science\",\"internships\",\"document-review\",\"proof-of-concept\",\"proof-of-concept-poc\",\"errors-omissions-e-o\",\"python\",\"data-science\",\"machine-learning\",\"training-and-development\",\"developer-tools\",\"dating-personals\",\"cover-letters\",\"diversity\",\"workday\"],\"description\":\"## **Introduction**\\n\\nWithin ASML\u2019s EUV Factory organization in Veldhoven, the team is responsible for managing and reviewing customer infrastructure documentation required before system installation. These documents describe critical requirements related to utilities, facilities, cooling, power, and other installation interfaces. Today, reviewing and validating these large document packages is a manual process that can take up to three weeks and requires extensive expert effort. Because even small mistakes can lead to quality risks, delays, and significant costs, the team is looking for opportunities to improve both speed and accuracy. During this internship, you will explore how Artificial Intelligence can help automate document reviews and support faster, more reliable decision-making.\\n\\n## **Your assignment**\\n\\nIn this internship, you will investigate how AI can be applied to automate the review of customer requirement documentation. You will develop a proof of concept that demonstrates how AI can identify inconsist"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":919397720,\"job_title\":\"Records Clerk\",\"url\":\"http://www.indeed.com/job/records-clerk-450b010e275171e8\",\"date_posted\":\"2026-11-03\",\"has_blurred_data\":false,\"company\":\"USA\",\"final_url\":null,\"source_url\":\"https://indeed.com/viewjob?jk=450b010e275171e8\",\"location\":\"Delano, CA 93215\",\"short_location\":\"Delano, CA\",\"long_location\":\"Delano, CA 93215\",\"state_code\":\"CA\",\"latitude\":35.77067184448242,\"longitude\":-119.24734497070312,\"postal_code\":\"93215\",\"remote\":false,\"hybrid\":false,\"salary_string\":\"$19.92 an hour\",\"min_annual_salary\":41433,\"min_annual_salary_usd\":41433.6015625,\"max_annual_salary\":41433,\"max_annual_salary_usd\":41433.6015625,\"avg_annual_salary_usd\":41433.6,\"salary_currency\":\"USD\",\"salary_period\":\"hour\",\"min_salary\":19.92,\"max_salary\":19.92,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-03T20:20:33.613000Z\",\"closed_at\":null,\"company_domain\":\"google.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"temporary\"],\"easy_apply\":true,\"technology_slugs\":[\"rms\"],\"keyword_slugs\":[\"digital-document-management\",\"document-control\",\"document-storage\",\"content-document-management\",\"document-management-systems-dms\",\"records-management\",\"rms\",\"digitalization\",\"records-retention\",\"policies-and-practices\",\"compliance\",\"regulatory-compliance\",\"compliance-management\",\"information-governance\",\"data-security\",\"information-security\",\"laws-and-regulations\",\"content-management\",\"data-management\"],\"description\":\"**Job Summary**\\n\\nAs a Records Clerk, you\u2019ll organize, maintain, and protect physical and electronic records so information is accurate, accessible, and handled in line with applicable requirements. You\u2019ll use document management systems and record management systems (RMS) to support filing, digitization, metadata entry, and records retention. Your impact: By keeping records complete, searchable, and secure, you help colleagues find reliable information and support compliant decision-making.\\n\\n**Responsibilities**\\n\\n- File, classify, and index records using established taxonomy, metadata, and information management practices.\\n- Maintain physical and electronic records, including digitization, archival processing, and archives management.\\n- Apply records retention schedules and support record retention for compliance, regulatory compliance management, and government records management.\\n- Follow information governance, information security, archival standards, and records management regulation compliance procedures.\\n- Update document management and content management systems; use Microsoft Office for data management, tracking, and proofreading.\\n\\n**Experience**\\n\\n- Administrative experience or related records management work is helpful; equivalent skills are welcome.\\n- Familiarity with documen"
     }
   ]
 }
