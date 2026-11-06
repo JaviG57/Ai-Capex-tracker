@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T18:25:43.847088Z",
+  "generated_at": "2026-11-06T17:46:59.543445Z",
   "lookback_days": 365,
-  "states_ok": 29,
+  "states_ok": 30,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): cd5': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#a3c7cfcad18dd4ccd1c8c5ccd1c0c68dc7c6d5c6cfccd3e3cbc2d4c2caca8dc4ccd5?\n",
+    "hi": "no output (exit 1): 3ea': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#9cf8f0f5eeb2ebf3eef7faf3eefff9b2f8f9eaf9f0f3ecdcf4fdebfdf5f5b2fbf3ea?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -38,7 +38,7 @@
     "ri": "no output (exit 1): ignore\")\n                                 ^^^^^^^^^\nUnboundLocalError: cannot access local variable 'headers' where it is not associated with a value\n",
     "sc": "ok",
     "sd": "ok",
-    "tn": "no output (exit 1): ectionError(err, request=request)\nrequests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))\n",
+    "tn": "ok",
     "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
     "ut": "ok",
     "va": "ok",
@@ -90,6 +90,22 @@
         "Closure Layoff": "Layoff",
         "Type of Layoff": "Permanent",
         "Received Date": "9/14/2026"
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "state": "CA",
+      "date": "2026-11-02",
+      "employees_affected": 94,
+      "raw": {
+        "notice_date": "11/02/2026",
+        "effective_date": "01/31/2027",
+        "received_date": "11/03/2026",
+        "company": "Amazon",
+        "num_employees": "94",
+        "layoff_or_closure": "Layoff Permanent",
+        "county": "Los Angeles County",
+        "address": "15120 Valley Blvd.  La Puente CA 91746"
       }
     },
     {
