@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T21:13:34.457305Z",
+  "generated_at": "2026-11-10T18:24:43.698850Z",
   "lookback_days": 365,
-  "states_ok": 30,
+  "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 75e': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#284c44415a065f475a434e475a4b4d064c4d5e4d4447586840495f494141064f475e?\n",
+    "hi": "no output (exit 1): 0d9': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#afcbc3c6dd81d8c0ddc4c9c0ddccca81cbcad9cac3c0dfefc7ced8cec6c681c8c0d9?\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -44,7 +44,7 @@
     "va": "ok",
     "vt": "ok",
     "wa": "ok",
-    "wi": "ok"
+    "wi": "no output (exit 1): che/Python/3.11.18/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n"
   },
   "notices": [
     {
