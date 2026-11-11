@@ -1,40 +1,124 @@
 {
   "error": null,
   "companies_queried": [
+    "ETN",
+    "GOOGL",
+    "AMD",
     "TSM",
-    "ASML",
-    "ARM",
-    "SMCI",
-    "DLR"
+    "ASML"
   ],
   "jobs_returned": {
+    "ETN": {
+      "jobs_overall": 483,
+      "jobs_ai": 11,
+      "jobs_last_30d": 114
+    },
+    "GOOGL": {
+      "jobs_overall": 301,
+      "jobs_ai": 0,
+      "jobs_last_30d": 6
+    },
+    "AMD": {
+      "jobs_overall": 27967,
+      "jobs_ai": 184,
+      "jobs_last_30d": 990
+    },
     "TSM": {
-      "jobs_overall": 4729,
+      "jobs_overall": 4748,
       "jobs_ai": 25,
-      "jobs_last_30d": 506
+      "jobs_last_30d": 390
     },
     "ASML": {
-      "jobs_overall": 16682,
+      "jobs_overall": 16880,
       "jobs_ai": 34,
-      "jobs_last_30d": 1180
-    },
-    "ARM": {
-      "jobs_overall": 10666,
-      "jobs_ai": 83,
-      "jobs_last_30d": 379
-    },
-    "SMCI": {
-      "jobs_overall": 5646,
-      "jobs_ai": 9,
-      "jobs_last_30d": 458
-    },
-    "DLR": {
-      "jobs_overall": 4117,
-      "jobs_ai": 0,
-      "jobs_last_30d": 157
+      "jobs_last_30d": 1264
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":11,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":925441618,\"job_title\":\"Sr. Engineer- Machine Learning\",\"url\":\"https://www.naukri.com/job-listings-061126501507\",\"date_posted\":\"2026-11-06\",\"has_blurred_data\":false,\"company\":\"Eaton Technologies\",\"final_url\":null,\"source_url\":\"https://www.naukri.com/job-listings-061126501507\",\"location\":\"Pune\",\"short_location\":\"Pune\",\"long_location\":\"Pune\",\"state_code\":\"MH\",\"latitude\":18.519569396972656,\"longitude\":73.8553466796875,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"India\",\"country_codes\":[\"IN\"],\"country_code\":\"IN\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-06T19:23:42.669000Z\",\"closed_at\":\"2026-11-07T19:23:23Z\",\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[\"spark\",\"kafka\",\"hadoop\",\"apache-hadoop\",\"flink\",\"amazon-web-services\",\"microsoft-azure\",\"google-cloud-platform\",\"python\",\"azure-databricks\",\"databricks\",\"airflow\",\"apache-airflow\",\"azure-devops\",\"github\",\"github-actions\",\"jenkins\",\"docker\",\"kubernetes\",\"snowflake\",\"delta-lake\",\"tensorflow\",\"pytorch\",\"scikit-learn\",\"ml-flow\",\"mlflow\",\"terraform\",\"grafana\",\"prometheus\",\"elk\",\"azure-monitor\",\"datadog\"],\"keyword_slugs\":[\"machine-learning\",\"training-and-development\",\"computer-science\",\"power-and-cooling\",\"maintenance-repair-and-operations-mro\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"ml-platform\",\"machine-learning-ops-mlops\",\"data-engineering\",\"feature-engineering\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"artificial-intelligence\",\"deep-learning\",\"policies-and-practices\",\"model-version-control\",\"experiment-tracking\",\"reskilling\",\"programming-style-guide\",\"time-and-attendance\",\"faster-development-cycles\",\"troubleshooting\",\"model-performance\",\"data-quality\",\"high-availability\",\"scalability\",\"mentoring\",\"runbooks\",\"training-certification\",\"education-training\",\"cabinet-construction-materials-hardware\",\"training-materials-methods\",\"emerging-technologies\",\"cloud-services\",\"big-data\",\"spark\",\"kafka\",\"hadoop\",\"apache-hadoop\",\"flink\",\"distributed-computing\",\"amazon-web-services\",\"microsoft-azure\",\"google-cloud-platform\",\"python\",\"azure-databricks\",\"databricks\",\"airflow\",\"apache-airflow\",\"azure-devops\",\"development-operations-devops\",\"github\",\"github-actions\",\"jenkins\",\"docker\",\"kubernetes\",\"software-version-management\",\"revision-management\",\"source-code-management\",\"version-control\",\"testing-and-analysis\",\"code-review\",\"model-management\",\"snowflake\",\"delta-lake\",\"vector-database\",\"google-tensorflow\",\"tensorflow\",\"pytorc"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "google.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":932686940,\"job_title\":\"Product Test Engineer, APAC Manufacturing Operations\",\"url\":\"https://au.seek.com/job/95836008?tracking=SHR-WEB-SharedJob-anz-1\",\"date_posted\":\"2026-11-11\",\"has_blurred_data\":false,\"company\":\"Google\",\"final_url\":\"https://au.seek.com/job/95836008?tracking=SHR-WEB-SharedJob-anz-1\",\"source_url\":\"https://au.seek.com/job/95836008?tracking=SHR-WEB-SharedJob-anz-1\",\"location\":null,\"short_location\":null,\"long_location\":null,\"state_code\":\"00\",\"latitude\":15.5,\"longitude\":101.0,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"World Class Benefits\",\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":\"THB\",\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Thailand\",\"country_codes\":[\"TH\"],\"country_code\":\"TH\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-11T11:22:07.156000Z\",\"closed_at\":null,\"company_domain\":\"google.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"python\",\"seek\"],\"keyword_slugs\":[\"sensors-test-measurement\",\"maintenance-repair-and-operations-mro\",\"manufacturing-operations\",\"testing-and-analysis\",\"supply-chain\",\"sql\",\"python\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"mechanical-enclosures-assembly\",\"contract-manufacturer-cm\",\"contract-manufacturing\",\"root-cause-analysis-rca\",\"process-improvement\",\"power-and-cooling\",\"cabinet-construction-materials-hardware\",\"state-local-municipal\",\"search-and-retrieval\",\"insurance-consulting-and-technology\",\"user-experience-ux\",\"remote-assistance\",\"debugging\",\"training-certification\",\"education-training\",\"training-and-development\",\"new-product-introduction\",\"product-data-management\",\"data-management\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"business-continuity-planning\",\"seek\"],\"description\":\"Google will be prioritizing applicants who have valid working rights in Thailand and do not require Google\u2019s sponsorship of a visa.  \\n**Remote location: Thailand.**\\n\\n**Minimum qualifications:**  \\n\\n- Bachelor's degree in Engineering or equivalent practical experience.\\n- 8 years of experience in manufacturing or testing.\\n\\n**Preferred qualifications:**  \\n\\n- 10 years relevant work experience at a company developing supply chains in manufacturing and testing with knowledge of system, functional, and board level testing and experience with SQL and Python.\\n- Experience in creating and executing a Design Validation Test Plan on a complex electronic assembly.\\n- Experience developing technical relationships with contract manufacturers.\\n- Understanding of Automatic Test Equipment (ATE) tests, Design for X (DFX), quality, and reliability.\\n- Ability to drive root"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "amd.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":184,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":932157765,\"job_title\":\"AI Software Development Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4487892256/\",\"date_posted\":\"2026-11-11\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4487892256/\",\"location\":\"Seoul Incheon Metropolitan Area\",\"short_location\":\"Seoul Incheon Metropolitan Area\",\"long_location\":\"Seoul Incheon Metropolitan Area\",\"state_code\":\"00\",\"latitude\":36.5,\"longitude\":127.75,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"Korea, Republic of\",\"country_codes\":[\"KR\"],\"country_code\":\"KR\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-11T04:51:31.347000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"vllm1\",\"kubernetes\",\"envoy\",\"triton\",\"python\",\"golang\",\"rust\",\"cplusplus\",\"sglang\",\"github\",\"pytorch\",\"hugging-face\"],\"keyword_slugs\":[\"artificial-intelligence\",\"software-development\",\"training-and-development\",\"machine-learning\",\"large-language-model-llm\",\"routing-and-switching\",\"cyber-intelligence\",\"vllm1\",\"pick-and-pack\",\"environment-health-and-safety-hsse\",\"first-class\",\"kubernetes\",\"envoy\",\"application-programming-interface-api\",\"machine-learning-inference\",\"i-o-memory-peripheral-connectors\",\"network-latency\",\"graphics-processing-unit-gpu\",\"triton\",\"training-certification\",\"education-training\",\"assessment-assessment-tools\",\"testing-and-analysis\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"customer-intelligence-ci\",\"continuous-integration\",\"observability\",\"python\",\"golang\",\"rust\",\"cplusplus\",\"sglang\",\"sensors-test-measurement\",\"maintenance-repair-and-operations-mro\",\"github\",\"code-review\",\"open-source\",\"pytorch\",\"eye-face-and-head\",\"hugging-face\",\"public-speaking\",\"computer-science\",\"electrical-engineering-and-planning\",\"distributed-computing\",\"high-performance-computing\",\"supercomputing\"],\"description\":\"**ADVANCE YOUR CAREER. ADVANCE THE WORLD.**\\nAt AMD, we believe technology has the power to solve the world\u2019s most important challenges. From advancing healthcare and scientific discovery to powering AI and the technologies people rely on every day, innovation at AMD is shaping the future.\\n  \\n  \\nWhether you\u2019re designing next-gen processors, enabling AI breakthroughs, or bringing leading edge products to market, every role at AMD contributes to something bigger \u2014 technology that moves the world forward. Join us and, together, we\u2019ll advance your career.\\n  \\n  \\n**The Role**\\nAI applications no longer run on a si"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -82,90 +166,6 @@
       },
       "status_code": 200,
       "body_snippet": "{\"metadata\":{\"total_results\":34,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":930319283,\"job_title\":\"Internship- Co-Op: AI Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4489189203/\",\"date_posted\":\"2026-11-10\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4489189203/\",\"location\":\"San Diego, CA\",\"short_location\":\"San Diego, CA\",\"long_location\":\"San Diego, CA\",\"state_code\":\"CA\",\"latitude\":32.7157096862793,\"longitude\":-117.16471862792969,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-10T08:49:26.466000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"part_time\"],\"easy_apply\":null,\"technology_slugs\":[\"python\",\"java\",\"azure-databricks\",\"databricks\",\"microsoft-azure\"],\"keyword_slugs\":[\"internships\",\"artificial-intelligence\",\"clubs-organizations\",\"information-technology\",\"colleges-universities\",\"analytics\",\"data-analytics\",\"customer-satisfaction\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"job-descriptions\",\"collateralized-debt-obligations-cdo\",\"data-pipeline\",\"use-case\",\"laser-photonic\",\"data-integration\",\"sensors-test-measurement\",\"sql\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"data-quality\",\"observability\",\"policies-and-practices\",\"testing-and-analysis\",\"automation-testing\",\"software-version-management\",\"revision-management\",\"source-code-management\",\"version-control\",\"insurance-consulting-and-technology\",\"code-review\",\"continuous-improvement-process-cip\",\"education-training\",\"computer-science\",\"data-engineering\",\"python\",\"java\",\"programming-languages\",\"data-model\",\"azure-databricks\",\"databricks\",\"microsoft-azure\",\"extract-transform-and-load-etl\",\"electronic-title\",\"extract-load-transform-elt\",\"training-and-development\",\"data-processing\",\"dating-personals\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-deposit\",\"ci-cd\",\"software-development\",\"data-visualization\",\"competencies\",\"emerging-technologies\",\"data-platform\",\"diversity\"],\"description\":\"Co-Op: AI Engineer\\n  \\n  \\n**Organization:**\\nIT & Data, Chief Data Office US\\n  \\n  \\n**Location:**\\nUnited States, hybrid\\n  \\n  \\n**Employment Type:**\\nCollege Co-Op\\n  \\n  \\nJob Mission\\n  \\n  \\nAs a AI Engineer Co-Op at ASML, you will help develop data pipelines and data products that transform laser-machine and enterprise data into trusted, usable information.\\n  \\n  \\nWorking with experienced data engineers, data architects, IT specialists, and business stakeholders"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "arm.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":83,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":931155192,\"job_title\":\"Senior Software Engineer - AI Compiler\",\"url\":\"https://www.linkedin.com/jobs/view/4471338081/\",\"date_posted\":\"2026-11-10\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4471338081/\",\"location\":\"Cambridge, England\",\"short_location\":\"Cambridge, England\",\"long_location\":\"Cambridge, England\",\"state_code\":\"ENG\",\"latitude\":52.20000076293945,\"longitude\":0.11666999757289886,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United Kingdom\",\"country_codes\":[\"GB\"],\"country_code\":\"GB\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-10T18:03:12.258000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"cplusplus\",\"python\",\"llama\",\"vllm1\",\"meta-llama\",\"processing-js\"],\"keyword_slugs\":[\"artificial-intelligence\",\"job-descriptions\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"machine-learning\",\"cplusplus\",\"python\",\"sensors-test-measurement\",\"field-programmable-gate-arrays-fpgas\",\"training-and-development\",\"llama\",\"vllm1\",\"testing-and-analysis\",\"monitor-and-analyze-performance\",\"meta-llama\",\"generative-artificial-intelligence-generative-ai\",\"neural-networks\",\"processing-js\",\"neural-processing-unit-npu\",\"graphics-processing-unit-gpu\",\"payouts\",\"recruiting-career-management\",\"hotels-accommodations\",\"salary-range\"],\"description\":\"**Job Description**\\nArm's Central Technology Machine Learning Group is looking for highly motivated and creative software engineers to join the ML compiler development team!\\n  \\n  \\nYou would join our diverse and dedicated team shaping the future of AI on Arm's platforms. We work on all aspects of ML graph compilation - model ingestion, low-level hardware programming, efficient memory allocation and performance optimisation.\\n  \\n  \\n**Responsibilities**\\nYou will contribute to the design and implementation of an AI/ML compiler and ensure that it integrates well with rest of our ML software stack.\\n  \\n  \\nWe are looking for an engineer who has a desire to build knowledge, learn new skills, can adapt to a constantly evolving environment and who enjoys complex problem solving. Given the impact and reach of this technology, you\u2019ll have an opportunity to collaborate with specialists across the company.\\n  \\n  \\n**Required Skills And Experience**\\n\\n- Experience with the whole software lifecycle - taking complex software from initial design through to production and support\\n- Strong programming expertise in C++ and"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "supermicro.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":9,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":922646641,\"job_title\":\"Sr. Product Engineer- AI Infrastructure\",\"url\":\"https://www.linkedin.com/jobs/view/4470628516/\",\"date_posted\":\"2026-11-05\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4470628516/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-05T10:58:38.035000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"artificial-intelligence\",\"ai-infrastructure\",\"instructional-design-id\",\"command-center\",\"non-disclosure-agreement-nda\",\"certificate-authority-ca\",\"graphics-processing-unit-gpu\",\"systems-integration\",\"new-product-introduction\",\"debugging\",\"customer-facing\",\"networking-telecommunications\",\"power-and-cooling\",\"cyber-essentials-ce\",\"troubleshooting\",\"scripting\",\"lift-and-shift\",\"time-and-attendance\",\"hours-of-work\",\"training-certification\",\"education-training\",\"training-and-development\",\"commuting\",\"salary-range\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30307****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nThe OEM server group is seeking a talented Sr. Product Engineer to be part of a growing team that manages some of the highest visibility accounts at Supermicro. The ideal PE candidate should have either relevant industry experience or are familiar with the server hardware industry, can hit the ground running from day 1, and most importantly be a team player. This individual should also be able to perform their day-to-day duties with minimal supervision and help support internal teams with product or process issues.\\n  \\n  \\nThis position will be based in our headquarters located in San Jose"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "digitalrealty.com"
-        ],
-        "posted_at_max_age_days": 60,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":931188441,\"job_title\":\"Global Quality Commissioning Program Manager\",\"url\":\"https://www.linkedin.com/jobs/view/4488392689/\",\"date_posted\":\"2026-11-10\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4488392689/\",\"location\":\"Dallas, TX\",\"short_location\":\"Dallas, TX\",\"long_location\":\"Dallas, TX\",\"state_code\":\"TX\",\"latitude\":32.783058166503906,\"longitude\":-96.80667114257812,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-10T18:26:49.405000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[],\"keyword_slugs\":[\"job-descriptions\",\"eye-face-and-head\",\"training-and-development\",\"continuous-improvement-process-cip\",\"data-center\",\"server-farms\",\"reporting-and-disclosure\",\"adaptive-project-management-and-reporting\",\"user-adoption\",\"data-quality\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"maintenance-repair-and-operations-mro\",\"quarry-aggregate\",\"training-certification\",\"education-training\",\"compliance\",\"compliance-monitoring\",\"sensors-test-measurement\",\"analytics\",\"data-analytics\",\"testing-and-analysis\",\"repair-and-recovery\",\"stakeholder-management\",\"clubs-organizations\",\"youth-organizations-resources\",\"resource-allocation\",\"allocation\",\"resource-management\",\"benchmarking\",\"freight-rate-analysis-benchmarking\",\"process-improvement\",\"construction-management\",\"quality-assurance\",\"information-and-communication-technology-ict\",\"quality-control\",\"policies-and-practices\",\"mission-critical\",\"effective-communication\",\"external-workforce\",\"planning-and-forecasting\",\"electrical-engineering-and-planning\",\"corporate-risk\",\"risk-management\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"health-and-safety\",\"workplace-safety\",\"salary-range\",\"time-and-attendance\",\"commissions\",\"religion-belief-and-spirituality\",\"accidental-death-and-dismemberment-insurance-ad-d\",\"401k\",\"sep-ira-401k\",\"retirement-savings-401-k\",\"health-promotion-recreation-wellness-benefits\",\"employee-stock-purchase-plan-espp\",\"paid-time-off\",\"holidays-seasonal-events\"],\"description\":\"**Job Description**\\n**Position Title: Global Quality & Commissioning Program Manager**\\n**Location: Austin, Dallas, Chicago, Ashburn, Atlanta, OR Charlotte**\\n**Your role**\\nThe Quality and Commissioning (QCx) Program Manager will support the Global Head of Quality and Commis"
     }
   ]
 }
