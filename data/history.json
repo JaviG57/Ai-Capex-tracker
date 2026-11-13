@@ -12605,5 +12605,252 @@
       }
     },
     "summary": "The capex numbers remain the clearest signal and they keep pointing the same direction: up, and in most cases accelerating. Amazon's September-quarter capex hit $77.3bn, up 42.5% QoQ and 120% YoY; Oracle spent $28.5bn, up a startling 72.8% QoQ and 235% YoY; CoreWeave's $9.4bn was up 47% QoQ and nearly 4x YoY. Google ($51.4bn, +114% YoY) and Microsoft ($39.4bn, +103% YoY) both show capex growth actually reaccelerating QoQ (14.3% and 10%, respectively) rather than cooling. Meta's $33.9bn/+80% YoY is comparatively the most restrained of the hyperscalers. The exceptions are the smaller/upstream suppliers: ARM's capex (tiny in absolute terms) fell 63.5% QoQ and is down 47.8% YoY, and AMD and Vertiv both posted QoQ declines even as yoy comps stay elevated \u2014 worth flagging as fiscal-quarter-timing noise rather than a trend given the small dollar bases.\n\nAgainst that backdrop, equities diverged sharply from the spend data today: Nvidia fell 6% on the day and is down 27.8% over 30 days, Super Micro dropped 10.3% today and 30% over the month, and CoreWeave, Meta, Google, and ARM are all down double-digits over 30 days despite capex either holding or accelerating \u2014 a reminder that stock price is reacting to sentiment/margin fears, not to the capex trajectory itself.\n\nHiring signals are more mixed than capex. Meta's AI job postings are up 50% over 30 days and overall postings up 18.1%, while Oracle's AI postings (+25% 30d) and"
+  },
+  {
+    "date": "2026-11-13",
+    "companies": {
+      "MSFT": {
+        "jobs_overall": 2457,
+        "jobs_ai": null,
+        "jobs_source": "ms_careers_browser",
+        "jobs_approx": true,
+        "stock_price": 524.64,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 223000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 2,
+        "warn_employees_90d": 882
+      },
+      "GOOGL": {
+        "stock_price": 295.41,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 190820,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 1,
+        "warn_employees_90d": 52
+      },
+      "AMZN": {
+        "jobs_overall": 10000,
+        "jobs_ai": 440,
+        "jobs_source": "amazon_jobs",
+        "jobs_capped": true,
+        "jobs_new": null,
+        "jobs_closed": null,
+        "stock_price": 265.57,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 1576000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 5,
+        "warn_employees_90d": 458
+      },
+      "META": {
+        "jobs_overall": 2740,
+        "jobs_ai": 420,
+        "jobs_source": "metacareers_browser",
+        "jobs_approx": true,
+        "stock_price": 641.01,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 78865,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "NVDA": {
+        "stock_price": 162.49,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 42000,
+        "headcount_as_of": "2026-01-25",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AVGO": {
+        "jobs_overall": 401,
+        "jobs_ai": 13,
+        "jobs_source": "workday",
+        "jobs_new": 9,
+        "jobs_closed": 20,
+        "stock_price": 345.58,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 33000,
+        "headcount_as_of": "2025-11-02",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "AMD": {
+        "jobs_overall": 28268,
+        "jobs_ai": 193,
+        "jobs_last_30d": 1190,
+        "stock_price": 532.28,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 31000,
+        "headcount_as_of": "2025-12-27",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "TSM": {
+        "jobs_overall": 4947,
+        "jobs_ai": 26,
+        "jobs_last_30d": 446,
+        "stock_price": 398.8,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 103073,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ASML": {
+        "jobs_overall": 17072,
+        "jobs_ai": 35,
+        "jobs_last_30d": 1406,
+        "stock_price": 1489.29,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 42416,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ARM": {
+        "jobs_overall": 11078,
+        "jobs_ai": 96,
+        "jobs_last_30d": 458,
+        "stock_price": 190.25,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 9584,
+        "headcount_as_of": "2026-03-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ORCL": {
+        "jobs_overall": 2833,
+        "jobs_ai": 60,
+        "jobs_source": "oracle",
+        "jobs_new": 42,
+        "jobs_closed": 65,
+        "stock_price": 125.32,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 141000,
+        "headcount_as_of": "2026-05-31",
+        "warn_notices_90d": 4,
+        "warn_employees_90d": 800
+      },
+      "DELL": {
+        "jobs_overall": 588,
+        "jobs_ai": 43,
+        "jobs_source": "oracle",
+        "jobs_new": 24,
+        "jobs_closed": 18,
+        "stock_price": 342.86,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2026-01-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "SMCI": {
+        "jobs_overall": 5712,
+        "jobs_ai": 10,
+        "jobs_last_30d": 454,
+        "stock_price": 26.67,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 7000,
+        "headcount_as_of": "2026-06-30",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "CRWV": {
+        "jobs_overall": 305,
+        "jobs_ai": 15,
+        "jobs_source": "greenhouse",
+        "jobs_new": 10,
+        "jobs_closed": 8,
+        "stock_price": 53.22,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 2189,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "DLR": {
+        "stock_price": 179.68,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 4282,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "EQIX": {
+        "jobs_overall": 321,
+        "jobs_ai": 15,
+        "jobs_source": "workday",
+        "jobs_new": 19,
+        "jobs_closed": 10,
+        "stock_price": 1052.27,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 13716,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "VRT": {
+        "jobs_overall": 2351,
+        "jobs_ai": 35,
+        "jobs_source": "oracle",
+        "jobs_new": 57,
+        "jobs_closed": 34,
+        "stock_price": 202.02,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 1,
+        "headcount": 34000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      },
+      "ETN": {
+        "stock_price": 351.54,
+        "price_date": "2026-11-13",
+        "sec_8k_filings_today": 0,
+        "headcount": 97000,
+        "headcount_as_of": "2025-12-31",
+        "warn_notices_90d": 0,
+        "warn_employees_90d": 0
+      }
+    },
+    "macro": {
+      "pytorch/pytorch": {
+        "commits_last_24h": 77
+      },
+      "huggingface/transformers": {
+        "commits_last_24h": 14
+      },
+      "vllm-project/vllm": {
+        "commits_last_24h": 100
+      },
+      "ggerganov/llama.cpp": {
+        "commits_last_24h": 25
+      },
+      "NVIDIA/TensorRT-LLM": {
+        "commits_last_24h": 45
+      },
+      "microsoft/DeepSpeed": {
+        "commits_last_24h": 6
+      }
+    },
+    "summary": "The capex story remains unambiguously one of acceleration, not deceleration. For the September quarter, Amazon spent $77.26bn (+42.5% QoQ, +120.1% YoY), Google $51.35bn (+14.3% QoQ, +114.4% YoY), Microsoft $39.37bn (+10% QoQ, +103% YoY), and Oracle $28.5bn (+72.8% QoQ, +235.2% YoY) \u2014 all four hyperscalers still compounding triple-digit annual growth. CoreWeave's $9.44bn (+295.2% YoY) and Broadcom's smaller base but +274.6% YoY underscore the same trend down the supply chain. The lone deceleration worth flagging is AMD, where capex fell 19.8% QoQ despite still being up 151.2% YoY, and Arm, whose capex is down 63.5% QoQ and 47.8% YoY \u2014 though Arm's base is tiny ($70mn) and likely just lumpy IP/licensing-related spend rather than a infrastructure signal.\n\nEquities are far noisier than the spending data suggests. Nvidia has shed 13.7% on the week and 26.3% over 30 days, AMD dropped 8.5% today alone (still up 18.9% on the week), and Arm, SMCI, and CRWV are all down double-digits over 30 days \u2014 a synchronized selloff across chip and AI-infra names that doesn't square with the capex trajectory and is worth watching as a sentiment/fundamentals gap rather than reading as a capex signal itself.\n\nOn hiring, Dell's postings are up 20% w/w and 24.3% over 30 days, Meta's total postings are up 15.1% over 30 days (AI postings up 50%), and TSM and AMD both show high-single-digit weekly job growth \u2014"
   }
 ]
