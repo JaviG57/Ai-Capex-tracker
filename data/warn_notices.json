@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-15T17:31:44.015226Z",
+  "generated_at": "2026-11-16T20:47:27.905097Z",
   "lookback_days": 365,
   "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
-    "al": "no output (exit 1): kages/warn/scrapers/al.py\", line 39, in scrape\n    table_rows = table[0].find_all(\"tr\")\n                 ~~~~~^^^\nIndexError: list index out of range\n",
+    "al": "ok",
     "az": "ok",
     "ca": "ok",
     "co": "no output (exit 1): rs/co.py\", line 292, in scrape\n    standardized_key = header_crosswalk[key]\n                       ~~~~~~~~~~~~~~~~^^^^^\nKeyError: 'CO Notifications'\n",
@@ -14,7 +14,7 @@
     "de": "ok",
     "fl": "no output (exit 1): ape\n    pageholder = soup.select(\"div.mainContentArea\")[0]\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
     "ga": "ok",
-    "hi": "no output (exit 1): 0b9': No scheme supplied. Perhaps you meant https:///cdn-cgi/l/email-protection#cfaba3a6bde1b8a0bda4a9a0bdacaae1abaab9aaa3a0bf8fa7aeb8aea6a6e1a8a0b9?\n",
+    "hi": "no output (exit 1): che/Python/3.11.18/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
     "ia": "ok",
     "id": "no output (exit 1): /pdf.py\", line 52, in __init__\n    raise PdfminerException(e)\npdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?\n",
     "il": "ok",
@@ -35,11 +35,11 @@
     "ok": "ok",
     "or": "ok",
     "pa": "ok",
-    "ri": "no output (exit 1): che/Python/3.11.18/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
+    "ri": "no output (exit 1): ignore\")\n                                 ^^^^^^^^^\nUnboundLocalError: cannot access local variable 'headers' where it is not associated with a value\n",
     "sc": "ok",
     "sd": "ok",
     "tn": "no output (exit 1): che/Python/3.11.18/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
-    "tx": "ok",
+    "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
     "ut": "ok",
     "va": "ok",
     "vt": "ok",
@@ -588,6 +588,22 @@
         "layoff_or_closure": "Layoff Permanent",
         "county": "Santa Clara County",
         "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "MO",
+      "date": "2026-03-31",
+      "employees_affected": 539,
+      "raw": {
+        "Received Sort descending": "03/31/2026",
+        "Title": "Oracle",
+        "Industry": "Software Publisher",
+        "Location(s)": "Kansas City",
+        "County": "Jackson",
+        "Region": "Kansas City",
+        "Type": "Layoff",
+        "Layoff date(s)": "05/26/2026 06/01/2026"
       }
     },
     {
