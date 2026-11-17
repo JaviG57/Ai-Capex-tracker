@@ -1,40 +1,124 @@
 {
   "error": null,
   "companies_queried": [
+    "SMCI",
+    "DLR",
+    "ETN",
     "GOOGL",
-    "AMD",
-    "TSM",
-    "ASML",
-    "ARM"
+    "AMD"
   ],
   "jobs_returned": {
-    "GOOGL": {
-      "jobs_overall": 121,
+    "SMCI": {
+      "jobs_overall": 5879,
+      "jobs_ai": 4,
+      "jobs_last_30d": 524
+    },
+    "DLR": {
+      "jobs_overall": 4310,
       "jobs_ai": 0,
-      "jobs_last_30d": 13
+      "jobs_last_30d": 233
+    },
+    "ETN": {
+      "jobs_overall": 52396,
+      "jobs_ai": 12,
+      "jobs_last_30d": 3777
+    },
+    "GOOGL": {
+      "jobs_overall": 2,
+      "jobs_ai": 0,
+      "jobs_last_30d": 0
     },
     "AMD": {
       "jobs_overall": 28361,
-      "jobs_ai": 184,
+      "jobs_ai": 183,
       "jobs_last_30d": 1106
-    },
-    "TSM": {
-      "jobs_overall": 4955,
-      "jobs_ai": 25,
-      "jobs_last_30d": 420
-    },
-    "ASML": {
-      "jobs_overall": 17245,
-      "jobs_ai": 38,
-      "jobs_last_30d": 1297
-    },
-    "ARM": {
-      "jobs_overall": 11206,
-      "jobs_ai": 94,
-      "jobs_last_30d": 498
     }
   },
   "request_log": [
+    {
+      "payload": {
+        "company_domain_or": [
+          "supermicro.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":4,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":922646641,\"job_title\":\"Sr. Product Engineer- AI Infrastructure\",\"url\":\"https://www.linkedin.com/jobs/view/4470628516/\",\"date_posted\":\"2026-11-05\",\"has_blurred_data\":false,\"company\":\"Supermicro\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4470628516/\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-05T10:58:38.035000Z\",\"closed_at\":null,\"company_domain\":\"supermicro.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":null,\"technology_slugs\":[],\"keyword_slugs\":[\"artificial-intelligence\",\"ai-infrastructure\",\"instructional-design-id\",\"command-center\",\"non-disclosure-agreement-nda\",\"certificate-authority-ca\",\"graphics-processing-unit-gpu\",\"systems-integration\",\"new-product-introduction\",\"debugging\",\"customer-facing\",\"networking-telecommunications\",\"power-and-cooling\",\"cyber-essentials-ce\",\"troubleshooting\",\"scripting\",\"lift-and-shift\",\"time-and-attendance\",\"hours-of-work\",\"training-certification\",\"education-training\",\"training-and-development\",\"commuting\",\"salary-range\",\"equal-employment-opportunity-eeo\"],\"description\":\"****Job Req ID: 30307****\\n**About Supermicro**\\nSupermicro\u00ae is a Top Tier provider of advanced server, storage, and networking solutions for Data Center, Cloud Computing, Enterprise IT, Hadoop/ Big Data, Hyperscale, HPC and IoT/Embedded customers worldwide. We are the #5 fastest growing company among the Silicon Valley Top 50 technology firms. Our unprecedented global expansion has provided us with the opportunity to offer a large number of new positions to the technology community. We seek talented, passionate, and committed engineers, technologists, and business leaders to join us.\\n  \\n  \\n**Job Summary**\\nThe OEM server group is seeking a talented Sr. Product Engineer to be part of a growing team that manages some of the highest visibility accounts at Supermicro. The ideal PE candidate should have either relevant industry experience or are familiar with the server hardware industry, can hit the ground running from day 1, and most importantly be a team player. This individual should also be able to perform their day-to-day duties with minimal supervision and help support internal teams with product or process issues.\\n  \\n  \\nThis position will be based in our headquarters located in San Jose"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":0,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":0},\"data\":[]}"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "digitalrealty.com"
+        ],
+        "posted_at_max_age_days": 60,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":952616148,\"job_title\":\"Technician II\",\"url\":\"https://hdep.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/9129\",\"date_posted\":\"2026-11-17\",\"has_blurred_data\":false,\"company\":\"Digital Realty\",\"final_url\":\"https://hdep.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/9129\",\"source_url\":\"https://hdep.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/9129\",\"location\":\"Richardson, TX, United States\",\"short_location\":\"Richardson, TX, United States\",\"long_location\":\"Richardson, TX, United States\",\"state_code\":\"TX\",\"latitude\":32.94818115234375,\"longitude\":-96.72972106933594,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-17T19:27:07.678000Z\",\"closed_at\":null,\"company_domain\":\"digitalrealty.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"microsoft-access\",\"microsoft-powerpoint\",\"microsoft-outlook\",\"oracle-recruiting-cloud\"],\"keyword_slugs\":[\"lift-and-shift\",\"cables-flat-flex-wiring\",\"cabinet-construction-materials-hardware\",\"power-and-cooling\",\"audits\",\"hard-drives\",\"testing-and-analysis\",\"troubleshooting\",\"fiber-optics\",\"networking-telecommunications\",\"sensors-test-measurement\",\"ticketing\",\"issue-tracking\",\"standard-operating-procedure-sop\",\"data-center\",\"server-farms\",\"telecom\",\"structured-cabling\",\"root-cause-analysis-rca\",\"business-communications\",\"training-certification\",\"building-management-system-bms\",\"building-automation\",\"battery-management-system-bms\",\"microsoft-access\",\"microsoft-powerpoint\",\"microsoft-outlook\",\"search-and-retrieval\",\"maintenance-repair-and-operations-mro\",\"education-training\",\"training-and-development\",\"corporate-training\",\"environment-health-and-safety-hsse\",\"health-and-safety\",\"workplace-safety\",\"oracle-recruiting-cloud\"],\"description\":\"**Position Title: Technician - II (Night Shift)**\\n\\n**Your role**\\n\\nThe Remote Hands Technician II will assist all Digital Realty customers by providing \u201cbest in class\u201d customer and technical support.\u00a0 The Remote Hands Technician II will work with and support all customer demands which may include, racking and stacking of equipment, cabling, cross connects, etc. Internally, the Remote Hands Technician II may work with the Deployment and Implementation teams, the Global Command Center, Provisioning team and Project Management to ensure relevant installations meet delivery dates and create a positive customer experience.\u00a0 The Remote Hands Technician I"
+    },
+    {
+      "payload": {
+        "company_domain_or": [
+          "eaton.com"
+        ],
+        "job_title_or": [
+          "machine learning",
+          "artificial intelligence",
+          "ai engineer",
+          "ai research",
+          "llm",
+          "generative ai",
+          "deep learning",
+          "ml engineer",
+          "ml infrastructure"
+        ],
+        "posted_at_max_age_days": 60,
+        "include_total_results": true,
+        "limit": 1,
+        "page": 0
+      },
+      "status_code": 200,
+      "body_snippet": "{\"metadata\":{\"total_results\":12,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":935394854,\"job_title\":\"Lead Engineer - Engineering Digitalization & AI\",\"url\":\"https://www.linkedin.com/jobs/view/4460718974/\",\"date_posted\":\"2026-11-08\",\"has_blurred_data\":false,\"company\":\"Eaton\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4460718974/\",\"location\":\"Southfield, MI\",\"short_location\":\"Southfield, MI\",\"long_location\":\"Southfield, MI\",\"state_code\":\"MI\",\"latitude\":42.47336959838867,\"longitude\":-83.22187042236328,\"postal_code\":null,\"remote\":false,\"hybrid\":true,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-12T01:31:01.704000Z\",\"closed_at\":null,\"company_domain\":\"eaton.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"nvidia\",\"ansys\",\"matlab\",\"simulink\"],\"keyword_slugs\":[\"digitalization\",\"artificial-intelligence\",\"salary-range\",\"domain-expertise\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"sensors-test-measurement\",\"agentic-ai\",\"iteration\",\"digital-twin\",\"embedded-control-automation\",\"nvidia\",\"time-and-attendance\",\"maintenance-repair-and-operations-mro\",\"digital-thread\",\"electrical-engineering-and-planning\",\"aerospace-engineering\",\"computer-science\",\"machine-learning\",\"computer-aided-engineering\",\"cyber-intelligence\",\"training-and-development\",\"ansys\",\"matlab\",\"simulink\",\"value-proposition\",\"competencies\",\"data-security\",\"laws-and-regulations\",\"hotels-accommodations\",\"search-and-retrieval\"],\"description\":\"Eaton\u2019s CTO Corporate Technology Office division is currently seeking a Lead Engineer - Engineering Digitalization & AI. This role will be based out of any US Eaton location on a hybrid schedule.\\n  \\n  \\nThe expected annual salary range for this role is $105000 - $154000 a year.\\n  \\n  \\nPlease note the salary information shown above is a general guideline only. Salaries are based upon candidate skills, experience, and qualifications, as well as market and business considerations.\\n  \\n  \\n**What You\u2019ll Do**\\n**Eaton\u2019s CTO Corporate Technology Office division is currently seeking a Lead Engineer \u2013 Engineering Digitalization & AI.**\\n*Please note the salary information shown above is a general guideline only. Salaries are based upon candidate skills, experience, and qualifications, as well as market and business considerations.*\\nEaton\u2019s Corporate Technology Office is currently seeking a Lead Engineer \u2013 Engineering Digitalization & AI to join our team. This role is open to a hybrid work schedule out of an Eaton Engineering site within the US.\\n  \\"
+    },
     {
       "payload": {
         "company_domain_or": [
@@ -69,7 +153,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":948260422,\"job_title\":\"Wi-Fi Development Engineer \u2013 Automotive IVI (Android / Linux)\",\"url\":\"https://www.linkedin.com/jobs/view/4490279001/\",\"date_posted\":\"2026-11-16\",\"has_blurred_data\":false,\"company\":\"US based Law Firm\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4490279001/\",\"location\":\"Bengaluru, Karnataka\",\"short_location\":\"Bengaluru, Karnataka\",\"long_location\":\"Bengaluru, Karnataka\",\"state_code\":\"KA\",\"latitude\":12.971940040588379,\"longitude\":77.59368896484375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"India\",\"country_codes\":[\"IN\"],\"country_code\":\"IN\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-16T07:52:21.175000Z\",\"closed_at\":null,\"company_domain\":\"google.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"cplusplus\",\"java\"],\"keyword_slugs\":[\"wifi\",\"training-and-development\",\"in-vehicle-infotainment-ivi\",\"humanoid-robot\",\"linux\",\"software-development\",\"cplusplus\",\"java\",\"accounts-payable\",\"purchase-to-pay-p2p\",\"procure-to-pay\",\"peer-to-peer\",\"802-11ax\",\"wi-fi-6\",\"networking-telecommunications\",\"debugging\",\"testing-and-analysis\",\"cabinet-construction-materials-hardware\",\"systems-integration\",\"training-certification\",\"embedded-control-automation\",\"performance-optimization\",\"network-latency\",\"mobile-wireless\",\"wireless-communications\"],\"description\":\"Experience:\\n**5-7 Years**\\n\\nLocation:\\n**Chennai / Bangalore**\\n\\nBudget:\\n**Up to \u20b925 LPA**\\n\\nNotice Period:\\n**Immediate to 30 Days**\\n\\n**Mandatory Skills & Experience**\\n\\nHands-on experience in Wi-Fi software development for Android AOSP and/or Linux platforms.\\n\\nStrong programming skills in C, C++, and/or Java.\\n\\nExperience with Wi-Fi features: Access Point (AP), Station (STA), and Wi-Fi Direct (P2P).\\n\\nKnowledge of Wi-Fi standards: 802.11n, 802.11ac, and 802.11ax.\\n\\nUnderstanding of WPA2/WPA3 security protocols.\\n\\nStrong knowledge of Android and Linux networking stacks.\\n\\nExperience with Wi-Fi debugging, sniffer tools, packet captures, and pcap analysis.\\n\\n**Key Responsibilities**\\n\\nDevelop and enhance Wi-Fi software modules for automotive IVI systems.\\n\\nWork across Wi-Fi driver, framework, and application layers.\\n\\nDebug connectivity and performance issues using sniffer logs and pcap traces.\\n\\nCollaborate with BSP, hardware, and system integration teams.\\n\\nSupport Wi-Fi Alliance certification requirements.\\n\\nOptimize Wi-Fi performance, stability, and connectivity.\\n\\n**Preferred Skills**\\n\\nAutomotive embedded systems and IVI experience.\\n\\nFamiliarity wit"
+      "body_snippet": "{\"metadata\":{\"total_results\":null,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":null},\"data\":[{\"id\":952388660,\"job_title\":\"Office Manager\",\"url\":\"https://www.linkedin.com/jobs/view/4490954431/\",\"date_posted\":\"2026-11-17\",\"has_blurred_data\":false,\"company\":\"Tisch Medical Instruments\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4490954431/\",\"location\":\"Los Angeles, CA\",\"short_location\":\"Los Angeles, CA\",\"long_location\":\"Los Angeles, CA\",\"state_code\":\"CA\",\"latitude\":34.05223083496094,\"longitude\":-118.24368286132812,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-17T17:39:58.542000Z\",\"closed_at\":null,\"company_domain\":\"Google.com\",\"hiring_team\":[{\"first_name\":\"Ariel\",\"full_name\":\"Ariel Beroukhim\",\"linkedin_url\":\"https://www.linkedin.com/in/arielberoukhim/\",\"role\":\"\",\"image_url\":\"\",\"thumbnail_url\":\"https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2\"}],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"part_time\"],\"easy_apply\":false,\"technology_slugs\":[\"processing-js\",\"quickbooks\",\"microsoft-excel\"],\"keyword_slugs\":[\"maintenance-repair-and-operations-mro\",\"order-management\",\"processing-js\",\"quickbooks\",\"microsoft-excel\"],\"description\":\"**Company Description**\\nTisch Medical is a growing medical device distribution company specializing in surgical instruments and equipment for neurosurgery and spine surgery. We work closely with hospitals, surgical teams, and manufacturers throughout Southern California.\\n\\n**Role Description**\\n\\nWe are seeking a highly organized, detail-oriented\u00a0\\nOperations & Accounting Coordinator\\n\u00a0to manage daily administrative operations, process customer orders, and support our bookkeeping activities.\\n\\n- Order Processing & Management\\n- Bookkeeping & Accounting\\n- Administrative Support\\n\\n**Qualifications**\\n\\n- Experience in bookkeeping, order processing, office administration, or a similar role.\\n- Familiarity with QuickBooks or comparable accounting software\\n- Strong organizational skills and attention to detail.\\n- Excellent written and verbal communication skills.\\n- Ability to manage multiple priorities independently.\\n- Proficiency in Microsoft Excel and general office software.\",\"company_object\":{\"id\":\"zWTlCef5F67Yd3cvOglJFSuQAkvWUodY9hHRaHMum50=\",\"name\":\"Tisch Medical Instruments\",\"domain\":\"Google.com\",\"industry\":\"Medical Equipment Manufacturing\",\"country\":\"United States\",\"country_code\":\"US\",\"employee_count\":4,\"logo\":\"https://media.theirstack.com/company/logo/domain/tischmed.com.jpeg\",\"num_jobs\":2,\"num_technologies\":1,\"num_keywords\":0,\"num_buying_intent_topics\":-1,"
     },
     {
       "payload": {
@@ -93,79 +177,7 @@
         "page": 0
       },
       "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":184,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":947517638,\"job_title\":\"Senior AI/ML Solutions Engineer\",\"url\":\"https://www.linkedin.com/jobs/view/4472994364/\",\"date_posted\":\"2026-11-14\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":null,\"source_url\":\"https://www.linkedin.com/jobs/view/4472994364/\",\"location\":\"Santa Clara, CA\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Clara, CA\",\"state_code\":\"CA\",\"latitude\":37.35411071777344,\"longitude\":-121.95523834228516,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$200.8k - $301.2k per year\",\"min_annual_salary\":200800,\"min_annual_salary_usd\":200800.0,\"max_annual_salary\":301200,\"max_annual_salary_usd\":301200.0,\"avg_annual_salary_usd\":251000.0,\"salary_currency\":\"USD\",\"salary_period\":\"year\",\"min_salary\":200800.0,\"max_salary\":301200.0,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"senior\",\"discovered_at\":\"2026-11-15T21:50:49.375000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"pytorch\",\"tensorflow\"],\"keyword_slugs\":[\"artificial-intelligence\",\"machine-learning\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"workflow\",\"vehicle-modification-tuning\",\"customer-analytics\",\"customer-insight\",\"training-certification\",\"education-training\",\"training-and-development\",\"graphics-processing-unit-gpu\",\"customer-experience-and-engagement\",\"customer-engagement\",\"generative-artificial-intelligence-generative-ai\",\"retrieval-augmented-generation-rag\",\"fine-tuning\",\"pytorch\",\"google-tensorflow\",\"tensorflow\",\"computer-science\"],\"description\":\"**ADVANCE YOUR CAREER. ADVANCE THE WORLD.**\\nAt AMD, we believe technology has the power to solve the world\u2019s most important challenges. From advancing healthcare and scientific discovery to powering AI and the technologies people rely on every day, innovation at AMD is shaping the future.\\n  \\n  \\nWhether you\u2019re designing next-gen processors, enabling AI breakthroughs, or bringing leading edge products to market, every role at AMD contributes to something bigger \u2014 technology that moves the world forward. Join us and, together, we\u2019ll advance your career.\\n  \\n  \\n**The Role**\\nAMD\u2019s Software and Solutions Team is seeking an AI/ML Solutions Engineer to empower customers and partners in adopting AMD\u2019s AI software stack. This role requires strong technical depth in machine learning frameworks, GPU workflows, and enterprise architecture, paired with excellent communication and customer-facing skills. The role spans development, integration, deployment, and performance analysis, ensuring innovative, efficient, and scalable AI solutions on AMD GPUs.\\n  \\n  \\n**The Person**\\nA highly motivated and passionate professional with deep expertise in ML/AI systems and a "
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "tsmc.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":25,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":942157663,\"job_title\":\"[2027 Summer] AI Research and Engineering Intern for Business Intelligence (8023)\",\"url\":\"https://ro.careers.tsmc.com/job/San-Jose-2027-Summer-AI-Research-and-Engineering-Intern-for-Business-Intelligence-(8023)-CA-95101/1370315466/\",\"date_posted\":\"2026-11-12\",\"has_blurred_data\":false,\"company\":\"TSMC\",\"final_url\":\"https://ro.careers.tsmc.com/job/San-Jose-2027-Summer-AI-Research-and-Engineering-Intern-for-Business-Intelligence-(8023)-CA-95101/1370315466/\",\"source_url\":\"https://indeed.com/viewjob?jk=7364121e98d720db\",\"location\":\"San Jose, CA\",\"short_location\":\"San Jose, CA\",\"long_location\":\"San Jose, CA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":\"$41 - $52 an hour\",\"min_annual_salary\":85280,\"min_annual_salary_usd\":85280.0,\"max_annual_salary\":108160,\"max_annual_salary_usd\":108160.0,\"avg_annual_salary_usd\":96720.0,\"salary_currency\":\"USD\",\"salary_period\":\"hour\",\"min_salary\":41.0,\"max_salary\":52.0,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-13T11:37:45.009000Z\",\"closed_at\":\"2026-11-14T03:12:16Z\",\"company_domain\":\"tsmc.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"internship\",\"seasonal\"],\"easy_apply\":false,\"technology_slugs\":[\"guardrails\",\"python\",\"aws-sdks\",\"vllm1\",\"sglang\",\"docker\",\"kubernetes\",\"power-bi\",\"streamlit\",\"javascript\",\"react\",\"wellspring\"],\"keyword_slugs\":[\"artificial-intelligence\",\"business-intelligence\",\"cyber-intelligence\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"training-certification\",\"education-training\",\"training-and-development\",\"internships\",\"mentoring\",\"planning-and-design\",\"visual-art-design\",\"product-development-and-design\",\"sandboxing\",\"i-o-memory-peripheral-connectors\",\"errors-omissions-e-o\",\"repair-and-recovery\",\"hours-of-work\",\"multi-agent-systems-mas\",\"model-context-protocol-mcp\",\"microsoft-certification\",\"service-management-and-orchestration-smo\",\"time-and-attendance\",\"foundation-models\",\"planning-and-forecasting\",\"financial-forecasting\",\"demand-forecasting\",\"supply-chain\",\"large-language-model-llm\",\"ai-infrastructure\",\"routing-and-switching\",\"network-latency\",\"observability\",\"guardrails\",\"racking-protection\",\"safety-barriers\",\"assessment-assessment-tools\",\"synthetic-data\",\"fine-tuning\",\"vehicle-modification-tuning\",\"distillation\",\"reinforcement-learning\",\"sql\",\"ablation\",\"machine-learning\",\"deep-learning\",\"model-monitoring\",\"actionable-insights\",\"presentations\",\"computer-science\",\"electrical-engineering-and-planning\",\"analytics\",\"data-analytics\",\"python\",\"data-management\",\"aws-sdks\",\"vllm1\",\"sglang\",\"machine-learning-ops-mlops\",\"docker\",\"kubernetes\",\"customer-intelligence-ci\",\"continuous-integration\",\"cd-certificate-of-d"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "asml.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":38,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":1},\"data\":[{\"id\":949397675,\"job_title\":\"Internship-Generative AI developer\",\"url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/San-Jose-CA-USA/Internship-Generative-AI-developer_J-00355346\",\"date_posted\":\"2026-11-16\",\"has_blurred_data\":false,\"company\":\"ASML\",\"final_url\":\"https://asml.wd3.myworkdayjobs.com/ASMLEXT1/job/San-Jose-CA-USA/Internship-Generative-AI-developer_J-00355346\",\"source_url\":\"https://asml.wd3.myworkdayjobs.com/asmlext1/job/Internship-Generative-AI-developer_J-00355346\",\"location\":\"San Jose, CA, USA\",\"short_location\":\"San Jose, CA, USA\",\"long_location\":\"San Jose, CA, USA\",\"state_code\":\"CA\",\"latitude\":37.33938980102539,\"longitude\":-121.89495849609375,\"postal_code\":null,\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-16T18:55:30.878000Z\",\"closed_at\":null,\"company_domain\":\"asml.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"full_time\"],\"easy_apply\":false,\"technology_slugs\":[\"python\",\"langchain\",\"langgraph\",\"workday\"],\"keyword_slugs\":[\"internships\",\"artificial-intelligence\",\"generative-artificial-intelligence-generative-ai\",\"debugging\",\"intelligent-automation\",\"i-o-memory-peripheral-connectors\",\"training-and-development\",\"use-case\",\"knowledge-management\",\"computer-science\",\"python\",\"langchain\",\"langgraph\",\"retrieval-augmented-generation-rag\",\"diversity\",\"workday\"],\"description\":\"## Introduction\\n\\nThe TAC AI team is applying Generative AI to computational lithography products to help users create, debug, optimize, and automate complex engineering workflows. Our mission is to enable users to go directly from intent to solution using AI agents, knowledge systems, and intelligent automation. Key challenges include building reliable agent workflows, managing long-term knowledge and memory, and integrating AI into real engineering applications.\\n\\n## Your Assignment\\n\\nAs a Generative AI Development Intern, you will help develop the next generation of AI-powered engineering assistants.\\n\\nYour responsibilities include:\\n\\n- Designing and implementing agent workflows for different use cases.\\n- Developing memory and knowledge systems for AI agents.\\n- Building solutions that connect user intent to automated problem solving.\\n- Organizing and maintaining knowledge repositories used by AI agents.\\n- Experimenting with modern agent frameworks and Generative AI technologies.\\n\\n**Why this internship is interesting**\\n\\n- Work on real-world Generative AI applications in computational lithography.\\n- Gain hands-on experience with LLMs, AI a"
-    },
-    {
-      "payload": {
-        "company_domain_or": [
-          "arm.com"
-        ],
-        "job_title_or": [
-          "machine learning",
-          "artificial intelligence",
-          "ai engineer",
-          "ai research",
-          "llm",
-          "generative ai",
-          "deep learning",
-          "ml engineer",
-          "ml infrastructure"
-        ],
-        "posted_at_max_age_days": 60,
-        "include_total_results": true,
-        "limit": 1,
-        "page": 0
-      },
-      "status_code": 200,
-      "body_snippet": "{\"metadata\":{\"total_results\":94,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":944732566,\"job_title\":\"Machine Learning Engineering Intern (MS/PhD)\",\"url\":\"https://careers.arm.com/job/austin/machine-learning-engineering-intern-ms-phd/33099/103250201872\",\"date_posted\":\"2026-11-13\",\"has_blurred_data\":false,\"company\":\"Arm\",\"final_url\":\"https://careers.arm.com/job/austin/machine-learning-engineering-intern-ms-phd/33099/103250201872\",\"source_url\":\"https://indeed.com/viewjob?jk=5d89763e375ea1c4\",\"location\":\"Austin, TX 78735\",\"short_location\":\"Austin, TX\",\"long_location\":\"Austin, TX 78735\",\"state_code\":\"TX\",\"latitude\":30.244060516357422,\"longitude\":-97.84451293945312,\"postal_code\":\"78735\",\"remote\":false,\"hybrid\":false,\"salary_string\":\"$50 - $60 an hour\",\"min_annual_salary\":104000,\"min_annual_salary_usd\":104000.0,\"max_annual_salary\":124800,\"max_annual_salary_usd\":124800.0,\"avg_annual_salary_usd\":114400.0,\"salary_currency\":\"USD\",\"salary_period\":\"hour\",\"min_salary\":50.0,\"max_salary\":60.0,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"junior\",\"discovered_at\":\"2026-11-14T11:37:42.937000Z\",\"closed_at\":null,\"company_domain\":\"Arm.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"temporary\",\"internship\"],\"easy_apply\":false,\"technology_slugs\":[\"devise\",\"python\",\"tensorflow\",\"pytorch\"],\"keyword_slugs\":[\"machine-learning\",\"instructional-design-id\",\"devise\",\"domain-expertise\",\"cabinet-construction-materials-hardware\",\"training-and-development\",\"proof-of-concept\",\"proof-of-concept-poc\",\"electrical-engineering-and-planning\",\"computer-science\",\"deep-learning\",\"neural-networks\",\"network-architecture\",\"visual-art-design\",\"network-design\",\"planning-and-design\",\"product-development-and-design\",\"compressors\",\"programming-languages\",\"python\",\"google-tensorflow\",\"tensorflow\",\"pytorch\",\"graphics-processing-unit-gpu\",\"insurance-consulting-and-technology\",\"emerging-technologies\",\"environment-health-and-safety-hsse\",\"ecology-environment\",\"payouts\",\"mentoring\",\"coaching-mentoring\",\"artificial-intelligence\",\"recruiting-career-management\",\"hotels-accommodations\"],\"description\":\"**Job ID** 2026-18591 **Date posted** Nov. 13, 2026 **Location** Austin, Texas **Category** Software Engineering, Intern\\n\\n  \\n\\n## **Job Overview**\\n\\nThe mission of Central Technology - Machine Learning (CT-ML) is to create technology to enable all ML Compute on ARM. We believe that advancing innovative machine learning (ML) technology requires a collaborative approach across hardware, software, and algorithms. The CT-ML Algorithms team acts as the Center of Excellence for ML content analysis, algorithm development, and tools, driving this unified effort forward.\\n\\n## **What you could be doing as a Machine Learning Intern (MS/PhD)**\\n\\n- Develop in depth understanding of ML workload, and develop algorithms and optimization techniques to drive PPA (Performance, Po"
+      "body_snippet": "{\"metadata\":{\"total_results\":183,\"truncated_results\":0,\"truncated_companies\":0,\"total_companies\":2},\"data\":[{\"id\":951168923,\"job_title\":\"Gen AI Software Development Engineer\",\"url\":\"https://careers.amd.com/jobs/91795/job?iis=Job+Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f&utm_source=indeed_integration\",\"date_posted\":\"2026-11-16\",\"has_blurred_data\":false,\"company\":\"AMD\",\"final_url\":\"https://careers.amd.com/jobs/91795/job?iis=Job+Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f&utm_source=indeed_integration\",\"source_url\":\"https://indeed.com/viewjob?jk=d157d8124b8ad4af\",\"location\":\"Santa Clara, CA 95054\",\"short_location\":\"Santa Clara, CA\",\"long_location\":\"Santa Clara, CA 95054\",\"state_code\":\"CA\",\"latitude\":37.38231658935547,\"longitude\":-121.9709243774414,\"postal_code\":\"95054\",\"remote\":false,\"hybrid\":false,\"salary_string\":null,\"min_annual_salary\":null,\"min_annual_salary_usd\":null,\"max_annual_salary\":null,\"max_annual_salary_usd\":null,\"avg_annual_salary_usd\":null,\"salary_currency\":null,\"salary_period\":null,\"min_salary\":null,\"max_salary\":null,\"countries\":[],\"country\":\"United States\",\"country_codes\":[\"US\"],\"country_code\":\"US\",\"cities\":[],\"continents\":[],\"seniority\":\"mid_level\",\"discovered_at\":\"2026-11-17T08:52:26.087000Z\",\"closed_at\":null,\"company_domain\":\"amd.com\",\"hiring_team\":[],\"reposted\":false,\"date_reposted\":null,\"employment_statuses\":[\"temporary\"],\"easy_apply\":false,\"technology_slugs\":[\"c10\",\"cplusplus\",\"github\"],\"keyword_slugs\":[\"artificial-intelligence\",\"software-development\",\"training-and-development\",\"cabinet-construction-materials-hardware\",\"application-specific-integrated-circuits-asics\",\"asic-design\",\"debugging\",\"object-oriented-programming-oop\",\"c10\",\"cplusplus\",\"doors-windows\",\"linux\",\"humanoid-robot\",\"source-code-control\",\"embedded-control-automation\",\"github\",\"effective-communication\",\"computer-science\",\"electrical-engineering-and-planning\"],\"description\":\"Overview:\\n\\n**ADVANCE YOUR CAREER. ADVANCE THE WORLD.**\\n\\nAt AMD, we believe technology has the power to solve the world\u2019s most important challenges. From advancing healthcare and scientific discovery to powering AI and the technologies people rely on every day, innovation at AMD is shaping the future.\\n\\nWhether you\u2019re designing next-gen processors, enabling AI breakthroughs, or bringing leading edge products to market, every role at AMD contributes to something bigger \u2014 technology that moves the world forward. Join us and, together, we\u2019ll advance your career.\\n\\nResponsibilities:\\n\\n**THE ROLE:**\\n\\nAMD is looking for a strategic software engineering lead who is passionate about improving the performance of key applications and benchmarks**.** You will be a member of a core team of incredibly talented industry specialists and will work with the very latest hardware and software technology.\\n\\n**THE PERSON:**\\n\\nThe ideal candidate should be passionate about software engin"
     }
   ]
 }
