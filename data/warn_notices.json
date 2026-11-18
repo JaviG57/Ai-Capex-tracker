@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T19:32:51.841730Z",
+  "generated_at": "2026-11-18T19:13:13.493068Z",
   "lookback_days": 365,
-  "states_ok": 30,
+  "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
-    "al": "ok",
+    "al": "no output (exit 1): kages/warn/scrapers/al.py\", line 39, in scrape\n    table_rows = table[0].find_all(\"tr\")\n                 ~~~~~^^^\nIndexError: list index out of range\n",
     "az": "ok",
     "ca": "ok",
     "co": "no output (exit 1): rs/co.py\", line 292, in scrape\n    standardized_key = header_crosswalk[key]\n                       ~~~~~~~~~~~~~~~~^^^^^\nKeyError: 'CO Notifications'\n",
