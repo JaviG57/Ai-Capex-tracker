@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T17:51:26.585060Z",
+  "generated_at": "2026-11-22T18:09:58.836772Z",
   "lookback_days": 365,
-  "states_ok": 31,
+  "states_ok": 30,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -39,7 +39,7 @@
     "sc": "ok",
     "sd": "ok",
     "tn": "ok",
-    "tx": "ok",
+    "tx": "no output (exit 1): b/python3.11/site-packages/warn/scrapers/tx.py\", line 77, in scrape\n    raise Exception(\"Scraper isn't scraping.\")\nException: Scraper isn't scraping.\n",
     "ut": "ok",
     "va": "ok",
     "vt": "ok",
@@ -588,6 +588,22 @@
         "layoff_or_closure": "Layoff Permanent",
         "county": "Santa Clara County",
         "source_file": "warn-report-for-7-1-25-to-6-30-26.pdf"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "state": "MO",
+      "date": "2026-03-31",
+      "employees_affected": 539,
+      "raw": {
+        "Received Sort descending": "03/31/2026",
+        "Title": "Oracle",
+        "Industry": "Software Publisher",
+        "Location(s)": "Kansas City",
+        "County": "Jackson",
+        "Region": "Kansas City",
+        "Type": "Layoff",
+        "Layoff date(s)": "05/26/2026 06/01/2026"
       }
     },
     {
