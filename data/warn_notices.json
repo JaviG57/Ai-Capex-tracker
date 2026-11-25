@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-24T20:58:32.957163Z",
+  "generated_at": "2026-11-25T20:21:08.845209Z",
   "lookback_days": 365,
-  "states_ok": 30,
+  "states_ok": 29,
   "states_total": 41,
   "state_status": {
     "ak": "ok",
@@ -30,7 +30,7 @@
     "ne": "ok",
     "nj": "ok",
     "nm": "ok",
-    "ny": "ok",
+    "ny": "no output (exit 1): che/Python/3.11.18/x64/lib/python3.11/site-packages/warn/utils.py\", line 309, in get_url\n    assert response.ok\n           ^^^^^^^^^^^\nAssertionError\n",
     "oh": "no output (exit 1): otFound(\nbs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?\n",
     "ok": "ok",
     "or": "ok",
@@ -265,22 +265,6 @@
     },
     {
       "ticker": "ORCL",
-      "state": "NY",
-      "date": "2026-07-01",
-      "employees_affected": 62,
-      "raw": {
-        "Business Legal Name": "Oracle America, Inc.",
-        "Date Layoff/Closure Starts": "2026-07-01",
-        "Date of WARN Notice ": "2026-04-02",
-        "Date Posted  ": "2026-07-10",
-        "Impacted Site Address": "100 Woods Road  Valhalla, NY, 10595",
-        "Impacted Site County": "Westchester",
-        "Layoff or Closure?": "Layoff",
-        "Permanent or Temporary Layoff?": "Permanent"
-      }
-    },
-    {
-      "ticker": "ORCL",
       "state": "WA",
       "date": "2026-06-01",
       "employees_affected": 475,
@@ -292,22 +276,6 @@
         "Closure Layoff": "Layoff",
         "Type of Layoff": "Permanent",
         "Received Date": "3/31/2026"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "NY",
-      "date": "2026-05-30",
-      "employees_affected": 542,
-      "raw": {
-        "Business Legal Name": "Amazon (Western)",
-        "Date Layoff/Closure Starts": "2026-05-30",
-        "Date of WARN Notice ": "2026-02-27",
-        "Date Posted  ": "2026-03-17",
-        "Impacted Site Address": "4201 Walden Ave  Lancaster, NY, 14086",
-        "Impacted Site County": "Erie",
-        "Layoff or Closure?": "Closure",
-        "Permanent or Temporary Layoff?": "Permanent"
       }
     },
     {
@@ -432,54 +400,6 @@
         "Month Posted": "January",
         "Effective Date": "2026-04-28 00:00:00",
         "Workforce Affected": "240 (Passaic), 417 (Bergen), 141 (Monmouth), 44 (Hudson), 29 (Statewide)"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "NY",
-      "date": "2026-04-28",
-      "employees_affected": 135,
-      "raw": {
-        "Business Legal Name": "Amazon",
-        "Date Layoff/Closure Starts": "2026-04-28",
-        "Date of WARN Notice ": "2026-01-28",
-        "Date Posted  ": "2026-02-17",
-        "Impacted Site Address": "1440 Broadway  New York City, NY, 10018",
-        "Impacted Site County": "New York",
-        "Layoff or Closure?": "Layoff",
-        "Permanent or Temporary Layoff?": "Permanent"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "NY",
-      "date": "2026-04-28",
-      "employees_affected": 71,
-      "raw": {
-        "Business Legal Name": "Amazon (Long Island)",
-        "Date Layoff/Closure Starts": "2026-04-28",
-        "Date of WARN Notice ": "2026-01-27",
-        "Date Posted  ": "2026-02-24",
-        "Impacted Site Address": "3620 Long Beach Rd  Oceanside, NY, 11572",
-        "Impacted Site County": "Nassau",
-        "Layoff or Closure?": "Closure",
-        "Permanent or Temporary Layoff?": "Permanent"
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "state": "NY",
-      "date": "2026-04-28",
-      "employees_affected": 44,
-      "raw": {
-        "Business Legal Name": "Amazon (Long Island)",
-        "Date Layoff/Closure Starts": "2026-04-28",
-        "Date of WARN Notice ": "2026-01-27",
-        "Date Posted  ": "2026-02-24",
-        "Impacted Site Address": "4054 Nesconset Highway  East Setauket, NY, 11733",
-        "Impacted Site County": "Suffolk",
-        "Layoff or Closure?": "Closure",
-        "Permanent or Temporary Layoff?": "Permanent"
       }
     },
     {
